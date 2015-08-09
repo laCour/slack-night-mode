@@ -7,7 +7,7 @@ clean:
 	mkdir css/variants
 
 default:
-	sass scss/main.scss:css/default.scss
+	sass scss/main.scss:css/default.css
 
 themes:
 	for sass in scss/themes/build-variants/*.scss; do \
