@@ -1,0 +1,95 @@
+.dense_theme {
+  .message {
+    color: $base-font-color;
+    font-family: $base-font-family;
+
+    &.unprocessed {
+      color: rgba($base-font-color, 0.75);
+    }
+
+    .timestamp {
+      color: $base-link-color;
+    }
+
+    &.first .timestamp,
+    &:hover .timestamp {
+      color: $base-link-color-active;
+    }
+
+    &.divider {
+      border-top: 1px solid $color-base;
+    }
+
+    &.archived,
+    &.bot_change,
+    &.joined,
+    &.left,
+    &.pinned .pinned_item_message_header,
+    &.purpose,
+    &.rename,
+    &.sh_created .sh_auto_msg_text,
+    &.sh_shared .sh_auto_msg_text,
+    &.topic,
+    &.unarchived {
+      color: $color-highlight;
+    }
+  }
+
+  #message_editing_info {
+    color: $color-highlight;
+  }
+
+  #message_edit_form {
+    textarea {
+      color: $base-font-color;
+    }
+
+    p,
+    span {
+      color: $color-highlight;
+    }
+
+    .timestamp {
+      color: $color-highlight;
+    }
+  }
+
+  .file_reference {
+    .post_meta,
+    .space_meta {
+      color: $color-highlight;
+    }
+
+    .post_meta,
+    .snippet_meta,
+    .space_meta {
+      color: $color-highlight;
+    }
+
+    a:not(.member):not(.member_name):not(.icon):not(.timestamp):not(.preview_main_action):not(.preview_show_more):not(.file_preview_action) {
+      color: $base-link-color;
+    }
+
+    &:hover a {
+      &:not(.member):not(.member_name):not(.icon):not(.timestamp) {
+        color: $base-link-color;
+      }
+
+      &:hover:not(.member):not(.member_name):not(.icon):not(.timestamp) {
+        color: $base-link-color-active;
+      }
+
+      &.file_download_link {
+        color: $base-link-color !important;
+
+        &:hover {
+          color: $base-link-color-active !important;
+        }
+      }
+    }
+  }
+
+  .msg_inline_video {
+    border: 1px solid $base-link-color;
+  }
+}

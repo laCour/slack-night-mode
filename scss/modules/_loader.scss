@@ -1,0 +1,25 @@
+.loading {
+  #loading-zone {
+    background: $color-base;
+    left: 110px;
+  }
+
+  #col_channels_bg {
+    background: $color-base;
+  }
+}
+
+#self_help_link_div {
+  right: 110px !important;
+}
+
+#loading_indicator,
+#loading_welcome_msg {
+  color: $color-highlight;
+  text-shadow: 0 1px $color-shade-darkest;
+}
+
+#loading_team_menu_bg,
+#loading_user_menu_bg {
+  border: none;
+}

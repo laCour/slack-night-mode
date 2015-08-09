@@ -1,0 +1,123 @@
+#details_tab {
+  .heading {
+    background: $color-base;
+
+    a.close_flexpane {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  &.feature_channel_details {
+    .channel_page_section {
+      border-top: 1px solid $color-shade-dark !important;
+    }
+  }
+
+  hr {
+    border-top-color: $color-shade-dark;
+  }
+
+  .channel_page_section {
+    background: $color-base;
+    border-bottom: 1px solid $color-shade-dark;
+
+    .section_header {
+      &:hover {
+        .disclosure_triangle {
+          color: $base-link-color-active;
+        }
+      }
+
+      a {
+        color: $base-link-color;
+      }
+    }
+
+    .disclosure_triangle {
+      color: $base-link-color;
+    }
+
+    .channel_page_members_highlighter,
+    .channel_page_pinned_items_highlighter {
+      background: rgba($color-red, 0.25) !important;
+    }
+  }
+
+  .created_by {
+    color: $base-font-color;
+  }
+
+  .channel_page_member_tabs {
+    .icon_member_header {
+      color: $color-highlight;
+    }
+  }
+
+  .channel_page_member_row {
+    color: $base-font-color;
+
+    a {
+      color: $base-link-color;
+    }
+
+    &.away {
+      color: $base-font-color;
+
+      a {
+        color: $base-link-color;
+      }
+    }
+  }
+
+  .pinned_item:hover {
+    border-color: $color-shade-light;
+  }
+
+  .channel_page_action {
+    .leave_link {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+}
+
+.pinned_item {
+  color: $base-font-color;
+
+  .pin_file_title {
+    color: $base-link-color;
+  }
+
+  .pin_member_name a {
+    color: $base-link-color !important;
+  }
+
+  .pin_metadata {
+    color: $color-highlight;
+  }
+
+  .remove_pin {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  .pinned_message_text {
+    .pin_truncate_fade {
+      background: $color-base;
+    }
+  }
+
+  &.delete_mode {
+    border-color: $color-red !important;
+  }
+}

@@ -1,0 +1,54 @@
+.modal {
+  background-color: $color-base;
+  border: 1px solid $color-shade-darkest;
+  box-shadow: 0 1px 10px $color-shadow-dark;
+
+  .close,
+  label {
+    color: $base-font-color;
+  }
+}
+
+.modal_input_note,
+.modal_input_note_full_width {
+  color: $color-highlight;
+}
+
+.modal-footer {
+  background: padding-box $color-shade-darkest;
+  border-top: 1px solid $color-shade-light;
+  box-shadow: inset 0 1px 0 $color-shadow-dark;
+}
+
+.modal-header {
+  background: padding-box $color-shade-darkest;
+  border-bottom: 1px solid $color-shade-dark;
+  color: $base-font-color;
+}
+
+.close {
+  color: $base-font-color;
+  text-shadow: 0 1px 0 $color-shadow-dark;
+}
+
+#fs_modal_bg {
+  background: $color-base;
+}
+
+#fs_modal {
+  background: $color-base;
+
+  .fs_modal_btn {
+    color: $color-shade-light;
+
+    &:hover {
+      background: $color-shade-lightest;
+      color: $base-font-color;
+    }
+
+    &:active {
+      background: $color-shade-lightest;
+      color: $base-font-color;
+    }
+  }
+}

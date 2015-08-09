@@ -1,0 +1,24 @@
+.client_header_icon {
+  -moz-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
+  -webkit-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
+  filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
+}
+
+.CodeMirror,
+.snippet_preview {
+  -moz-filter: hue-rotate(180deg) invert(1) saturate(10);
+  -webkit-filter: hue-rotate(180deg) invert(1) saturate(10);
+  filter: hue-rotate(180deg) invert(1) saturate(10);
+
+  pre {
+    color: $white;
+  }
+}
+
+code,
+pre,
+.backup_codes_wrapper {
+  -moz-filter: hue-rotate(180deg) invert(1) opacity(0.8) saturate(10);
+  -webkit-filter: hue-rotate(180deg) invert(1) opacity(0.8) saturate(10);
+  filter: hue-rotate(180deg) invert(1) opacity(0.8) saturate(10);
+}

@@ -1,0 +1,39 @@
+#coachmark {
+  &.channels_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.search_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.invites_coachmark_div {
+    @include coachmark($color-red);
+  }
+
+  &.recent_mentions_coachmark_div {
+    @include coachmark($color-red);
+  }
+
+  &.direct_messages_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.private_groups_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.starred_items_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+}
+
+#coachmark_footer {
+  .coachmark_got_it {
+    background: rgba($color-shade-lightest, 0.5) !important;
+  }
+}
+
+#coachmark_interior {
+  color: $base-font-color;
+}

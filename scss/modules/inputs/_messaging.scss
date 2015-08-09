@@ -1,0 +1,91 @@
+#message-input {
+  &.offline {
+    background-color: $color-shade-dark !important;
+  }
+
+  &.disabled {
+    background-color: $color-shade-dark;
+  }
+}
+
+#message-input-message {
+  color: $color-highlight;
+  font-family: $base-font-family;
+}
+
+#message_edit_form,
+#messages-input-container {
+  #message-input {
+    background: padding-box $color-shade-light;
+    border: 2px solid $color-shade-dark;
+    color: $base-font-color;
+
+    &:focus {
+      border-color: $color-shade-darkest;
+    }
+  }
+
+  .emo_menu {
+    color: rgba($base-font-color, 0.15);
+
+    &.active .ts_icon_happy_smile,
+    &:hover .ts_icon_happy_smile {
+      color: $color-shade-lightest;
+    }
+  }
+
+  &.focus {
+    .emo_menu {
+      color: rgba($base-font-color, 0.2);
+    }
+
+    #primary_file_button:not(:hover) {
+      border-color: $color-shade-darkest;
+    }
+  }
+
+  &.offline {
+    #message-input,
+    #primary_file_button {
+      background-color: $color-shade-dark !important;
+    }
+
+    #primary_file_button {
+      border-color: $color-shade-dark;
+      color: $color-highlight;
+    }
+  }
+}
+
+#primary_file_button {
+  background: padding-box $color-shade-light;
+  border: 2px solid $color-shade-dark;
+
+  &.active,
+  &:hover {
+    background: $color-shade-light;
+    border-color: $color-shade-light;
+    color: $base-font-color;
+  }
+}
+
+#footer {
+  background: $color-base;
+
+  &.disabled #message-input {
+    background: padding-box $color-shade-dark !important;
+    border: 2px solid $color-shade-dark !important;
+  }
+}
+
+#footer_archives_table {
+  color: $color-highlight;
+}
+
+#typing_text {
+  color: $color-highlight;
+}
+
+#special_formatting_text {
+  color: $color-highlight;
+}

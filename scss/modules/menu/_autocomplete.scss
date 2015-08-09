@@ -1,0 +1,196 @@
+#autocomplete_menu {
+  color: $base-font-color;
+
+  h2 {
+    color: $base-font-color;
+  }
+
+  ol {
+    li {
+      &.selected {
+        background-color: $color-shade-lightest;
+        color: $base-font-color;
+
+        &:hover {
+          background-color: $color-shade-lightest;
+          color: $base-font-color;
+
+          .keyword_placeholder,
+          .username,
+          &.keyword_match .modifier {
+            color: $color-highlight;
+          }
+        }
+
+        .keyword_placeholder,
+        .username,
+        &.keyword_match .modifier {
+          color: $color-highlight;
+        }
+
+        .ts_icon,
+        &:hover .ts_icon {
+          color: $color-highlight !important;
+        }
+      }
+
+      &:hover {
+        background-color: $color-shade-light;
+      }
+
+      .ellipsis_icon,
+      .history_icon,
+      .modifier_icon {
+        color: $color-highlight;
+      }
+    }
+  }
+
+  footer {
+    .keyword:before,
+    .modifier:before {
+      background: $color-shade-lightest;
+      border: 1px solid $color-shade-light;
+      color: $base-font-color;
+    }
+
+    .selected {
+      .keyword:before,
+      .modifier:before {
+        background: rgba($color-shade-light, 0.25);
+        border: $color-shade-lightest;
+      }
+    }
+  }
+
+  header {
+    background-color: $color-shade-darkest;
+
+    .keyword:before,
+    .modifier:before {
+      background: $color-shade-lightest;
+      border: 1px solid $color-shade-light;
+      color: $base-font-color;
+    }
+
+    .selected {
+      .keyword:before,
+      .modifier:before {
+        background: rgba($color-shade-light, 0.25);
+        border: $color-shade-lightest;
+      }
+    }
+  }
+
+  footer .modifier.incomplete:before,
+  header .modifier.incomplete:before {
+    background: $color-shade-dark;
+    border: 1px solid $color-shade-darkest;
+  }
+
+  .no_results {
+    color: $base-font-color;
+  }
+
+  .keyword_match .modifier,
+  .username {
+    color: $color-highlight;
+  }
+
+  .keyword_placeholder {
+    color: $color-highlight;
+  }
+
+  .history {
+    .keyword:before {
+      background: $color-shade-lightest;
+      border: 1px solid $color-shade-light;
+      color: $base-font-color;
+    }
+
+    .modifier {
+      &:before {
+        background: $color-shade-lightest;
+        border: 1px solid $color-shade-light;
+        color: $base-font-color;
+      }
+
+      &.incomplete:before {
+        background: $color-shade-dark;
+        border: 1px solid $color-shade-darkest;
+      }
+    }
+
+    .selected {
+      .keyword:before,
+      .modifier:before {
+        background: rgba($color-shade-light, 0.25);
+        border: $color-shade-lightest;
+      }
+    }
+  }
+
+  .delete_history_item_target_area {
+    .delete_icon {
+      color: $base-link-color;
+    }
+
+    &:hover .ts_icon.delete_icon {
+      color: $color-red !important;
+    }
+  }
+
+  .boxed {
+    background: $color-base;
+    border: 1px solid $color-shade-dark;
+    box-shadow: 0 1px 0 0 $color-shadow-light;
+  }
+
+  .section_header {
+    .header_label {
+      background-color: $color-base;
+      color: $color-highlight;
+    }
+  }
+
+  .pickmeup {
+    border-bottom: 1px solid $color-shade-dark;
+  }
+}
+
+.search_light_grey {
+  color: $base-font-color !important;
+}
+
+.highlighter_underlay {
+  .keyword:before {
+    background: $color-shade-lightest;
+    border: 1px solid $color-shade-light;
+    color: $base-font-color;
+  }
+
+  .modifier {
+    &:before {
+      background: $color-shade-lightest;
+      border: 1px solid $color-shade-light;
+      color: $base-font-color;
+    }
+
+    &.incomplete:before {
+      background: $color-shade-dark;
+      border: 1px solid $color-shade-darkest;
+    }
+  }
+
+  .selected {
+    .keyword:before,
+    .modifier:before {
+      background: rgba($color-shade-lightest, 0.25);
+      border: $color-shade-light;
+    }
+  }
+
+  .ghost_text {
+    color: $base-font-color;
+  }
+}

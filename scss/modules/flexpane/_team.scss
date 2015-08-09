@@ -1,0 +1,108 @@
+.team_list_item {
+  border-top: 1px solid $color-shade-light;
+  color: $base-font-color;
+
+  a {
+    &:not(.member_name):hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  .member_name {
+    color: $base-font-color;
+  }
+}
+
+#member_preview_scroller a:not(.member_name),
+.team_list_item a:not(.member_name) {
+  color: $base-font-color;
+}
+
+#member_preview_scroller a:not(.member_name):hover {
+  color: $base-link-color-active;
+}
+
+#disabled_members_tab {
+  a {
+    color: $base-link-color;
+
+    &:hover {
+      background: $color-shade-light;
+      color: $base-link-color-active;
+    }
+  }
+
+  &.active a {
+    color: $base-font-color;
+  }
+}
+
+#member_preview_scroller .member_data_table a,
+#team_list .member_data_table a {
+  color: $base-font-color;
+}
+
+#member_preview_scroller .member_data_table a:hover,
+#team_list .member_data_table a:hover {
+  color: $base-link-color-active;
+}
+
+#member_preview_scroller a.member_action_button,
+#team_list a.member_action_button {
+  color: $base-link-color !important;
+}
+
+#member_preview_scroller a.member_action_button:hover,
+#team_list a.member_action_button:hover {
+  border-color: $color-shade-darkest !important;
+  color: $base-link-color-active !important;
+}
+
+#client-ui #team_list .team_list_item.expanded,
+#member_preview_scroller .team_list_item.expanded {
+  background-color: $color-shade-light;
+  border-color: $color-shade-lightest;
+}
+
+#client-ui #team_list .team_list_item:hover,
+#member_preview_scroller .team_list_item:hover {
+  border-color: $color-shade-light;
+}
+
+.member_meta {
+  color: $base-font-color;
+}
+
+.menu_member_user_details {
+  background: $color-shade-light;
+  border-bottom: 1px solid $color-shade-darkest;
+  color: $base-link-color;
+
+  .member_name {
+    color: $base-font-color;
+  }
+}
+
+#about_dms_link {
+  color: $base-font-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}
+
+.dm_list_username {
+  color: $base-font-color;
+}
+
+.dm_list_real_name {
+  color: $color-highlight;
+}
+
+#menu:not(.keyboard_active) .dm_list_item:hover,
+.dm_list_item.highlighted {
+  .dm_list_real_name,
+  .dm_list_username {
+    color: $base-font-color;
+  }
+}

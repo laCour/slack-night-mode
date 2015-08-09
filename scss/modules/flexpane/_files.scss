@@ -1,0 +1,322 @@
+#file_list_toggle_users {
+  color: $base-link-color;
+
+  &.active:hover,
+  &:hover {
+    color: $base-link-color-active;
+  }
+
+  &.active {
+    color: $color-highlight;
+  }
+}
+
+.secondary_file_button {
+  color: $color-highlight !important;
+
+  &:hover {
+    color: $base-font-color !important;
+  }
+}
+
+.file_list_item .icon,
+.file_reference .icon {
+  background: $color-shade-lightest;
+  border: 1px solid $color-shade-light;
+  color: $base-font-color !important;
+}
+
+.filetype_button {
+  background: $color-shade-lightest;
+  border: 1px solid $color-shade-light;
+  color: $base-font-color !important;
+
+  &:hover {
+    background: $color-shade-lightest;
+
+    .file_download_label {
+      background: $color-shade-light;
+      color: $base-font-color;
+    }
+  }
+
+  .file_title {
+    color: $base-font-color;
+  }
+
+  .file_download_label {
+    background: $color-shade-lightest;
+    border-top: 1px solid $color-shade-light;
+  }
+}
+
+a {
+  &.filetype_button_web {
+    background: $color-shade-lightest;
+    border: 1px solid $color-shade-light;
+    color: $base-font-color;
+
+    .filetype_icon {
+      background-color: $color-shade-light;
+    }
+  }
+
+  &.file_download_link {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  &:hover .file_inline_icon {
+    color: $color-highlight;
+  }
+
+  &.gsheet img,
+  &.pdf img {
+    background: $color-base !important;
+  }
+}
+
+html.no_touch a.filetype_button_web:hover {
+  border-color: $color-shade-light;
+
+  .file_title {
+    color: $base-font-color;
+  }
+}
+
+.file_meta {
+  color: $color-highlight;
+}
+
+.file_inline_icon {
+  color: $color-highlight;
+}
+
+.file_header {
+  .member {
+    color: $color-highlight !important;
+  }
+
+  .title {
+    color: $base-font-color;
+
+    a {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+}
+
+.flexpane_file_title {
+  .member,
+  .service_link {
+    color: $base-link-color !important;
+  }
+
+  .title,
+  .file_action_list {
+    a {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+}
+
+.file_actions_cog {
+  color: $base-link-color !important;
+
+  &:hover {
+    color: $base-link-color-active !important;
+  }
+}
+
+.file_list_item {
+  color: $base-font-color;
+
+  a {
+    color: $base-link-color;
+
+    &.member {
+      color: $base-link-color-active;
+    }
+  }
+
+  .bullet {
+    color: $color-highlight;
+  }
+
+  .icon {
+    background: $color-shade-lightest;
+    border-color: $color-shade-light;
+  }
+
+  .ts_icon_comment {
+    color: $color-highlight;
+  }
+
+  .file_comment_link:hover {
+    color: $base-link-color;
+
+    .ts_icon_comment {
+      color: $color-highlight;
+    }
+  }
+
+  .title {
+    a {
+      color: $base-link-color;
+    }
+  }
+
+  .share_info {
+    .unshare_link {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  .actions {
+    a,
+    span {
+      background-color: $color-shade-dark;
+      border: 1px solid $color-shade-lightest;
+      color: $base-link-color;
+    }
+
+    a {
+      &:hover {
+        background-color: $color-base !important;
+        border-color: $color-shade-lightest;
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  &.post .preview,
+  &.space .preview {
+    color: $base-font-color;
+  }
+
+  #share_dialog,
+  &.active,
+  &:active,
+  &:hover {
+    background-color: $color-shade-light;
+    border-color: $color-shade-lightest;
+
+    .title a {
+      color: $base-link-color;
+    }
+
+    .actions {
+      background-color: transparent;
+
+      a,
+      span {
+        background-color: $color-shade-dark;
+      }
+    }
+  }
+}
+
+.unshare_link {
+  color: $base-link-color;
+
+  i {
+    &:before {
+      color: $color-highlight;
+    }
+
+    &.ts_icon_minus_circle_small:hover:before {
+      color: $color-red;
+    }
+  }
+}
+
+.snippet_preview pre {
+  color: $base-font-color;
+}
+
+.file_preview_wrapper {
+  .file_preview {
+    background: $color-base;
+
+    &:hover {
+      background: $color-shade-dark;
+    }
+  }
+}
+
+.file_page_user {
+  color: $base-font-color;
+
+  .member {
+    color: $base-font-color !important;
+  }
+
+  .date {
+    color: $color-highlight;
+  }
+}
+
+.file_page_meta {
+  color: $color-highlight;
+}
+
+#file_page_preview img {
+  background: $color-base;
+  border: 1px solid $color-shade-darkest;
+
+  &:hover {
+    background: $color-shade-dark;
+  }
+}
+
+.comment_meta {
+  color: $color-highlight;
+}
+
+.comment {
+  .special_formatting_quote .content {
+    color: $base-font-color;
+  }
+
+  .member {
+    color: $base-font-color !important;
+  }
+}
+
+.comment_body {
+  color: $base-font-color;
+}
+
+.comment_actions {
+  color: $color-highlight;
+}
+
+.comment_actions:hover {
+  color: $base-font-color;
+}
+
+.icon_quote {
+  color: $base-font-color;
+}
+
+#flex_contents {
+  .comment_form textarea,
+  .edit_comment_form textarea {
+    color: $base-font-color;
+  }
+}

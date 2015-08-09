@@ -1,0 +1,197 @@
+#msgs_overlay_div {
+  background: $color-base;
+}
+
+body:not(.feature_new_message_markup) {
+  .message {
+    .mention,
+    &.highlight {
+      background: $color-shade-light;
+      border: 1px solid $color-shade-lightest;
+      border-radius: 3px;
+      padding: 2px;
+    }
+
+    .inline_color_block {
+      border: 1px solid $color-shade-dark;
+    }
+
+    &.unprocessed {
+      color: rgba($base-font-color, 0.75);
+    }
+
+    .edited,
+    .temp_msg_controls {
+      color: $color-highlight;
+    }
+
+    .msg_actions {
+      color: $base-link-color;
+    }
+
+    &:hover .msg_actions:hover {
+      color: $base-link-color-active;
+    }
+
+    &.delete_mode,
+    &.multi_delete_mode {
+      background: rgba($color-red, 0.75);
+    }
+
+    &.edit_mode {
+      background: rgba($color-shade-darkest, 0.75);
+    }
+  }
+
+  .selecting_messages .message.multi_delete_mode:hover {
+    background: rgba($color-red, 0.75);
+  }
+
+  .selecting_messages .message:hover {
+    background: $color-shade-darkest;
+  }
+
+  .msgs_holder .unread_divider {
+    color: $base-font-color;
+
+    &.no_unreads {
+      color: $base-font-color;
+
+      hr {
+        border-top: 1px solid $color-shade-dark;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $color-red;
+    }
+  }
+}
+
+.msgs_holder {
+  .unread_divider {
+    span.divider_label {
+      background: $color-red;
+      border-radius: 3px;
+      padding: 3px;
+    }
+
+    &.no_unreads span.divider_label {
+      background: $color-shade-light;
+    }
+  }
+
+  .message.automated_grey {
+    background: $color-shade-darkest;
+
+    .timestamp {
+      color: $base-link-color;
+    }
+
+    &:hover .timestamp {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+body.feature_new_message_markup .msgs_holder .unread_divider {
+  color: $base-font-color;
+
+  &.no_unreads {
+    color: $color-highlight;
+
+    hr {
+      border-top: 1px solid $color-base;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $color-shade-light;
+  }
+}
+
+.star {
+  color: $color-highlight;
+}
+
+.star_item {
+  border-bottom: 1px solid $color-shade-darkest;
+
+  .star_meta {
+    color: $color-highlight;
+  }
+}
+
+.bot_label {
+  background: $color-shade-darkest;
+  color: $color-highlight;
+}
+
+.bot_message .message_sender {
+  color: $base-font-color;
+
+  a {
+    color: $base-font-color;
+  }
+}
+
+.ephemeral.message {
+  .message_content {
+    color: $base-font-color;
+  }
+
+  .ephemeral_notice {
+    color: $color-highlight;
+  }
+}
+
+.color_USLACKBOT:not(.nuc),
+#col_channels ul li:not(.active):not(.away) > .color_USLACKBOT:not(.nuc),
+#col_channels:not(.show_presence) ul li > .color_USLACKBOT:not(.nuc) {
+  color: $base-font-color;
+}
+
+#msgs_scroller_div #end_display_div {
+  #end_display_status {
+    color: $color-highlight;
+  }
+
+  #end_display_meta {
+    color: $color-highlight;
+
+    h1 {
+      color: $base-font-color;
+    }
+  }
+
+  p {
+    color: $base-font-color;
+  }
+}
+
+.member_mentions_options {
+  background-color: $color-shade-darkest;
+  border-top: 1px solid $color-shade-dark;
+}
+
+.dm_badge {
+  .dm_badge_meta {
+    color: $base-font-color;
+  }
+
+  a {
+    color: $base-link-color;
+
+    &.member_preview_link {
+      color: $base-link-color;
+    }
+  }
+
+  .dm_badge:hover a {
+    color: $base-link-color;
+  }
+
+  .hint {
+    color: $color-highlight;
+  }
+}

@@ -1,0 +1,82 @@
+.pickmeup {
+  background: $color-base;
+  border: 1px solid $color-shade-dark;
+  box-shadow: 0 1px 5px $color-shadow-light;
+
+  .pmu-instance {
+    .pmu-button {
+      color: $base-font-color;
+    }
+
+    .pmu-today {
+      &.pmu-selected,
+      &:hover {
+        background: $color-shade-dark !important;
+
+        .pmu-today-border {
+          background: $color-shade-lightest;
+          color: $base-font-color !important;
+        }
+      }
+    }
+
+    .pmu-today-border {
+      border: 2px solid $color-shade-light !important;
+      color: $color-shade-lightest !important;
+    }
+
+    .pmu-button:not(.pmu-disabled):hover {
+      background: $color-shade-light;
+      color: $base-font-color;
+    }
+
+    .pmu-not-in-month {
+      background: $color-base;
+      color: $color-highlight;
+
+      &.pmu-selected {
+        background: $color-shade-light;
+      }
+    }
+
+    .pmu-disabled {
+      background: $color-base;
+      color: $color-highlight;
+
+      &:hover {
+        background: $color-base;
+        color: $color-highlight;
+      }
+    }
+
+    .pmu-selected {
+      background: $color-shade-light;
+      color: $base-font-color;
+    }
+
+    nav {
+      color: $base-link-color;
+
+      :first-child :hover {
+        color: $base-link-color-active;
+      }
+    }
+
+    .pmu-months *,
+    .pmu-years * {
+      border: 1px solid $color-shade-dark;
+    }
+
+    .pmu-day-of-week {
+      color: $base-font-color;
+
+      * {
+        border: 1px solid $color-shade-dark;
+      }
+    }
+
+    .pmu-days * {
+      border: 1px solid $color-shade-dark;
+    }
+  }
+}

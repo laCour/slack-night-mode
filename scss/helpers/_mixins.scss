@@ -1,0 +1,8 @@
+@mixin coachmark($background) {
+  background: $background;
+
+  #coachmark_callout,
+  #coachmark_interior {
+    background: $background;
+  }
+}

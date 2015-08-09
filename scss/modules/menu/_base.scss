@@ -1,0 +1,113 @@
+#menu,
+.menu_example {
+  background: $color-shade-darkest;
+  box-shadow: 0 2px 10px $color-shadow-light;
+  color: $base-font-color;
+}
+
+#menu .section_header .header_label,
+.menu_example .section_header .header_label {
+  background-color: $color-base;
+  color: $color-highlight;
+}
+
+#menu .section_header > div.header_label_container,
+.menu_example .section_header > div.header_label_container {
+  color: $color-highlight;
+}
+
+#menu_header {
+  .menu_simple_header {
+    background: $color-shade-darkest;
+    border-color: $color-shade-dark;
+    color: $base-font-color;
+
+    a {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  .menu_close {
+    color: $base-font-color;
+  }
+}
+
+#menu ul li a,
+.menu_example ul li a {
+  background: $color-base;
+  border-bottom: 1px solid $color-shade-dark;
+  color: $base-link-color;
+}
+
+#menu {
+  ul li {
+    &.highlighted a {
+      background: $color-shade-darkest;
+      border-bottom-color: $color-base;
+      color: $base-link-color-active;
+      text-shadow: 0 1px 0 $color-shadow-light;
+
+      &.delete_link {
+        color: $color-red;
+      }
+    }
+
+    &.disabled a {
+      color: $color-highlight;
+    }
+
+    &.divider {
+      border-bottom: 2px solid $color-shade-mid;
+    }
+
+    &.double-divider {
+      border-bottom: 4px solid $color-shade-mid;
+    }
+
+    a.delete_link {
+      color: $color-red;
+    }
+  }
+
+  &:not(.keyboard_active) ul li:hover a {
+    background: $color-shade-darkest;
+    border-bottom-color: $color-base;
+    color: $base-link-color-active;
+    text-shadow: 0 1px 0 $color-shadow-light;
+
+    &.delete_link {
+      color: $color-red;
+    }
+  }
+
+  input {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-darkest;
+  }
+
+  textarea {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-darkest;
+  }
+}
+
+.menu_example {
+  ul li.highlighted a,
+  &:not(.keyboard_active) ul li:hover a {
+    background: $color-shade-darkest;
+    border-bottom-color: $color-base;
+    color: $base-link-color-active;
+    text-shadow: 0 1px 0 $color-shadow-light;
+  }
+}
+
+#menu_footer {
+  .menu_footer {
+    background: $color-shade-darkest;
+    border-top: 1px solid $color-shade-dark;
+  }
+}

@@ -1,0 +1,54 @@
+.search_form {
+  .icon_search {
+    color: $color-highlight;
+  }
+
+  .icon_close {
+    color: $base-link-color;
+  }
+
+  .search_input {
+    background: $color-shade-light;
+    border: 1px solid rgba($color-shade-lightest, 0.61);
+
+    &:hover {
+      border: 1px solid $color-shade-lightest;
+    }
+
+    &:focus {
+      border-color: rgba($color-shade-lightest, 0.61);
+    }
+  }
+}
+
+#header_search_form.search_form .icon_search {
+  color: $color-highlight;
+}
+
+#team_filter {
+  .icon_search {
+    color: $color-highlight;
+  }
+
+  a.icon_close {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+#client-ui {
+  .icon_search {
+    color: $color-highlight;
+  }
+
+  a.icon_close {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}

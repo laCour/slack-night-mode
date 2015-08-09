@@ -1,0 +1,60 @@
+@-moz-document domain(slack.com) {
+
+  @import "helpers/variables";
+  @import "helpers/mixins";
+
+  @import "layout/base";
+  @import "layout/sidebar";
+  @import "layout/monkey-scroll";
+
+  @import "modules/loader";
+
+  @import "modules/inputs/base";
+  @import "modules/inputs/chzn";
+  @import "modules/inputs/messaging";
+
+  @import "modules/menu/base";
+  @import "modules/menu/team";
+  @import "modules/menu/file";
+  @import "modules/menu/popover";
+  @import "modules/menu/calendar";
+  @import "modules/menu/autocomplete";
+  @import "modules/menu/flex";
+  @import "modules/menu/filters";
+
+  @import "modules/header/base";
+  @import "modules/header/search";
+  @import "modules/header/day-divider";
+  @import "modules/header/banners";
+
+  @import "modules/messaging/base";
+  @import "modules/messaging/light";
+  @import "modules/messaging/dense";
+  @import "modules/messaging/banners";
+  @import "modules/messaging/attachments";
+
+  @import "modules/flexpane/base";
+  @import "modules/flexpane/channel";
+  @import "modules/flexpane/search";
+  @import "modules/flexpane/mentions";
+  @import "modules/flexpane/files";
+  @import "modules/flexpane/team";
+
+  @import "modules/emojis/base";
+  @import "modules/emojis/reactions";
+
+  @import "modules/modals/base";
+  @import "modules/modals/preferences";
+  @import "modules/modals/invite";
+  @import "modules/modals/omnibox";
+
+  @import "modules/tooltips/base";
+  @import "modules/tooltips/coachmarks";
+
+  @import "modules/color-overrides";
+  @import "modules/hacks";
+
+  @import "pages/status";
+  @import "pages/website";
+
+}

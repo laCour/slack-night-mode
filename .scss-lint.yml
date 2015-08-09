@@ -1,0 +1,24 @@
+scss_files: "stylesheets/**/*.scss"
+linters:
+  BorderZero:
+    enabled: false
+  IdSelector:
+    enabled: false
+  ImportantRule:
+    enabled: false
+  LeadingZero:
+    enabled: true
+    style: include_zero
+  NestingDepth:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  SelectorDepth:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+  VendorPrefix:
+    enabled: false

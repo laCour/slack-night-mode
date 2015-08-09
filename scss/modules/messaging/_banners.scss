@@ -1,0 +1,47 @@
+.messages_banner {
+  color: $base-font-color;
+  text-shadow: 0 1px $color-shadow-light;
+
+  a {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+#connection_div {
+  background: $color-red;
+}
+
+#archives_return {
+  background: padding-box $color-shade-lightest;
+  color: $base-font-color;
+
+  &.warning {
+    background: $color-red;
+  }
+
+  a {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+#messages_unread_status {
+  background: $color-shade-light;
+
+  &.quiet {
+    background: $color-shade-lightest;
+    color: $base-font-color;
+    text-shadow: 0 1px $color-shadow-light;
+
+    a {
+      color: $base-link-color;
+    }
+  }
+}

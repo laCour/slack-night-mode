@@ -1,0 +1,30 @@
+.emoji_rxn {
+  background: $color-shade-darkest;
+  border: 1px solid $color-shade-light;
+
+  &.active,
+  &:hover {
+    border-color: $color-shade-mid;
+
+    .emoji_rxn_count {
+      color: $base-font-color;
+    }
+  }
+
+  &.user_reacted {
+    background-color: rgba($color-shade-mid, 0.08);
+    border-color: rgba($color-shade-lightest, 0.4) !important;
+
+    .emoji_rxn_count {
+      color: $base-font-color;
+    }
+  }
+
+  .emoji_rxn_count {
+    color: $base-font-color;
+  }
+
+  &.menu_rxn .ts_icon {
+    color: rgba($base-font-color, 0.25);
+  }
+}

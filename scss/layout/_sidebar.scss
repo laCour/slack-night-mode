@@ -1,0 +1,239 @@
+#col_channels_collapse_view {
+  background: $color-shade-dark;
+}
+
+#col_channels {
+  background: $color-shade-dark;
+  color: $base-font-color;
+
+  ul li {
+    &.channel.active a.channel_name,
+    &.group.active a.group_name,
+    &.member.active a.im_name {
+      background: $color-shade-light;
+      color: $base-font-color;
+    }
+  }
+
+  .channels_list_holder ul li {
+    &.channel.active .unread_highlight,
+    &.group.active .unread_highlight,
+    &.member.active .unread_highlight {
+      background: $color-base;
+      color: $base-font-color;
+    }
+  }
+}
+
+.channels_list_holder {
+  h2 {
+    color: $base-link-color;
+
+    &.hoverable:not(.jquery_hover):hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  ul {
+    color: $base-font-color;
+
+    li {
+      text-shadow: 0 1px 1px $color-shadow-light;
+
+      a {
+        color: $base-link-color;
+
+        &:hover {
+          background: $color-base;
+        }
+      }
+
+      &.channel.active a.channel_name .prefix {
+        color: $color-highlight;
+      }
+
+      &.group {
+        &.active a.group_name .prefix {
+          color: $color-highlight;
+        }
+
+        .group_close {
+          color: $base-link-color;
+        }
+      }
+
+      &.member .im_close,
+      &.mpim .mpim_close {
+        color: $color-highlight;
+      }
+
+      &.group.active .group_close,
+      &.member.active .im_close,
+      &.mpim.active .mpim_close {
+        color: $base-link-color;
+      }
+
+      &.mention a {
+        color: $base-font-color;
+      }
+
+      &.unread {
+        &:not(.muted_channel) a {
+          color: $base-font-color;
+        }
+
+        .prefix {
+          color: $base-font-color;
+        }
+      }
+    }
+  }
+
+  .unread_just {
+    background: $color-base;
+    color: $base-font-color;
+  }
+
+  .unread_highlight {
+    background: $color-red;
+    color: $base-font-color;
+    text-shadow: 0 1px 0 $color-shadow-light;
+  }
+}
+
+.channels_list_new_btn {
+  color: $base-link-color;
+}
+
+.list_more {
+  border-bottom: 1px dotted $base-link-color;
+  color: $base-link-color !important;
+
+  &:hover {
+    border-bottom: 1px solid $base-link-color-active;
+    color: $base-link-color-active !important;
+  }
+}
+
+#channel_scroll_down,
+#channel_scroll_up {
+  background: $color-shade-darkest;
+  color: $base-font-color;
+  text-shadow: 0 1px 1px $color-shadow-light;
+}
+
+#channel_scroll_down {
+  &:hover {
+    color: $base-font-color;
+  }
+
+  &.unseen_have_mentions {
+    background: $color-red;
+  }
+}
+
+#channel_scroll_up {
+  &.unseen_have_mentions {
+    background: $color-red;
+  }
+}
+
+#channel_scroll_up:hover {
+  color: $base-font-color;
+}
+
+#list_controls {
+  border-bottom: 1px solid $color-shade-dark;
+  color: $color-highlight;
+}
+
+#list_search {
+  border: 1px solid $color-shade-dark;
+}
+
+#list_search_container {
+  .icon_search {
+    color: $color-highlight;
+  }
+
+  .icon_close {
+    color: $color-highlight;
+  }
+}
+
+#list_browser {
+  p.highlighted {
+    background: $color-base;
+  }
+
+  &:not(.keyboard_active) p:hover {
+    background: $color-base;
+  }
+
+  .item_creator {
+    color: $color-highlight;
+  }
+
+  .item_count {
+    color: $base-font-color;
+  }
+
+  .item_purpose {
+    color: $base-font-color;
+  }
+}
+
+#list_browser_dialog {
+  .modal-footer a {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+#channel_list_invites_link {
+  border-bottom: 1px dotted $base-link-color;
+  color: $base-link-color;
+  font-size: 0.9rem;
+
+  &:hover {
+    border-bottom: 1px solid $base-link-color;
+  }
+}
+
+#quick_switcher_btn {
+  background: $color-shade-dark;
+  border-top: 2px solid $color-shade-dark;
+
+  > i {
+    color: $color-highlight;
+  }
+
+  &:active,
+  &:hover {
+    background: $color-base;
+    border-color: $color-base;
+
+    > i {
+      color: $base-link-color;
+    }
+
+    #quick_switcher_label {
+      color: $base-link-color;
+    }
+
+    #quick_switcher_shortcut {
+      color: $base-link-color;
+    }
+  }
+}
+
+#quick_switcher_shortcut {
+  color: $color-highlight;
+}
+
+#quick_switcher_label {
+  color: $color-highlight;
+}

@@ -1,0 +1,42 @@
+body {
+  background: $color-base;
+  color: $base-font-color;
+}
+
+a {
+  color: $base-link-color;
+
+  &:link,
+  &:visited {
+    color: $base-link-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $base-link-color-active;
+  }
+}
+
+hr {
+  border-bottom: 1px solid $color-shade-mid;
+  border-top: 1px solid $color-base;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $base-font-color;
+}
+
+h1 a {
+  color: $base-font-color;
+
+  &:active,
+  &:hover,
+  &:link,
+  &:visited {
+    color: $base-font-color;
+  }
+}

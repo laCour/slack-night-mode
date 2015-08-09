@@ -1,0 +1,170 @@
+#header {
+  background: $color-base;
+
+  .client_header_button {
+    background: $color-shade-mid;
+    border: 1px solid $color-shade-dark;
+
+    &:hover {
+      background: $color-shade-light;
+      border: 1px solid $color-shade-mid;
+    }
+  }
+}
+
+#help_icon {
+  border: 1px solid $color-shade-mid;
+  color: $color-highlight;
+
+  &:hover {
+    background: $color-shade-mid;
+    border: 1px solid $color-shade-dark;
+    color: $base-font-color;
+  }
+
+  &.unread #help_icon_circle_count {
+    background-color: $color-red;
+    color: $white;
+  }
+}
+
+#flex_menu_toggle {
+  &.unread #help_icon_circle_count {
+    background-color: $color-red;
+    color: $white;
+  }
+}
+
+#flex_menu_toggle.open #help_icon_circle_count,
+#help_icon.open #help_icon_circle_count {
+  background-color: $color-shade-darkest;
+  color: $base-font-color;
+}
+
+#channel_members_toggle {
+  background: $color-base;
+  color: $color-highlight;
+
+  .channel_members_toggle_icon {
+    color: $color-highlight;
+  }
+
+  &:hover .channel_members_toggle_icon {
+    color: $base-font-color;
+  }
+}
+
+#active_channel_name {
+  color: $color-highlight;
+
+  .name {
+    color: $base-font-color;
+
+    &.muted {
+      color: $color-highlight;
+    }
+  }
+
+  .prefix {
+    color: $color-highlight;
+  }
+
+  &.active .prefix,
+  &:hover .prefix {
+    color: $base-font-color;
+  }
+
+  #channel_actions {
+    color: $color-highlight;
+  }
+
+  .topic {
+    color: $color-highlight;
+  }
+
+  .call_icon {
+    color: $color-highlight;
+
+    &.away {
+      color: rgba($color-highlight, 0.25);
+    }
+
+    &.call_window_offline {
+      color: rgba($color-highlight, 0.25);
+    }
+  }
+
+  .ts_icon_microphone:hover,
+  .ts_icon_video_camera:hover {
+    color: $base-font-color;
+  }
+
+  &:hover {
+    .name.muted,
+    i .fa {
+      color: $base-font-color;
+    }
+  }
+}
+
+#group_actions,
+#im_actions {
+  color: $color-highlight;
+}
+
+#channel_header .star {
+  color: $color-highlight;
+}
+
+.flexpane_toggle_button {
+  border: 1px solid rgba($color-shade-lightest, 0.1);
+  color: $color-highlight;
+
+  &#details_toggle.active,
+  &#flex_menu_toggle.active,
+  &#recent_mentions_toggle.active,
+  &#stars_toggle.active {
+    background-color: $color-shade-lightest;
+    border-color: rgba($color-shade-light, 0.12);
+    color: $base-font-color;
+
+    &:hover {
+      background-color: $color-shade-lightest;
+      border-color: rgba($color-shade-light, 0.12);
+      color: $base-font-color;
+    }
+  }
+
+  &#details_toggle:hover {
+    color: $base-font-color;
+  }
+
+  &#recent_mentions_toggle {
+    &:hover {
+      color: $color-red;
+    }
+
+    &.jquery_hover:hover {
+      color: $base-font-color;
+    }
+  }
+
+  &#stars_toggle {
+    &.jquery_hover:hover {
+      color: $base-font-color;
+    }
+  }
+
+  &#flex_menu_toggle {
+    &.active:hover,
+    &.menu_open,
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+#rxn_toast_div {
+  background: $color-shade-lightest;
+  border: 1px solid $color-shadow-light;
+}

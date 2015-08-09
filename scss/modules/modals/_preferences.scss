@@ -1,0 +1,32 @@
+#new_prefs_dialog {
+  background: $color-shade-mid;
+
+  .modal-header {
+    border-bottom: 1px solid $color-base;
+  }
+
+  .modal-nav {
+    background: padding-box $color-shade-light;
+    border-right: 1px solid $color-base;
+
+    a {
+      color: $base-link-color;
+      text-shadow: 0 1px 0 $color-shadow-light;
+
+      &:hover {
+        background: $color-shade-lightest;
+        color: $base-link-color;
+      }
+
+      &.active {
+        background: $color-shade-mid;
+        color: $base-link-color;
+        text-shadow: 0 1px 0 $color-shadow-light;
+      }
+    }
+  }
+}
+
+#debug_prefs_dialog {
+  background: $color-shade-mid;
+}

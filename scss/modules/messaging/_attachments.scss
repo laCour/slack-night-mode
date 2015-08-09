@@ -1,0 +1,102 @@
+.msg_inline_img_holder .msg_inline_img {
+  box-shadow: inset 0 0 0 1px $color-shade-darkest;
+}
+
+.msg_inline_attachment_collapser,
+.msg_inline_attachment_expander,
+.msg_inline_audio_collapser,
+.msg_inline_audio_expander,
+.msg_inline_email_collapser,
+.msg_inline_email_expander,
+.msg_inline_file_preview_collapser,
+.msg_inline_file_preview_expander,
+.msg_inline_img_collapser,
+.msg_inline_img_expander,
+.msg_inline_other_collapser,
+.msg_inline_other_expander,
+.msg_inline_room_preview_collapser,
+.msg_inline_room_preview_expander,
+.msg_inline_video_collapser,
+.msg_inline_video_expander {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}
+
+.msg_inline_img {
+  background: $color-shade-light;
+
+  &:hover {
+    background: $color-shade-lightest;
+  }
+}
+
+.msg_inline_room_preview_collapser {
+  color: $color-highlight;
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
+.msg_inline_file_preview_collapser.title_hidden {
+  color: $color-highlight;
+}
+
+.inline_attachment {
+  span {
+    &.attachment_author_name {
+      color: $base-link-color;
+    }
+
+    &.attachment_author_subname,
+    &.attachment_service_name {
+      color: $base-link-color;
+    }
+  }
+
+  a span {
+    &:active,
+    &:hover {
+      color: $base-link-color-active !important;
+    }
+  }
+
+  .attachment_footer,
+  .attachment_ts {
+    color: $base-link-color;
+
+    a {
+      color: $base-link-color;
+    }
+  }
+
+  .attachment_footer a {
+    &:active,
+    &:hover {
+      color: $base-link-color-active !important;
+    }
+  }
+
+  .attachment_ts a {
+    &:active,
+    &:hover {
+      color: $base-link-color-active !important;
+    }
+  }
+
+  .iframe_placeholder,
+  iframe {
+    background-color: $color-shade-darkest;
+  }
+}
+
+.delete_attachment_link {
+  color: $base-link-color;
+}
+
+.delete_attachment_link:hover {
+  color: $base-link-color-active;
+}

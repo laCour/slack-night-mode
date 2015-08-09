@@ -1,0 +1,225 @@
+.search_message_result {
+  background: $color-base;
+  border-top: 2px solid $color-shade-darkest;
+  color: $base-font-color;
+
+  .search_message_result_meta {
+    color: $color-highlight;
+
+    a {
+      color: $base-link-color;
+    }
+
+    .date_links a {
+      color: $base-link-color;
+    }
+  }
+
+  .search_message_result_text .result_msg_format a {
+    color: $base-link-color;
+  }
+}
+
+span.match {
+  background: $color-base;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+#search_widget {
+  background: padding-box $color-shade-darkest;
+  box-shadow: 0 1px 3px $color-shadow-dark;
+  color: $base-font-color;
+
+  .results_block {
+    background: $color-shade-dark;
+    box-shadow: 0 1px 1px $color-shadow-light;
+  }
+
+  .results_heading {
+    background: $color-shade-darkest;
+    color: $base-font-color;
+  }
+
+  a.results_heading:hover {
+    background: $color-base;
+  }
+
+  .search_widget_item {
+    a {
+      color: $base-link-color;
+    }
+
+    &:hover a {
+      color: $base-link-color-active;
+    }
+
+    .result_meta a {
+      color: $color-highlight;
+
+      &:hover {
+        color: $base-font-color;
+      }
+    }
+  }
+}
+
+.search_widget_item {
+  border-top: 1px solid $color-shade-light;
+  color: $base-font-color;
+
+  &:hover {
+    background: $color-shade-light;
+  }
+
+  .result_meta {
+    color: $base-font-color;
+  }
+}
+
+#search_options {
+  background: $color-shade-light;
+  border-top: 1px solid $color-shade-dark;
+  color: $base-font-color;
+}
+
+#advanced_options_toggle:hover {
+  color: $base-link-color-active;
+}
+
+#advanced_options {
+  .active .arrow_down {
+    color: $base-link-color;
+  }
+}
+
+#search_filters {
+  a {
+    background: $color-shade-light;
+    color: $base-font-color;
+  }
+
+  a:hover {
+    border-bottom: 4px solid $color-shade-dark;
+  }
+
+  &.files #filter_files,
+  &.messages #filter_messages {
+    border-bottom: 4px solid $color-shade-dark;
+    color: $base-font-color;
+  }
+}
+
+#search_file_list_toggle_users.active:hover {
+  border: 2px solid $base-link-color-active;
+  color: $base-link-color-active !important;
+}
+
+.no_results {
+  color: $base-font-color;
+}
+
+#search_results_team {
+  .team_results_heading {
+    color: $base-font-color;
+  }
+
+  .team_result {
+    background-color: $color-shade-light;
+    border: 1px solid $color-shade-lightest;
+    color: $base-font-color;
+
+    a {
+      color: $base-link-color;
+    }
+
+    &:hover a {
+      color: $base-link-color-active;
+    }
+
+    a:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  .member_name {
+    color: $base-font-color !important;
+  }
+}
+
+.suggestion {
+  color: $base-font-color;
+
+  &.active,
+  &:hover {
+    background: $color-shade-light;
+  }
+}
+
+#paging_in_options {
+  .search_paging {
+    color: $color-highlight;
+  }
+}
+
+#search_results_items {
+  .search_paging {
+    color: $base-font-color;
+  }
+}
+
+.search_paging {
+  i.disabled {
+    color: $color-highlight;
+  }
+
+  a {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+.search_sort_prefix {
+  color: $base-font-color;
+}
+
+.search_segmented_control {
+  border: 1px solid $color-shade-dark;
+  color: $base-link-color !important;
+
+  &:hover {
+    color: $base-link-color-active !important;
+  }
+
+  &.active {
+    background: $color-base;
+    color: $base-link-color-active !important;
+  }
+}
+
+.search_result_with_extract {
+  background: $color-shade-light;
+  border: 1px solid $color-shade-darkest;
+  box-shadow: 0 1px 10px $color-shadow-light;
+
+  &:hover {
+    border: 1px solid $color-shade-lightest;
+  }
+}
+
+.search_result_for_context {
+  &::after {
+    background: rgba($color-base, 0.1);
+  }
+}
+
+.extract_expand_icons {
+  color: $base-link-color;
+}
+
+.search_result_with_extract:hover .extract_expand_icons {
+  color: $base-link-color-active;
+}
