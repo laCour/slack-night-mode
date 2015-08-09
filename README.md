@@ -1,7 +1,7 @@
 # Slack Night Mode
 A Stylish style for easy Slack theming.
 
-Licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
+This is public domain.
 
 ## Requirements
 
