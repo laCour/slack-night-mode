@@ -1,4 +1,4 @@
-scss_files: "stylesheets/**/*.scss"
+scss_files: "scss/**/*.scss"
 linters:
   BorderZero:
     enabled: false
