@@ -1,0 +1,43 @@
+.tab_complete_ui {
+  background: $color-base;
+  border: 1px solid $color-shade-dark;
+  box-shadow: 0 1px 15px $color-shadow-dark;
+
+  .tab_complete_ui_header {
+    background: padding-box $color-shade-darkest;
+    border-bottom: 1px solid $color-shade-dark;
+    color: $base-font-color;
+    text-shadow: 0 1px $color-shadow-light;
+  }
+
+  ul {
+    &.type_emoji li {
+      color: $base-font-color;
+    }
+
+    &.type_members {
+      .broadcast_info,
+      .realname {
+        color: $color-highlight;
+      }
+    }
+  }
+
+  li.tab_complete_ui_item {
+    border-bottom: 1px solid $color-shade-dark;
+
+    &.active {
+      background: $color-shade-light;
+      border-bottom-color: $color-shade-dark;
+      text-shadow: 0 1px $color-shadow-light;
+
+      span {
+        color: $base-font-color !important;
+      }
+    }
+  }
+
+  .not_in_channel {
+    color: $color-highlight;
+  }
+}
