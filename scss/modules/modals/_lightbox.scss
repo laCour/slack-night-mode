@@ -1,0 +1,56 @@
+#lightbox_dialog {
+  &.modal {
+    .lightbox_image {
+      background: $color-shade-darkest;
+      box-shadow: 0 1px 15px $color-shadow-dark;
+    }
+
+    .close {
+      background: $color-base;
+      border: 2px solid $color-shade-lightest;
+      box-shadow: 0 1px 2px $color-shadow-dark;
+      color: $base-font-color;
+
+      &:hover {
+        box-shadow: 0 1px 2px $color-shadow-dark;
+      }
+    }
+
+    .icon_new_window {
+      color: rgba($base-font-color, 0.5) !important;
+    }
+
+    .lightbox_meta {
+      background: rgba($color-shade-darkest, 0.75);
+
+      &:hover {
+        background: $color-base;
+
+        .icon_new_window {
+          color: $base-font-color !important;
+        }
+      }
+
+      .title {
+        color: $base-font-color;
+
+        a {
+          color: $base-link-color;
+
+          &:hover {
+            color: $base-link-color-active;
+          }
+        }
+      }
+    }
+
+    .member {
+      color: $base-font-color !important;
+    }
+
+    &.loading {
+      background: $color-shadow-dark;
+      box-shadow: 0 1px 5px $color-shadow-dark;
+    }
+  }
+}
