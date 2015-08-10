@@ -437,7 +437,7 @@
 
   #message-input-message {
     color: #949494;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; }
+    font-family: inherit; }
 
   #message_edit_form #message-input,
   #messages-input-container #message-input {
@@ -771,6 +771,31 @@
   .highlighter_underlay .ghost_text {
     color: #e6e6e6; }
 
+  .tab_complete_ui {
+    background: #222;
+    border: 1px solid #363636;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+    .tab_complete_ui .tab_complete_ui_header {
+      background: padding-box #000;
+      border-bottom: 1px solid #363636;
+      color: #e6e6e6;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+    .tab_complete_ui ul.type_emoji li {
+      color: #e6e6e6; }
+    .tab_complete_ui ul.type_members .broadcast_info,
+    .tab_complete_ui ul.type_members .realname {
+      color: #949494; }
+    .tab_complete_ui li.tab_complete_ui_item {
+      border-bottom: 1px solid #363636; }
+      .tab_complete_ui li.tab_complete_ui_item.active {
+        background: #545454;
+        border-bottom-color: #363636;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+        .tab_complete_ui li.tab_complete_ui_item.active span {
+          color: #e6e6e6 !important; }
+    .tab_complete_ui .not_in_channel {
+      color: #949494; }
+
   #flex_menu_footer.menu_footer {
     background: #222 !important; }
 
@@ -1088,7 +1113,7 @@
 
   .light_theme .message {
     color: #e6e6e6;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; }
+    font-family: inherit; }
     .light_theme .message.unprocessed {
       color: rgba(230, 230, 230, 0.75); }
     .light_theme .message .timestamp {
@@ -1117,7 +1142,7 @@
 
   .dense_theme .message {
     color: #e6e6e6;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; }
+    font-family: inherit; }
     .dense_theme .message.unprocessed {
       color: rgba(230, 230, 230, 0.75); }
     .dense_theme .message .timestamp {
@@ -1227,8 +1252,6 @@
 
   .msg_inline_img {
     background: #545454; }
-    .msg_inline_img:hover {
-      background: #828282; }
 
   .msg_inline_room_preview_collapser {
     color: #949494; }
@@ -1263,6 +1286,19 @@
 
   .delete_attachment_link:hover {
     color: #c7c7c7; }
+
+  .sssh-variable {
+    color: #3cbf0c; }
+
+  .sssh-operator,
+  .sssh-property {
+    color: #0c95bf; }
+
+  .sssh-meta {
+    color: #fff; }
+
+  .sssh-qualifier {
+    color: #fff; }
 
   #flex_contents {
     background: #222; }
@@ -1856,7 +1892,7 @@
 
   .modal {
     background-color: #222;
-    border: 1px solid #000;
+    border: 0;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
     .modal .close,
     .modal label {
@@ -1893,6 +1929,36 @@
       #fs_modal .fs_modal_btn:active {
         background: #828282;
         color: #e6e6e6; }
+
+  #lightbox_dialog.modal .lightbox_image {
+    background: #000;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  #lightbox_dialog.modal .close {
+    background: #222;
+    border: 2px solid #828282;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #e6e6e6; }
+    #lightbox_dialog.modal .close:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  #lightbox_dialog.modal .icon_new_window {
+    color: rgba(230, 230, 230, 0.5) !important; }
+  #lightbox_dialog.modal .lightbox_meta {
+    background: rgba(0, 0, 0, 0.75); }
+    #lightbox_dialog.modal .lightbox_meta:hover {
+      background: #222; }
+      #lightbox_dialog.modal .lightbox_meta:hover .icon_new_window {
+        color: #e6e6e6 !important; }
+    #lightbox_dialog.modal .lightbox_meta .title {
+      color: #e6e6e6; }
+      #lightbox_dialog.modal .lightbox_meta .title a {
+        color: #949494; }
+        #lightbox_dialog.modal .lightbox_meta .title a:hover {
+          color: #c7c7c7; }
+  #lightbox_dialog.modal .member {
+    color: #e6e6e6 !important; }
+  #lightbox_dialog.modal.loading {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
 
   #new_prefs_dialog {
     background: #424242; }

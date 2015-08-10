@@ -771,6 +771,31 @@
   .highlighter_underlay .ghost_text {
     color: #f0d9ed; }
 
+  .tab_complete_ui {
+    background: #3e313c;
+    border: 1px solid #4d394b;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+    .tab_complete_ui .tab_complete_ui_header {
+      background: padding-box #372c36;
+      border-bottom: 1px solid #4d394b;
+      color: #f0d9ed;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+    .tab_complete_ui ul.type_emoji li {
+      color: #f0d9ed; }
+    .tab_complete_ui ul.type_members .broadcast_info,
+    .tab_complete_ui ul.type_members .realname {
+      color: #a3839f; }
+    .tab_complete_ui li.tab_complete_ui_item {
+      border-bottom: 1px solid #4d394b; }
+      .tab_complete_ui li.tab_complete_ui_item.active {
+        background: #61485e;
+        border-bottom-color: #4d394b;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+        .tab_complete_ui li.tab_complete_ui_item.active span {
+          color: #f0d9ed !important; }
+    .tab_complete_ui .not_in_channel {
+      color: #a3839f; }
+
   #flex_menu_footer.menu_footer {
     background: #3e313c !important; }
 
@@ -1227,8 +1252,6 @@
 
   .msg_inline_img {
     background: #61485e; }
-    .msg_inline_img:hover {
-      background: #876484; }
 
   .msg_inline_room_preview_collapser {
     color: #a3839f; }
@@ -1263,6 +1286,19 @@
 
   .delete_attachment_link:hover {
     color: #d4bbd1; }
+
+  .sssh-variable {
+    color: #3cbf0c; }
+
+  .sssh-operator,
+  .sssh-property {
+    color: #0c95bf; }
+
+  .sssh-meta {
+    color: #fff; }
+
+  .sssh-qualifier {
+    color: #fff; }
 
   #flex_contents {
     background: #3e313c; }
@@ -1856,7 +1892,7 @@
 
   .modal {
     background-color: #3e313c;
-    border: 1px solid #372c36;
+    border: 0;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
     .modal .close,
     .modal label {
@@ -1893,6 +1929,36 @@
       #fs_modal .fs_modal_btn:active {
         background: #876484;
         color: #f0d9ed; }
+
+  #lightbox_dialog.modal .lightbox_image {
+    background: #372c36;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
+  #lightbox_dialog.modal .close {
+    background: #3e313c;
+    border: 2px solid #876484;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #f0d9ed; }
+    #lightbox_dialog.modal .close:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  #lightbox_dialog.modal .icon_new_window {
+    color: rgba(240, 217, 237, 0.5) !important; }
+  #lightbox_dialog.modal .lightbox_meta {
+    background: rgba(55, 44, 54, 0.75); }
+    #lightbox_dialog.modal .lightbox_meta:hover {
+      background: #3e313c; }
+      #lightbox_dialog.modal .lightbox_meta:hover .icon_new_window {
+        color: #f0d9ed !important; }
+    #lightbox_dialog.modal .lightbox_meta .title {
+      color: #f0d9ed; }
+      #lightbox_dialog.modal .lightbox_meta .title a {
+        color: #a3839f; }
+        #lightbox_dialog.modal .lightbox_meta .title a:hover {
+          color: #d4bbd1; }
+  #lightbox_dialog.modal .member {
+    color: #f0d9ed !important; }
+  #lightbox_dialog.modal.loading {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
 
   #new_prefs_dialog {
     background: #4a3b49; }
