@@ -1,5 +1,6 @@
 # Changelog
 
+* **09/08/15**: Added styles for tab complete menu. Added styles for lightboxes. Bug fixes (#1, #2, #5).
 * **08/08/15 - Major Release**: Switched to Sass. Added theming (incl. black and monospaced variants). Moved to GitHub. This change also includes many bug fixes and style support for previously unstyled features.
 
 ## Pre-Sass
