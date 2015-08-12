@@ -10,7 +10,10 @@
 
 #message-input-message {
   color: $color-highlight;
-  font-family: $base-font-family;
+
+  @if global-variable-exists(base-font-family) {
+    font-family: $base-font-family;
+  }
 }
 
 #message_edit_form,

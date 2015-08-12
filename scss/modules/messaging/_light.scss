@@ -1,7 +1,10 @@
 .light_theme {
   .message {
     color: $base-font-color;
-    font-family: $base-font-family;
+
+    @if global-variable-exists(base-font-family) {
+      font-family: $base-font-family;
+    }
 
     &.unprocessed {
       color: rgba($base-font-color, 0.75);
