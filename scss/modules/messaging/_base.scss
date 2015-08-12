@@ -12,6 +12,10 @@ body:not(.feature_new_message_markup) {
       padding: 2px;
     }
 
+    a .mention {
+      color: $base-font-color;
+    }
+
     .inline_color_block {
       border: 1px solid $color-shade-dark;
     }

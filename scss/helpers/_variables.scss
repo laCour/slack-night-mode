@@ -25,5 +25,14 @@ $color-shadow-medium: rgba(0, 0, 0, 0.25) !default;
 $color-shadow-light: rgba(0, 0, 0, 0.15) !default;
 $color-shadow-transparent: rgba(255, 255, 255, 0) !default;
 
+// Code Colors
+$code-colors: (
+  keyword: #ce93d8, atom: #9fa8da, number: #a5d6a7, def: #536dfe,
+  variable: #9fa8da, variable-alt: #c5e1a5, comment: #ffcc80, string: #ef9a9a,
+  string-alt: #ffab91, meta: #eee, qualifier: #eee, builtin: #b39ddb,
+  bracket: #e6ee9c, tag: #a5d6a7, attribute: #40c4ff, header: #80cbc4,
+  quote: #b0bec5, hr: $color-shade-dark, link: $base-link-color
+);
+
 // Font Families
 // $base-font-family may be set in themes to override the chat font-family

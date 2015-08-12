@@ -1,0 +1,270 @@
+code {
+  background-color: $color-shade-darkest;
+  border: 1px solid $color-shade-dark;
+  color: $color-highlight;
+}
+
+.file_list_item.snippet .snippet_preview {
+  background: $color-shade-darkest;
+}
+
+.snippet_preview {
+  background: $color-shade-darkest;
+
+  pre {
+    color: $base-font-color;
+  }
+}
+
+.CodeMirror {
+  background: $color-shade-darkest;
+  border: 1px solid $color-shade-dark;
+  color: $base-font-color;
+
+  div.CodeMirror-cursor {
+    border-left: 1px solid $base-font-color;
+  }
+
+  &.cm-fat-cursor div.CodeMirror-cursor {
+    background: $base-font-color;
+  }
+}
+
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+  background-color: $color-shade-dark;
+}
+
+.CodeMirror-gutters {
+  background-color: $color-shade-dark;
+  border-right: 1px solid $color-base;
+}
+
+.CodeMirror-linenumber {
+  color: $color-highlight;
+}
+
+.CodeMirror-guttermarker {
+  color: $color-highlight;
+}
+
+.CodeMirror-guttermarker-subtle {
+  color: $color-highlight;
+}
+
+.CodeMirror-ruler {
+  border-left: 1px solid $color-shade-lightest;
+}
+
+.cm-s-default {
+  .cm-keyword {
+    color: map-get($code-colors, keyword);
+  }
+
+  .cm-atom {
+    color: map-get($code-colors, atom);
+  }
+
+  .cm-number {
+    color: map-get($code-colors, number);
+  }
+
+  .cm-def {
+    color: map-get($code-colors, def);
+  }
+
+  .cm-variable-2 {
+    color: map-get($code-colors, variable);
+  }
+
+  .cm-variable-3 {
+    color: map-get($code-colors, variable-alt);
+  }
+
+  .cm-comment {
+    color: map-get($code-colors, comment);
+  }
+
+  .cm-string {
+    color: map-get($code-colors, string);
+  }
+
+  .cm-string-2 {
+    color: map-get($code-colors, string-alt);
+  }
+
+  .cm-meta {
+    color: map-get($code-colors, meta);
+  }
+
+  .cm-qualifier {
+    color: map-get($code-colors, qualifier);
+  }
+
+  .cm-builtin {
+    color: map-get($code-colors, builtin);
+  }
+
+  .cm-bracket {
+    color: map-get($code-colors, bracket);
+  }
+
+  .cm-tag {
+    color: map-get($code-colors, tag);
+  }
+
+  .cm-attribute {
+    color: map-get($code-colors, attribute);
+  }
+
+  .cm-header {
+    color: map-get($code-colors, header);
+  }
+
+  .cm-quote {
+    color: map-get($code-colors, quote);
+  }
+
+  .cm-hr {
+    color: map-get($code-colors, hr);
+  }
+
+  .cm-link {
+    color: map-get($code-colors, link);
+  }
+}
+
+.cm-negative {
+  color: $color-red;
+}
+
+.cm-positive {
+  color: adjust-hue($color-red, 180);
+}
+
+.cm-invalidchar,
+.cm-s-default .cm-error {
+  color: $color-red;
+}
+
+div.CodeMirror span {
+  &.CodeMirror-matchingbracket {
+    color: adjust-hue($color-red, 180);
+  }
+
+  &.CodeMirror-nonmatchingbracket {
+    color: $color-red;
+  }
+}
+
+.CodeMirror-matchingtag {
+  background: $color-shade-darkest;
+}
+
+.CodeMirror-activeline-background {
+  background: $color-shade-lightest;
+}
+
+.CodeMirror-selected {
+  background: $color-base;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: $color-base;
+}
+
+.cm-searching {
+  background: $color-shade-lightest;
+}
+
+.sssh-keyword {
+  color: map-get($code-colors, keyword);
+}
+
+.sssh-atom {
+  color: map-get($code-colors, atom);
+}
+
+.sssh-number {
+  color: map-get($code-colors, number);
+}
+
+.sssh-def {
+  color: map-get($code-colors, def);
+}
+
+.sssh-variable {
+  color: map-get($code-colors, variable);
+}
+
+.sssh-variable-2 {
+  color: map-get($code-colors, variable-alt);
+}
+
+.sssh-variable-3 {
+  color: adjust-hue(map-get($code-colors, variable-alt), 180);
+}
+
+.sssh-operator {
+  color: $base-font-color;
+}
+
+.sssh-property {
+  color: $base-font-color;
+}
+
+.sssh-comment {
+  color: map-get($code-colors, comment);
+}
+
+.sssh-string {
+  color: map-get($code-colors, string);
+}
+
+.sssh-string-2 {
+  color: map-get($code-colors, string-alt);
+}
+
+.sssh-meta {
+  color: map-get($code-colors, meta);
+}
+
+.sssh-error {
+  color: $color-red;
+}
+
+.sssh-qualifier {
+  color: map-get($code-colors, qualifier);
+}
+
+.sssh-builtin {
+  color: map-get($code-colors, builtin);
+}
+
+.sssh-bracket {
+  color: map-get($code-colors, bracket);
+}
+
+.sssh-tag {
+  color: map-get($code-colors, tag);
+}
+
+.sssh-attribute {
+  color: map-get($code-colors, attribute);
+}
+
+.sssh-header {
+  color: map-get($code-colors, header);
+}
+
+.sssh-quote {
+  color: map-get($code-colors, quote);
+}
+
+.sssh-hr {
+  color: map-get($code-colors, hr);
+}
+
+.sssh-link {
+  color: map-get($code-colors, link);
+}
