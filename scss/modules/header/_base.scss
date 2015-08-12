@@ -117,7 +117,7 @@
 }
 
 .flexpane_toggle_button {
-  border: 1px solid rgba($color-shade-lightest, 0.1);
+  border: 1px solid rgba($color-shade-lightest, 0.61);
   color: $color-highlight;
 
   &#details_toggle.active,
@@ -125,12 +125,12 @@
   &#recent_mentions_toggle.active,
   &#stars_toggle.active {
     background-color: $color-shade-lightest;
-    border-color: rgba($color-shade-light, 0.12);
+    border-color: $color-shade-dark;
     color: $base-font-color;
 
     &:hover {
       background-color: $color-shade-lightest;
-      border-color: rgba($color-shade-light, 0.12);
+      border-color: rgba($color-shade-dark, 0.61);
       color: $base-font-color;
     }
   }
