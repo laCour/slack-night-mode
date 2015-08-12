@@ -15,7 +15,7 @@
     }
   }
 
-  .channels_list_holder ul li {
+  &.channels_list_holder ul li {
     &.channel.active .unread_highlight,
     &.group.active .unread_highlight,
     &.member.active .unread_highlight {
