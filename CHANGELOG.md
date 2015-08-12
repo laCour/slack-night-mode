@@ -1,5 +1,6 @@
 # Changelog
 
+* **11/08/15**: Added styles for code and quote blocks. Added styles for timestamp tooltips. Bug fixes (b5715aa, 17caf6e, 546b0b4, 66eb35c, #2).
 * **09/08/15**: Added styles for tab complete menu. Added styles for lightboxes. Bug fixes (#1, #2, #5).
 * **08/08/15 - Major Release**: Switched to Sass. Added theming (incl. black and monospaced variants). Moved to GitHub. This change also includes many bug fixes and style support for previously unstyled features.
 
