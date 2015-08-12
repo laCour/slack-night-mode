@@ -1,7 +1,8 @@
 #menu,
 .menu_example {
   background: $color-shade-darkest;
-  box-shadow: 0 2px 10px $color-shadow-light;
+  border: 0;
+  box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
 }
 
@@ -39,7 +40,7 @@
 #menu ul li a,
 .menu_example ul li a {
   background: $color-base;
-  border-bottom: 1px solid $color-shade-dark;
+  border-bottom: 0;
   color: $base-link-color;
 }
 
