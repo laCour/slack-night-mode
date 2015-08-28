@@ -10,17 +10,17 @@
     border-right: 1px solid $color-base;
 
     a {
-      color: $base-link-color;
+      color: $base-font-color;
       text-shadow: 0 1px 0 $color-shadow-light;
 
       &:hover {
         background: $color-shade-lightest;
-        color: $base-link-color;
+        color: $base-font-color;
       }
 
       &.active {
         background: $color-shade-mid;
-        color: $base-link-color;
+        color: $base-font-color;
         text-shadow: 0 1px 0 $color-shadow-light;
       }
     }
