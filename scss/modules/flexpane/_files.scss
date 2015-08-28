@@ -87,7 +87,7 @@ html.no_touch a.filetype_button_web:hover {
   }
 }
 
-.file_meta {
+.file_container ~ .file_meta {
   color: $color-highlight;
 }
 
