@@ -5,17 +5,6 @@
       box-shadow: 0 1px 15px $color-shadow-dark;
     }
 
-    .close {
-      background: $color-base;
-      border: 2px solid $color-shade-lightest;
-      box-shadow: 0 1px 2px $color-shadow-dark;
-      color: $base-font-color;
-
-      &:hover {
-        box-shadow: 0 1px 2px $color-shadow-dark;
-      }
-    }
-
     .icon_new_window {
       color: rgba($base-font-color, 0.5) !important;
     }
@@ -51,6 +40,30 @@
     &.loading {
       background: $color-shadow-dark;
       box-shadow: 0 1px 5px $color-shadow-dark;
+    }
+
+    .close {
+      background: $color-base;
+      border: 2px solid $color-shade-lightest;
+      box-shadow: 0 1px 2px $color-shadow-dark;
+      color: $base-font-color;
+
+      &:hover {
+        box-shadow: 0 1px 2px $color-shadow-dark;
+      }
+    }
+
+    .lightbox_nav {
+      background: $color-base;
+      border: 3px solid $color-shade-lightest;
+      box-shadow: 0 1px 1px rgba($color-shadow-dark, 0.3);
+      color: $base-font-color;
+      text-shadow: 0 1px 1px rgba($color-shadow-dark, 0.3);
+
+      &:not(.faded):hover {
+        box-shadow: 0 1px 2px rgba($color-shadow-dark, 0.5);
+        text-shadow: 0 1px 2px rgba($color-shadow-dark, 0.5);
+      }
     }
   }
 }
