@@ -8,11 +8,24 @@ code {
   background: $color-shade-darkest;
 }
 
-.snippet_preview {
+.snippet_preview,
+.snippet_body {
   background: $color-shade-darkest;
 
   pre {
     color: $base-font-color;
+  }
+}
+
+.file_container {
+  .CodeMirror,
+  .sssh-code {
+    .CodeMirror-code > div:before,
+    .sssh-line:before {
+      background-color: $color-shade-dark;
+      border-right: 1px solid $color-shade-dark;
+      color: $color-highlight;
+    }
   }
 }
 
