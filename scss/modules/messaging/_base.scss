@@ -58,8 +58,17 @@ body:not(.feature_new_message_markup) {
   .msgs_holder .unread_divider {
     color: $base-font-color;
 
+    span.divider_label {
+      background: $color-red;
+      padding: 3px;
+    }
+
     &.no_unreads {
       color: $base-font-color;
+
+      span.divider_label {
+        background: $color-shade-light;
+      }
 
       hr {
         border-top: 1px solid $color-shade-dark;
@@ -74,6 +83,8 @@ body:not(.feature_new_message_markup) {
 
 .msgs_holder {
   .unread_divider {
+    color: $base-font-color;
+
     span.divider_label {
       background: $color-red;
       border-radius: 3px;
