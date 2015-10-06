@@ -19,8 +19,18 @@
     border-bottom: 1px solid $color-shade-dark;
   }
 
+  #emoji_preview_text {
+    background: $color-shade-darkest;
+    color: $base-font-color;
+  }
+
   #emoji_preview_deluxe {
     color: $base-font-color;
+  }
+
+  #emoji_menu_footer {
+    background: $color-shade-darkest;
+    border-top: 1px solid $color-shade-dark;
   }
 
   &.all_emoji {
@@ -65,20 +75,10 @@
       }
     }
   }
-}
 
-#emoji_preview_text {
-  background: $color-shade-darkest;
-  color: $base-font-color;
-}
-
-#emoji_menu_footer {
-  background: $color-shade-darkest;
-  border-top: 1px solid $color-shade-dark;
-}
-
-#monkey_scroll_wrapper_for_emoji_menu_items_scroller {
-  background: $color-base;
+  #monkey_scroll_wrapper_for_emoji_menu_items_scroller {
+    background: $color-base;
+  }
 }
 
 #emoji_menu_header {
