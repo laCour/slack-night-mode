@@ -320,3 +320,34 @@ html.no_touch a.filetype_button_web:hover {
     color: $base-font-color;
   }
 }
+
+.tab_container {
+  .star_item .message,
+  .file_list_item,
+  .file_comment_item {
+    .actions {
+      .btn_icon,
+      .star_jump {
+        background-color: $color-base;
+      }
+
+      .btn:after {
+        border-color: $color-shade-dark;
+      }
+    }
+  }
+
+  .star_item {
+    .message .timestamp {
+      color: $color-highlight;
+    }
+  }
+
+  .file_list_item {
+    &:focus,
+    &:hover {
+      background-color: $color-shade-dark;
+      border-color: $color-shade-darkest;
+    }
+  }
+}
