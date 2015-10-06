@@ -654,7 +654,7 @@ ul.sidebar_nav li {
 
 .admin_list_item:hover,
 .plan_availability,
-#monkey_scroll_wrapper_for_menu_items_scroller,
+.menu #monkey_scroll_wrapper_for_menu_items_scroller,
 .modal-backdrop,
 .icon {
   background: $color-base;
@@ -664,7 +664,6 @@ ul.sidebar_nav li {
   background-image: linear-gradient(to bottom, $color-shadow-transparent 0, $color-shade-darkest 65%);
   bottom: 0;
   height: 480px;
-  margin-left: -2rem;
   position: absolute;
   width: 100%;
 }
