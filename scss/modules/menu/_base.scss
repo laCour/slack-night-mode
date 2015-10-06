@@ -1,50 +1,52 @@
-#menu,
+.menu,
 .menu_example {
   background: $color-shade-darkest;
   border: 0;
   box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
+
+  ul li a {
+    background: $color-base;
+    border-bottom: 0;
+    color: $base-link-color;
+  }
+
+  .section_header {
+    .header_label {
+      background-color: $color-base;
+      color: $color-highlight;
+    }
+
+    > div.header_label_container {
+      color: $color-highlight;
+    }
+  }
 }
 
-#menu .section_header .header_label,
-.menu_example .section_header .header_label {
-  background-color: $color-base;
-  color: $color-highlight;
-}
+.menu {
+  background: $color-shade-darkest;
+  color: $base-font-color;
 
-#menu .section_header > div.header_label_container,
-.menu_example .section_header > div.header_label_container {
-  color: $color-highlight;
-}
+  #menu_header {
+    .menu_simple_header {
+      background: $color-shade-darkest;
+      border-color: $color-shade-dark;
+      color: $base-font-color;
 
-#menu_header {
-  .menu_simple_header {
-    background: $color-shade-darkest;
-    border-color: $color-shade-dark;
-    color: $base-font-color;
+      a {
+        color: $base-link-color;
 
-    a {
-      color: $base-link-color;
-
-      &:hover {
-        color: $base-link-color-active;
+        &:hover {
+          color: $base-link-color-active;
+        }
       }
+    }
+
+    .menu_close {
+      color: $base-font-color;
     }
   }
 
-  .menu_close {
-    color: $base-font-color;
-  }
-}
-
-#menu ul li a,
-.menu_example ul li a {
-  background: $color-base;
-  border-bottom: 0;
-  color: $base-link-color;
-}
-
-#menu {
   ul li {
     &.highlighted a {
       background: $color-shade-darkest;
@@ -94,6 +96,13 @@
     background: $color-shade-darkest;
     border: 1px solid $color-shade-darkest;
   }
+
+  #menu_footer {
+    .menu_footer {
+      background: $color-shade-darkest;
+      border-top: 1px solid $color-shade-dark;
+    }
+  }
 }
 
 .menu_example {
@@ -103,12 +112,5 @@
     border-bottom-color: $color-base;
     color: $base-link-color-active;
     text-shadow: 0 1px 0 $color-shadow-light;
-  }
-}
-
-#menu_footer {
-  .menu_footer {
-    background: $color-shade-darkest;
-    border-top: 1px solid $color-shade-dark;
   }
 }
