@@ -144,11 +144,31 @@
 }
 
 .file_container {
-  &:after {
-    background-image: -webkit-linear-gradient(top, rgba($color-shade-darkest, 0) 0, $color-shade-darkest 100%);
-    background-image: -moz-linear-gradient(top, rgba($color-shade-darkest, 0) 0, $color-shade-darkest 100%);
-    background-image: -o-linear-gradient(top, rgba($color-shade-darkest, 0) 0, $color-shade-darkest 100%);
-    background-image: linear-gradient(top, rgba($color-shade-darkest, 0) 0, $color-shade-darkest 100%);
+  border: 1px solid $color-shade-darkest;
+  color: $base-font-color;
+
+  &:after,
+  &.post_container:after {
+    background-image: -webkit-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
+    background-image: -moz-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
+    background-image: -o-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
+    background-image: linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
+  }
+
+  &.generic_container {
+    .file_header_icon .ts_icon {
+      background: $color-base;
+      box-shadow: 0 0 0 3px $color-base;
+      color: $base-font-color;
+
+      &.snippet {
+        background: $color-shade-dark;
+      }
+    }
+
+    .file_header_meta .meta_hover {
+      background: $color-base;
+    }
   }
 
   .file_header .file_header_meta {
@@ -167,8 +187,8 @@
     }
 
     &.preview_show_less_header {
-      background-color: $color-base;
-      color: $base-link-color !important;
+      background-color: rgba($color-shade-lightest, 0.9);
+      color: $base-font-color !important;
 
       &:after {
         border: 2px solid $color-shade-darkest;
