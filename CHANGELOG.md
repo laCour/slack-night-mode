@@ -1,5 +1,6 @@
 # Changelog
 
+* **19/10/15**: Fixed styles for member preview background in flexpane (#13).
 * **06/10/15**: Added styles for filter inputs and share modals. Updated styles to reflect recent changes to attachments, menus, tab-completion menus, and more.
 * **27/08/15**: Added styles for lightbox navigation buttons. Updated styles for inline code snippets and attachments. Bug fixes (4e35642, 8555895, df60b4f, #8, #9, #10, #11)
 * **11/08/15**: Added styles for code and quote blocks. Added styles for timestamp tooltips. Bug fixes (b5715aa, 17caf6e, 546b0b4, 66eb35c, #2).
