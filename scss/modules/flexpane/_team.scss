@@ -13,6 +13,12 @@
   }
 }
 
+#member_preview_scroller,
+#member_preview_web_container,
+.menu_member_header {
+  background-color: $color-base;
+}
+
 #member_preview_scroller a:not(.member_name),
 .team_list_item a:not(.member_name) {
   color: $base-font-color;
