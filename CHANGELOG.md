@@ -1,5 +1,6 @@
 # Changelog
 
+* **29/10/15**: Added styles for new "what's new" flexpane section, channels modal, direct messages modal. Improved styling on filter selects and toggles. Several other bug fixes, including #14. 
 * **19/10/15**: Fixed styles for member preview background in flexpane (#13).
 * **06/10/15**: Added styles for filter inputs and share modals. Updated styles to reflect recent changes to attachments, menus, tab-completion menus, and more.
 * **27/08/15**: Added styles for lightbox navigation buttons. Updated styles for inline code snippets and attachments. Bug fixes (4e35642, 8555895, df60b4f, #8, #9, #10, #11)
