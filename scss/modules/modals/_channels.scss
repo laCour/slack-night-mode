@@ -1,0 +1,68 @@
+.channel_modal_header {
+  color: $base-font-color;
+}
+
+#channel_browser {
+  .channel_browser_row {
+    border-top: 1px solid $color-shade-dark;
+    color: $base-font-color;
+  }
+
+  .channel_browser_row_header {
+    color: $base-font-color;
+  }
+
+  .channel_browser_creator_name {
+    color: $color-highlight;
+  }
+
+  .channel_browser_open,
+  .channel_browser_preview {
+    color: $color-highlight;
+  }
+
+  #channel_list_container:not(.keyboard_active).not_scrolling .channel_browser_row:hover,
+  .channel_browser_row.highlighted {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-light;
+  }
+
+  .channel_browser_divider {
+    background: transparent;
+    color: $color-highlight;
+  }
+
+  .channel_browser_sort_container:after {
+    color: $base-font-color;
+  }
+}
+
+.channel_invite_member .add_icon,
+.channel_invite_member_small .add_icon {
+  color: $base-link-color;
+}
+
+.channel_invite_member .name_container .not_in_token,
+.channel_invite_member_small .name_container .not_in_token {
+  color: $color-highlight !important;
+}
+
+.channel_invite_member .invite_user_group_avatar,
+.channel_invite_member_small .invite_user_group_avatar {
+  background-color: $color-shade-darkest;
+  color: $base-font-color;
+}
+
+#invite_members_container .fsl_input_container {
+  background: $color-shade-light;
+}
+
+#notifications_not_working p.highlight_yellow_bg {
+  border-radius: 3px;
+  padding: 0 6px 6px;
+
+  a {
+    color: $base-font-color;
+    text-decoration: underline;
+  }
+}

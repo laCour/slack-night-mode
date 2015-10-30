@@ -1,0 +1,44 @@
+#im_browser {
+  .im_browser_row {
+    border-top: 1px solid $color-shade-light;
+
+    &.multiparty .member_image + .member_image:not(.ra):not(.ura) {
+      border: 2px solid $color-shade-darkest;
+    }
+
+    .im_unread_cnt {
+      background: $color-red;
+      color: $base-font-color;
+    }
+
+    &.disabled {
+      color: $color-highlight;
+    }
+  }
+
+  #im_list_container:not(.keyboard_active).not_scrolling .im_browser_row:hover,
+  .im_browser_row.highlighted {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-light;
+  }
+}
+
+#im_browser_tokens {
+  background: $color-shade-light;
+  border: 1px solid $color-shade-lightest;
+
+  &.active {
+    border-color: $color-shade-lightest;
+    box-shadow: 0 0 7px rgba($color-shade-lightest, 0.15);
+  }
+
+  .member_token {
+    background: $color-base;
+    border: 1px solid $color-shade-darkest;
+    color: $base-font-color;
+
+    &.ra {
+      background: $color-red;
+    }
+  }
+}

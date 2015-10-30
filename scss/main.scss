@@ -13,6 +13,7 @@
   @import "modules/inputs/chzn";
   @import "modules/inputs/filter-select";
   @import "modules/inputs/messaging";
+  @import "modules/inputs/toggle";
 
   @import "modules/menu/base";
   @import "modules/menu/team";
@@ -43,11 +44,14 @@
   @import "modules/flexpane/mentions";
   @import "modules/flexpane/files";
   @import "modules/flexpane/team";
+  @import "modules/flexpane/whats-new";
 
   @import "modules/emojis/base";
   @import "modules/emojis/reactions";
 
   @import "modules/modals/base";
+  @import "modules/modals/channels";
+  @import "modules/modals/direct-messages";
   @import "modules/modals/lightbox";
   @import "modules/modals/preferences";
   @import "modules/modals/invite";
