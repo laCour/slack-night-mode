@@ -40,3 +40,23 @@ h1 a {
     color: $base-font-color;
   }
 }
+
+.bordered {
+  border: 1px solid $color-shade-dark;
+}
+
+.top_border {
+  border-top: 1px solid $color-shade-dark;
+}
+
+.bottom_border {
+  border-bottom: 1px solid $color-shade-dark;
+}
+
+.left_border {
+  border-left: 1px solid $color-shade-dark;
+}
+
+.right_border {
+  border-right: 1px solid $color-shade-dark;
+}
