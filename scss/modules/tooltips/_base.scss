@@ -33,33 +33,6 @@
   }
 }
 
-.ts_toggle {
-  .ts_toggle_button {
-    background: $color-shade-lightest;
-    color: $base-font-color;
-
-    .ts_toggle_handle {
-      background: $color-shade-lightest;
-    }
-  }
-
-  .ts_toggle_secondary_label {
-    color: $color-highlight;
-  }
-
-  &.checked {
-    .ts_toggle_button {
-      background: $color-shade-lightest;
-      color: $base-font-color;
-    }
-  }
-
-  &.ts_toggle_orange .ts_toggle_button {
-    background: $color-red;
-    color: $base-font-color;
-  }
-}
-
 .tooltip-inner {
   background-color: $color-shade-lightest;
   color: $base-font-color;
