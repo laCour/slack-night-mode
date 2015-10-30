@@ -25,6 +25,21 @@
     h1 a:active, h1 a:hover, h1 a:link, h1 a:visited {
       color: #f0d9ed; }
 
+  .bordered {
+    border: 1px solid #4d394b; }
+
+  .top_border {
+    border-top: 1px solid #4d394b; }
+
+  .bottom_border {
+    border-bottom: 1px solid #4d394b; }
+
+  .left_border {
+    border-left: 1px solid #4d394b; }
+
+  .right_border {
+    border-right: 1px solid #4d394b; }
+
   #col_channels_collapse_view {
     background: #4d394b; }
 
@@ -334,6 +349,9 @@
     .btn-link[disabled]:focus, .btn-link[disabled]:hover {
       color: #d4bbd1; }
 
+  .btn_info {
+    background: #61485e !important; }
+
   .btn_outline {
     background: #3e313c;
     color: #f0d9ed !important; }
@@ -449,7 +467,7 @@
   .filter_select.default_style .fsl_list .fsl_item.disabled {
     color: #f0d9ed; }
   .filter_select.default_style .fsl_list .fsl_item.active {
-    background-color: #876484;
+    background-color: #372c36;
     border-color: #4d394b;
     color: #f0d9ed; }
   .filter_select.default_style .fsl_token {
@@ -526,6 +544,20 @@
 
   #special_formatting_text {
     color: #a3839f; }
+
+  .ts_toggle .ts_toggle_button {
+    background: #372c36;
+    color: #f0d9ed; }
+    .ts_toggle .ts_toggle_button .ts_toggle_handle {
+      background: #4d394b; }
+  .ts_toggle .ts_toggle_secondary_label {
+    color: #a3839f; }
+  .ts_toggle.checked .ts_toggle_button {
+    background: #876484;
+    color: #f0d9ed; }
+  .ts_toggle.ts_toggle_orange .ts_toggle_button {
+    background: #bf360c;
+    color: #f0d9ed; }
 
   .menu,
   .menu_example {
@@ -1000,6 +1032,10 @@
     background: #876484;
     border: 1px solid rgba(0, 0, 0, 0.15); }
 
+  #whats_new_burst {
+    background: #bf360c;
+    border-color: #61485e; }
+
   .search_form .icon_search {
     color: #a3839f; }
   .search_form .icon_close {
@@ -1065,8 +1101,8 @@
     background: #3e313c; }
 
   body:not(.feature_new_message_markup) .message .mention, body:not(.feature_new_message_markup) .message.highlight {
-    background: #61485e;
-    border: 1px solid #876484;
+    background: transparent;
+    border: 0;
     border-radius: 3px;
     padding: 2px; }
   body:not(.feature_new_message_markup) .message a .mention {
@@ -1223,13 +1259,15 @@
       color: #a3839f; }
   .dense_theme #message_editing_info {
     color: #a3839f; }
-  .dense_theme #message_edit_form textarea {
-    color: #f0d9ed; }
-  .dense_theme #message_edit_form p,
-  .dense_theme #message_edit_form span {
-    color: #a3839f; }
-  .dense_theme #message_edit_form .timestamp {
-    color: #a3839f; }
+  .dense_theme #message_edit_form {
+    margin-left: 0; }
+    .dense_theme #message_edit_form textarea {
+      color: #f0d9ed; }
+    .dense_theme #message_edit_form p,
+    .dense_theme #message_edit_form span {
+      color: #a3839f; }
+    .dense_theme #message_edit_form .timestamp {
+      color: #a3839f; }
   .dense_theme .file_reference .post_meta,
   .dense_theme .file_reference .space_meta {
     color: #a3839f; }
@@ -1394,6 +1432,7 @@
     color: #d4bbd1; }
 
   .file_container {
+    background: #372c36;
     border: 1px solid #372c36;
     color: #f0d9ed; }
     .file_container:after, .file_container.post_container:after {
@@ -1408,7 +1447,8 @@
       .file_container.generic_container .file_header_icon .ts_icon.snippet {
         background: #4d394b; }
     .file_container.generic_container .file_header_meta .meta_hover {
-      background: #3e313c; }
+      background: #372c36;
+      color: #f0d9ed; }
     .file_container .file_header .file_header_meta {
       color: #a3839f; }
     .file_container .file_header + .file_body {
@@ -2188,6 +2228,12 @@
   .dm_list_item.highlighted .dm_list_username {
     color: #f0d9ed; }
 
+  #whats_new_tab p {
+    color: #f0d9ed; }
+
+  #whats_new_updates h3 a {
+    color: #f0d9ed !important; }
+
   #emoji_menu {
     background: #372c36;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -2309,6 +2355,79 @@
         background: #876484;
         color: #f0d9ed; }
 
+  .channel_modal_header {
+    color: #f0d9ed; }
+
+  #channel_browser .channel_browser_row {
+    border-top: 1px solid #4d394b;
+    color: #f0d9ed; }
+  #channel_browser .channel_browser_row_header {
+    color: #f0d9ed; }
+  #channel_browser .channel_browser_creator_name {
+    color: #a3839f; }
+  #channel_browser .channel_browser_open,
+  #channel_browser .channel_browser_preview {
+    color: #a3839f; }
+  #channel_browser #channel_list_container:not(.keyboard_active).not_scrolling .channel_browser_row:hover,
+  #channel_browser .channel_browser_row.highlighted {
+    background: #372c36;
+    border: 1px solid #61485e; }
+  #channel_browser .channel_browser_divider {
+    background: transparent;
+    color: #a3839f; }
+  #channel_browser .channel_browser_sort_container:after {
+    color: #f0d9ed; }
+
+  .channel_invite_member .add_icon,
+  .channel_invite_member_small .add_icon {
+    color: #a3839f; }
+
+  .channel_invite_member .name_container .not_in_token,
+  .channel_invite_member_small .name_container .not_in_token {
+    color: #a3839f !important; }
+
+  .channel_invite_member .invite_user_group_avatar,
+  .channel_invite_member_small .invite_user_group_avatar {
+    background-color: #372c36;
+    color: #f0d9ed; }
+
+  #invite_members_container .fsl_input_container {
+    background: #61485e; }
+
+  #notifications_not_working p.highlight_yellow_bg {
+    border-radius: 3px;
+    padding: 0 6px 6px; }
+    #notifications_not_working p.highlight_yellow_bg a {
+      color: #f0d9ed;
+      text-decoration: underline; }
+
+  #im_browser .im_browser_row {
+    border-top: 1px solid #61485e; }
+    #im_browser .im_browser_row.multiparty .member_image + .member_image:not(.ra):not(.ura) {
+      border: 2px solid #372c36; }
+    #im_browser .im_browser_row .im_unread_cnt {
+      background: #bf360c;
+      color: #f0d9ed; }
+    #im_browser .im_browser_row.disabled {
+      color: #a3839f; }
+  #im_browser #im_list_container:not(.keyboard_active).not_scrolling .im_browser_row:hover,
+  #im_browser .im_browser_row.highlighted {
+    background: #372c36;
+    border: 1px solid #61485e; }
+
+  #im_browser_tokens {
+    background: #61485e;
+    border: 1px solid #876484; }
+    #im_browser_tokens.active {
+      border-color: #876484;
+      box-shadow: 0 0 7px rgba(135, 100, 132, 0.15); }
+    #im_browser_tokens .member_token {
+      background: #3e313c;
+      border: 1px solid #372c36;
+      color: #f0d9ed; }
+      #im_browser_tokens .member_token.ra {
+        background: #bf360c; }
+
   #lightbox_dialog.modal .lightbox_image {
     background: #372c36;
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5); }
@@ -2368,6 +2487,15 @@
 
   #debug_prefs_dialog {
     background: #4a3b49; }
+
+  #prefs_themes .monkey_scroller:before {
+    background: #bf360c;
+    border-radius: 3px;
+    content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme.";
+    display: block;
+    margin-bottom: 6px;
+    padding: 2px 4px 4px;
+    width: 100%; }
 
   .admin_invites_account_type_option {
     border-bottom: 1px solid #4d394b; }
@@ -2430,20 +2558,6 @@
     border-top-color: #61485e; }
   .ts_tip.ts_tip_bottom .ts_tip_tip:after {
     border-bottom-color: #61485e; }
-
-  .ts_toggle .ts_toggle_button {
-    background: #876484;
-    color: #f0d9ed; }
-    .ts_toggle .ts_toggle_button .ts_toggle_handle {
-      background: #876484; }
-  .ts_toggle .ts_toggle_secondary_label {
-    color: #a3839f; }
-  .ts_toggle.checked .ts_toggle_button {
-    background: #876484;
-    color: #f0d9ed; }
-  .ts_toggle.ts_toggle_orange .ts_toggle_button {
-    background: #bf360c;
-    color: #f0d9ed; }
 
   .tooltip-inner {
     background-color: #876484;
@@ -2513,6 +2627,9 @@
 
   .clear_blue {
     color: #a3839f !important; }
+
+  .candy_red_bg {
+    background-color: #bf360c !important; }
 
   .client_header_icon {
     -moz-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
