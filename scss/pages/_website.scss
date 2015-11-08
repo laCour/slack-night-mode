@@ -416,7 +416,7 @@ footer {
   border-color: $color-shade-dark;
 }
 
-table th {
+table tr:first-child th:not(:only-of-type) {
   border-bottom: 2px solid $color-shade-darkest;
 }
 
