@@ -29,7 +29,7 @@
   }
 
   .emo_menu {
-    color: rgba($base-font-color, 0.15);
+    color: rgba($base-font-color, 0.3);
 
     &.active .ts_icon_happy_smile,
     &:hover .ts_icon_happy_smile {
@@ -39,7 +39,7 @@
 
   &.focus {
     .emo_menu {
-      color: rgba($base-font-color, 0.2);
+      color: rgba($base-font-color, 0.6);
     }
 
     #primary_file_button:not(:hover) {

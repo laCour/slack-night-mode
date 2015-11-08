@@ -11,10 +11,6 @@
     background-color: $base-link-color-active;
   }
 
-  .emoji_li a:hover {
-    background: $base-link-color-active;
-  }
-
   #emoji_div_default_rxns {
     border-bottom: 1px solid $color-shade-dark;
   }
@@ -33,56 +29,58 @@
     border-top: 1px solid $color-shade-dark;
   }
 
-  &.all_emoji {
-    #emoji_menu_header {
-      background: $color-shade-darkest;
+  #emoji_menu_header {
+    background: $color-shade-darkest;
+  }
+
+  .emoji_li {
+    a:hover {
+      background: $base-link-color-active;
     }
 
-    .emoji_li {
-      a.green:hover,
-      &.key_selection a.green {
-        background: $color-highlight;
-      }
-
-      a.yellow:hover,
-      &.key_selection a.yellow {
-        background: $color-highlight;
-      }
-
-      a.blue:hover,
-      &.key_selection a.blue {
-        background: $color-highlight;
-      }
-
-      a.pink:hover,
-      &.key_selection a.pink {
-        background: $color-highlight;
-      }
+    a.green:hover,
+    &.key_selection a.green {
+      background: $color-highlight;
     }
 
-    a.emoji_grouping_tab {
-      color: $base-link-color;
+    a.yellow:hover,
+    &.key_selection a.yellow {
+      background: $color-highlight;
+    }
 
-      &:hover {
-        background: $color-shade-dark;
-        color: $base-link-color-active;
-      }
+    a.blue:hover,
+    &.key_selection a.blue {
+      background: $color-highlight;
+    }
 
-      &.active {
-        background: $color-shade-light;
-        border-bottom: 3px solid $color-shade-mid;
-        color: $base-font-color;
-      }
+    a.pink:hover,
+    &.key_selection a.pink {
+      background: $color-highlight;
+    }
+  }
+
+  a.emoji_grouping_tab {
+    color: $base-link-color;
+
+    &:hover {
+      background: $color-shade-dark;
+      color: $base-link-color-active;
+    }
+
+    &.active {
+      background: $color-shade-light;
+      border-bottom: 3px solid $color-shade-mid;
+      color: $base-font-color;
     }
   }
 
   #monkey_scroll_wrapper_for_emoji_menu_items_scroller {
     background: $color-base;
   }
-}
 
-#emoji_menu_header {
-  background: $color-shade-darkest;
+  #emoji_input:focus {
+    border-color: $color-shade-light;
+  }
 }
 
 .emoji_li a {
@@ -102,19 +100,5 @@ div {
   &#emoji_tip i,
   &#emoji_zero_results i {
     color: $color-highlight;
-  }
-}
-
-#emoji_input:focus {
-  border-color: $color-highlight;
-}
-
-#emoji_menu:not(.all_emoji) a.emoji_grouping_tab {
-  &:hover {
-    background: $color-shade-dark;
-  }
-
-  &.active {
-    background: $color-shade-light;
   }
 }
