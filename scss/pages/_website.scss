@@ -863,6 +863,10 @@ a.two_factor_choice {
   }
 }
 
+#custom_emoji span.emoji-wrapper {
+  background-color: $color-shade-dark;
+}
+
 @keyframes highlight_fade {
   from { background-color: $color-shade-mid; }
   to { background-color: $color-shade-dark; }
