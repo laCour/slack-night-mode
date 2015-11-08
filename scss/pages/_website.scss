@@ -273,24 +273,44 @@ html.no_touch {
   border-bottom: 1px solid $color-base;
   color: $base-font-color;
 
+  &:hover {
+    background-color: $color-shade-dark;
+  }
+
+  .pill.group {
+    background: $color-shade-mid;
+  }
+
   .admin_member_type,
   .admin_member_caret {
     color: $color-highlight;
   }
 
-  .admin_member_real_name,
-  &.expanded .sub_action {
+  .admin_member_real_name {
     color: $base-font-color;
   }
 
-  &.expanded .btn-outline {
-    border: 1px solid $color-base;
-    color: $base-font-color !important;
+  .two_factor_auth_badge:hover {
+    background: $color-shade-mid;
+  }
 
-    &:hover {
-      background: $color-base;
-      border: 1px solid $color-shade-dark;
+  &.expanded {
+    .btn_outline {
+      border: 1px solid $color-base;
       color: $base-font-color !important;
+
+      &:hover {
+        border: 1px solid $color-shade-dark;
+        color: $base-font-color !important;
+      }
+    }
+
+    .sub_action {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
     }
   }
 
@@ -302,7 +322,7 @@ html.no_touch {
   }
 
   &.inactive {
-    background: $color-shade-darkest;
+    background: $color-shade-mid;
   }
 
   .inline_name:hover,
@@ -311,6 +331,50 @@ html.no_touch {
     background: none !important;
     color: $base-link-color-active;
     text-decoration: underline;
+  }
+
+  &.invite_item.bouncing {
+    background: $color-shade-lightest;
+
+    .email {
+      color: $color-red;
+    }
+  }
+}
+
+.notice_error,
+.notice_processing {
+  color: $base-font-color;
+  text-shadow: 0 1px 1px $color-shadow-medium;
+}
+
+.notice_success {
+  color: $base-font-color;
+  text-shadow: 0 1px 1px $color-shadow-medium;
+
+  a.undo_link {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+.restriction_option {
+  background: $color-shade-mid;
+  color: $base-font-color;
+
+  &:hover {
+    background: $color-shade-darkest;
+
+    .ts_icon_arrow_right {
+      color: $base-link-color-active;
+    }
+  }
+
+  .ts_icon_arrow_right {
+    color: $base-link-color;
   }
 }
 
@@ -528,7 +592,6 @@ html.no_touch .plastic_row:hover .chevron {
   color: $base-link-color;
 }
 
-.admin_list_item.expanded .sub_action:hover,
 .nav_open #menu_toggle,
 #second_row .disclaimer,
 #stats_disclaimer,
@@ -721,7 +784,6 @@ ul.sidebar_nav li {
   color: $base-link-color-active;
 }
 
-.admin_list_item:hover,
 .plan_availability,
 .menu #monkey_scroll_wrapper_for_menu_items_scroller,
 .modal-backdrop,
@@ -799,4 +861,9 @@ a.two_factor_choice {
   .two_factor_link {
     color: $base-font-color;
   }
+}
+
+@keyframes highlight_fade {
+  from { background-color: $color-shade-mid; }
+  to { background-color: $color-shade-dark; }
 }
