@@ -1,0 +1,18 @@
+#im-list,
+#starred-list {
+  li.member.active .presence {
+    color: $white;
+
+    &.away {
+      text-shadow: 1px 1px $color-shadow-light;
+    }
+  }
+}
+
+#about_dms_link {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}

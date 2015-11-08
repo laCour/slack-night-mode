@@ -88,13 +88,13 @@
   }
 
   input {
-    background: $color-shade-darkest;
-    border: 1px solid $color-shade-darkest;
+    background: $color-shade-dark;
+    border: 1px solid $color-shade-light;
   }
 
   textarea {
-    background: $color-shade-darkest;
-    border: 1px solid $color-shade-darkest;
+    background: $color-shade-dark;
+    border: 1px solid $color-shade-light;
   }
 
   #menu_footer {
