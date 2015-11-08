@@ -41,16 +41,16 @@ code {
   &.cm-fat-cursor div.CodeMirror-cursor {
     background: $base-font-color;
   }
+
+  .CodeMirror-gutters {
+    background-color: $color-shade-dark;
+    border-right: 1px solid $color-base;
+  }
 }
 
 .CodeMirror-gutter-filler,
 .CodeMirror-scrollbar-filler {
   background-color: $color-shade-dark;
-}
-
-.CodeMirror-gutters {
-  background-color: $color-shade-dark;
-  border-right: 1px solid $color-base;
 }
 
 .CodeMirror-linenumber {
