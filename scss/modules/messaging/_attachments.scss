@@ -253,3 +253,40 @@ body:not(.feature_new_message_markup) .meta {
     }
   }
 }
+
+.post_body {
+  ul {
+    &.checklist {
+      background-color: $color-shade-dark;
+
+      li {
+        &:before {
+          background: $color-shade-dark;
+        }
+
+        &.checked {
+          color: $color-highlight;
+        }
+      }
+    }
+
+    &.list.checklist {
+      li {
+        border-bottom: 1px solid $color-shade-light;
+
+        &.checked {
+          color: $color-highlight;
+        }
+      }
+    }
+  }
+
+  .message {
+    background-color: $base-font-color;
+  }
+
+  code,
+  pre {
+    background: $color-shade-dark;
+  }
+}
