@@ -1,5 +1,11 @@
-#whats_new_tab p {
-  color: $base-font-color;
+#whats_new_tab {
+  p {
+    color: $base-font-color;
+  }
+
+  .flex_heading_controls label {
+    color: $color-highlight;
+  }
 }
 
 #whats_new_updates {
