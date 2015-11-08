@@ -46,3 +46,19 @@
     }
   }
 }
+
+.filter_header {
+  background-color: $color-base;
+}
+
+.filter_select.default_style .fsl_token {
+  &.fsl_token_default_group {
+    background-color: $color-shade-dark;
+    border-color: $color-shade-dark;
+  }
+
+  &.fsl_token_user_group {
+    background-color: $color-shade-lightest;
+    border-color: $color-shade-lightest;
+  }
+}
