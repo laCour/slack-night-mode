@@ -64,12 +64,40 @@
     &.type_members {
       .broadcast_info,
       .realname {
-        color: $color-highlight;
+        color: $base-font-color;
+      }
+    }
+
+    &.type_cmds {
+      li {
+        &.tab_complete_ui_group {
+          .group_name {
+            color: $base-font-color !important;
+          }
+
+          .group_divider {
+            border-bottom: 0;
+            border-top-color: $color-shade-dark;
+          }
+        }
+
+        &.tab_complete_ui_item {
+          .cmd-left-td,
+          .cmd-right-td {
+            color: $color-highlight;
+          }
+        }
+      }
+
+      .cmdname {
+        color: $base-font-color;
+        font-weight: 900;
       }
     }
   }
 
-  li.tab_complete_ui_item {
+  li.tab_complete_ui_item,
+  li.tab_complete_ui_group {
     border-bottom: 1px solid $color-shade-dark;
 
     &.active {
