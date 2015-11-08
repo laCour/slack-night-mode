@@ -53,6 +53,7 @@
   @import "modules/modals/channels";
   @import "modules/modals/direct-messages";
   @import "modules/modals/lightbox";
+  @import "modules/modals/profile";
   @import "modules/modals/preferences";
   @import "modules/modals/invite";
   @import "modules/modals/omnibox";
@@ -60,6 +61,7 @@
 
   @import "modules/tooltips/base";
   @import "modules/tooltips/coachmarks";
+  @import "modules/tooltips/member";
 
   @import "modules/color-overrides";
   @import "modules/hacks";

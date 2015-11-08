@@ -1,0 +1,195 @@
+#edit_team_profile_container {
+  input:disabled,
+  select:disabled {
+    background: $color-shade-light;
+    border: 1px solid $color-shade-darkest;
+  }
+
+  .filter_select.disabled {
+    background: $color-shade-light;
+
+    input {
+      background: $color-shade-light;
+    }
+  }
+}
+
+#edit_team_profile_add .row,
+#edit_team_profile_list .row {
+  border-top: 1px solid $color-shade-dark;
+}
+
+#edit_team_profile_list {
+  .row {
+    &:nth-last-child(2) {
+      &:hover {
+        border-color: $color-shade-dark !important;
+      }
+    }
+
+    &:nth-child(n+5) {
+      &.active,
+      &:hover {
+        background: $color-shade-dark;
+        border: 1px solid $color-shade-darkest;
+      }
+
+      &.active .edit_team_profile_list_controls i.ts_icon_cog_o {
+        color: $color-highlight;
+      }
+    }
+  }
+
+  .edit_team_profile_list_controls {
+    i {
+      color: $base-font-color;
+
+      &.ts_icon_cog_o:hover {
+        color: $color-highlight;
+      }
+
+      &.ts_icon_grabby_patty:hover {
+        color: $color-highlight;
+      }
+    }
+  }
+
+  .sortable-placeholder:before {
+    border-top: 1px solid $color-shade-light;
+  }
+}
+
+#edit_team_profile_add {
+  .row {
+    &:last-child {
+      border-bottom: 1px solid $color-shade-light;
+    }
+
+    &:not(.header_row) {
+      &:hover {
+        background: $color-shade-dark;
+        border: 1px solid $color-shade-darkest;
+
+        .col:first-child {
+          color: $base-font-color;
+        }
+
+        i {
+          border-color: $color-shade-darkest;
+          color: $base-font-color;
+        }
+      }
+    }
+  }
+
+  i {
+    color: $color-highlight;
+  }
+}
+
+#edit_team_profile_edit {
+  .profile_field_preview_protector label.select {
+    &:after,
+    &:hover:after {
+      color: $color-highlight;
+    }
+  }
+
+  .row {
+    &.option_row.show_remove_action {
+      i {
+        border: 1px solid $color-shade-darkest;
+
+        &:hover {
+          background-color: $color-red;
+          border-color: $color-red !important;
+          color: $base-font-color;
+        }
+      }
+    }
+
+    i {
+      border: 1px solid $color-shade-darkest;
+      color: $base-font-color;
+    }
+  }
+}
+
+#edit_team_profile_custom .row {
+  .col {
+    .profile_field_preview {
+      background: $color-shade-dark;
+      border: 2px solid $color-shade-darkest;
+
+      &:active,
+      &:hover {
+        border-color: $color-shade-dark;
+
+        span {
+          color: $color-highlight;
+       }
+      }
+    }
+
+    input {
+      background: $color-shade-light;
+      border: 1px solid $color-shade-darkest;
+    }
+
+    .fsl_item {
+      background: $color-shade-mid;
+      border-color: $color-shade-mid;
+    }
+
+    &[data-type=options_list] {
+      span:after {
+        color: $color-highlight;
+      }
+
+      input {
+        border-right: 1px solid $color-shade-darkest;
+      }
+    }
+  }
+}
+
+.profile_field_preview_protector {
+  .profile_field_preview {
+    background: $color-base;
+    border: 1px solid $color-shade-light;
+
+    &:after {
+      background-color: $color-base;
+      box-shadow: 0 0.75rem 0.75rem $color-shadow-medium;
+    }
+
+    &:before {
+      background-color: $color-base;
+      box-shadow: 0 0.75rem 0.75rem $color-shadow-medium;
+    }
+
+    input:disabled,
+    select:disabled {
+      background: $color-shade-light;
+      color: $color-highlight;
+    }
+
+    .profile_field_preview_fade_out_mask {
+      background: linear-gradient(to left, $color-shade-darkest, $color-shadow-transparent);
+    }
+
+    .profile_field_preview_ribbon {
+      &:before {
+        border-color: transparent transparent transparent $color-shade-darkest;
+      }
+
+      &:after {
+        border-color: $color-shade-darkest transparent transparent;
+      }
+    }
+  }
+}
+
+#edit_member_profile_header_container {
+  border-bottom: 1px solid $color-shade-light;
+}

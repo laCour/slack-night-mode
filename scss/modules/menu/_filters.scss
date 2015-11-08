@@ -11,6 +11,7 @@
 
   #team_list_container #team_filter {
     .member_filter {
+      background-color: $color-base;
       border-left: 1px solid $color-shade-darkest;
     }
   }
