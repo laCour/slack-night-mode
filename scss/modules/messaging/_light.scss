@@ -14,6 +14,12 @@
       color: $base-link-color;
     }
 
+    .message_content {
+      .message_sender {
+        color: $base-font-color !important;
+      }
+    }
+
     .comment:before {
       color: $color-highlight;
     }
@@ -38,10 +44,6 @@
     .file_service_icon {
       color: $color-highlight;
     }
-  }
-
-  .message_sender {
-    color: $base-font-color !important;
   }
 
   #message_editing_info {
