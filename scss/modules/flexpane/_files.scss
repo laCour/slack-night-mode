@@ -350,5 +350,35 @@ html.no_touch a.filetype_button_web:hover {
       background-color: $color-shade-dark;
       border-color: $color-shade-darkest;
     }
+
+    .star {
+      color: $color-highlight;
+    }
+
+    .contents {
+      .file_comment_link {
+        color: $base-link-color;
+
+        .ts_icon {
+          color: $base-link-color;
+        }
+
+        &:focus,
+        &:hover {
+          color: $base-link-color-active;
+
+          .ts_icon {
+            color: $base-link-color-active;
+          }
+        }
+      }
+
+      .member,
+      .service_link,
+      .share_info,
+      .time {
+        color: $color-highlight;
+      }
+    }
   }
 }
