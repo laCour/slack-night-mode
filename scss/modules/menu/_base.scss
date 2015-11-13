@@ -1,30 +1,7 @@
-.menu,
-.menu_example {
+.menu {
   background: $color-shade-darkest;
   border: 0;
   box-shadow: 0 2px 10px $color-shadow-dark;
-  color: $base-font-color;
-
-  ul li a {
-    background: $color-base;
-    border-bottom: 0;
-    color: $base-link-color;
-  }
-
-  .section_header {
-    .header_label {
-      background-color: $color-base;
-      color: $color-highlight;
-    }
-
-    > div.header_label_container {
-      color: $color-highlight;
-    }
-  }
-}
-
-.menu {
-  background: $color-shade-darkest;
   color: $base-font-color;
 
   #menu_header {
@@ -47,7 +24,28 @@
     }
   }
 
+  .section_header {
+    .header_label {
+      background-color: $color-base;
+      color: $color-highlight;
+    }
+
+    > div.header_label_container {
+      color: $color-highlight;
+    }
+  }
+
   ul li {
+    a {
+      background: $color-base;
+      border-bottom: 0;
+      color: $base-link-color;
+
+      &.delete_link {
+        color: $color-red;
+      }
+    }
+
     &.highlighted a {
       background: $color-shade-darkest;
       border-bottom-color: $color-base;
@@ -69,10 +67,6 @@
 
     &.double-divider {
       border-bottom: 4px solid $color-shade-mid;
-    }
-
-    a.delete_link {
-      color: $color-red;
     }
   }
 
