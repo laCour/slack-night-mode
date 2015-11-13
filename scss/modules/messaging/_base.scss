@@ -2,101 +2,243 @@
   background: $color-base;
 }
 
-body:not(.feature_new_message_markup) {
-  .message {
-    .mention,
-    &.highlight {
-      background: transparent;
-      border: 0;
-      border-radius: 3px;
-      padding: 2px;
-    }
+ts-message {
+  color: $base-font-color;
 
-    a .mention {
-      color: $base-font-color;
-    }
+  &.active:not(.standalone):not(.multi_delete_mode),
+  &:hover:not(.standalone):not(.multi_delete_mode) {
+    background: rgba($color-shade-darkest, 0.1);
+  }
 
-    .inline_color_block {
-      border: 1px solid $color-shade-dark;
-    }
+  .timestamp {
+    color: $base-link-color;
+  }
 
-    &.unprocessed {
-      color: rgba($base-font-color, 0.75);
-    }
+  .edited,
+  .temp_msg_controls {
+    color: $color-highlight;
+  }
 
-    .edited,
-    .temp_msg_controls {
-      color: $color-highlight;
-    }
+  .only_visible_to_user {
+    color: $color-highlight;
+  }
 
-    .msg_actions {
-      color: $base-link-color;
-    }
+  &.ephemeral {
+    color: $base-font-color;
+  }
 
-    &:hover .msg_actions:hover {
-      color: $base-link-color-active;
-    }
+  .bot_label {
+    background: $color-shade-darkest;
+    color: $color-highlight;
+  }
 
-    &.delete_mode,
-    &.multi_delete_mode {
-      background: rgba($color-red, 0.75);
-    }
+  .in_reply_to {
+    background: $color-shade-darkest;
+    color: $color-highlight;
+  }
 
-    &.edit_mode {
-      background: rgba($color-shade-darkest, 0.75);
+  &.standalone:not(.for_mention_display):not(.for_search_display):not(.for_star_display) {
+    border: 1px solid $color-shade-light;
+  }
+
+  &.unprocessed {
+    color: rgba($base-font-color, 0.75);
+  }
+
+  &.highlight {
+    background: rgba($color-red, 0.75);
+
+    &:hover {
+      background: rgba($color-shade-darkest, 0.15);
     }
   }
 
-  .selecting_messages .message.multi_delete_mode:hover {
+  &.delete_mode,
+  &.multi_delete_mode {
     background: rgba($color-red, 0.75);
   }
 
-  .selecting_messages .message:hover {
-    background: $color-shade-darkest;
+  &.automated .message_body {
+    color: rgba($base-font-color, 0.8);
   }
 
-  .msgs_holder .unread_divider {
-    color: $base-font-color;
+  .action_hover_container,
+  .message_actions_container message_actions {
+    border: 1px solid $color-base;
 
-    span.divider_label {
-      background: $color-red;
-      padding: 3px;
+    &:hover {
+      border-color: $color-shade-light;
+      box-shadow: 0 1px 1px $color-shadow-medium;
+
+      a {
+        background: $color-shade-dark;
+        border-right: 1px solid $color-shade-light;
+      }
     }
 
-    &.no_unreads {
-      color: $base-font-color;
+    a {
+      background: $color-base;
+      border-right: 1px solid $color-base;
+      color: $base-link-color;
 
-      span.divider_label {
+      &:hover {
+        color: $base-link-color;
+      }
+
+      &.active,
+      &:active {
+        background: $color-shade-dark;
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  &.selected {
+    background: $color-base;
+    border-bottom: 6px solid $color-shade-dark;
+    border-top: 6px solid $color-shade-dark;
+
+    &:hover {
+      background: $color-base;
+    }
+  }
+
+  .meta {
+    color: $color-highlight;
+
+    &.msg_inline_img_toggler,
+    &.msg_inline_file_preview_toggler {
+      .member,
+      .service_link {
+        color: $base-link-color !important;
+      }
+
+      .ts_icon_dropbox,
+      a {
+        color: $color-highlight !important;
+      }
+    }
+  }
+
+  .pinned_item_message_header {
+    color: $color-highlight;
+  }
+
+  .mention,
+  &.highlight {
+    background: transparent;
+    border: 0;
+    border-radius: 3px;
+    padding: 2px;
+  }
+
+  a .mention {
+    color: $base-font-color;
+  }
+}
+
+.selecting_messages ts-message.multi_delete_mode:hover {
+  background: rgba($color-red, 0.75);
+}
+
+.selecting_messages ts-message:hover {
+  background: $color-shade-darkest;
+}
+
+#conversation_container {
+  background-color: rgba($color-shade-dark, 0.85);
+
+  #message_edit_container {
+    border-bottom: 1px solid $color-shade-light;
+    border-top: 1px solid $color-shade-light;
+  }
+
+  .more_messages_container .more_messages {
+    color: $color-highlight;
+  }
+
+  ts-conversation {
+    &:after {
+      background: rgba($color-shade-darkest, 0.08);
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(1, rgba($color-shade-darkest, 0.08)));
+      background: -moz-linear-gradient(center bottom, transparent 0, rgba($color-shade-darkest, 0.08) 100%);
+    }
+
+    &:before {
+      background: transparent;
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba($color-shade-darkest, 0.08)), color-stop(1, transparent));
+      background: -moz-linear-gradient(center bottom, rgba($color-shade-darkest, 0.08) 0, transparent 100%);
+    }
+
+    ts-message {
+      &.selected {
+        background: $color-shade-light;
+      }
+    }
+
+    ts-relatives {
+      &:after {
         background: $color-shade-light;
       }
 
-      hr {
-        border-top: 1px solid $color-shade-dark;
-      }
-    }
+      ts-message {
+        &.deleted {
+          .message_icon i {
+            background-color: $color-shade-light;
+            color: $color-highlight;
+          }
 
-    hr {
-      border-top: 1px solid $color-red;
+          .message_content {
+            color: $base-font-color;
+          }
+        }
+
+        &:not(.selected):not(.highlight):not(.delete_mode) {
+          background-color: #rgba($color-red, 0.5);
+
+          &.new {
+            background-color: rgba($color-red, 0.75);
+          }
+        }
+      }
     }
   }
 }
 
-.msgs_holder {
-  .unread_divider {
-    color: $base-font-color;
+#msg_input_overlay {
+  background: $color-base;
 
-    span.divider_label {
+  #close_conversation {
+    background: rgba(0, 0, 0, 0.8);
+    color: $color-highlight;
+  }
+}
+
+#msgs_div {
+  .unread_divider {
+    hr {
+      border-top: 1px solid $color-red;
+    }
+
+    .divider_label {
       background: $color-red;
-      border-radius: 3px;
+      color: $base-font-color;
       padding: 3px;
     }
 
-    &.no_unreads span.divider_label {
-      background: $color-shade-light;
+    &.no_unreads {
+      hr {
+        border-top-color: $color-shade-dark;
+      }
+
+      .divider_label {
+        background: $color-shade-light;
+        color: $color-highlight;
+      }
     }
   }
 
-  .message.automated_grey {
+  ts-message.automated_grey {
     background: $color-shade-darkest;
 
     .timestamp {
@@ -109,20 +251,13 @@ body:not(.feature_new_message_markup) {
   }
 }
 
-body.feature_new_message_markup .msgs_holder .unread_divider {
-  color: $base-font-color;
+#conversation_container .more_messages,
+#messages_unread_status {
+  background: $color-shade-light;
+}
 
-  &.no_unreads {
-    color: $color-highlight;
-
-    hr {
-      border-top: 1px solid $color-base;
-    }
-  }
-
-  hr {
-    border-top: 1px solid $color-shade-light;
-  }
+.channel_archive_messages.card .col:first-child {
+  border-right: 1px solid $color-shade-light;
 }
 
 .star {
@@ -137,26 +272,11 @@ body.feature_new_message_markup .msgs_holder .unread_divider {
   }
 }
 
-.bot_label {
-  background: $color-shade-darkest;
-  color: $color-highlight;
-}
-
 .bot_message .message_sender {
   color: $base-font-color;
 
   a {
     color: $base-font-color;
-  }
-}
-
-.ephemeral.message {
-  .message_content {
-    color: $base-font-color;
-  }
-
-  .ephemeral_notice {
-    color: $color-highlight;
   }
 }
 

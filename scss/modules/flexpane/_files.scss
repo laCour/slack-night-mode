@@ -323,6 +323,7 @@ html.no_touch a.filetype_button_web:hover {
 
 .tab_container {
   .star_item .message,
+  .star_item ts-message,
   .file_list_item,
   .file_comment_item {
     .actions {
@@ -338,7 +339,7 @@ html.no_touch a.filetype_button_web:hover {
   }
 
   .star_item {
-    .message .timestamp {
+    ts-message .timestamp {
       color: $color-highlight;
     }
   }

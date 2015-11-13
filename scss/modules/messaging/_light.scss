@@ -1,5 +1,5 @@
 .light_theme {
-  .message {
+  ts-message {
     color: $base-font-color;
 
     @if global-variable-exists(base-font-family) {
@@ -10,12 +10,12 @@
       color: rgba($base-font-color, 0.75);
     }
 
-    .timestamp {
+    .msg_right_link {
       color: $base-link-color;
     }
 
-    .msg_right_link {
-      color: $base-link-color;
+    .comment:before {
+      color: $color-highlight;
     }
 
     &.archived .message_content,

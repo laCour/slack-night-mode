@@ -1,14 +1,12 @@
-body:not(.feature_new_message_markup) {
-  .day_divider {
-    background: $color-base;
-    color: $color-highlight;
+.day_divider {
+  background: $color-base;
+  color: $color-highlight;
 
-    hr {
-      border-top: 1px solid $color-shade-dark;
-    }
+  hr {
+    border-top: 1px solid $color-shade-dark;
   }
 
   .day_divider_label {
-    background: $color-base;
+    background: $color-shade-dark;
   }
 }
