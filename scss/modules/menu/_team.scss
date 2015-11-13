@@ -45,3 +45,13 @@
     color: $base-link-color;
   }
 }
+
+#im-list li.member.active .presence,
+#starred-list li.member.active .presence {
+  color: $base-font-color;
+
+  &.away {
+    color: $color-highlight;
+    text-shadow: 1px 1px $color-shadow-light;
+  }
+}
