@@ -1,9 +1,10 @@
 # Changelog
 
+* **16/11/15**: Corrected selector for invalid message scroller container spacing hack.
 * **15/11/15**: Added styles for channel-specific notification settings.
 * **12/11/15**: Added support for new messaging styles. Various bug fixes (#23, 79e2a1f, 7a2c867).
 * **07/11/15 - Major Release**: Added styles for new posts editor, user groups, improved profiles, slash commands, and 2FA setup. Many bug fixes (c2b94bc, 3adde1a, 806f218, 6b35cee, 7a61c6c, 04ed39b).
-* **29/10/15**: Added styles for new "what's new" flexpane section, channels modal, direct messages modal. Improved styling on filter selects and toggles. Several other bug fixes, including #14. 
+* **29/10/15**: Added styles for new "what's new" flexpane section, channels modal, direct messages modal. Improved styling on filter selects and toggles. Several other bug fixes, including #14.
 * **19/10/15**: Fixed styles for member preview background in flexpane (#13).
 * **06/10/15**: Added styles for filter inputs and share modals. Updated styles to reflect recent changes to attachments, menus, tab-completion menus, and more.
 * **27/08/15**: Added styles for lightbox navigation buttons. Updated styles for inline code snippets and attachments. Bug fixes (4e35642, 8555895, df60b4f, #8, #9, #10, #11)

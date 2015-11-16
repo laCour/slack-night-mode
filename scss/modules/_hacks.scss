@@ -1,4 +1,4 @@
-#end_display_div {
+#msgs_scroller_div {
   margin-left: 1px; // This is necessary because this container is being undersized on the width property by a script. Without this, there would be a 1px space on the right, to the left of the monkey scroller.
 }
 
