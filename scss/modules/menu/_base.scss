@@ -1,8 +1,28 @@
 .menu {
-  background: $color-shade-darkest;
+  background: $color-base;
   border: 0;
   box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
+
+  .menu_filter_container {
+    background: $color-base;
+
+    input.menu_filter {
+      border: 1px solid $color-shade-mid;
+
+      &:focus {
+        border-color: $color-shade-light;
+      }
+    }
+
+    .icon_search {
+      color: $color-highlight;
+    }
+
+    .icon_close {
+      color: $color-highlight !important;
+    }
+  }
 
   #menu_header {
     .menu_simple_header {
@@ -96,15 +116,5 @@
       background: $color-shade-darkest;
       border-top: 1px solid $color-shade-dark;
     }
-  }
-}
-
-.menu_example {
-  ul li.highlighted a,
-  &:not(.keyboard_active) ul li:hover a {
-    background: $color-shade-darkest;
-    border-bottom-color: $color-base;
-    color: $base-link-color-active;
-    text-shadow: 0 1px 0 $color-shadow-light;
   }
 }

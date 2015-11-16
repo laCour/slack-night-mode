@@ -871,3 +871,29 @@ a.two_factor_choice {
   from { background-color: $color-shade-mid; }
   to { background-color: $color-shade-dark; }
 }
+
+#channel_specific_settings {
+  tr {
+    border-top: 1px solid $color-shade-light;
+
+    &.channel_override_row.muted td {
+      background: $color-shade-dark;
+    }
+  }
+
+  .extra_left_border {
+    border-left: 3px solid $color-shade-light;
+  }
+
+  .extra_right_border {
+    border-right: 3px solid $color-shade-light;
+  }
+
+  .revert_to_default {
+    color: $color-highlight;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+}
