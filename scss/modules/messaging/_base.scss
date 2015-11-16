@@ -194,7 +194,7 @@ ts-message {
         }
 
         &:not(.selected):not(.highlight):not(.delete_mode) {
-          background-color: #rgba($color-red, 0.5);
+          background-color: rgba($color-red, 0.5);
 
           &.new {
             background-color: rgba($color-red, 0.75);
