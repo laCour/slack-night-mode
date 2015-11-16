@@ -219,10 +219,6 @@ ts-space {
           color: $base-font-color;
         }
 
-        &:-ms-input-placeholder {
-          color: $base-font-color;
-        }
-
         &:focus {
           &::-webkit-input-placeholder {
             color: $color-highlight;
@@ -233,10 +229,6 @@ ts-space {
           }
 
           &:-moz-placeholder {
-            color: $color-highlight;
-          }
-
-          &:-ms-input-placeholder {
             color: $color-highlight;
           }
         }
@@ -448,8 +440,7 @@ comments {
       }
 
       ::-webkit-input-placeholder,
-      ::-moz-placeholder,
-      ::-ms-placeholder {
+      ::-moz-placeholder {
         color: $color-highlight;
       }
 

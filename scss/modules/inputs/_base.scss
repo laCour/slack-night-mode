@@ -110,17 +110,8 @@ textarea:focus {
   color: $base-font-color;
 }
 
-:-ms-input-placeholder {
-  color: $base-font-color;
-}
-
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: $base-font-color;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
   color: $base-font-color;
 }
 
