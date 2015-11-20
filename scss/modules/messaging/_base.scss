@@ -126,10 +126,11 @@ ts-message {
 
   .mention,
   &.highlight {
-    background: transparent;
-    border: 0;
+    background: $color-shade-light;
+    border: 1px solid $color-shade-lightest;
     border-radius: 3px;
-    padding: 2px;
+    color: $base-font-color;
+    padding: 0 3px;
   }
 
   a .mention {
