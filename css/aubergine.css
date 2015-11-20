@@ -157,7 +157,7 @@
   .filter_select.default_style.single .fsl_input_container.active:after, .filter_select.default_style.single .fsl_input_container:hover:after { color: #f0d9ed; }
   #message-input.offline { background-color: #4d394b !important; }
   #message-input.disabled { background-color: #4d394b; }
-  #message-input-message { color: #a3839f; font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+  #message-input-message { color: #a3839f; }
   #message_edit_form #message-input, #messages-input-container #message-input { background: padding-box #61485e; border: 2px solid #4d394b; color: #f0d9ed; }
   #message_edit_form #message-input:focus, #messages-input-container #message-input:focus { border-color: #372c36; }
   #message_edit_form .emo_menu, #messages-input-container .emo_menu { color: rgba(240, 217, 237, 0.3); }
@@ -443,7 +443,7 @@
   .dm_badge a.member_preview_link { color: #a3839f; }
   .dm_badge .dm_badge:hover a { color: #a3839f; }
   .dm_badge .hint { color: #a3839f; }
-  .light_theme ts-message { color: #f0d9ed; font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+  .light_theme ts-message { color: #f0d9ed; }
   .light_theme ts-message.unprocessed { color: rgba(240, 217, 237, 0.75); }
   .light_theme ts-message .msg_right_link { color: #a3839f; }
   .light_theme ts-message .message_content .message_sender { color: #f0d9ed !important; }
@@ -456,7 +456,7 @@
   .light_theme #message_edit_form p, .light_theme #message_edit_form span { color: #a3839f; }
   .light_theme .msg_inline_video_holder { border: 1px solid #4d394b; }
   .light_theme .pinned_item_message_header { color: #a3839f; }
-  .dense_theme ts-message { color: #f0d9ed; font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+  .dense_theme ts-message { color: #f0d9ed; }
   .dense_theme ts-message.unprocessed { color: rgba(240, 217, 237, 0.75); }
   .dense_theme ts-message.first .timestamp, .dense_theme ts-message:hover .timestamp { color: #d4bbd1; }
   .dense_theme ts-message.first .message_gutter .timestamp, .dense_theme ts-message.selected .message_gutter .timestamp { color: #a3839f; }
