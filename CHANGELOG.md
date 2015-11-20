@@ -1,6 +1,6 @@
 # Changelog
 
-* **19/11/15**: Corrected selector for hovered messages (#28). Corrected styles for mentions (#26). Improved README and Makefile.
+* **19/11/15**: Corrected selector for hovered messages (#28). Corrected styles for mentions (#26). Added styles for emoji skin picker. Improved README and Makefile.
 * **16/11/15**: Corrected selector for invalid message scroller container spacing hack, added styles for emoji skin picker.
 * **15/11/15**: Added styles for channel-specific notification settings.
 * **12/11/15**: Added support for new messaging styles. Various bug fixes (#23, 79e2a1f, 7a2c867).
