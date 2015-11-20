@@ -1,15 +1,15 @@
 all: clean build
 
-build: default themes
+build: default variants
 
 clean:
-	rm -rf css/*
-	mkdir css/variants
+	rm -rf css
+	mkdir -p css/variants
 
 default:
-	sass scss/main.scss:css/default.css --style compressed
+	sassc -t compact scss/main.scss css/aubergine.css
 
-themes:
+variants:
 	for sass in scss/themes/build-variants/*.scss; do \
 		theme=`basename $$sass .scss`; \
-	sass $$sass:css/variants/$$theme.css --style compressed; done
+	sassc -t compact $$sass  css/variants/$$theme.css; done
