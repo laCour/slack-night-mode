@@ -5,8 +5,8 @@
 ts-message {
   color: $base-font-color;
 
-  &.active:not(.standalone):not(.multi_delete_mode),
-  &:hover:not(.standalone):not(.multi_delete_mode) {
+  &.active:not(.standalone):not(.multi_delete_mode):not(.highlight),
+  &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) {
     background: rgba($color-shade-darkest, 0.1);
   }
 
