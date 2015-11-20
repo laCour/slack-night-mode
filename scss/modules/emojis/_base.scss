@@ -81,6 +81,16 @@
   #emoji_input:focus {
     border-color: $color-shade-light;
   }
+
+  #emoji_skin_button,
+  #emoji_skin_picker,
+  #emoji_skin_tip {
+    color: $color-highlight;
+  }
+
+  #emoji_skin_picker {
+    background: $color-shade-darkest;
+  }
 }
 
 .emoji_li a {
