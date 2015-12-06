@@ -1,5 +1,6 @@
 # Changelog
 
+* **06/12/15**: Corrected styling for preferences modal (#32), menu hovering (#31), and adjacent new messages and day divider (#30). Improved styles for tooltips (b63f13b) and divider labels (72f231c).
 * **19/11/15**: Corrected selector for hovered messages (#28). Corrected styles for mentions (#26). Added styles for emoji skin picker. Improved README and Makefile.
 * **16/11/15**: Corrected selector for invalid message scroller container spacing hack, added styles for emoji skin picker.
 * **15/11/15**: Added styles for channel-specific notification settings.
