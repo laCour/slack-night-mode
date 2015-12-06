@@ -1,4 +1,4 @@
-#new_prefs_dialog {
+#new_prefs_dialog:not(.higher):not(.precedence) {
   background: $color-shade-mid;
 
   .modal-header {
