@@ -222,9 +222,8 @@ ts-message {
     }
 
     .divider_label {
-      background: $color-red;
-      color: $base-font-color;
-      padding: 3px;
+      background: $color-base;
+      color: $color-red;
     }
 
     &.no_unreads {
@@ -233,7 +232,6 @@ ts-message {
       }
 
       .divider_label {
-        background: $color-shade-light;
         color: $color-highlight;
       }
     }
