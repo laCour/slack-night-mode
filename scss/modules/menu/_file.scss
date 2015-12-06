@@ -2,7 +2,7 @@
   box-shadow: 0 3px 8px $color-shadow-dark;
 
   ul li.highlighted,
-  &:not(.keyboard_active) ul li:hover {
+  &:not(.keyboard_active) ul li:hover:not(.disabled) {
     background: $color-shade-darkest;
 
     > a {

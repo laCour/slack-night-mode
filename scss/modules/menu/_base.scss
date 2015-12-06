@@ -90,7 +90,7 @@
     }
   }
 
-  &:not(.keyboard_active) ul li:hover a {
+  &:not(.keyboard_active) ul li:hover:not(.disabled) a {
     background: $color-shade-darkest;
     border-bottom-color: $color-base;
     color: $base-link-color-active;
