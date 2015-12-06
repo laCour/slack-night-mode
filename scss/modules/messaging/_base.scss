@@ -235,6 +235,10 @@ ts-message {
         color: $color-highlight;
       }
     }
+
+    &.adjacent_to_date {
+      background: $color-base;
+    }
   }
 
   ts-message.automated_grey {
