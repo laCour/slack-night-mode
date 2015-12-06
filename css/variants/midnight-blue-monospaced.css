@@ -197,8 +197,8 @@
   .menu ul li.disabled a { color: #1793D1; }
   .menu ul li.divider { border-bottom: 2px solid #222; }
   .menu ul li.double-divider { border-bottom: 4px solid #222; }
-  .menu:not(.keyboard_active) ul li:hover a { background: #000; border-bottom-color: #000; color: #299BD4; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
-  .menu:not(.keyboard_active) ul li:hover a.delete_link { color: #bf360c; }
+  .menu:not(.keyboard_active) ul li:hover:not(.disabled) a { background: #000; border-bottom-color: #000; color: #299BD4; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+  .menu:not(.keyboard_active) ul li:hover:not(.disabled) a.delete_link { color: #bf360c; }
   .menu input { background: #111; border: 1px solid #333; }
   .menu textarea { background: #111; border: 1px solid #333; }
   .menu #menu_footer .menu_footer { background: #000; border-top: 1px solid #111; }
@@ -215,9 +215,9 @@
   #im-list li.member.active .presence, #starred-list li.member.active .presence { color: #00B9F2; }
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { color: #1793D1; text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #menu.file_menu { box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
-  #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover { background: #000; }
-  #menu.file_menu ul li.highlighted > a, #menu.file_menu:not(.keyboard_active) ul li:hover > a { color: #299BD4; }
-  #menu.file_menu ul li.highlighted i.file_menu_icon, #menu.file_menu:not(.keyboard_active) ul li:hover i.file_menu_icon { color: #00B9F2; }
+  #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) { background: #000; }
+  #menu.file_menu ul li.highlighted > a, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) > a { color: #299BD4; }
+  #menu.file_menu ul li.highlighted i.file_menu_icon, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) i.file_menu_icon { color: #00B9F2; }
   #menu.file_menu ul li > a { color: #1793D1; }
   #menu.file_menu ul li i.file_menu_icon { color: #1793D1; }
   #menu.popover_menu { background-color: #000; border-top: 1px solid #333; }
@@ -419,9 +419,10 @@
   #msg_input_overlay { background: #000; }
   #msg_input_overlay #close_conversation { background: rgba(0, 0, 0, 0.8); color: #1793D1; }
   #msgs_div .unread_divider hr { border-top: 1px solid #bf360c; }
-  #msgs_div .unread_divider .divider_label { background: #bf360c; color: #00B9F2; padding: 3px; }
+  #msgs_div .unread_divider .divider_label { background: #000; color: #bf360c; }
   #msgs_div .unread_divider.no_unreads hr { border-top-color: #111; }
-  #msgs_div .unread_divider.no_unreads .divider_label { background: #333; color: #1793D1; }
+  #msgs_div .unread_divider.no_unreads .divider_label { color: #1793D1; }
+  #msgs_div .unread_divider.adjacent_to_date { background: #000; }
   #msgs_div ts-message.automated_grey { background: #000; }
   #msgs_div ts-message.automated_grey .timestamp { color: #1793D1; }
   #msgs_div ts-message.automated_grey:hover .timestamp { color: #299BD4; }
@@ -925,12 +926,12 @@
   .profile_field_preview_protector .profile_field_preview .profile_field_preview_ribbon:before { border-color: transparent transparent transparent #000; }
   .profile_field_preview_protector .profile_field_preview .profile_field_preview_ribbon:after { border-color: #000 transparent transparent; }
   #edit_member_profile_header_container { border-bottom: 1px solid #333; }
-  #new_prefs_dialog { background: #222; }
-  #new_prefs_dialog .modal-header { border-bottom: 1px solid #000; }
-  #new_prefs_dialog .modal-nav { background: padding-box #333; border-right: 1px solid #000; }
-  #new_prefs_dialog .modal-nav a { color: #00B9F2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
-  #new_prefs_dialog .modal-nav a:hover { background: #444; color: #00B9F2; }
-  #new_prefs_dialog .modal-nav a.active { background: #222; color: #00B9F2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+  #new_prefs_dialog:not(.higher):not(.precedence) { background: #222; }
+  #new_prefs_dialog:not(.higher):not(.precedence) .modal-header { border-bottom: 1px solid #000; }
+  #new_prefs_dialog:not(.higher):not(.precedence) .modal-nav { background: padding-box #333; border-right: 1px solid #000; }
+  #new_prefs_dialog:not(.higher):not(.precedence) .modal-nav a { color: #00B9F2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+  #new_prefs_dialog:not(.higher):not(.precedence) .modal-nav a:hover { background: #444; color: #00B9F2; }
+  #new_prefs_dialog:not(.higher):not(.precedence) .modal-nav a.active { background: #222; color: #00B9F2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   #debug_prefs_dialog { background: #222; }
   #prefs_themes .monkey_scroller:before { background: #bf360c; border-radius: 3px; content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme."; display: block; margin-bottom: 6px; padding: 2px 4px 4px; width: 100%; }
   .admin_invites_account_type_option { border-bottom: 1px solid #111; }
@@ -958,6 +959,11 @@
   .ts_tip.ts_tip_right .ts_tip_tip:after { border-right-color: #333; }
   .ts_tip.ts_tip_top .ts_tip_tip:after { border-top-color: #333; }
   .ts_tip.ts_tip_bottom .ts_tip_tip:after { border-bottom-color: #333; }
+  .ts_tip.success .ts_tip_tip { background: #444; }
+  .ts_tip.success.ts_tip_left .ts_tip_tip:after { border-left-color: #444; }
+  .ts_tip.success.ts_tip_right .ts_tip_tip:after { border-right-color: #444; }
+  .ts_tip.success.ts_tip_top .ts_tip_tip:after { border-top-color: #444; }
+  .ts_tip.success.ts_tip_bottom .ts_tip_tip:after { border-bottom-color: #444; }
   .tooltip-inner { background-color: #444; color: #00B9F2; }
   .tooltip.top .tooltip-arrow, .tooltip.top-left .tooltip-arrow { border-top-color: #444; }
   .tooltip.right .tooltip-arrow { border-right-color: #444; }
@@ -993,7 +999,7 @@
   .member_meta { color: #1793D1; }
   .menu_member_user_details { background: #111; border-bottom: 1px solid #333; color: #00B9F2; }
   .menu_member_user_details .member_name { color: #1793D1; }
-  .mini, .dull_grey, .charcoal_grey, .ts_tip_tip .subtle_silver { color: #00B9F2 !important; }
+  .mini, .flat_grey, .charcoal_grey, .ts_tip_tip .subtle_silver { color: #00B9F2 !important; }
   .sky_blue, .plastic_grey, .indifferent_grey, .cloud_silver { color: #1793D1 !important; }
   .clear_blue { color: #1793D1 !important; }
   .candy_red_bg { background-color: #bf360c !important; }
