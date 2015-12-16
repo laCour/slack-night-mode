@@ -33,8 +33,6 @@
 
   ul li.highlighted,
   &:not(.keyboard_active) ul li:hover {
-    background: $color-shade-light;
-
     > a {
       background: $color-shade-light;
       color: $base-link-color-active;
