@@ -7,7 +7,7 @@ clean:
 	mkdir -p css/variants
 
 default:
-	sassc -t compact scss/main.scss css/aubergine.css
+	sassc -t compact scss/main.scss css/black.css
 
 variants:
 	for sass in scss/themes/build-variants/*.scss; do \

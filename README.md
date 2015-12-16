@@ -13,21 +13,21 @@ All themes can be built by running `make` (you will need [SassC](http://sass-lan
 
 ### Supported
 
-#### Aubergine ([source](scss/main.scss) - [build](css/aubergine.css) - [install](https://userstyles.org/styles/101971/slack-night-mode))
+#### Black ([source](scss/main.scss) - [build](css/black.css) - [install](https://userstyles.org/styles/117475/slack-night-mode-black))
 
-This is based on Slack's aubergine/maroon style. It's the original theme.
-
-![Default Screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshots/101971_after.png)
-
-#### Black ([source](scss/themes/_black.scss) - [build](css/variants/black.css) - [install](https://userstyles.org/styles/117475/slack-night-mode-black))
-
-This is an excellent theme if you use a program like f.lux or redshift.
+The primary supported theme. This is an excellent theme if you use a program like f.lux or redshift.
 
 ![Black Screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshots/117475_after.png)
 
 ### Variants
 
-#### Midnight Blue ([source](scss/themes/midnight-blue.css) - [build](css/variants/midnight-blue.css))
+#### Aubergine ([source](scss/themes/_aubergine.scss) - [build](css/variants/aubergine.css))
+
+This is based on Slack's aubergine/maroon style. It's the original theme.
+
+![Default Screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshots/101971_after.png)
+
+#### Midnight Blue ([source](scss/themes/_midnight-blue.scss) - [build](css/variants/midnight-blue.css))
 
 ### Extensions
 

@@ -1,19 +1,19 @@
 // Theme Colors
-$color-base: #3e313c !default;
-$color-highlight: #a3839f !default;
+$color-base: #222 !default;
+$color-highlight: #949494 !default;
 $color-red: #bf360c !default;
 
-$color-shade-darkest: #372c36 !default;
-$color-shade-dark: #4d394b !default;
-$color-shade-mid: #4a3b49 !default;
-$color-shade-light: #61485e !default;
-$color-shade-lightest: #876484 !default;
+$color-shade-darkest: #000 !default;
+$color-shade-dark: #363636 !default;
+$color-shade-mid: #424242 !default;
+$color-shade-light: #545454 !default;
+$color-shade-lightest: #828282 !default;
 
 // Font Colors
-$base-font-color: #f0d9ed !default;
+$base-font-color: #e6e6e6 !default;
 
 $base-link-color: $color-highlight !default;
-$base-link-color-active: #d4bbd1 !default;
+$base-link-color-active: #c7c7c7 !default;
 
 // Grayscale Colors
 $black: #000;
