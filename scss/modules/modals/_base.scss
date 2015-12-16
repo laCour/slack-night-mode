@@ -38,6 +38,29 @@
 #fs_modal {
   background: $color-base;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $base-font-color;
+  }
+
+  #fs_modal_sidebar a {
+    color: $base-link-color;
+
+    &:hover {
+      background: $color-shade-dark;
+    }
+
+    &.active {
+      background: $color-shade-darkest;
+      color: $base-link-color-active;
+      text-shadow: 0 1px 0 $color-shadow-light;
+    }
+  }
+
   .fs_modal_btn {
     color: $color-shade-light;
 
