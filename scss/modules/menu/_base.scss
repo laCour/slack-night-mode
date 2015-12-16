@@ -1,5 +1,5 @@
 .menu {
-  background: $color-base;
+  background: $color-shade-dark;
   border: 0;
   box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
@@ -46,7 +46,7 @@
 
   .section_header {
     .header_label {
-      background-color: $color-base;
+      background-color: $color-shade-dark;
       color: $color-highlight;
     }
 
@@ -57,9 +57,9 @@
 
   ul li {
     a {
-      background: $color-base;
+      background: $color-shade-dark;
       border-bottom: 0;
-      color: $base-link-color;
+      color: $base-font-color;
 
       &.delete_link {
         color: $color-red;
@@ -67,9 +67,9 @@
     }
 
     &.highlighted a {
-      background: $color-shade-darkest;
-      border-bottom-color: $color-base;
-      color: $base-link-color-active;
+      background: $color-base;
+      border-bottom-color: $color-shade-darkest;
+      color: $base-font-color;
       text-shadow: 0 1px 0 $color-shadow-light;
 
       &.delete_link {
@@ -91,9 +91,9 @@
   }
 
   &:not(.keyboard_active) ul li:hover:not(.disabled) a {
-    background: $color-shade-darkest;
-    border-bottom-color: $color-base;
-    color: $base-link-color-active;
+    background: $color-base;
+    border-bottom-color: $color-shade-darkest;
+    color: $base-font-color;
     text-shadow: 0 1px 0 $color-shadow-light;
 
     &.delete_link {
