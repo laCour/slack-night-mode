@@ -1,69 +1,87 @@
-#lightbox_dialog {
-  &.modal {
-    .lightbox_image {
-      background: $color-shade-darkest;
-      box-shadow: 0 1px 15px $color-shadow-dark;
+.fs_modal_file_viewer_header {
+  background-color: $color-shade-dark;
+  box-shadow: 0 1px 0 $color-shadow-dark;
+
+  .btn {
+    color: $base-font-color;
+  }
+
+  .star {
+    color: $color-highlight;
+  }
+
+  .control_btn,
+  a.control_btn {
+    color: $base-font-color;
+
+    &:link,
+    &:visited {
+      color: $base-font-color;
     }
 
-    .icon_new_window {
-      color: rgba($base-font-color, 0.5) !important;
+    &:focus,
+    &:hover {
+      color: $color-highlight;
     }
 
-    .lightbox_meta {
-      background: rgba($color-shade-darkest, 0.75);
+    &.active,
+    &:active {
+      background: $color-shade-light;
+    }
+  }
 
-      &:hover {
-        background: $color-base;
+  .file_size {
+    color: $color-highlight;
+  }
 
-        .icon_new_window {
-          color: $base-font-color !important;
-        }
+  .close_btn {
+    &:after {
+      border-right: 1px solid $color-shade-light;
+    }
+  }
+}
+
+.fs_modal_file_viewer_content {
+  .viewer {
+    background-color: $color-shade-darkest;
+    color: $base-font-color !important;
+
+    .next_btn,
+    .previous_btn {
+      .ts_icon {
+        background: $color-shade-light;
+        box-shadow: 0 1px 1px 0 $color-shadow-medium;
       }
 
-      .title {
+      &:focus,
+      &:hover {
+        background: rgba($color-shade-lightest, 0.25);
         color: $base-font-color;
+      }
 
-        a {
-          color: $base-link-color;
-
-          &:hover {
-            color: $base-link-color-active;
-          }
+      &[disabled] {
+        &:focus,
+        &:hover {
+          color: rgba($color-highlight, 0.8);
         }
       }
     }
+  }
 
-    .member {
-      color: $base-font-color !important;
-    }
+  .comment_panel {
+    background-color: $color-shade-darkest;
+    box-shadow: -1px 0 0 $color-shadow-medium;
+  }
 
-    &.loading {
-      background: $color-shadow-dark;
-      box-shadow: 0 1px 5px $color-shadow-dark;
-    }
+  .comment_header {
+    border-bottom: 1px solid $color-shade-dark;
+  }
 
-    .close {
-      background: $color-base;
-      border: 2px solid $color-shade-lightest;
-      box-shadow: 0 1px 2px $color-shadow-dark;
-      color: $base-font-color;
+  .no_comment {
+    color: $color-highlight;
+  }
 
-      &:hover {
-        box-shadow: 0 1px 2px $color-shadow-dark;
-      }
-    }
-
-    .lightbox_nav {
-      background: $color-base;
-      border: 3px solid $color-shade-lightest;
-      box-shadow: 0 1px 1px rgba($color-shadow-dark, 0.3);
-      color: $base-font-color;
-      text-shadow: 0 1px 1px rgba($color-shadow-dark, 0.3);
-
-      &:not(.faded):hover {
-        box-shadow: 0 1px 2px rgba($color-shadow-dark, 0.5);
-        text-shadow: 0 1px 2px rgba($color-shadow-dark, 0.5);
-      }
-    }
+  .comment_close_btn {
+    color: $base-font-color;
   }
 }
