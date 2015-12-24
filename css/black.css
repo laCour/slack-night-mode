@@ -897,6 +897,10 @@
   .fs_modal_file_viewer_content .comment_header { border-bottom: 1px solid #363636; }
   .fs_modal_file_viewer_content .no_comment { color: #949494; }
   .fs_modal_file_viewer_content .comment_close_btn { color: #e6e6e6; }
+  .mini_file_profile .meta_data { color: #949494; }
+  .mini_file_profile .author .member { color: #949494 !important; }
+  .mini_file_profile .title { color: #e6e6e6; }
+  .mini_file_profile .bullet { color: #949494; }
   #edit_team_profile_container input:disabled, #edit_team_profile_container select:disabled { background: #545454; border: 1px solid #000; }
   #edit_team_profile_container .filter_select.disabled { background: #545454; }
   #edit_team_profile_container .filter_select.disabled input { background: #545454; }
@@ -1008,7 +1012,7 @@
   .menu_member_user_details { background: #363636; border-bottom: 1px solid #545454; color: #e6e6e6; }
   .menu_member_user_details .member_name { color: #949494; }
   .mini, .dull_grey, .flat_grey, .charcoal_grey, .ts_tip_tip .subtle_silver { color: #e6e6e6 !important; }
-  .sky_blue, .plastic_grey, .indifferent_grey, .cloud_silver { color: #949494 !important; }
+  .sky_blue, .havana_blue, .plastic_grey, .indifferent_grey, .cloud_silver { color: #949494 !important; }
   .clear_blue { color: #949494 !important; }
   .candy_red_bg { background-color: #bf360c !important; }
   .neutral_white_bg { background-color: #222 !important; }
