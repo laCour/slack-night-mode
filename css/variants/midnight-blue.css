@@ -545,7 +545,7 @@
   pre span.mention { padding: 2px 0 !important; }
   #page pre, body > pre { background: #000; color: #00b9f2 !important; }
   body > pre { background: #444; }
-  code { background-color: #000; border: 1px solid #111; color: #1793d1; }
+  code { background-color: #000; border: 1px solid #111; color: #00b9f2; }
   .file_list_item.snippet .snippet_preview { background: #000; }
   .snippet_preview, .snippet_body { background: #000; }
   .snippet_preview pre, .snippet_body pre { color: #00b9f2; }
@@ -1035,6 +1035,28 @@
   #msgs_scroller_div { margin-left: 1px; }
   .client_header_icon { -moz-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); -webkit-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); }
   .para_menu .options a span, .para_menu a.trigger.pilcrow.active, .para_menu a.trigger.pilcrow:hover, .textstyle_menu .buttons a span, .textstyle_menu.style a span { -moz-filter: brightness(10); -webkit-filter: brightness(10); filter: brightness(10); }
+  body.api header .header_links a { color: #00b9f2; }
+  body.api header .header_links a.active { background: #333; }
+  body.api pre code { color: #00b9f2; }
+  body.api #page_contents .card { background: #111; }
+  body.api .scopes_to_methods code { color: #00b9f2; }
+  body.api .scopes_to_methods .selected code { color: #bf360c; }
+  body.api .scopes_to_methods li { color: #00b9f2; }
+  body.api .scopes_to_methods .selected li { color: #00b9f2; }
+  body.api .section_title { border-bottom: 2px solid #000; }
+  body.api .example { border: 1px solid #444; }
+  body.api .example h5 { background-color: #444; color: #00b9f2; }
+  body.api .alert { background: #333; }
+  nav#api_nav { background: transparent; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  nav#api_nav h5 { color: #00b9f2; }
+  nav#api_nav #api_sections ul li a { border-bottom: 1px solid #111; color: #1793d1; }
+  nav#api_nav #api_sections ul li a:hover { background: #333; border-radius: 0.25rem; color: #00b9f2; }
+  nav#api_nav #api_sections ul li a.active { background: #333; color: #00b9f2; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  nav#api_nav #api_sections ul li a.active:hover { background: #333; color: #00b9f2; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  nav#api_nav #footer { background: transparent; }
+  nav#api_nav #footer #footer_nav a { color: #1793d1; }
+  nav#api_nav #footer #footer_signature { color: #bf360c; }
+  nav#api_nav #footer ul a:hover { color: #299bd4; }
   #page .media_list { background-color: #111; border: 1px solid #333; }
   #page .media_list > li + li:before { border-top: 1px solid #333; }
   #page .media_list > li.interactive a { color: #00b9f2; }
@@ -1053,7 +1075,7 @@
   #page ul.small_arrow_list li + li a { border-top: 1px solid transparent; }
   #page .tag { background-color: #000; border: 1px solid #111; }
   #page .tag:hover { background-color: #333 !important; }
-  .large_app_icon { border: 1px solid #111; }
+  .apps_directory .app_card, .apps_directory .large_app_card { background-color: #000; border: 1px solid #111; }
   nav.top.apps_nav { background: transparent; }
   nav.top.apps_nav.persistent .nav_title { border-color: #333; }
   nav.top.apps_nav.clear_nav .nav_title a { color: #00b9f2; }
@@ -1066,6 +1088,59 @@
   .apps_typeahead .suggestion:hover { background: #000; }
   .apps_typeahead .suggestion.active { background: #333 !important; color: #00b9f2; }
   .search_input_container .search_input:focus ~ .icon_search_input { color: #00b9f2; }
+  body.oauth_page { background: #111; }
+  body.oauth_page .oauth_header { background: #000 !important; }
+  body.oauth_page .alert { border-color: #772207; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  body.oauth_page .alert.alert_warning { border-left-color: #8f2809; }
+  body.oauth_page .alert.alert_warning .bottom_border { border-color: #8f2809; }
+  body.oauth_page .alert_text { background: #bf360c; color: #00b9f2; }
+  body.oauth_page .alert_text i:hover { color: #00b9f2 !important; }
+  body.oauth_page .darken_hover:hover { color: #1793d1 !important; }
+  body.oauth_page .team:hover { background: #000; border: 1px solid #333 !important; }
+  body.oauth_page .safe_scopes { border-top: 1px solid #000; }
+  body.oauth_page .yolk_orange, body.oauth_page .subtle_silver { color: #00b9f2 !important; }
+  body.oauth_page .top_border { border-color: #000; }
+  .section_divider { border-bottom: 2px solid #000; }
+  .intro h1, .intro h2 { color: #00b9f2; }
+  .plans { background-color: #000; }
+  .plan { background: #000; }
+  .plan h4 { color: #00b9f2; }
+  .plan li span { color: #00b9f2; }
+  .plan_card { color: #00b9f2; text-shadow: 0 3px 1px rgba(0, 0, 0, 0.15); }
+  .plan_card h3 { color: #00b9f2; }
+  a.plan_price_details { color: #00b9f2; }
+  #plan_modal .plan_preview .plan { color: #00b9f2; text-shadow: 0 3px 1px rgba(0, 0, 0, 0.15); }
+  #plan_modal .plan_preview .plan h3 { color: #00b9f2; }
+  #plan_modal .plan_preview .preview_details { color: #1793d1; }
+  .ready_to_try_slack.bottom { background-color: #000; }
+  .from_the_wall_of_love { background-color: #000; border-bottom: 2px solid #000; }
+  .from_the_wall_of_love h3 .ts_icon_heart_o:before { color: #bf360c; }
+  .from_the_wall_of_love:before { background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 0), #000), -moz-linear-gradient(right, rgba(255, 255, 255, 0), #000); background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 0), #000), -ms-linear-gradient(right, rgba(255, 255, 255, 0), #000); background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), #000), -o-linear-gradient(right, rgba(255, 255, 255, 0), #000); background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #000), -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #000); }
+  .from_the_wall_of_love:after { background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #000), -moz-linear-gradient(left, rgba(255, 255, 255, 0), #000); background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), #000), -ms-linear-gradient(left, rgba(255, 255, 255, 0), #000); background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #000), -o-linear-gradient(left, rgba(255, 255, 255, 0), #000); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #000), -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #000); }
+  .tweet_carousel_controls a { color: #1793d1; }
+  .happy_customers { background-color: #000; }
+  .new_signup.top { color: #00b9f2; }
+  .new_signup.bottom .section_content { border: 1px solid #000; }
+  .fair_billing_policy { background-color: #000; border-top: 10px solid #000; }
+  .our_pricing_perspective h3, .nonprofit_pricing h3 { color: inherit; }
+  .need_a_hand { background-color: #222; border-top: 10px solid #111; }
+  .need_a_hand .btn_info { background-color: #222 !important; color: #00b9f2 !important; }
+  .common_questions_and_resources { background-color: #000; }
+  .common_questions_and_resources ul.question_list li { border-bottom: 2px solid #000; }
+  .common_questions_and_resources ul.question_list li h4 a { color: #1793d1; }
+  .common_questions_and_resources ul.question_list li h4 a:hover { color: #1793d1; }
+  .common_questions_and_resources ul.question_list li h4 a i.ts_icon:before { color: #1793d1; }
+  .common_questions_and_resources ul.question_list li p, .common_questions_and_resources ul.question_list li ul { color: #00b9f2; }
+  .common_questions_and_resources ul.question_list li.expanded h4 a i.ts_icon:before { color: #1793d1; }
+  .common_questions_and_resources ul.question_list li:hover { background: #000; }
+  .common_questions_and_resources ul.question_list li.expanded:hover h4 a i.ts_icon:before { color: #00b9f2; }
+  .common_questions_and_resources ul.getting_started_list li { border-bottom: 2px solid #000; }
+  .common_questions_nav ul li a { color: #00b9f2; }
+  .common_questions_nav ul li a:hover { background-color: #333; color: #00b9f2; }
+  .common_questions_nav ul li a.active { background-color: #333; color: #00b9f2; }
+  .back_to_the_top { background-color: #000; }
+  .back_to_the_top .btn { color: #00b9f2 !important; }
+  .payment_per_month { color: #00b9f2 !important; }
   rocket { color: #00b9f2; }
   rocket a { color: #1793d1; }
   rocket a caret:before { background-color: #111; border-color: #111; }
@@ -1179,6 +1254,7 @@
   .para_menu .options a:hover { border: 1px solid #333; }
   .para_menu .options a.active { background-color: #222; border: 1px solid #111; }
   nav.top.persistent { background: #111; }
+  nav.top.persistent .logo { background-position: 50% 0 !important; }
   .widescreen #header_team_name a i { margin-left: 1.5em; }
   .widescreen #user_menu { border-right: none; }
   header #menu_toggle { color: #1793d1; }
@@ -1293,12 +1369,10 @@
   #last_day p.summary strong { color: #00b9f2; }
   header .menu_icon, #stats_too_soon img, header #header_logo { display: none; }
   .service_group a, .file_actions_cog { color: #1793d1 !important; }
-  .plan, #plan_preview .plan { background: #000; color: #00b9f2; }
   .plastic_row h3, .plastic_row h4 a, .plastic_row .chevron { color: #00b9f2; }
   .service_row a.summary, .accordion_section h4 a { color: #00b9f2; }
   .card h3 a, header #header_team_nav li a { color: #00b9f2; }
   #stats_too_soon_copy p, table.mini { color: #00b9f2; }
-  .plan_details .column:not(.no_hover):hover, .plan_details .column.active { color: #00b9f2; }
   .preview_details, .cost_explanation { color: #00b9f2; }
   .icon_plus, nav.top.persistent ul a { color: #00b9f2; }
   footer ul a { color: #00b9f2; }
@@ -1346,6 +1420,9 @@
   #channel_specific_settings .extra_right_border { border-right: 3px solid #333; }
   #channel_specific_settings .revert_to_default { color: #1793d1; }
   #channel_specific_settings .revert_to_default:hover { color: #bf360c; }
+  #page_contents .card { background: rgba(0, 0, 0, 0.5); }
+  #page_contents .card p { text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+  #page_contents .card .mustard_yellow { color: #bf360c !important; }
   body > .status .current_status { background: #000; }
   body > .section.main { background: #000; box-shadow: none; }
   .calendar_incident { border-top: 1px solid #444; }
