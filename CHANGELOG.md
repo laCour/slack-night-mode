@@ -1,5 +1,6 @@
 # Changelog
 
+* **19/01/16**: Added styles for new quick search. Corrected styles for inline team menu's data (e.g. timezones).
 * **24/12/15**: Corrected styles for image viewer meta information (#37). Corrected style for channel invite link (efafa56).
 * **17/12/15**: Added styles for new image viewer (#34). Updated class for flexpane header buttons (#35).
 * **15/12/15 - Major Release**: Added styles for new app directory (#33), status page (#27), and the new preferences modal (7f9973b). Improved menu contrast (7c5e5ac). Corrected square hover background for team menu (21c7de0).
