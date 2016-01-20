@@ -1,5 +1,6 @@
 # Changelog
 
+* **20/01/16 - Major Release**:  Added styles for OAuth pages (d0d0cd9), 404 pages (786a690), pricing page (282c534), and for the API documentation (1f64964). Use white Slack logo on pages (0e4bbbc). Improved readability of code snippets (be0e3d5). Corrected styles for updated app directory (f30407e).
 * **19/01/16**: Added styles for new quick search. Corrected styles for inline team menu's data (e.g. timezones).
 * **24/12/15**: Corrected styles for image viewer meta information (#37). Corrected style for channel invite link (efafa56).
 * **17/12/15**: Added styles for new image viewer (#34). Updated class for flexpane header buttons (#35).
