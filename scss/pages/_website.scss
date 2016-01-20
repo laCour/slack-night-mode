@@ -901,3 +901,15 @@ a.two_factor_choice {
     }
   }
 }
+
+#page_contents .card {
+  background: rgba($color-base, 0.5);
+
+  p {
+    text-shadow: 0 0 1px $color-shadow-dark;
+  }
+
+  .mustard_yellow {
+    color: $color-red !important;
+  }
+}
