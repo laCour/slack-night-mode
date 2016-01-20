@@ -63,26 +63,41 @@
   }
 }
 
-#member_preview_scroller .member_details.feature_custom_fields,
-#member_preview_web_container .member_details.feature_custom_fields,
-.menu_member_header .member_details.feature_custom_fields {
-  .member_name_and_presence .member_name {
-    color: $base-font-color;
-  }
+#member_preview_scroller,
+#member_preview_web_container,
+.menu_member_header {
+  .member_details {
+    .member_name_and_presence .member_name {
+      color: $base-font-color;
+    }
 
-  .member_title {
-    color: $base-font-color;
-  }
+    .member_title {
+      color: $base-font-color;
+    }
 
-  .member_restriction {
-    color: $color-highlight;
+    .member_restriction,
+    .member_timezone_value {
+      color: $color-highlight;
 
-    .ts_icon_question_circle {
-      &:focus,
-      &:hover {
+      a {
         color: $base-link-color;
+
+        &:hover {
+          color: $base-link-color-active;
+        }
+      }
+
+      .ts_icon_question_circle {
+        &:focus,
+        &:hover {
+          color: $base-link-color;
+        }
       }
     }
+  }
+
+  .member_details_divider {
+    border-color: $color-shade-dark;
   }
 }
 
