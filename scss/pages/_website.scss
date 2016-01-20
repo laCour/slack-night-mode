@@ -890,7 +890,7 @@ a.two_factor_choice {
 }
 
 #page_contents .card {
-  background: rgba($color-base, 0.5);
+  background: $color-shade-dark;
 
   p {
     text-shadow: 0 0 1px $color-shadow-dark;

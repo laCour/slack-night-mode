@@ -1420,7 +1420,7 @@
   #channel_specific_settings .extra_right_border { border-right: 3px solid #61485e; }
   #channel_specific_settings .revert_to_default { color: #a3839f; }
   #channel_specific_settings .revert_to_default:hover { color: #bf360c; }
-  #page_contents .card { background: rgba(62, 49, 60, 0.5); }
+  #page_contents .card { background: #4d394b; }
   #page_contents .card p { text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
   #page_contents .card .mustard_yellow { color: #bf360c !important; }
   body > .status .current_status { background: #372c36; }
