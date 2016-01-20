@@ -1,0 +1,51 @@
+body.oauth_page {
+  background: $color-shade-dark;
+
+  .oauth_header {
+    background: $color-base !important;
+  }
+
+  .alert {
+    border-color: darken($color-red, 15%);
+    text-shadow: 0 1px 0 $color-shadow-medium;
+
+    &.alert_warning {
+      border-left-color: darken($color-red, 10%);
+
+      .bottom_border {
+        border-color: darken($color-red, 10%)
+      }
+    }
+  }
+
+  .alert_text {
+    background: $color-red;
+    color: $base-font-color;
+
+    i:hover {
+      color: $base-font-color !important;
+    }
+  }
+
+  .darken_hover:hover {
+    color: $color-highlight !important;
+  }
+
+  .team:hover {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-light !important;
+  }
+
+  .safe_scopes {
+    border-top: 1px solid $color-base;
+  }
+
+  .yolk_orange,
+  .subtle_silver {
+    color: $base-font-color !important;
+  }
+
+  .top_border {
+    border-color: $color-base;
+  }
+}
