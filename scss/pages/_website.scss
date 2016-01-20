@@ -624,12 +624,6 @@ header #header_logo {
   color: $base-link-color !important;
 }
 
-.plan,
-#plan_preview .plan {
-  background: $color-base;
-  color: $base-font-color;
-}
-
 .plastic_row {
   h3,
   h4 a,
@@ -651,13 +645,6 @@ header #header_team_nav li a {
 #stats_too_soon_copy p,
 table.mini {
   color: $base-font-color;
-}
-
-.plan_details .column {
-  &:not(.no_hover):hover,
-  &.active {
-    color: $base-font-color;
-  }
 }
 
 .preview_details,
