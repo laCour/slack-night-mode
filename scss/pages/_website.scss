@@ -2,6 +2,10 @@
 
 nav.top.persistent {
   background: $color-shade-dark;
+
+  .logo {
+    background-position: 50% 0 !important;
+  }
 }
 
 .widescreen {
