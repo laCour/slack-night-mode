@@ -1,0 +1,71 @@
+ts-jumper {
+  ts-jumper-container {
+    background: $color-base;
+    box-shadow: 0 1px 10px $color-shadow-dark;
+  }
+
+  ts-jumper-help {
+    color: $color-highlight;
+  }
+
+  input[type=text] {
+    border: 1px solid $color-shade-darkest !important;
+    color: $base-font-color;
+
+    &:focus {
+      border: 1px solid rgba($color-shade-dark, 0.8) !important;
+      color: $base-font-color;
+    }
+
+    &::-webkit-input-placeholder,
+    &:focus::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &:focus:-moz-placeholder,
+    &::-moz-placeholder,
+    &:focus::-moz-placeholder {
+      color: $base-font-color;
+    }
+  }
+
+  ol {
+    li {
+      color: $base-font-color;
+
+      .channel_not_member,
+      .match_score,
+      .member_real_name + .member_username,
+      .member_username + .member_real_name,
+      ts-icon {
+        color: $color-highlight;
+      }
+
+      .unread_count {
+        background: $color-red;
+        color: $base-font-color;
+        text-shadow: 0 1px 0 $color-shadow-medium;
+      }
+
+      &.highlighted {
+        background: $color-shade-lightest;
+        color: $base-font-color;
+      }
+    }
+
+    &:not(.keyboard_active) li:hover {
+      background: $color-shade-lightest;
+      color: $base-font-color;
+    }
+
+    li.highlighted,
+    &:not(.keyboard_active) li:hover {
+      .channel_not_member,
+      .match_score,
+      .member_real_name + .member_username,
+      .member_username + .member_real_name,
+      i.presence_icon,
+      ts-icon {
+        color: $base-font-color;
+      }
+    }
+  }
+}
