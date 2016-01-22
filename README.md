@@ -5,6 +5,8 @@ A Stylish style for easy Slack theming. [CC0](http://creativecommons.org/publicd
 
 This theme requires that you use the Stylish extension for your browser (available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/), [Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe), and [Safari](http://sobolev.us/stylish/)).
 
+If you're using the desktop application on Linux or Windows, you can find out how to use this theme at the [bottom of my blog post](http://blog.lacour.me/making-slack-night-mode#toc_1).
+
 ## Build
 
 All themes can be built by running `make` (you will need [SassC](http://sass-lang.com/libsass)).
