@@ -214,7 +214,7 @@
   #im-list li.member.active .presence, #starred-list li.member.active .presence { color: #00b9f2; }
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { color: #1793d1; text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #menu.file_menu { box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
-  #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) { background: #000; }
+  #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) { background: #111; }
   #menu.file_menu ul li.highlighted > a, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) > a { color: #299bd4; }
   #menu.file_menu ul li.highlighted i.file_menu_icon, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) i.file_menu_icon { color: #00b9f2; }
   #menu.file_menu ul li > a { color: #1793d1; }
@@ -1141,31 +1141,31 @@
   .back_to_the_top { background-color: #000; }
   .back_to_the_top .btn { color: #00b9f2 !important; }
   .payment_per_month { color: #00b9f2 !important; }
-  rocket { color: #00b9f2; }
-  rocket a { color: #1793d1; }
-  rocket a caret:before { background-color: #111; border-color: #111; }
-  rocket hr { border-color: #111; }
-  rocket code, rocket .pre.text, rocket > div > pre { background-color: #000; }
-  rocket .blockquote.text:before, rocket > div > blockquote:before { background-color: #000; }
-  rocket .cl.text { background-color: #000; border-bottom: 1px solid #111; }
-  rocket .cl.text .checkbox.checked + li { color: #1793d1; }
-  rocket > div > .checklist { background-color: #000; border-bottom: 1px solid #111; }
-  rocket > div > .checklist .checkbox.checked + li { color: #1793d1; }
-  rocket > div > .checklist li:before { background: #111; }
-  rocket > div > .checklist li.checked { color: #1793d1; }
-  rocket .unfurl .unfurl-container { background-color: #000; }
-  rocket .unfurl .unfurl-container.unfurl-render-failed { background-color: rgba(191, 54, 12, 0.1); }
-  rocket .unfurl .attachment_bar { background-color: #111 !important; }
-  rocket .unfurl .unfurl-remove:before { color: #1793d1; }
-  rocket .unfurl .unfurl-remove:hover:before { color: #00b9f2; }
-  rocket .unfurl.selected .unfurl-container { background-color: rgba(68, 68, 68, 0.5); }
-  rocket .unfurl.selected .unfurl-container .attachment_bar { background-color: rgba(68, 68, 68, 0.5) !important; }
-  rocket caret:before { background-color: #111; border: 1px solid #111; }
-  rocket carriage { background-color: rgba(68, 68, 68, 0.5); }
-  rocket selection { background-color: rgba(68, 68, 68, 0.5); }
-  rocket selection:after, rocket selection:before { background-color: rgba(68, 68, 68, 0.5); }
-  rocket ime { background-color: rgba(68, 68, 68, 0.5); }
-  rocket .hr.selected hr { box-shadow: 0 0 0 5px rgba(68, 68, 68, 0.5); }
+  ts-rocket { color: #00b9f2; }
+  ts-rocket a { color: #1793d1; }
+  ts-rocket a caret:before { background-color: #111; border-color: #111; }
+  ts-rocket hr { border-color: #111; }
+  ts-rocket code, ts-rocket .pre.text, ts-rocket > div > pre { background-color: #000; }
+  ts-rocket .blockquote.text:before, ts-rocket > div > blockquote:before { background-color: #000; }
+  ts-rocket .cl.text { background-color: #000; border-bottom: 1px solid #111; }
+  ts-rocket .cl.text .checkbox.checked + li { color: #1793d1; }
+  ts-rocket > div > .checklist { background-color: #000; border-bottom: 1px solid #111; }
+  ts-rocket > div > .checklist .checkbox.checked + li { color: #1793d1; }
+  ts-rocket > div > .checklist li:before { background: #111; }
+  ts-rocket > div > .checklist li.checked { color: #1793d1; }
+  ts-rocket .unfurl .unfurl-container { background-color: #000; }
+  ts-rocket .unfurl .unfurl-container.unfurl-render-failed { background-color: rgba(191, 54, 12, 0.1); }
+  ts-rocket .unfurl .attachment_bar { background-color: #111 !important; }
+  ts-rocket .unfurl .unfurl-remove:before { color: #1793d1; }
+  ts-rocket .unfurl .unfurl-remove:hover:before { color: #00b9f2; }
+  ts-rocket .unfurl.selected .unfurl-container { background-color: rgba(68, 68, 68, 0.5); }
+  ts-rocket .unfurl.selected .unfurl-container .attachment_bar { background-color: rgba(68, 68, 68, 0.5) !important; }
+  ts-rocket caret:before { background-color: #111; border: 1px solid #111; }
+  ts-rocket carriage { background-color: rgba(68, 68, 68, 0.5); }
+  ts-rocket selection { background-color: rgba(68, 68, 68, 0.5); }
+  ts-rocket selection:after, ts-rocket selection:before { background-color: rgba(68, 68, 68, 0.5); }
+  ts-rocket ime { background-color: rgba(68, 68, 68, 0.5); }
+  ts-rocket .hr.selected hr { box-shadow: 0 0 0 5px rgba(68, 68, 68, 0.5); }
   .focusing_input_field space.inactive .unfurl.selected .unfurl-container { background-color: #000; }
   nav { background: #111; }
   nav .space { background-color: #111; box-shadow: 0 1px rgba(0, 0, 0, 0.25), 0 2px rgba(0, 0, 0, 0.15), 0 3px rgba(0, 0, 0, 0.15); }
