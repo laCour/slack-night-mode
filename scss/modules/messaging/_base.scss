@@ -46,10 +46,10 @@ ts-message {
   }
 
   &.highlight {
-    background: rgba($color-red, 0.75);
+    background: rgba($color-red, 0.4);
 
     &:hover {
-      background: rgba($color-shade-darkest, 0.15);
+      background: rgba($color-red, 0.4);
     }
   }
 
@@ -124,8 +124,7 @@ ts-message {
     color: $color-highlight;
   }
 
-  .mention,
-  &.highlight {
+  .mention {
     background: $color-shade-light;
     border: 1px solid $color-shade-lightest;
     border-radius: 3px;
