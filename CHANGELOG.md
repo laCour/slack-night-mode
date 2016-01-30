@@ -1,5 +1,6 @@
 # Changelog
 
+* **29/01/16**: Added styles for split pages (#39). Corrected styles for floating menus on error pages (acfc844). Corrected overlapping issue with scrollbar (d6cf363). Corrected styles for highlighted messages (42d0efd).
 * **23/01/16**: Corrected styles for post editor (#38). Corrected background color issue for hovered file menu items (890d811).
 * **20/01/16 - Major Release**:  Added styles for OAuth pages (d0d0cd9), 404 pages (786a690), pricing page (282c534), and for the API documentation (1f64964). Use white Slack logo on pages (0e4bbbc). Improved readability of code snippets (be0e3d5). Corrected styles for updated app directory (f30407e).
 * **19/01/16**: Added styles for new quick search. Corrected styles for inline team menu's data (e.g. timezones).
