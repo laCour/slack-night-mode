@@ -900,3 +900,9 @@ a.two_factor_choice {
     color: $color-red !important;
   }
 }
+
+@media only screen and (min-width: 1441px) {
+  .widescreen:not(.nav_open) nav#site_nav {
+    background: rgba($color-base, 0.9);
+  }
+}
