@@ -384,8 +384,8 @@
   ts-message .in_reply_to { background: #000; color: #1793d1; }
   ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_star_display) { border: 1px solid #333; }
   ts-message.unprocessed { color: rgba(0, 185, 242, 0.75); }
-  ts-message.highlight { background: rgba(191, 54, 12, 0.75); }
-  ts-message.highlight:hover { background: rgba(0, 0, 0, 0.15); }
+  ts-message.highlight { background: rgba(191, 54, 12, 0.4); }
+  ts-message.highlight:hover { background: rgba(191, 54, 12, 0.4); }
   ts-message.delete_mode, ts-message.multi_delete_mode { background: rgba(191, 54, 12, 0.75); }
   ts-message.automated .message_body { color: rgba(0, 185, 242, 0.8); }
   ts-message .action_hover_container, ts-message .message_actions_container message_actions { border: 1px solid #000; }
@@ -400,7 +400,7 @@
   ts-message .meta.msg_inline_img_toggler .member, ts-message .meta.msg_inline_img_toggler .service_link, ts-message .meta.msg_inline_file_preview_toggler .member, ts-message .meta.msg_inline_file_preview_toggler .service_link { color: #1793d1 !important; }
   ts-message .meta.msg_inline_img_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_img_toggler a, ts-message .meta.msg_inline_file_preview_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_file_preview_toggler a { color: #1793d1 !important; }
   ts-message .pinned_item_message_header { color: #1793d1; }
-  ts-message .mention, ts-message.highlight { background: #333; border: 1px solid #444; border-radius: 3px; color: #00b9f2; padding: 0 3px; }
+  ts-message .mention { background: #333; border: 1px solid #444; border-radius: 3px; color: #00b9f2; padding: 0 3px; }
   ts-message a .mention { color: #00b9f2; }
   .selecting_messages ts-message.multi_delete_mode:hover { background: rgba(191, 54, 12, 0.75); }
   .selecting_messages ts-message:hover { background: #000; }
@@ -1033,6 +1033,7 @@
   .flexpane_grey_bg { background-color: #222 !important; }
   .sky_blue_bg { background-color: #333 !important; }
   #msgs_scroller_div { margin-left: 1px; }
+  .monkey_scroll_bar { z-index: 99; }
   .client_header_icon { -moz-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); -webkit-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); }
   .para_menu .options a span, .para_menu a.trigger.pilcrow.active, .para_menu a.trigger.pilcrow:hover, .textstyle_menu .buttons a span, .textstyle_menu.style a span { -moz-filter: brightness(10); -webkit-filter: brightness(10); filter: brightness(10); }
   body.api header .header_links a { color: #00b9f2; }
@@ -1423,7 +1424,20 @@
   #page_contents .card { background: #111; }
   #page_contents .card p { text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
   #page_contents .card .mustard_yellow { color: #bf360c !important; }
+  @media only screen and (min-width: 1441px) { .widescreen:not(.nav_open) nav#site_nav { background: rgba(0, 0, 0, 0.9); } }
   body > .status .current_status { background: #000; }
   body > .section.main { background: #000; box-shadow: none; }
   .calendar_incident { border-top: 1px solid #444; }
-  .calendar_day.future { background-color: #444; } }
+  .calendar_day.future { background-color: #444; }
+  .fs_split { background-color: #000; }
+  .fs_split .desc { color: #00b9f2; }
+  .fs_split .fs_split_pane .fs_split_flex_wrapper .fs_split_well { background-color: #111; color: #00b9f2; }
+  .fs_split .fs_split_pane .fs_split_flex_wrapper .fs_split_well a { color: #00b9f2; }
+  .fs_split .header_error_message { background: #f15626; border-left: 0.5rem solid #bf360c; }
+  .fs_split .error_message { color: #bf360c; }
+  .fs_split .error input, .fs_split .error textarea { background: #f15626; border: 1px solid #bf360c; }
+  .fs_split .error input:focus, .fs_split .error textarea:focus { border-color: #f15626; box-shadow: 0 0 7px rgba(191, 54, 12, 0.4); }
+  .fs_split_pane_left { background-color: #000; color: #00b9f2; }
+  .fs_split_pane_right { background-color: #000; }
+  .fs_split_footer a { color: inherit; }
+  .fs_split_footer a:hover, .fs_split_footer a:focus { color: inherit; } }
