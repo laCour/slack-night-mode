@@ -380,5 +380,9 @@ html.no_touch a.filetype_button_web:hover {
         color: $color-highlight;
       }
     }
+
+    .filetype_image {
+      background-color: $color-shade-darkest;
+    }
   }
 }
