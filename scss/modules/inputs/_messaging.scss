@@ -41,10 +41,6 @@
     .emo_menu {
       color: rgba($base-font-color, 0.6);
     }
-
-    #primary_file_button:not(:hover) {
-      border-color: $color-shade-darkest;
-    }
   }
 
   &.offline {
@@ -58,6 +54,11 @@
       color: $color-highlight;
     }
   }
+}
+
+#message_edit_form.focus #primary_file_button:not(:hover),
+#messages-input-container.focus #primary_file_button:not(:hover) {
+  border-color: $color-shade-darkest;
 }
 
 #primary_file_button {
