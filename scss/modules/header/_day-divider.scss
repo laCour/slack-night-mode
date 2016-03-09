@@ -10,3 +10,13 @@
     background: $color-shade-dark;
   }
 }
+
+.day_container {
+  .day_msgs {
+    border-top: 1px solid $color-shade-dark;
+  }
+
+  &.unread_day_container .day_msgs {
+    border-color: $color-red;
+  }
+}
