@@ -1,15 +1,117 @@
-#header {
-  background: $color-base;
+#client_header .channel_header {
+  .flex_header {
+    background: $color-base;
+  }
 
-  .client_header_button {
-    background: $color-shade-mid;
-    border: 1px solid $color-shade-dark;
+  .channel_name_container {
+    color: $base-font-color;
 
-    &:hover {
-      background: $color-shade-light;
-      border: 1px solid $color-shade-mid;
+    .channel_name {
+      color: $base-font-color;
+
+      &.muted {
+        color: $color-highlight;
+      }
+
+      #im_title.away {
+        color: $color-highlight;
+      }
+
+      ul li.mpdm_member.away {
+        color: $color-highlight;
+      }
+    }
+
+    .mute_container .muted_icon {
+      color: $color-highlight;
+
+      &:hover {
+        color: $color-red;
+      }
     }
   }
+
+  #channel_header_info {
+    background: $color-base;
+    color: $base-font-color;
+
+    .topic_divider {
+      color: $color-shade-dark;
+    }
+  }
+
+  .channel_title_info {
+    background: $color-base;
+    color: $color-highlight;
+
+    .divider_bar {
+      background: $color-shade-dark;
+    }
+
+    .channel_details_toggle {
+      color: $color-highlight;
+    }
+
+    .channel_actions_toggle {
+      color: $color-highlight;
+    }
+  }
+
+  .channel_header_icon {
+    color: $base-font-color;
+
+    &.channel_calls_button {
+      color: $color-highlight;
+    }
+
+    &#channel_actions_toggle {
+      &.active {
+        color: $base-font-color;
+      }
+    }
+
+    &#recent_mentions_toggle {
+      &:hover {
+        color: $color-red;
+      }
+    }
+
+    &#flex_menu_toggle {
+      &.active {
+        color: $base-font-color;
+      }
+
+      .flex_menu_download_circle {
+        background: $color-base;
+
+        canvas {
+          background: $color-base;
+        }
+      }
+    }
+
+    &#details_toggle,
+    &#recent_mentions_toggle,
+    &#stars_toggle {
+      &.active {
+        background: $color-shade-dark;
+
+        &:hover {
+          background: $color-shade-light;
+          color: $base-font-color;
+        }
+      }
+    }
+  }
+
+  .blue_hover:hover {
+    color: $base-font-color;
+  }
+}
+
+.channel_header_refresh #client_body:not(.onboarding)::before {
+  background: $color-base;
+  border-bottom: 1px solid $color-base;
 }
 
 #help_icon {
@@ -110,58 +212,6 @@
 #group_actions,
 #im_actions {
   color: $color-highlight;
-}
-
-#channel_header .star {
-  color: $color-highlight;
-}
-
-.channel_header_button {
-  border: 1px solid rgba($color-shade-lightest, 0.61);
-  color: $color-highlight;
-
-  &#details_toggle.active,
-  &#flex_menu_toggle.active,
-  &#recent_mentions_toggle.active,
-  &#stars_toggle.active {
-    background-color: $color-shade-lightest;
-    border-color: $color-shade-dark;
-    color: $base-font-color;
-
-    &:hover {
-      background-color: $color-shade-lightest;
-      border-color: rgba($color-shade-dark, 0.61);
-      color: $base-font-color;
-    }
-  }
-
-  &#details_toggle:hover {
-    color: $base-font-color;
-  }
-
-  &#recent_mentions_toggle {
-    &:hover {
-      color: $color-red;
-    }
-
-    &.jquery_hover:hover {
-      color: $base-font-color;
-    }
-  }
-
-  &#stars_toggle {
-    &.jquery_hover:hover {
-      color: $base-font-color;
-    }
-  }
-
-  &#flex_menu_toggle {
-    &.active:hover,
-    &.menu_open,
-    &:hover {
-      color: $base-link-color-active;
-    }
-  }
 }
 
 #rxn_toast_div {
