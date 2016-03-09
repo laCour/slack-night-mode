@@ -4,20 +4,15 @@
 
 .msg_inline_attachment_collapser,
 .msg_inline_attachment_expander,
-.msg_inline_audio_collapser,
-.msg_inline_audio_expander,
 .msg_inline_email_collapser,
 .msg_inline_email_expander,
 .msg_inline_file_preview_collapser,
 .msg_inline_file_preview_expander,
 .msg_inline_img_collapser,
 .msg_inline_img_expander,
-.msg_inline_other_collapser,
-.msg_inline_other_expander,
+.msg_inline_media_toggler,
 .msg_inline_room_preview_collapser,
-.msg_inline_room_preview_expander,
-.msg_inline_video_collapser,
-.msg_inline_video_expander {
+.msg_inline_room_preview_expander {
   color: $base-link-color;
 
   &:hover {
