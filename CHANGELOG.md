@@ -1,6 +1,6 @@
 # Changelog
 
-* **08/03/16**: Added styles for incoming calls (621dce9). Updated styles for inline media expanders (216082d). Updated styles for new channel header (3c2114d). Added styles for new inline channel topic editor (15da7cd). Added styles for new day containers (8185fe3). Updated styles for flexpane search refinement tabs (f227f34). Fixed background color on unloaded image thumbnails in the flexpane (f508a8d).
+* **08/03/16**: Added styles for incoming calls (621dce9). Updated styles for inline media expanders (216082d). Updated styles for new channel header (3c2114d). Added styles for new inline channel topic editor (15da7cd). Added styles for new day containers (8185fe3). Updated styles for flexpane search refinement tabs (f227f34). Fixed background color on unloaded image thumbnails in the flexpane (f508a8d). Updated styles for notifications (25d18fe).
 * **29/01/16**: Added styles for split pages (#39). Corrected styles for floating menus on error pages (acfc844). Corrected overlapping issue with scrollbar (d6cf363). Corrected styles for highlighted messages (42d0efd).
 * **23/01/16**: Corrected styles for post editor (#38). Corrected background color issue for hovered file menu items (890d811).
 * **20/01/16 - Major Release**:  Added styles for OAuth pages (d0d0cd9), 404 pages (786a690), pricing page (282c534), and for the API documentation (1f64964). Use white Slack logo on pages (0e4bbbc). Improved readability of code snippets (be0e3d5). Corrected styles for updated app directory (f30407e).
