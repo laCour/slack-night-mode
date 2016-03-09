@@ -163,7 +163,7 @@
   #message_edit_form .emo_menu, #messages-input-container .emo_menu { color: rgba(230, 230, 230, 0.3); }
   #message_edit_form .emo_menu.active .ts_icon_happy_smile, #message_edit_form .emo_menu:hover .ts_icon_happy_smile, #messages-input-container .emo_menu.active .ts_icon_happy_smile, #messages-input-container .emo_menu:hover .ts_icon_happy_smile { color: #828282; }
   #message_edit_form.focus .emo_menu, #messages-input-container.focus .emo_menu { color: rgba(230, 230, 230, 0.6); }
-  #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #000; }
+  #message_edit_form.focus #primary_file_button:not(:hover, :hover), #messages-input-container.focus #primary_file_button:not(:hover, :hover) { border-color: #000; }
   #message_edit_form.offline #message-input, #message_edit_form.offline #primary_file_button, #messages-input-container.offline #message-input, #messages-input-container.offline #primary_file_button { background-color: #363636 !important; }
   #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #363636; color: #949494; }
   #primary_file_button { background: padding-box #545454; border: 2px solid #363636; }
@@ -487,8 +487,8 @@
   #messages_unread_status.quiet { background: #828282; color: #e6e6e6; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
   #messages_unread_status.quiet a { color: #e6e6e6; }
   .msg_inline_img_holder .msg_inline_img { box-shadow: inset 0 0 0 1px #000; }
-  .msg_inline_attachment_collapser, .msg_inline_attachment_expander, .msg_inline_audio_collapser, .msg_inline_audio_expander, .msg_inline_email_collapser, .msg_inline_email_expander, .msg_inline_file_preview_collapser, .msg_inline_file_preview_expander, .msg_inline_img_collapser, .msg_inline_img_expander, .msg_inline_other_collapser, .msg_inline_other_expander, .msg_inline_room_preview_collapser, .msg_inline_room_preview_expander, .msg_inline_video_collapser, .msg_inline_video_expander { color: #949494; }
-  .msg_inline_attachment_collapser:hover, .msg_inline_attachment_expander:hover, .msg_inline_audio_collapser:hover, .msg_inline_audio_expander:hover, .msg_inline_email_collapser:hover, .msg_inline_email_expander:hover, .msg_inline_file_preview_collapser:hover, .msg_inline_file_preview_expander:hover, .msg_inline_img_collapser:hover, .msg_inline_img_expander:hover, .msg_inline_other_collapser:hover, .msg_inline_other_expander:hover, .msg_inline_room_preview_collapser:hover, .msg_inline_room_preview_expander:hover, .msg_inline_video_collapser:hover, .msg_inline_video_expander:hover { color: #c7c7c7; }
+  .msg_inline_attachment_collapser, .msg_inline_attachment_expander, .msg_inline_email_collapser, .msg_inline_email_expander, .msg_inline_file_preview_collapser, .msg_inline_file_preview_expander, .msg_inline_img_collapser, .msg_inline_img_expander, .msg_inline_media_toggler, .msg_inline_room_preview_collapser, .msg_inline_room_preview_expander { color: #949494; }
+  .msg_inline_attachment_collapser:hover, .msg_inline_attachment_expander:hover, .msg_inline_email_collapser:hover, .msg_inline_email_expander:hover, .msg_inline_file_preview_collapser:hover, .msg_inline_file_preview_expander:hover, .msg_inline_img_collapser:hover, .msg_inline_img_expander:hover, .msg_inline_media_toggler:hover, .msg_inline_room_preview_collapser:hover, .msg_inline_room_preview_expander:hover { color: #c7c7c7; }
   .msg_inline_img { background: #545454; }
   .msg_inline_room_preview_collapser { color: #949494; }
   .msg_inline_room_preview_collapser:hover { color: #949494; }
@@ -979,6 +979,7 @@
   ts-jumper ol li.highlighted { background: #828282; color: #e6e6e6; }
   ts-jumper ol:not(.keyboard_active) li:hover { background: #828282; color: #e6e6e6; }
   ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .match_score, ts-jumper ol li.highlighted .member_real_name + .member_username, ts-jumper ol li.highlighted .member_username + .member_real_name, ts-jumper ol li.highlighted i.presence_icon, ts-jumper ol li.highlighted ts-icon, ts-jumper ol:not(.keyboard_active) li:hover .channel_not_member, ts-jumper ol:not(.keyboard_active) li:hover .match_score, ts-jumper ol:not(.keyboard_active) li:hover .member_real_name + .member_username, ts-jumper ol:not(.keyboard_active) li:hover .member_username + .member_real_name, ts-jumper ol:not(.keyboard_active) li:hover i.presence_icon, ts-jumper ol:not(.keyboard_active) li:hover ts-icon { color: #e6e6e6; }
+  #incoming_call { background-color: rgba(0, 0, 0, 0.97); color: #e6e6e6; }
   .ts_tip .ts_tip_multiline_inner, .ts_tip:not(.ts_tip_multiline) .ts_tip_tip { background: #545454; }
   .ts_tip .ts_tip_tip { color: #e6e6e6; }
   .ts_tip.ts_tip_left .ts_tip_tip:after { border-left-color: #545454; }
