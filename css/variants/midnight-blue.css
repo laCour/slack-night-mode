@@ -163,9 +163,9 @@
   #message_edit_form .emo_menu, #messages-input-container .emo_menu { color: rgba(0, 185, 242, 0.3); }
   #message_edit_form .emo_menu.active .ts_icon_happy_smile, #message_edit_form .emo_menu:hover .ts_icon_happy_smile, #messages-input-container .emo_menu.active .ts_icon_happy_smile, #messages-input-container .emo_menu:hover .ts_icon_happy_smile { color: #444; }
   #message_edit_form.focus .emo_menu, #messages-input-container.focus .emo_menu { color: rgba(0, 185, 242, 0.6); }
-  #message_edit_form.focus #primary_file_button:not(:hover, :hover), #messages-input-container.focus #primary_file_button:not(:hover, :hover) { border-color: #000; }
   #message_edit_form.offline #message-input, #message_edit_form.offline #primary_file_button, #messages-input-container.offline #message-input, #messages-input-container.offline #primary_file_button { background-color: #111 !important; }
   #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #111; color: #1793d1; }
+  #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #000; }
   #primary_file_button { background: padding-box #333; border: 2px solid #111; }
   #primary_file_button.active, #primary_file_button:hover { background: #333; border-color: #333; color: #00b9f2; }
   #footer { background: #000; }
@@ -316,9 +316,31 @@
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #about_dms_link { color: #1793d1; }
   #about_dms_link:hover { color: #299bd4; }
-  #header { background: #000; }
-  #header .client_header_button { background: #222; border: 1px solid #111; }
-  #header .client_header_button:hover { background: #333; border: 1px solid #222; }
+  #client_header .channel_header .flex_header { background: #000; }
+  #client_header .channel_header .channel_name_container { color: #00b9f2; }
+  #client_header .channel_header .channel_name_container .channel_name { color: #00b9f2; }
+  #client_header .channel_header .channel_name_container .channel_name.muted { color: #1793d1; }
+  #client_header .channel_header .channel_name_container .channel_name #im_title.away { color: #1793d1; }
+  #client_header .channel_header .channel_name_container .channel_name ul li.mpdm_member.away { color: #1793d1; }
+  #client_header .channel_header .channel_name_container .mute_container .muted_icon { color: #1793d1; }
+  #client_header .channel_header .channel_name_container .mute_container .muted_icon:hover { color: #bf360c; }
+  #client_header .channel_header #channel_header_info { background: #000; color: #00b9f2; }
+  #client_header .channel_header #channel_header_info .topic_divider { color: #111; }
+  #client_header .channel_header .channel_title_info { background: #000; color: #1793d1; }
+  #client_header .channel_header .channel_title_info .divider_bar { background: #111; }
+  #client_header .channel_header .channel_title_info .channel_details_toggle { color: #1793d1; }
+  #client_header .channel_header .channel_title_info .channel_actions_toggle { color: #1793d1; }
+  #client_header .channel_header .channel_header_icon { color: #00b9f2; }
+  #client_header .channel_header .channel_header_icon.channel_calls_button { color: #1793d1; }
+  #client_header .channel_header .channel_header_icon#channel_actions_toggle.active { color: #00b9f2; }
+  #client_header .channel_header .channel_header_icon#recent_mentions_toggle:hover { color: #bf360c; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle.active { color: #00b9f2; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle { background: #000; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle canvas { background: #000; }
+  #client_header .channel_header .channel_header_icon#details_toggle.active, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #111; }
+  #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #333; color: #00b9f2; }
+  #client_header .channel_header .blue_hover:hover { color: #00b9f2; }
+  .channel_header_refresh #client_body:not(.onboarding)::before { background: #000; border-bottom: 1px solid #000; }
   #help_icon { border: 1px solid #222; color: #1793d1; }
   #help_icon:hover { background: #222; border: 1px solid #111; color: #00b9f2; }
   #help_icon.unread #help_icon_circle_count { background-color: #bf360c; color: #fff; }
@@ -340,23 +362,17 @@
   #active_channel_name .ts_icon_microphone:hover, #active_channel_name .ts_icon_video_camera:hover { color: #00b9f2; }
   #active_channel_name:hover .name.muted, #active_channel_name:hover i .fa { color: #00b9f2; }
   #group_actions, #im_actions { color: #1793d1; }
-  #channel_header .star { color: #1793d1; }
-  .channel_header_button { border: 1px solid rgba(68, 68, 68, 0.61); color: #1793d1; }
-  .channel_header_button#details_toggle.active, .channel_header_button#flex_menu_toggle.active, .channel_header_button#recent_mentions_toggle.active, .channel_header_button#stars_toggle.active { background-color: #444; border-color: #111; color: #00b9f2; }
-  .channel_header_button#details_toggle.active:hover, .channel_header_button#flex_menu_toggle.active:hover, .channel_header_button#recent_mentions_toggle.active:hover, .channel_header_button#stars_toggle.active:hover { background-color: #444; border-color: rgba(17, 17, 17, 0.61); color: #00b9f2; }
-  .channel_header_button#details_toggle:hover { color: #00b9f2; }
-  .channel_header_button#recent_mentions_toggle:hover { color: #bf360c; }
-  .channel_header_button#recent_mentions_toggle.jquery_hover:hover { color: #00b9f2; }
-  .channel_header_button#stars_toggle.jquery_hover:hover { color: #00b9f2; }
-  .channel_header_button#flex_menu_toggle.active:hover, .channel_header_button#flex_menu_toggle.menu_open, .channel_header_button#flex_menu_toggle:hover { color: #299bd4; }
   #rxn_toast_div { background: #444; border: 1px solid rgba(0, 0, 0, 0.15); }
   #whats_new_burst { background: #bf360c; border-color: #333; }
-  .search_form .icon_search { color: #1793d1; }
-  .search_form .icon_close { color: #1793d1; }
-  .search_form .search_input { background: #333; border: 1px solid rgba(68, 68, 68, 0.61); }
-  .search_form .search_input:hover { border: 1px solid #444; }
-  .search_form .search_input:focus { border-color: rgba(68, 68, 68, 0.61); }
-  #header_search_form.search_form .icon_search { color: #1793d1; }
+  #client_header .search_form .icon_search { color: #1793d1; }
+  #client_header .search_form .icon_close { color: #1793d1; }
+  #client_header .search_form .search_input { background: #333; border: 1px solid rgba(68, 68, 68, 0.61); }
+  #client_header .search_form .search_input:hover { border: 1px solid #444; }
+  #client_header .search_form .search_input:focus { border-color: rgba(68, 68, 68, 0.61); }
+  #client_header .channel_header #header_search_form:hover .search_input { border: 1px solid rgba(51, 51, 51, 0.61); }
+  #client_header .channel_header #header_search_form #search_spinner { color: #00b9f2; }
+  #client_header .channel_header #header_search_form.search_form .icon_search { color: #1793d1; }
+  #client_header .channel_header #search_container .search_form .search_clear_icon .ts_icon_times_circle { color: #1793d1; }
   #team_filter .icon_search { color: #1793d1; }
   #team_filter a.icon_close { color: #1793d1; }
   #team_filter a.icon_close:hover { color: #299bd4; }
@@ -366,6 +382,8 @@
   .day_divider { background: #000; color: #1793d1; }
   .day_divider hr { border-top: 1px solid #111; }
   .day_divider .day_divider_label { background: #111; }
+  .day_container .day_msgs { border-top: 1px solid #111; }
+  .day_container.unread_day_container .day_msgs { border-color: #bf360c; }
   #banner { background: #000; }
   #banner a { color: #1793d1; }
   .banner_content { color: #00b9f2; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -373,6 +391,12 @@
   #banner:hover #notifications_banner { background: #000; }
   #notifications_dismiss_banner { background: #000; }
   #macssb1_banner, #macssb1_dismiss_banner, #winssb1_banner, #winssb1_dismiss_banner { background: #000; }
+  .inline_edit .inline_edit_inner::before { background: #111; border: 1px solid #333; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5); }
+  .inline_edit .inline_edit_inner::after { color: #00b9f2; }
+  .inline_edit.inline_edit_success .inline_edit_inner::after { color: #0c95bf; }
+  .inline_edit.inline_edit_error .inline_edit_inner::after { color: #bf360c; }
+  .inline_edit.inline_edit_editing .inline_edit_inner::before { border-color: #000; box-shadow: none; }
+  .inline_edit.inline_edit_editing .inline_edit_inner::after { color: #1793d1; }
   #msgs_overlay_div { background: #000; }
   ts-message { color: #00b9f2; }
   ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) { background: rgba(0, 0, 0, 0.1); }
@@ -674,10 +698,10 @@
   .search_widget_item { border-top: 1px solid #333; color: #00b9f2; }
   .search_widget_item:hover { background: #333; }
   .search_widget_item .result_meta { color: #00b9f2; }
-  #search_options { background: #333; border-top: 1px solid #111; color: #00b9f2; }
+  #search_options { background: #000; border-top: 1px solid #111; color: #00b9f2; }
   #advanced_options_toggle:hover { color: #299bd4; }
   #advanced_options .active .arrow_down { color: #1793d1; }
-  #search_filters a { background: #333; color: #00b9f2; }
+  #search_filters a { background: #000; color: #00b9f2; }
   #search_filters a:hover { border-bottom: 4px solid #111; }
   #search_filters.files #filter_files, #search_filters.messages #filter_messages { border-bottom: 4px solid #111; color: #00b9f2; }
   #search_file_list_toggle_users.active:hover { border: 2px solid #299bd4; color: #299bd4 !important; }
@@ -784,6 +808,7 @@
   .tab_container .file_list_item .contents .file_comment_link:focus, .tab_container .file_list_item .contents .file_comment_link:hover { color: #299bd4; }
   .tab_container .file_list_item .contents .file_comment_link:focus .ts_icon, .tab_container .file_list_item .contents .file_comment_link:hover .ts_icon { color: #299bd4; }
   .tab_container .file_list_item .contents .member, .tab_container .file_list_item .contents .service_link, .tab_container .file_list_item .contents .share_info, .tab_container .file_list_item .contents .time { color: #1793d1; }
+  .tab_container .file_list_item .filetype_image { background-color: #000; }
   #member_preview_scroller a:not(.member_name), .team_list_item a:not(.member_name) { color: #1793d1; }
   #member_preview_scroller a:not(.member_name):hover { color: #299bd4; }
   #member_preview_scroller .member_data_table a, #team_list .member_data_table a { color: #1793d1; }
