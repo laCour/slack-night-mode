@@ -47,6 +47,8 @@
   }
 
   &.header_refresh {
+    background: $color-shade-light;
+
     &:hover {
       background: $color-shade-lightest;
 
