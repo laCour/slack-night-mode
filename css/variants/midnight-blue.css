@@ -510,6 +510,7 @@
   #messages_unread_status { background: #333; }
   #messages_unread_status.quiet, #messages_unread_status.quiet.header_refresh { background: #444; color: #00b9f2; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
   #messages_unread_status.quiet a, #messages_unread_status.quiet.header_refresh a { color: #00b9f2; }
+  #messages_unread_status.header_refresh { background: #333; }
   #messages_unread_status.header_refresh:hover { background: #444; }
   #messages_unread_status.header_refresh:hover .clear_unread_messages { background: #444; }
   #messages_unread_status.header_refresh .clear_unread_messages:hover { background: #444; }
