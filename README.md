@@ -31,6 +31,8 @@ This is based on Slack's aubergine/maroon style. It's the original theme.
 
 #### Midnight Blue ([source](scss/themes/_midnight-blue.scss) - [build](css/variants/midnight-blue.css))
 
+#### Tomorrow Dark (base16) ([repository](https://github.com/danarnold/slack-night-mode))
+
 ### Extensions
 
 Variants can have extensions which add additional changes.
