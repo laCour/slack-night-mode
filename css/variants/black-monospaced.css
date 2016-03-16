@@ -1005,7 +1005,8 @@
   ts-jumper input[type=text]:focus { border: 1px solid rgba(54, 54, 54, 0.8) !important; color: #e6e6e6; }
   ts-jumper input[type=text]::-webkit-input-placeholder, ts-jumper input[type=text]:focus::-webkit-input-placeholder, ts-jumper input[type=text]:-moz-placeholder, ts-jumper input[type=text]:focus:-moz-placeholder, ts-jumper input[type=text]::-moz-placeholder, ts-jumper input[type=text]:focus::-moz-placeholder { color: #e6e6e6; }
   ts-jumper ol li { color: #e6e6e6; }
-  ts-jumper ol li .channel_not_member, ts-jumper ol li .match_score, ts-jumper ol li .member_real_name + .member_username, ts-jumper ol li .member_username + .member_real_name, ts-jumper ol li ts-icon { color: #949494; }
+  ts-jumper ol li .channel_name, ts-jumper ol li .member_real_name, ts-jumper ol li .member_username, ts-jumper ol li .team_username { color: #949494; }
+  ts-jumper ol li .channel_not_member, ts-jumper ol li .team_username, ts-jumper ol li .member_real_name + .member_username, ts-jumper ol li .member_username + .member_real_name, ts-jumper ol li ts-icon { color: #949494; }
   ts-jumper ol li .unread_count { background: #bf360c; color: #e6e6e6; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
   ts-jumper ol li.highlighted { background: #828282; color: #e6e6e6; }
   ts-jumper ol:not(.keyboard_active) li:hover { background: #828282; color: #e6e6e6; }
