@@ -20,8 +20,8 @@ code {
 .file_container {
   .CodeMirror,
   .sssh-code {
-    .CodeMirror-code > div:before,
-    .sssh-line:before {
+    .CodeMirror-code > div::before,
+    .sssh-line::before {
       background-color: $color-shade-dark;
       border-right: 1px solid $color-shade-dark;
       color: $color-highlight;

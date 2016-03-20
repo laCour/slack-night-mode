@@ -158,13 +158,13 @@ ts-message {
   }
 
   ts-conversation {
-    &:after {
+    &::after {
       background: rgba($color-shade-darkest, 0.08);
       background: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(1, rgba($color-shade-darkest, 0.08)));
       background: -moz-linear-gradient(center bottom, transparent 0, rgba($color-shade-darkest, 0.08) 100%);
     }
 
-    &:before {
+    &::before {
       background: transparent;
       background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba($color-shade-darkest, 0.08)), color-stop(1, transparent));
       background: -moz-linear-gradient(center bottom, rgba($color-shade-darkest, 0.08) 0, transparent 100%);
@@ -177,7 +177,7 @@ ts-message {
     }
 
     ts-relatives {
-      &:after {
+      &::after {
         background: $color-shade-light;
       }
 
@@ -209,7 +209,7 @@ ts-message {
   background: $color-base;
 
   #close_conversation {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba($black, 0.8);
     color: $color-highlight;
   }
 }

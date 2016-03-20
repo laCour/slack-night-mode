@@ -54,7 +54,7 @@
     }
   }
 
-  .sortable-placeholder:before {
+  .sortable-placeholder::before {
     border-top: 1px solid $color-shade-light;
   }
 }
@@ -89,8 +89,8 @@
 
 #edit_team_profile_edit {
   .profile_field_preview_protector label.select {
-    &:after,
-    &:hover:after {
+    &::after,
+    &:hover::after {
       color: $color-highlight;
     }
   }
@@ -142,7 +142,7 @@
     }
 
     &[data-type=options_list] {
-      span:after {
+      span::after {
         color: $color-highlight;
       }
 
@@ -158,12 +158,12 @@
     background: $color-base;
     border: 1px solid $color-shade-light;
 
-    &:after {
+    &::after {
       background-color: $color-base;
       box-shadow: 0 0.75rem 0.75rem $color-shadow-medium;
     }
 
-    &:before {
+    &::before {
       background-color: $color-base;
       box-shadow: 0 0.75rem 0.75rem $color-shadow-medium;
     }
@@ -179,11 +179,11 @@
     }
 
     .profile_field_preview_ribbon {
-      &:before {
+      &::before {
         border-color: transparent transparent transparent $color-shade-darkest;
       }
 
-      &:after {
+      &::after {
         border-color: $color-shade-darkest transparent transparent;
       }
     }

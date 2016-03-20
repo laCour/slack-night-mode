@@ -7,18 +7,18 @@
   background-color: $color-base;
   border-top: 1px solid $color-shade-light;
 
-  .arrow:after {
+  .arrow::after {
     background-color: $color-shade-darkest;
   }
 
-  .arrow_shadow:after {
+  .arrow_shadow::after {
     background-color: $color-base;
-    box-shadow: 0 0 0 1px $color-shade-light, 0 0 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 0 1px $color-shade-light, 0 0 3px rgba($black, 0.08);
   }
 
   &.showing_header {
-    .arrow:after,
-    .arrow_shadow:after {
+    .arrow::after,
+    .arrow_shadow::after {
       background-color: $color-shade-darkest;
     }
   }

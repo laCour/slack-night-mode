@@ -4,7 +4,7 @@
     border: 1px solid $color-shade-light;
 
     > li {
-      + li:before {
+      + li::before {
         border-top: 1px solid $color-shade-light;
       }
 
@@ -22,7 +22,7 @@
     }
 
     &.media_list_with_arrows a {
-      &:before {
+      &::before {
         color: $color-highlight;
       }
     }
@@ -63,7 +63,7 @@
         color: $color-highlight;
 
         &:not(:first-child) {
-          &:before {
+          &::before {
             color: $color-highlight;
           }
         }
@@ -79,7 +79,7 @@
             background-color: $color-shade-light;
           }
 
-          &:after {
+          &::after {
             color: $base-font-color;
           }
         }

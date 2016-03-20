@@ -47,7 +47,7 @@
     border: 1px solid $color-shade-darkest;
     color: $base-font-color;
 
-    &:after {
+    &::after {
       color: $base-font-color;
     }
   }
@@ -58,8 +58,8 @@
   }
 
   &.single .fsl_input_container {
-    &.active:after,
-    &:hover:after {
+    &.active::after,
+    &:hover::after {
       color: $base-font-color;
     }
   }

@@ -139,7 +139,7 @@ html.no_touch {
   input:hover,
   textarea:hover,
   select:hover,
-  label.select:not(.disabled):hover:after,
+  label.select:not(.disabled):hover::after,
   .accordion_section h4 a:hover {
     color: $base-link-color-active;
   }

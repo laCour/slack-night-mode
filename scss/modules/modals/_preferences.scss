@@ -42,7 +42,7 @@
       }
     }
 
-    &:before {
+    &::before {
       background: $color-red;
       border-radius: 3px;
       content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme.";

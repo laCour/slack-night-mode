@@ -35,7 +35,7 @@
   }
 
   .close_btn {
-    &:after {
+    &::after {
       border-right: 1px solid $color-shade-light;
     }
   }

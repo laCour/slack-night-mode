@@ -143,8 +143,8 @@
   border: 1px solid $color-shade-darkest;
   color: $base-font-color;
 
-  &:after,
-  &.post_container:after {
+  &::after,
+  &.post_container::after {
     background-image: -webkit-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
     background-image: -moz-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
     background-image: -o-linear-gradient(top, rgba($color-base, 0) 0, $color-base 100%);
@@ -179,7 +179,7 @@
   .preview_actions .btn {
     background-color: $color-shade-dark;
 
-    &:after {
+    &::after {
       border-color: $color-shade-darkest;
     }
 
@@ -187,7 +187,7 @@
       background-color: rgba($color-shade-lightest, 0.9);
       color: $base-font-color !important;
 
-      &:after {
+      &::after {
         border: 2px solid $color-shade-darkest;
       }
 
@@ -195,7 +195,7 @@
       &:hover {
         background-color: $color-shade-dark;
 
-        &:after {
+        &::after {
           border-color: $color-shade-dark;
         }
       }
@@ -255,7 +255,7 @@ body:not(.feature_new_message_markup) .meta {
       background-color: $color-shade-dark;
 
       li {
-        &:before {
+        &::before {
           background: $color-shade-dark;
         }
 

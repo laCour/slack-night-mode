@@ -20,9 +20,9 @@ $black: #000;
 $white: #fff;
 
 // Shadow Colors
-$color-shadow-dark: rgba(0, 0, 0, 0.5) !default;
-$color-shadow-medium: rgba(0, 0, 0, 0.25) !default;
-$color-shadow-light: rgba(0, 0, 0, 0.15) !default;
+$color-shadow-dark: rgba($black, 0.5) !default;
+$color-shadow-medium: rgba($black, 0.25) !default;
+$color-shadow-light: rgba($black, 0.15) !default;
 $color-shadow-transparent: rgba(255, 255, 255, 0) !default;
 
 // Code Colors

@@ -1,7 +1,7 @@
 .chzn-container .chzn-drop {
   background: $color-base;
   border: 1px solid $color-shade-mid;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba($black, 0.15);
 }
 
 .chzn-container-single {
@@ -9,7 +9,7 @@
     background-color: $color-base;
     background-image: linear-gradient($color-base 20%, $color-shade-dark 50%, $color-base 52%, $color-shade-dark 100%);
     border: 1px solid $color-shade-mid;
-    box-shadow: 0 0 3px $color-base inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px $color-base inset, 0 1px 1px rgba($black, 0.1);
     color: $base-font-color;
   }
 

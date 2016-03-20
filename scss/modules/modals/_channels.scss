@@ -32,7 +32,7 @@
     color: $color-highlight;
   }
 
-  .channel_browser_sort_container:after {
+  .channel_browser_sort_container::after {
     color: $base-font-color;
   }
 }

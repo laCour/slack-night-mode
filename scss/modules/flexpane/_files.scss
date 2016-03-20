@@ -235,11 +235,11 @@ html.no_touch a.filetype_button_web:hover {
   color: $base-link-color;
 
   i {
-    &:before {
+    &::before {
       color: $color-highlight;
     }
 
-    &.ts_icon_minus_circle_small:hover:before {
+    &.ts_icon_minus_circle_small:hover::before {
       color: $color-red;
     }
   }
@@ -332,7 +332,7 @@ html.no_touch a.filetype_button_web:hover {
         background-color: $color-base;
       }
 
-      .btn:after {
+      .btn::after {
         border-color: $color-shade-dark;
       }
     }

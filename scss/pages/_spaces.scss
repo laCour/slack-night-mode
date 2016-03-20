@@ -4,7 +4,7 @@ ts-rocket {
   a {
     color: $base-link-color;
 
-    caret:before {
+    caret::before {
       background-color: $color-shade-dark;
       border-color: $color-shade-dark;
     }
@@ -20,8 +20,8 @@ ts-rocket {
     background-color: $color-shade-darkest;
   }
 
-  .blockquote.text:before,
-  > div > blockquote:before {
+  .blockquote.text::before,
+  > div > blockquote::before {
     background-color: $color-shade-darkest;
   }
 
@@ -43,7 +43,7 @@ ts-rocket {
     }
 
     li {
-      &:before {
+      &::before {
         background: $color-shade-dark;
       }
 
@@ -67,11 +67,11 @@ ts-rocket {
     }
 
     .unfurl-remove {
-      &:before {
+      &::before {
         color: $color-highlight;
       }
 
-      &:hover:before {
+      &:hover::before {
         color: $base-font-color;
       }
     }
@@ -86,7 +86,7 @@ ts-rocket {
   }
 
   caret {
-    &:before {
+    &::before {
       background-color: $color-shade-dark;
       border: 1px solid $color-shade-dark;
     }
@@ -99,8 +99,8 @@ ts-rocket {
   selection {
     background-color: rgba($color-shade-lightest, 0.5);
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       background-color: rgba($color-shade-lightest, 0.5);
     }
   }
@@ -127,7 +127,7 @@ nav {
     background-color: $color-shade-dark;
     box-shadow: 0 1px $color-shadow-medium, 0 2px $color-shadow-light, 0 3px $color-shadow-light;
 
-    &:after {
+    &::after {
       border-left: 1px solid $color-shade-light;
     }
   }
@@ -140,7 +140,7 @@ nav {
     .btn_outline {
       background-color: $color-shade-mid;
 
-      &:after {
+      &::after {
         border-color: $color-shade-light;
       }
     }
@@ -188,7 +188,7 @@ nav {
   .comments_close {
     color: $color-highlight;
 
-    &:hover:before {
+    &:hover::before {
       color: $base-link-color !important;
     }
   }
@@ -215,20 +215,12 @@ ts-space {
           color: $base-font-color;
         }
 
-        &:-moz-placeholder {
-          color: $base-font-color;
-        }
-
         &:focus {
           &::-webkit-input-placeholder {
             color: $color-highlight;
           }
 
           &::-moz-placeholder {
-            color: $color-highlight;
-          }
-
-          &:-moz-placeholder {
             color: $color-highlight;
           }
         }
@@ -281,11 +273,11 @@ comments {
   }
 
   button#space_alert_close {
-    &:before {
+    &::before {
       color: $color-highlight;
     }
 
-    &:hover:before {
+    &:hover::before {
       color: $color-highlight;
     }
   }
@@ -294,7 +286,7 @@ comments {
     background-color: $color-shade-mid !important;
     color: $base-font-color !important;
 
-    &:after {
+    &::after {
       border-color: $color-shade-light;
     }
   }
@@ -315,8 +307,8 @@ comments {
     .ts_icon {
       background-color: $color-shade-light;
 
-      &:before,
-      &:hover:before {
+      &::before,
+      &:hover::before {
         color: $base-font-color;
       }
     }
@@ -327,11 +319,11 @@ comments {
   }
 
   #space_find_close {
-    &:before {
+    &::before {
       color: $color-highlight;
     }
 
-    &:hover:before {
+    &:hover::before {
       color: $color-highlight;
     }
   }
@@ -356,11 +348,11 @@ comments {
   border-top: 1px solid rgba($color-shade-darkest, 0.11);
   box-shadow: 0 0 1px $color-shadow-dark, 0 1px 3px $color-shadow-dark;
 
-  .arrow:after {
+  .arrow::after {
     background-color: $color-shade-dark;
   }
 
-  .arrow_shadow:after {
+  .arrow_shadow::after {
     background-color: $color-shade-dark;
     box-shadow: 0 0 0 1px $color-shadow-dark, 0 0 2px $color-shadow-dark;
   }
@@ -397,19 +389,19 @@ comments {
       background-color: $color-shade-lightest;
     }
 
-    .ts_icon:before {
+    .ts_icon::before {
       color: $color-highlight !important;
     }
   }
 }
 
 .textstyle_menu {
-  .arrow-shadow:after {
+  .arrow-shadow::after {
     background-color: $color-shade-dark;
     box-shadow: 0 0 0 1px $color-shade-dark;
   }
 
-  .arrow:after {
+  .arrow::after {
     background-color: $color-shade-dark;
   }
 
@@ -419,11 +411,11 @@ comments {
   }
 
   &.link {
-    .arrow-shadow:after {
+    .arrow-shadow::after {
       background-color: $color-shade-dark;
     }
 
-    .arrow:after {
+    .arrow::after {
       background-color: $color-shade-dark;
     }
 
@@ -465,11 +457,11 @@ comments {
     }
   }
 
-  &.style a.deformat:before {
+  &.style a.deformat::before {
     border-left: 1px solid $color-shade-light;
   }
 
-  .buttons a.link_unfurl:not(.unfurl_pending) span:before {
+  .buttons a.link_unfurl:not(.unfurl_pending) span::before {
     color: $color-highlight;
   }
 }
@@ -481,12 +473,12 @@ comments {
     }
 
     .tooltip {
-      .arrow-shadow:after {
+      .arrow-shadow::after {
         background-color: $color-shade-dark;
         box-shadow: 0 0 0 1px $color-shade-light;
       }
 
-      .arrow:after {
+      .arrow::after {
         background-color: $color-shade-dark;
       }
 
@@ -498,16 +490,16 @@ comments {
   }
 
   .format .options {
-    .arrow-shadow:after {
+    .arrow-shadow::after {
       background-color: $color-shade-dark;
       box-shadow: 0 0 0 1px $color-shade-light;
     }
 
-    .arrow:after {
+    .arrow::after {
       background-color: $color-shade-dark;
     }
 
-    .arrow-shadow.bottom:after {
+    .arrow-shadow.bottom::after {
       box-shadow: 1px 1px 0 0 $color-shade-light;
     }
 

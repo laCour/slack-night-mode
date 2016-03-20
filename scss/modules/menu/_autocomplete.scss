@@ -50,22 +50,22 @@
   header {
     background-color: $color-shade-darkest;
 
-    .keyword:before,
-    .modifier:before {
+    .keyword::before,
+    .modifier::before {
       background: $color-shade-lightest;
       border: 1px solid $color-shade-light;
       color: $base-font-color;
     }
 
     .selected {
-      .keyword:before,
-      .modifier:before {
+      .keyword::before,
+      .modifier::before {
         background: rgba($color-shade-light, 0.25);
         border: $color-shade-lightest;
       }
     }
 
-    .modifier.incomplete:before {
+    .modifier.incomplete::before {
       background: $color-shade-dark;
       border: 1px solid $color-shade-darkest;
     }
@@ -85,28 +85,28 @@
   }
 
   .history {
-    .keyword:before {
+    .keyword::before {
       background: $color-shade-lightest;
       border: 1px solid $color-shade-light;
       color: $base-font-color;
     }
 
     .modifier {
-      &:before {
+      &::before {
         background: $color-shade-lightest;
         border: 1px solid $color-shade-light;
         color: $base-font-color;
       }
 
-      &.incomplete:before {
+      &.incomplete::before {
         background: $color-shade-dark;
         border: 1px solid $color-shade-darkest;
       }
     }
 
     .selected {
-      .keyword:before,
-      .modifier:before {
+      .keyword::before,
+      .modifier::before {
         background: rgba($color-shade-light, 0.25);
         border: $color-shade-lightest;
       }
@@ -146,28 +146,28 @@
 }
 
 .highlighter_underlay {
-  .keyword:before {
+  .keyword::before {
     background: $color-shade-lightest;
     border: 1px solid $color-shade-light;
     color: $base-font-color;
   }
 
   .modifier {
-    &:before {
+    &::before {
       background: $color-shade-lightest;
       border: 1px solid $color-shade-light;
       color: $base-font-color;
     }
 
-    &.incomplete:before {
+    &.incomplete::before {
       background: $color-shade-dark;
       border: 1px solid $color-shade-darkest;
     }
   }
 
   .selected {
-    .keyword:before,
-    .modifier:before {
+    .keyword::before,
+    .modifier::before {
       background: rgba($color-shade-lightest, 0.25);
       border: $color-shade-light;
     }

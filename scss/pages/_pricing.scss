@@ -64,22 +64,22 @@ a.plan_price_details {
   background-color: $color-base;
   border-bottom: 2px solid $color-shade-darkest;
 
-  h3 .ts_icon_heart_o:before {
+  h3 .ts_icon_heart_o::before {
     color: $color-red;
   }
 
-  &:before {
-    background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 0), $color-base), -moz-linear-gradient(right, rgba(255, 255, 255, 0), $color-base);
-    background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 0), $color-base), -ms-linear-gradient(right, rgba(255, 255, 255, 0), $color-base);
-    background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), $color-base), -o-linear-gradient(right, rgba(255, 255, 255, 0), $color-base);
-    background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), $color-base), -webkit-linear-gradient(right, rgba(255, 255, 255, 0), $color-base);
+  &::before {
+    background-image: -moz-linear-gradient(right, rgba($white, 0), $color-base), -moz-linear-gradient(right, rgba($white, 0), $color-base);
+    background-image: -ms-linear-gradient(right, rgba($white, 0), $color-base), -ms-linear-gradient(right, rgba($white, 0), $color-base);
+    background-image: -o-linear-gradient(right, rgba($white, 0), $color-base), -o-linear-gradient(right, rgba($white, 0), $color-base);
+    background-image: -webkit-linear-gradient(right, rgba($white, 0), $color-base), -webkit-linear-gradient(right, rgba($white, 0), $color-base);
   }
 
-  &:after {
-    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), $color-base), -moz-linear-gradient(left, rgba(255, 255, 255, 0), $color-base);
-    background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), $color-base), -ms-linear-gradient(left, rgba(255, 255, 255, 0), $color-base);
-    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), $color-base), -o-linear-gradient(left, rgba(255, 255, 255, 0), $color-base);
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), $color-base), -webkit-linear-gradient(left, rgba(255, 255, 255, 0), $color-base);
+  &::after {
+    background-image: -moz-linear-gradient(left, rgba($white, 0), $color-base), -moz-linear-gradient(left, rgba($white, 0), $color-base);
+    background-image: -ms-linear-gradient(left, rgba($white, 0), $color-base), -ms-linear-gradient(left, rgba($white, 0), $color-base);
+    background-image: -o-linear-gradient(left, rgba($white, 0), $color-base), -o-linear-gradient(left, rgba($white, 0), $color-base);
+    background-image: -webkit-linear-gradient(left, rgba($white, 0), $color-base), -webkit-linear-gradient(left, rgba($white, 0), $color-base);
   }
 }
 
@@ -137,7 +137,7 @@ a.plan_price_details {
           color: $base-link-color;
         }
 
-        i.ts_icon:before {
+        i.ts_icon::before {
           color: $color-highlight;
         }
       }
@@ -147,7 +147,7 @@ a.plan_price_details {
         color: $base-font-color;
       }
 
-      &.expanded h4 a i.ts_icon:before {
+      &.expanded h4 a i.ts_icon::before {
         color: $color-highlight;
       }
 
@@ -155,7 +155,7 @@ a.plan_price_details {
         background: $color-base;
       }
 
-      &.expanded:hover h4 a i.ts_icon:before {
+      &.expanded:hover h4 a i.ts_icon::before {
         color: $base-font-color;
       }
     }
