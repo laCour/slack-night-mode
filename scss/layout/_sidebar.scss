@@ -62,6 +62,10 @@
         }
       }
 
+      &.member:hover {
+        background: $color-base;
+      }
+
       &.member .im_close,
       &.mpim .mpim_close {
         color: $color-highlight;
