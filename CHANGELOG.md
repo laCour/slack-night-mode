@@ -1,5 +1,6 @@
 # Changelog
 
+* **20/03/16**: Corrected styles for direct message close hover (#42).
 * **16/03/16**: Corrected styles for quick switcher items (#41).
 * **10/03/16**: Corrected styles for notification bars (54c8f09).
 * **09/03/16**: Added styles for incoming calls (621dce9). Updated styles for inline media expanders (216082d). Updated styles for new channel header (3c2114d). Added styles for new inline channel topic editor (15da7cd). Added styles for new day containers (8185fe3). Updated styles for flexpane search refinement tabs (f227f34). Fixed background color on unloaded image thumbnails in the flexpane (f508a8d). Updated styles for notifications (25d18fe).
