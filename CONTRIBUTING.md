@@ -72,10 +72,8 @@ Now it's just a matter of swapping out Slack's style definitions with the theme'
 
 Stylish doesn't have any way to continuously integrate, so you must manually copy and paste themes into the Stylish manager*. To quickly test themes, I recommend running `make`, then using a command-line tool to copy the compiled CSS into your clipboard:
 
-X systems: `make && xclip -sel clip < css/black.css`
-
-Mac OS X: `make && pbcopy < css/black.css`
-
+* **X systems:** `make && xclip -sel clip < css/black.css`
+* **Mac OS X:** `make && pbcopy < css/black.css`
 
 \* On Chromium-based browsers, when editing a Stylish theme, you must import a compiled CSS file because of the Mozilla specific domain-restriction syntax.
 
