@@ -1,5 +1,6 @@
 # Changelog
 
+* **21/03/16**: Updated styles for updated team menu (21f6a41).
 * **20/03/16**: Corrected styles for direct message close hover (#42).
 * **16/03/16**: Corrected styles for quick switcher items (#41).
 * **10/03/16**: Corrected styles for notification bars (54c8f09).
