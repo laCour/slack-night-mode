@@ -213,6 +213,8 @@
   #menu.team_menu ul li > a { color: #1793d1; }
   #im-list li.member.active .presence, #starred-list li.member.active .presence { color: #00b9f2; }
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { color: #1793d1; text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
+  .slack_menu_section::before { border-top: 1px solid #333; }
+  .slack_menu_header_secondary { color: #1793d1; }
   #menu.file_menu { box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
   #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) { background: #111; }
   #menu.file_menu ul li.highlighted > a, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) > a { color: #299bd4; }
