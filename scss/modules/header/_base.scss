@@ -215,8 +215,13 @@
 }
 
 #rxn_toast_div {
-  background: $color-shade-lightest;
-  border: 1px solid $color-shadow-light;
+  background: $color-shade-darkest;
+  border: 1px solid $color-shade-light;
+
+  &.header_refresh {
+    background: $color-shade-darkest;
+    border: 1px solid $color-shade-light;
+  }
 }
 
 #whats_new_burst {
