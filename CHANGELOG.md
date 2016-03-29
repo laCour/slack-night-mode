@@ -1,5 +1,6 @@
 # Changelog
 
+* **29/03/16**: Updated styles for new loading screen (#45). Removed limited messaging alert background (#44). Updated styles for reaction toasts (#43).
 * **21/03/16**: Updated styles for updated team menu (21f6a41).
 * **20/03/16**: Corrected styles for direct message close hover (#42).
 * **16/03/16**: Corrected styles for quick switcher items (#41).
