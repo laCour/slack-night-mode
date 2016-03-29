@@ -332,3 +332,11 @@ ts-message {
     color: $color-highlight;
   }
 }
+
+.is_limited_div {
+  background-color: $color-base !important;
+
+  &.mini {
+    color: $color-highlight !important;
+  }
+}
