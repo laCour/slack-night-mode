@@ -3,23 +3,43 @@
     background: $color-base;
     left: 110px;
   }
-
-  #col_channels_bg {
-    background: $color-base;
-  }
 }
 
 #self_help_link_div {
   right: 110px !important;
 }
 
-#loading_indicator,
-#loading_welcome_msg {
-  color: $color-highlight;
-  text-shadow: 0 1px $color-shade-darkest;
+#loading_welcome {
+  background-image: none;
+}
+
+#loading_message {
+  p {
+    color: $base-font-color;
+  }
+
+  #loading_message_attribution {
+    color: $color-highlight;
+  }
+}
+
+#col_channels_bg {
+  background: $color-base;
 }
 
 #loading_team_menu_bg,
 #loading_user_menu_bg {
+  background: $color-base;
   border: none;
+}
+
+#loading_message_spinner {
+  background-image: none;
+
+  &::after {
+    color: $color-highlight;
+    content: "Loading...";
+    display: block;
+    width: auto;
+  }
 }
