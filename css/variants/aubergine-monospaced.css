@@ -76,8 +76,8 @@
   #loading_message #loading_message_attribution { color: #a3839f; }
   #col_channels_bg { background: #3e313c; }
   #loading_team_menu_bg, #loading_user_menu_bg { background: #3e313c; border: none; }
-  #loading_message_spinner { background-image: none; }
-  #loading_message_spinner::after { color: #a3839f; content: "Loading..."; display: block; width: auto; }
+  #loading_message_spinner { background-image: none; width: auto; }
+  #loading_message_spinner::after { color: #a3839f; content: "Loading..."; }
   input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], input[type=search] { background-color: #61485e; border: 1px solid #372c36; color: #f0d9ed; }
   input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, input[type=number]:focus, input[type=email]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=color]:focus, input[type=search]:focus { border-color: rgba(77, 57, 75, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 100, 132, 0.6); }
   input[type=file]:focus { outline: #f0d9ed dotted thin; }
@@ -159,19 +159,18 @@
   .filter_select.default_style .fsl_token::after { color: #f0d9ed; }
   .filter_select.default_style .fsl_paginate .fsl_paginate_back, .filter_select.default_style .fsl_paginate_forward { color: #f0d9ed; }
   .filter_select.default_style.single .fsl_input_container.active::after, .filter_select.default_style.single .fsl_input_container:hover::after { color: #f0d9ed; }
-  #message-input.offline { background-color: #4d394b !important; }
-  #message-input.disabled { background-color: #4d394b; }
+  #message-input.offline, #message-input.disabled { background-color: #4d394b !important; }
   #message-input-message { color: #a3839f; font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
-  #message_edit_form #message-input, #messages-input-container #message-input { background: padding-box #61485e; border: 2px solid #4d394b; color: #f0d9ed; }
-  #message_edit_form #message-input:focus, #messages-input-container #message-input:focus { border-color: #372c36; }
+  #message_edit_form #message-input, #messages-input-container #message-input { background: padding-box #61485e; border: 2px solid #4a3b49; border-left: 0; color: #f0d9ed; }
+  #message_edit_form #message-input:focus, #messages-input-container #message-input:focus { border-color: #4d394b; }
   #message_edit_form .emo_menu, #messages-input-container .emo_menu { color: rgba(240, 217, 237, 0.3); }
   #message_edit_form .emo_menu.active .ts_icon_happy_smile, #message_edit_form .emo_menu:hover .ts_icon_happy_smile, #messages-input-container .emo_menu.active .ts_icon_happy_smile, #messages-input-container .emo_menu:hover .ts_icon_happy_smile { color: #876484; }
   #message_edit_form.focus .emo_menu, #messages-input-container.focus .emo_menu { color: rgba(240, 217, 237, 0.6); }
   #message_edit_form.offline #message-input, #message_edit_form.offline #primary_file_button, #messages-input-container.offline #message-input, #messages-input-container.offline #primary_file_button { background-color: #4d394b !important; }
-  #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #4d394b; color: #a3839f; }
-  #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #372c36; }
-  #primary_file_button { background: padding-box #61485e; border: 2px solid #4d394b; }
-  #primary_file_button.active, #primary_file_button:hover { background: #61485e; border-color: #61485e; color: #f0d9ed; }
+  #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #4a3b49; color: #a3839f; }
+  #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #4d394b; }
+  #primary_file_button { background: padding-box #61485e; border: 2px solid #4a3b49; }
+  #primary_file_button.active, #primary_file_button:hover { background: #61485e; border-color: #61485e; border-right: 2px solid #4a3b49; color: #f0d9ed; }
   #footer { background: #3e313c; }
   #footer.disabled #message-input { background: padding-box #4d394b !important; border: 2px solid #4d394b !important; }
   #footer_archives_table { color: #a3839f; }
@@ -212,6 +211,7 @@
   #team_menu.active #current_user_name, #team_menu:hover #current_user_name { color: #f0d9ed; }
   #team_menu i { color: #a3839f; }
   #team_menu .presence .presence_icon { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  #team_header_user_name { color: #a3839f; }
   #menu.team_menu { box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); }
   #menu.team_menu ul li.highlighted > a, #menu.team_menu:not(.keyboard_active) ul li:hover > a { background: #61485e; color: #d4bbd1; }
   #menu.team_menu ul li > a { color: #a3839f; }
@@ -373,12 +373,12 @@
   #whats_new_burst { background: #bf360c; border-color: #61485e; }
   #client_header .search_form .icon_search { color: #a3839f; }
   #client_header .search_form .icon_close { color: #a3839f; }
-  #client_header .search_form .search_input { background: #61485e; border: 1px solid rgba(135, 100, 132, 0.61); }
+  #client_header .search_form .search_input { background: #372c36 !important; border: 1px solid #61485e; }
   #client_header .search_form .search_input:hover { border: 1px solid #876484; }
-  #client_header .search_form .search_input:focus { border-color: rgba(135, 100, 132, 0.61); }
-  #client_header .channel_header #header_search_form:hover .search_input { border: 1px solid rgba(97, 72, 94, 0.61); }
+  #client_header .search_form .search_input:focus { border-color: #61485e; }
+  #client_header .channel_header #header_search_form:hover .search_input { border: 1px solid #61485e; }
   #client_header .channel_header #header_search_form #search_spinner { color: #f0d9ed; }
-  #client_header .channel_header #header_search_form.search_form .icon_search { color: #a3839f; }
+  #client_header .channel_header #header_search_form.search_form .icon_search { color: #a3839f; z-index: 2; }
   #client_header .channel_header #search_container .search_form .search_clear_icon .ts_icon_times_circle { color: #a3839f; }
   #team_filter .icon_search { color: #a3839f; }
   #team_filter a.icon_close { color: #a3839f; }
@@ -509,8 +509,8 @@
   .dense_theme .file_reference:hover a.file_download_link:hover { color: #d4bbd1 !important; }
   .dense_theme .msg_inline_video { border: 1px solid #4d394b; }
   .messages_banner { color: #f0d9ed; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
-  .messages_banner a { color: #a3839f; }
-  .messages_banner a:hover { color: #d4bbd1; }
+  .messages_banner a { color: #f0d9ed; }
+  .messages_banner a:hover { color: #f0d9ed; }
   #connection_div { background: #bf360c; }
   #archives_return { background: padding-box #876484; color: #f0d9ed; }
   #archives_return.warning { background: #bf360c; }
@@ -745,6 +745,8 @@
   .search_result_with_extract:hover .extract_expand_icons { color: #d4bbd1; }
   #mentions_options { background-color: #3e313c; border-top: 1px solid #372c36; color: #f0d9ed; }
   #member_mentions_more_btn { background-color: #876484 !important; }
+  .mention_rxn .mention_rxn_summary { color: #f0d9ed; }
+  .mention_rxn .mention_rxn_summary .member_preview_link, .mention_rxn .mention_rxn_summary .mention_rxn_summary_members { color: #a3839f; }
   #file_list_toggle_users { color: #a3839f; }
   #file_list_toggle_users.active:hover, #file_list_toggle_users:hover { color: #d4bbd1; }
   #file_list_toggle_users.active { color: #a3839f; }
@@ -830,10 +832,10 @@
   #member_preview_scroller .member_data_table a:hover, #team_list .member_data_table a:hover { color: #d4bbd1; }
   #member_preview_scroller a.member_action_button, #team_list a.member_action_button { color: #a3839f !important; }
   #member_preview_scroller a.member_action_button:hover, #team_list a.member_action_button:hover { border-color: #876484 !important; color: #d4bbd1 !important; }
-  #member_preview_scroller .member_data_table.team_profile_fields tr, #member_preview_web_container .member_data_table.team_profile_fields tr, #team_list .member_data_table.team_profile_fields tr, .menu_member_header .member_data_table.team_profile_fields tr { color: #f0d9ed; }
-  #member_preview_scroller .member_data_table.team_profile_fields a, #member_preview_web_container .member_data_table.team_profile_fields a, #team_list .member_data_table.team_profile_fields a, .menu_member_header .member_data_table.team_profile_fields a { color: #a3839f; }
-  #member_preview_scroller .member_data_table.team_profile_fields a:hover, #member_preview_web_container .member_data_table.team_profile_fields a:hover, #team_list .member_data_table.team_profile_fields a:hover, .menu_member_header .member_data_table.team_profile_fields a:hover { color: #d4bbd1; }
-  #member_preview_scroller .member_data_table.team_profile_fields .bot_label, #member_preview_web_container .member_data_table.team_profile_fields .bot_label, #team_list .member_data_table.team_profile_fields .bot_label, .menu_member_header .member_data_table.team_profile_fields .bot_label { background: #372c36; color: #a3839f; }
+  #member_preview_scroller .member_data_table tr, #member_preview_web_container .member_data_table tr, #team_list .member_data_table tr, .menu_member_header .member_data_table tr { color: #f0d9ed; }
+  #member_preview_scroller .member_data_table a, #member_preview_web_container .member_data_table a, #team_list .member_data_table a, .menu_member_header .member_data_table a { color: #a3839f; }
+  #member_preview_scroller .member_data_table a:hover, #member_preview_web_container .member_data_table a:hover, #team_list .member_data_table a:hover, .menu_member_header .member_data_table a:hover { color: #d4bbd1; }
+  #member_preview_scroller .member_data_table .bot_label, #member_preview_web_container .member_data_table .bot_label, #team_list .member_data_table .bot_label, .menu_member_header .member_data_table .bot_label { background: #372c36; color: #a3839f; }
   #member_preview_scroller, #member_preview_web_container { background-color: #4d394b; }
   #team_tab #member_preview_scroller, #team_tab #member_preview_web_container { background-color: #3e313c; }
   #member_preview_scroller .member_details .member_name_and_presence .member_name, #member_preview_web_container .member_details .member_name_and_presence .member_name, .menu_member_header .member_details .member_name_and_presence .member_name { color: #f0d9ed; }
@@ -861,6 +863,7 @@
   #emoji_menu #emoji_preview_text { background: #372c36; color: #f0d9ed; }
   #emoji_menu #emoji_preview_deluxe { color: #f0d9ed; }
   #emoji_menu #emoji_menu_footer { background: #372c36; border-top: 1px solid #4d394b; }
+  #emoji_menu #emoji_menu_content:hover #emoji_skin_button_container { border: 1px solid #4d394b; }
   #emoji_menu #emoji_menu_header { background: #372c36; }
   #emoji_menu .emoji_li a:hover { background: #d4bbd1; }
   #emoji_menu .emoji_li a.green:hover, #emoji_menu .emoji_li.key_selection a.green { background: #a3839f; }
@@ -874,6 +877,7 @@
   #emoji_menu #emoji_input:focus { border-color: #61485e; }
   #emoji_menu #emoji_skin_button, #emoji_menu #emoji_skin_picker, #emoji_menu #emoji_skin_tip { color: #a3839f; }
   #emoji_menu #emoji_skin_picker { background: #372c36; }
+  #emoji_menu #emoji_skin_picker > span[data-preferred=true] { background: #4d394b; }
   .emoji_li a { color: #a3839f !important; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
   div#emoji_tip { color: #f0d9ed; }
   div#emoji_zero_results { color: #a3839f; }
