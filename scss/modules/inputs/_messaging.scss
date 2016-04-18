@@ -1,10 +1,7 @@
 #message-input {
-  &.offline {
-    background-color: $color-shade-dark !important;
-  }
-
+  &.offline,
   &.disabled {
-    background-color: $color-shade-dark;
+    background-color: $color-shade-dark !important;
   }
 }
 
@@ -20,11 +17,12 @@
 #messages-input-container {
   #message-input {
     background: padding-box $color-shade-light;
-    border: 2px solid $color-shade-dark;
+    border: 2px solid $color-shade-mid;
+    border-left: 0;
     color: $base-font-color;
 
     &:focus {
-      border-color: $color-shade-darkest;
+      border-color: $color-shade-dark;
     }
   }
 
@@ -50,7 +48,7 @@
     }
 
     #primary_file_button {
-      border-color: $color-shade-dark;
+      border-color: $color-shade-mid;
       color: $color-highlight;
     }
   }
@@ -58,17 +56,18 @@
 
 #message_edit_form.focus #primary_file_button:not(:hover),
 #messages-input-container.focus #primary_file_button:not(:hover) {
-  border-color: $color-shade-darkest;
+  border-color: $color-shade-dark;
 }
 
 #primary_file_button {
   background: padding-box $color-shade-light;
-  border: 2px solid $color-shade-dark;
+  border: 2px solid $color-shade-mid;
 
   &.active,
   &:hover {
     background: $color-shade-light;
     border-color: $color-shade-light;
+    border-right: 2px solid $color-shade-mid;
     color: $base-font-color;
   }
 }
