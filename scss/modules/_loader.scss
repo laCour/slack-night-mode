@@ -35,11 +35,10 @@
 
 #loading_message_spinner {
   background-image: none;
+  width: auto;
 
   &::after {
     color: $color-highlight;
     content: "Loading...";
-    display: block;
-    width: auto;
   }
 }
