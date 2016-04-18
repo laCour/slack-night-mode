@@ -1,0 +1,10 @@
+.mention_rxn {
+  .mention_rxn_summary {
+    color: $base-font-color;
+
+    .member_preview_link,
+    .mention_rxn_summary_members {
+      color: $color-highlight;
+    }
+  }
+}
