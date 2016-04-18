@@ -29,6 +29,10 @@
     border-top: 1px solid $color-shade-dark;
   }
 
+  #emoji_menu_content:hover #emoji_skin_button_container {
+    border: 1px solid $color-shade-dark;
+  }
+
   #emoji_menu_header {
     background: $color-shade-darkest;
   }
@@ -90,6 +94,10 @@
 
   #emoji_skin_picker {
     background: $color-shade-darkest;
+
+    > span[data-preferred=true] {
+      background: $color-shade-dark;
+    }
   }
 }
 
