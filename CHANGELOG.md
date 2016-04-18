@@ -1,5 +1,6 @@
 # Changelog
 
+* **17/04/16**: Improve styles for main input (#48), search input (#47), and notification bar links (#46). Corrected styles for emoji skin selector (#52), flexpane reactions (#51), current user's name (#50), member pages (#49), and loading screen "loading" text (815df5d).
 * **29/03/16**: Updated styles for new loading screen (#45). Removed limited messaging alert background (#44). Updated styles for reaction toasts (#43).
 * **21/03/16**: Updated styles for updated team menu (21f6a41).
 * **20/03/16**: Corrected styles for direct message close hover (#42).
