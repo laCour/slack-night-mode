@@ -9,15 +9,15 @@
     }
 
     .search_input {
-      background: $color-shade-light;
-      border: 1px solid rgba($color-shade-lightest, 0.61);
+      background: $color-shade-darkest !important;
+      border: 1px solid $color-shade-light;
 
       &:hover {
         border: 1px solid $color-shade-lightest;
       }
 
       &:focus {
-        border-color: rgba($color-shade-lightest, 0.61);
+        border-color: $color-shade-light;
       }
     }
   }
@@ -25,7 +25,7 @@
   .channel_header {
     #header_search_form {
       &:hover .search_input {
-        border: 1px solid rgba($color-shade-light, 0.61);
+        border: 1px solid $color-shade-light;
       }
 
       #search_spinner {
@@ -34,6 +34,7 @@
 
       &.search_form .icon_search {
         color: $color-highlight;
+        z-index: 2;
       }
     }
 
