@@ -373,7 +373,7 @@
   #whats_new_burst { background: #bf360c; border-color: #61485e; }
   #client_header .search_form .icon_search { color: #a3839f; }
   #client_header .search_form .icon_close { color: #a3839f; }
-  #client_header .search_form .search_input { background: #372c36 !important; border: 1px solid #61485e; }
+  #client_header .search_form .search_input { background: #4d394b !important; border: 1px solid #61485e; }
   #client_header .search_form .search_input:hover { border: 1px solid #876484; }
   #client_header .search_form .search_input:focus { border-color: #61485e; }
   #client_header .channel_header #header_search_form:hover .search_input { border: 1px solid #61485e; }
