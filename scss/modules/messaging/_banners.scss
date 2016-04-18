@@ -3,10 +3,10 @@
   text-shadow: 0 1px $color-shadow-light;
 
   a {
-    color: $base-link-color;
+    color: $base-font-color;
 
     &:hover {
-      color: $base-link-color-active;
+      color: $base-font-color;
     }
   }
 }
