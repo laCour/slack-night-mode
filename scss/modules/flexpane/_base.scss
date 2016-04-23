@@ -40,6 +40,20 @@
     }
   }
 
+  .subheading {
+    background: $color-base;
+    border-top: 1px solid $color-shade-darkest;
+    color: $color-highlight;
+
+    p a {
+      color: $base-font-color;
+    }
+
+    .filter_menu_label.active .arrow_down {
+      color: $color-highlight;
+    }
+  }
+
   .toolbar {
     background: $color-base;
   }
