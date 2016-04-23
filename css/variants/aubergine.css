@@ -22,7 +22,7 @@
   .channels_list_holder ul { color: #f0d9ed; }
   .channels_list_holder ul li { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   .channels_list_holder ul li a { color: #a3839f; }
-  .channels_list_holder ul li a:hover { background: #3e313c; }
+  .channels_list_holder ul li a:hover { background: #3e313c; border-bottom-right-radius: 0.25rem; border-top-right-radius: 0.25rem; }
   .channels_list_holder ul li.channel.active a.channel_name .prefix { color: #a3839f; }
   .channels_list_holder ul li.group.active a.group_name .prefix { color: #a3839f; }
   .channels_list_holder ul li.group .group_close { color: #a3839f; }
@@ -98,7 +98,7 @@
   ::-moz-placeholder { color: #f0d9ed; }
   input::-moz-placeholder, textarea::-moz-placeholder { color: #f0d9ed; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #f0d9ed; }
-  input[disabled], input[readonly], textarea[disabled], textarea[readonly] { background-color: #61485e; }
+  input[disabled], input[readonly], textarea[disabled], textarea[readonly] { background-color: #61485e !important; }
   .form-actions { background-color: #4a3b49; border-top: 1px solid #4d394b; }
   .help-block, .help-inline { color: #a3839f; }
   .input-append .add-on, .input-prepend .add-on { background-color: #876484; border: 1px solid #61485e; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
@@ -170,7 +170,7 @@
   #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #4a3b49; color: #a3839f; }
   #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #4d394b; }
   #primary_file_button { background: padding-box #61485e; border: 2px solid #4a3b49; }
-  #primary_file_button.active, #primary_file_button:hover { background: #61485e; border-color: #61485e; border-right: 2px solid #4a3b49; color: #f0d9ed; }
+  #primary_file_button.active, #primary_file_button:hover { background: #4a3b49; border: 2px solid #4d394b; color: #a3839f; }
   #footer { background: #3e313c; }
   #footer.disabled #message-input { background: padding-box #4d394b !important; border: 2px solid #4d394b !important; }
   #footer_archives_table { color: #a3839f; }
@@ -248,6 +248,10 @@
   .pickmeup .pmu-instance .pmu-day-of-week { color: #f0d9ed; }
   .pickmeup .pmu-instance .pmu-day-of-week * { border: 1px solid #4d394b; }
   .pickmeup .pmu-instance .pmu-days * { border: 1px solid #4d394b; }
+  #menu.date_picker .pickmeup .pmu-instance .pmu-button:not(.pmu-disabled):hover, #menu.date_picker .pickmeup .pmu-selected { background: #61485e; }
+  #menu.date_picker li.date_picker_item a { color: #f0d9ed; }
+  #menu.date_picker li.date_picker_item a:hover { color: #f0d9ed; }
+  #menu.date_picker li.date_picker_item.highlighted a { color: #a3839f; }
   #autocomplete_menu { color: #f0d9ed; }
   #autocomplete_menu h2 { color: #f0d9ed; }
   #autocomplete_menu ol li.selected { background-color: #876484; color: #f0d9ed; }
@@ -273,6 +277,14 @@
   #autocomplete_menu .boxed { background: #3e313c; border: 1px solid #4d394b; box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15); }
   #autocomplete_menu .section_header .header_label { background-color: #3e313c; color: #a3839f; }
   #autocomplete_menu .pickmeup { border-bottom: 1px solid #4d394b; }
+  #autocomplete_menu:not(.search_menu) header { background-color: #372c36; }
+  #autocomplete_menu:not(.search_menu) ol li.selected { background-color: #876484; color: #f0d9ed; }
+  #autocomplete_menu:not(.search_menu) ol li.selected:hover { background-color: #876484; color: #f0d9ed; }
+  #autocomplete_menu:not(.search_menu) ol li.selected .username, #autocomplete_menu:not(.search_menu) ol li.selected:hover .username, #autocomplete_menu:not(.search_menu) ol li.selected.keyword_match .modifier, #autocomplete_menu:not(.search_menu) ol li.selected:hover.keyword_match .modifier, #autocomplete_menu:not(.search_menu) ol li.selected .keyword_placeholder, #autocomplete_menu:not(.search_menu) ol li.selected:hover .keyword_placeholder { color: #a3839f; }
+  #autocomplete_menu:not(.search_menu) ol li.selected .ts_icon, #autocomplete_menu:not(.search_menu) ol li.selected:hover .ts_icon { color: #a3839f !important; }
+  #autocomplete_menu:not(.search_menu) ol li:hover { background-color: #61485e; }
+  #autocomplete_menu:not(.search_menu) ol li .ellipsis_icon, #autocomplete_menu:not(.search_menu) ol li .history_icon, #autocomplete_menu:not(.search_menu) ol li .modifier_icon { color: #a3839f; }
+  #autocomplete_menu:not(.search_menu) .keyword_placeholder { color: #a3839f; }
   .search_light_grey { color: #f0d9ed !important; }
   .highlighter_underlay .keyword::before { background: #876484; border: 1px solid #61485e; color: #f0d9ed; }
   .highlighter_underlay .modifier::before { background: #876484; border: 1px solid #61485e; color: #f0d9ed; }
@@ -660,6 +672,9 @@
   #flex_contents .heading .menu_heading:hover { color: #f0d9ed; }
   #flex_contents .heading .menu_icon { color: #a3839f; }
   #flex_contents .heading .menu_icon:hover { color: #d4bbd1; }
+  #flex_contents .subheading { background: #3e313c; border-top: 1px solid #372c36; color: #a3839f; }
+  #flex_contents .subheading p a { color: #f0d9ed; }
+  #flex_contents .subheading .filter_menu_label.active .arrow_down { color: #a3839f; }
   #flex_contents .toolbar { background: #3e313c; }
   #flex_contents .flexpane_tab_bar li a { color: #a3839f; }
   #flex_contents .flexpane_tab_bar li:hover { border-bottom: 4px solid #4d394b; }
@@ -1347,6 +1362,9 @@
   #flex_contents .user_group_item:hover h4 { color: #f0d9ed; }
   .user_group_invite_member_small .add_icon { color: #a3839f; }
   #user_group_member_invite_div .disabled .fsl_item.fsl_token { background-color: #876484; border-color: #876484; }
+  .admin_pref:not(:first-of-type) { border-top: 1px solid #3e313c; }
+  .admin_pref.locked { background-color: rgba(191, 54, 12, 0.2); }
+  .admin_pref .admin_pref_locked_label { color: #a3839f; }
   .admin_list_item { border-bottom: 1px solid #3e313c; color: #f0d9ed; }
   .admin_list_item:hover { background-color: #4d394b; }
   .admin_list_item .pill.group { background: #4a3b49; }
