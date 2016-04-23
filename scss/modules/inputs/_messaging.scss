@@ -65,10 +65,9 @@
 
   &.active,
   &:hover {
-    background: $color-shade-light;
-    border-color: $color-shade-light;
-    border-right: 2px solid $color-shade-mid;
-    color: $base-font-color;
+    background: $color-shade-mid;
+    border: 2px solid $color-shade-dark;
+    color: $color-highlight;
   }
 }
 
