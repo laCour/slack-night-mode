@@ -80,3 +80,28 @@
     }
   }
 }
+
+#menu {
+  &.date_picker {
+    .pickmeup {
+      .pmu-instance .pmu-button:not(.pmu-disabled):hover,
+      .pmu-selected {
+        background: $color-shade-light;
+      }
+    }
+
+    li.date_picker_item {
+      a {
+        color: $base-font-color;
+
+        &:hover {
+          color: $base-font-color;
+        }
+      }
+
+      &.highlighted a {
+        color: $color-highlight;
+      }
+    }
+  }
+}
