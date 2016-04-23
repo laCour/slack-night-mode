@@ -273,6 +273,20 @@ html.no_touch {
   }
 }
 
+.admin_pref {
+  &:not(:first-of-type) {
+    border-top: 1px solid $color-base;
+  }
+
+  &.locked {
+    background-color: rgba($color-red, 0.2);
+  }
+
+  .admin_pref_locked_label {
+    color: $color-highlight;
+  }
+}
+
 .admin_list_item {
   border-bottom: 1px solid $color-base;
   color: $base-font-color;
