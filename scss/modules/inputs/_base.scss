@@ -120,7 +120,7 @@ input,
 textarea {
   &[disabled],
   &[readonly] {
-    background-color: $color-shade-light;
+    background-color: $color-shade-light !important;
   }
 }
 
