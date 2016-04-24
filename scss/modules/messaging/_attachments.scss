@@ -202,19 +202,25 @@
     }
   }
 
-  &.image_container .preview_actions {
-    .btn {
-      background-color: rgba($color-shade-lightest, 0.9);
-
-      &:focus,
-      &:hover {
-        background-color: $color-shade-dark;
-      }
+  &.image_container {
+    .image_body {
+      background-color: $color-base;
     }
 
-    &.overflow_preview_actions {
-      background: rgba($color-shade-lightest, 0.9);
-      border: 1px solid rgba($color-shade-darkest, 0.1);
+    .preview_actions {
+      .btn {
+        background-color: rgba($color-shade-lightest, 0.9);
+
+        &:focus,
+        &:hover {
+          background-color: $color-shade-dark;
+        }
+      }
+
+      &.overflow_preview_actions {
+        background: rgba($color-shade-lightest, 0.9);
+        border: 1px solid rgba($color-shade-darkest, 0.1);
+      }
     }
   }
 
