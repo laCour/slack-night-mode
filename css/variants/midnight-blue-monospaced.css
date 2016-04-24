@@ -577,6 +577,7 @@
   .file_container .preview_actions .btn.preview_show_less_header::after { border: 2px solid #000; }
   .file_container .preview_actions .btn.preview_show_less_header:focus, .file_container .preview_actions .btn.preview_show_less_header:hover { background-color: #111; }
   .file_container .preview_actions .btn.preview_show_less_header:focus::after, .file_container .preview_actions .btn.preview_show_less_header:hover::after { border-color: #111; }
+  .file_container.image_container .image_body { background-color: #000; }
   .file_container.image_container .preview_actions .btn { background-color: rgba(68, 68, 68, 0.9); }
   .file_container.image_container .preview_actions .btn:focus, .file_container.image_container .preview_actions .btn:hover { background-color: #111; }
   .file_container.image_container .preview_actions.overflow_preview_actions { background: rgba(68, 68, 68, 0.9); border: 1px solid rgba(0, 0, 0, 0.1); }
@@ -952,12 +953,12 @@
   .fs_modal_file_viewer_header .file_size { color: #1793d1; }
   .fs_modal_file_viewer_header .close_btn::after { border-right: 1px solid #333; }
   .fs_modal_file_viewer_content .viewer { background-color: #000; color: #00b9f2 !important; }
-  .fs_modal_file_viewer_content .viewer .next_btn .ts_icon, .fs_modal_file_viewer_content .viewer .previous_btn .ts_icon { background: #333; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); }
-  .fs_modal_file_viewer_content .viewer .next_btn:focus, .fs_modal_file_viewer_content .viewer .next_btn:hover, .fs_modal_file_viewer_content .viewer .previous_btn:focus, .fs_modal_file_viewer_content .viewer .previous_btn:hover { background: rgba(68, 68, 68, 0.25); color: #00b9f2; }
+  .fs_modal_file_viewer_content .viewer .next_btn ts-icon, .fs_modal_file_viewer_content .viewer .previous_btn ts-icon { background: #333; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); }
+  .fs_modal_file_viewer_content .viewer .next_btn:focus:not([disabled]), .fs_modal_file_viewer_content .viewer .next_btn:hover:not([disabled]), .fs_modal_file_viewer_content .viewer .previous_btn:focus:not([disabled]), .fs_modal_file_viewer_content .viewer .previous_btn:hover:not([disabled]) { background: rgba(68, 68, 68, 0.25); color: #00b9f2; }
   .fs_modal_file_viewer_content .viewer .next_btn[disabled]:focus, .fs_modal_file_viewer_content .viewer .next_btn[disabled]:hover, .fs_modal_file_viewer_content .viewer .previous_btn[disabled]:focus, .fs_modal_file_viewer_content .viewer .previous_btn[disabled]:hover { color: rgba(23, 147, 209, 0.8); }
   .fs_modal_file_viewer_content .comment_panel { background-color: #000; box-shadow: -1px 0 0 rgba(0, 0, 0, 0.25); }
-  .fs_modal_file_viewer_content .comment_header { border-bottom: 1px solid #111; }
-  .fs_modal_file_viewer_content .no_comment { color: #1793d1; }
+  .fs_modal_file_viewer_content .comment_header { background-color: transparent; border-bottom: 1px solid #000; }
+  .fs_modal_file_viewer_content .no_comment { background-color: #000; color: #1793d1; }
   .fs_modal_file_viewer_content .comment_close_btn { color: #00b9f2; }
   .mini_file_profile .meta_data { color: #1793d1; }
   .mini_file_profile .author .member { color: #1793d1 !important; }
