@@ -48,13 +48,13 @@
 
     .next_btn,
     .previous_btn {
-      .ts_icon {
+      ts-icon {
         background: $color-shade-light;
         box-shadow: 0 1px 1px 0 $color-shadow-medium;
       }
 
-      &:focus,
-      &:hover {
+      &:focus:not([disabled]),
+      &:hover:not([disabled]) {
         background: rgba($color-shade-lightest, 0.25);
         color: $base-font-color;
       }
@@ -69,15 +69,17 @@
   }
 
   .comment_panel {
-    background-color: $color-shade-darkest;
+    background-color: $color-base;
     box-shadow: -1px 0 0 $color-shadow-medium;
   }
 
   .comment_header {
-    border-bottom: 1px solid $color-shade-dark;
+    background-color: transparent;
+    border-bottom: 1px solid $color-shade-darkest;
   }
 
   .no_comment {
+    background-color: $color-base;
     color: $color-highlight;
   }
 
