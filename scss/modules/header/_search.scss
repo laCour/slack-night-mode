@@ -23,11 +23,17 @@
   }
 
   .channel_header {
-    #header_search_form {
-      &:hover .search_input {
+    #search_container {
+      .search_form:hover .search_input {
         border: 1px solid $color-shade-light;
       }
 
+      .search_form .search_clear_icon .ts_icon_times_circle {
+        color: $color-highlight;
+      }
+    }
+
+    #header_search_form {
       #search_spinner {
         color: $base-font-color;
       }
@@ -36,10 +42,6 @@
         color: $color-highlight;
         z-index: 2;
       }
-    }
-
-    #search_container .search_form .search_clear_icon .ts_icon_times_circle {
-      color: $color-highlight;
     }
   }
 }

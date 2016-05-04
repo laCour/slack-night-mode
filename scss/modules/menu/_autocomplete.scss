@@ -146,6 +146,31 @@
     background-color: $color-shade-darkest;
   }
 
+  footer,
+  header {
+    background-color: $color-shade-darkest;
+
+    .keyword::before,
+    .modifier::before {
+      background: $color-shade-lightest;
+      border: 1px solid $color-shade-light;
+      color: $base-font-color;
+    }
+
+    .selected {
+      .keyword::before,
+      .modifier::before {
+        background: rgba($color-shade-light, 0.25);
+        border: $color-shade-lightest;
+      }
+    }
+
+    .modifier.incomplete::before {
+      background: $color-shade-dark;
+      border: 1px solid $color-shade-darkest;
+    }
+  }
+
   ol {
     li {
       &.selected {
