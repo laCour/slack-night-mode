@@ -109,7 +109,7 @@
   }
 }
 
-.channel_header_refresh #client_body:not(.onboarding)::before {
+#client_body:not(.onboarding)::before {
   background: $color-base;
   border-bottom: 1px solid $color-base;
 }
