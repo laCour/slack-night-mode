@@ -164,6 +164,59 @@ html.no_touch {
       color: $base-font-color !important;
     }
   }
+
+  .pager {
+    .previous,
+    .next {
+      > a:hover,
+      > a:focus {
+        background-position: 0;
+        color: $color-highlight;
+      }
+    }
+  }
+}
+
+.pager {
+  li {
+    > a,
+    > span {
+      background-color: $color-shade-mid;
+      background-image: none;
+      border: 1px solid $color-shade-dark;
+      border-radius: 3px;
+      color: $base-font-color;
+    }
+
+    &.previous > {
+      a,
+      span {
+        background-position: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+
+    &.next > {
+      a,
+      span {
+        background-position: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .disabled > {
+    a,
+    span {
+      color: $color-highlight;
+    }
+  }
+}
+
+.loading_hash_animation img {
+  display: none;
 }
 
 .card,
