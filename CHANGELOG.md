@@ -1,5 +1,6 @@
 # Changelog
 
+* **04/05/16**: Fix white bar under header (#53), search input border and autocomplete modifier styles (3641f7c), and day divider styles (3b6c382). Added styles for history navigation on the team page (96abf60). 
 * **23/04/16**: Added styles for new date jumper (567e550) and new flexpane subheadings (b5259d9). Improve styling of file upload button on hover (a27e73e and #48). Fixed styles for team admin preferences page (4b97c35), search autocomplete dropdown (c63a023), channel link hover border radius (b4d8254), readonly/disabled inputs backgrounds (b81cd1d), inline image attachment backgrounds (5cbc44a), and various fixes for the image viewer (c8e88d2).
 * **17/04/16**: Improve styles for main input (#48), search input (#47), and notification bar links (#46). Corrected styles for emoji skin selector (#52), flexpane reactions (#51), current user's name (#50), member pages (#49), and loading screen "loading" text (815df5d).
 * **29/03/16**: Updated styles for new loading screen (#45). Removed limited messaging alert background (#44). Updated styles for reaction toasts (#43).
