@@ -3,11 +3,12 @@
   color: $color-highlight;
 
   hr {
+    border-bottom: 0;
     border-top: 1px solid $color-shade-dark;
   }
 
   .day_divider_label {
-    background: $color-shade-dark;
+    background: $color-base;
   }
 }
 
@@ -18,5 +19,13 @@
 
   &.unread_day_container .day_msgs {
     border-color: $color-red;
+  }
+
+  .day_divider {
+    color: $color-highlight;
+
+    .day_divider_label {
+      background: $color-base;
+    }
   }
 }
