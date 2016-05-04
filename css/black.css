@@ -278,6 +278,10 @@
   #autocomplete_menu .section_header .header_label { background-color: #222; color: #949494; }
   #autocomplete_menu .pickmeup { border-bottom: 1px solid #363636; }
   #autocomplete_menu:not(.search_menu) header { background-color: #000; }
+  #autocomplete_menu:not(.search_menu) footer, #autocomplete_menu:not(.search_menu) header { background-color: #000; }
+  #autocomplete_menu:not(.search_menu) footer .keyword::before, #autocomplete_menu:not(.search_menu) footer .modifier::before, #autocomplete_menu:not(.search_menu) header .keyword::before, #autocomplete_menu:not(.search_menu) header .modifier::before { background: #828282; border: 1px solid #545454; color: #e6e6e6; }
+  #autocomplete_menu:not(.search_menu) footer .selected .keyword::before, #autocomplete_menu:not(.search_menu) footer .selected .modifier::before, #autocomplete_menu:not(.search_menu) header .selected .keyword::before, #autocomplete_menu:not(.search_menu) header .selected .modifier::before { background: rgba(84, 84, 84, 0.25); border: #828282; }
+  #autocomplete_menu:not(.search_menu) footer .modifier.incomplete::before, #autocomplete_menu:not(.search_menu) header .modifier.incomplete::before { background: #363636; border: 1px solid #000; }
   #autocomplete_menu:not(.search_menu) ol li.selected { background-color: #828282; color: #e6e6e6; }
   #autocomplete_menu:not(.search_menu) ol li.selected:hover { background-color: #828282; color: #e6e6e6; }
   #autocomplete_menu:not(.search_menu) ol li.selected .username, #autocomplete_menu:not(.search_menu) ol li.selected:hover .username, #autocomplete_menu:not(.search_menu) ol li.selected.keyword_match .modifier, #autocomplete_menu:not(.search_menu) ol li.selected:hover.keyword_match .modifier, #autocomplete_menu:not(.search_menu) ol li.selected .keyword_placeholder, #autocomplete_menu:not(.search_menu) ol li.selected:hover .keyword_placeholder { color: #949494; }
@@ -358,7 +362,7 @@
   #client_header .channel_header .channel_header_icon#details_toggle.active, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #363636; }
   #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #545454; color: #e6e6e6; }
   #client_header .channel_header .blue_hover:hover { color: #e6e6e6; }
-  .channel_header_refresh #client_body:not(.onboarding)::before { background: #222; border-bottom: 1px solid #222; }
+  #client_body:not(.onboarding)::before { background: #222; border-bottom: 1px solid #222; }
   #help_icon { border: 1px solid #424242; color: #949494; }
   #help_icon:hover { background: #424242; border: 1px solid #363636; color: #e6e6e6; }
   #help_icon.unread #help_icon_circle_count { background-color: #bf360c; color: #fff; }
@@ -388,10 +392,10 @@
   #client_header .search_form .search_input { background: #363636 !important; border: 1px solid #545454; }
   #client_header .search_form .search_input:hover { border: 1px solid #828282; }
   #client_header .search_form .search_input:focus { border-color: #545454; }
-  #client_header .channel_header #header_search_form:hover .search_input { border: 1px solid #545454; }
+  #client_header .channel_header #search_container .search_form:hover .search_input { border: 1px solid #545454; }
+  #client_header .channel_header #search_container .search_form .search_clear_icon .ts_icon_times_circle { color: #949494; }
   #client_header .channel_header #header_search_form #search_spinner { color: #e6e6e6; }
   #client_header .channel_header #header_search_form.search_form .icon_search { color: #949494; z-index: 2; }
-  #client_header .channel_header #search_container .search_form .search_clear_icon .ts_icon_times_circle { color: #949494; }
   #team_filter .icon_search { color: #949494; }
   #team_filter a.icon_close { color: #949494; }
   #team_filter a.icon_close:hover { color: #c7c7c7; }
@@ -399,10 +403,12 @@
   #client-ui a.icon_close { color: #949494; }
   #client-ui a.icon_close:hover { color: #c7c7c7; }
   .day_divider { background: #222; color: #949494; }
-  .day_divider hr { border-top: 1px solid #363636; }
-  .day_divider .day_divider_label { background: #363636; }
+  .day_divider hr { border-bottom: 0; border-top: 1px solid #363636; }
+  .day_divider .day_divider_label { background: #222; }
   .day_container .day_msgs { border-top: 1px solid #363636; }
   .day_container.unread_day_container .day_msgs { border-color: #bf360c; }
+  .day_container .day_divider { color: #949494; }
+  .day_container .day_divider .day_divider_label { background: #222; }
   #banner { background: #000; }
   #banner a { color: #949494; }
   .banner_content { color: #e6e6e6; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -1344,6 +1350,12 @@
   html.no_touch .btn:hover, html.no_touch .btn.hover, html.no_touch .btn:focus { background: #c7c7c7; }
   html.no_touch .btn.btn_outline.btn_danger:hover { background: #000; }
   html.no_touch .btn_outline:hover, html.no_touch .btn_outline.hover { background: #222; border: 1px solid #363636; color: #e6e6e6 !important; }
+  html.no_touch .pager .previous > a:hover, html.no_touch .pager .previous > a:focus, html.no_touch .pager .next > a:hover, html.no_touch .pager .next > a:focus { background-position: 0; color: #949494; }
+  .pager li > a, .pager li > span { background-color: #424242; background-image: none; border: 1px solid #363636; border-radius: 3px; color: #e6e6e6; }
+  .pager li.previous > a, .pager li.previous > span { background-position: 0; padding-right: 0; text-align: center; }
+  .pager li.next > a, .pager li.next > span { background-position: 0; padding-left: 0; text-align: center; }
+  .pager .disabled > a, .pager .disabled > span { color: #949494; }
+  .loading_hash_animation img { display: none; }
   .card, .tab_pane { background: #363636; border: 1px solid #000; color: #e6e6e6; }
   .tab_set a.secondary { color: #949494; }
   .tab_set a.selected, .tab_set a.secondary.selected { background: #363636; border: 1px solid #000; color: #c7c7c7; }
