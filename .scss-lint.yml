@@ -11,6 +11,8 @@ linters:
     style: include_zero
   NestingDepth:
     enabled: false
+  PlaceholderInExtend:
+    enabled: false
   QualifyingElement:
     enabled: false
   SelectorDepth:
