@@ -35,8 +35,7 @@
 #messages_unread_status {
   background: $color-shade-light;
 
-  &.quiet,
-  &.quiet.header_refresh {
+  &.quiet {
     background: $color-shade-lightest;
     color: $base-font-color;
     text-shadow: 0 1px $color-shadow-light;
@@ -45,28 +44,12 @@
       color: $base-font-color;
     }
   }
-
-  &.header_refresh {
-    background: $color-shade-light;
-
-    &:hover {
-      background: $color-shade-lightest;
-
-      .clear_unread_messages {
-        background: $color-shade-lightest;
-      }
-    }
-
-    .clear_unread_messages:hover {
-      background: $color-shade-lightest;
-    }
-  }
 }
 
-.header_refresh .clear_unread_messages {
+.clear_unread_messages {
   border-left: 1px solid $color-shadow-light;
 }
 
-#messages_container.header_refresh.has_top_messages_banner::before {
-  background: $color-base;
+#messages_container.has_top_messages_banner::before {
+  background: none;
 }
