@@ -7,3 +7,12 @@
 #member_mentions_more_btn {
   background-color: $color-shade-lightest !important;
 }
+
+.mention_day_container_div .day_divider {
+  @extend .day_divider;
+
+  &::before {
+    background: none;
+    border-color: $color-shade-dark;
+  }
+}
