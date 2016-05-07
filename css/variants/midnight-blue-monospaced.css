@@ -401,8 +401,8 @@
   #client-ui .icon_search { color: #1793d1; }
   #client-ui a.icon_close { color: #1793d1; }
   #client-ui a.icon_close:hover { color: #299bd4; }
-  .day_divider { background: #000; color: #1793d1; }
-  .day_divider hr { border-bottom: 0; border-top: 1px solid #111; }
+  .day_divider, .mention_day_container_div .day_divider { background: #000; color: #1793d1; }
+  .day_divider hr, .mention_day_container_div .day_divider hr { border-bottom: 0; border-top: 1px solid #111; }
   .day_divider .day_divider_label { background: #000; }
   .day_container .day_msgs { border-top: 1px solid #111; }
   .day_container.unread_day_container .day_msgs { border-color: #bf360c; }
@@ -762,6 +762,7 @@
   .search_result_with_extract:hover .extract_expand_icons { color: #299bd4; }
   #mentions_options { background-color: #000; border-top: 1px solid #000; color: #00b9f2; }
   #member_mentions_more_btn { background-color: #444 !important; }
+  .mention_day_container_div .day_divider::before { background: none; border-color: #111; }
   .mention_rxn .mention_rxn_summary { color: #00b9f2; }
   .mention_rxn .mention_rxn_summary .member_preview_link, .mention_rxn .mention_rxn_summary .mention_rxn_summary_members { color: #1793d1; }
   #file_list_toggle_users { color: #1793d1; }
