@@ -406,7 +406,7 @@
   .day_divider .day_divider_label { background: #000; }
   .day_container .day_msgs { border-top: 1px solid #111; }
   .day_container.unread_day_container .day_msgs { border-color: #bf360c; }
-  .day_container .day_divider { color: #1793d1; }
+  .day_container .day_divider { background: none; color: #1793d1; }
   .day_container .day_divider .day_divider_label { background: #000; }
   #banner { background: #000; }
   #banner a { color: #1793d1; }
