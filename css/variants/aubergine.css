@@ -385,7 +385,6 @@
   #active_channel_name:hover .name.muted, #active_channel_name:hover i .fa { color: #f0d9ed; }
   #group_actions, #im_actions { color: #a3839f; }
   #rxn_toast_div { background: #372c36; border: 1px solid #61485e; }
-  #rxn_toast_div.header_refresh { background: #372c36; border: 1px solid #61485e; }
   #whats_new_burst { background: #bf360c; border-color: #61485e; }
   #client_header .search_form .icon_search { color: #a3839f; }
   #client_header .search_form .icon_close { color: #a3839f; }
@@ -535,14 +534,10 @@
   #archives_return a { color: #a3839f; }
   #archives_return a:hover { color: #d4bbd1; }
   #messages_unread_status { background: #61485e; }
-  #messages_unread_status.quiet, #messages_unread_status.quiet.header_refresh { background: #876484; color: #f0d9ed; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
-  #messages_unread_status.quiet a, #messages_unread_status.quiet.header_refresh a { color: #f0d9ed; }
-  #messages_unread_status.header_refresh { background: #61485e; }
-  #messages_unread_status.header_refresh:hover { background: #876484; }
-  #messages_unread_status.header_refresh:hover .clear_unread_messages { background: #876484; }
-  #messages_unread_status.header_refresh .clear_unread_messages:hover { background: #876484; }
-  .header_refresh .clear_unread_messages { border-left: 1px solid rgba(0, 0, 0, 0.15); }
-  #messages_container.header_refresh.has_top_messages_banner::before { background: #3e313c; }
+  #messages_unread_status.quiet { background: #876484; color: #f0d9ed; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+  #messages_unread_status.quiet a { color: #f0d9ed; }
+  .clear_unread_messages { border-left: 1px solid rgba(0, 0, 0, 0.15); }
+  #messages_container.has_top_messages_banner::before { background: none; }
   .msg_inline_img_holder .msg_inline_img { box-shadow: inset 0 0 0 1px #372c36; }
   .msg_inline_attachment_collapser, .msg_inline_attachment_expander, .msg_inline_email_collapser, .msg_inline_email_expander, .msg_inline_file_preview_collapser, .msg_inline_file_preview_expander, .msg_inline_img_collapser, .msg_inline_img_expander, .msg_inline_media_toggler, .msg_inline_room_preview_collapser, .msg_inline_room_preview_expander { color: #a3839f; }
   .msg_inline_attachment_collapser:hover, .msg_inline_attachment_expander:hover, .msg_inline_email_collapser:hover, .msg_inline_email_expander:hover, .msg_inline_file_preview_collapser:hover, .msg_inline_file_preview_expander:hover, .msg_inline_img_collapser:hover, .msg_inline_img_expander:hover, .msg_inline_media_toggler:hover, .msg_inline_room_preview_collapser:hover, .msg_inline_room_preview_expander:hover { color: #d4bbd1; }
