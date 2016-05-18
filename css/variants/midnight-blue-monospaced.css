@@ -171,7 +171,7 @@
   #message_edit_form.focus #primary_file_button:not(:hover), #messages-input-container.focus #primary_file_button:not(:hover) { border-color: #111; }
   #primary_file_button { background: padding-box #333; border: 2px solid #222; }
   #primary_file_button.active, #primary_file_button:hover { background: #222; border: 2px solid #111; color: #1793d1; }
-  #footer { background: #000; }
+  #footer, #footer:not(.footer_msg_input) { background: #000; }
   #footer.disabled #message-input { background: padding-box #111 !important; border: 2px solid #111 !important; }
   #footer_archives_table { color: #1793d1; }
   #typing_text { color: #1793d1; }
@@ -454,6 +454,7 @@
   .selecting_messages ts-message:hover { background: #000; }
   #conversation_container { background-color: rgba(17, 17, 17, 0.85); }
   #conversation_container #message_edit_container { border-bottom: 1px solid #333; border-top: 1px solid #333; }
+  #conversation_container .more_messages { background: #333; }
   #conversation_container .more_messages_container .more_messages { color: #1793d1; }
   #conversation_container ts-conversation::after { background: rgba(0, 0, 0, 0.08); background: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(1, rgba(0, 0, 0, 0.08))); background: -moz-linear-gradient(center bottom, transparent 0, rgba(0, 0, 0, 0.08) 100%); }
   #conversation_container ts-conversation::before { background: transparent; background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.08)), color-stop(1, transparent)); background: -moz-linear-gradient(center bottom, rgba(0, 0, 0, 0.08) 0, transparent 100%); }
@@ -473,7 +474,6 @@
   #msgs_div ts-message.automated_grey { background: #000; }
   #msgs_div ts-message.automated_grey .timestamp { color: #1793d1; }
   #msgs_div ts-message.automated_grey:hover .timestamp { color: #299bd4; }
-  #conversation_container .more_messages, #messages_unread_status { background: #333; }
   .channel_archive_messages.card .col:first-child { border-right: 1px solid #333; }
   .star { color: #1793d1; }
   .star_item { border-bottom: 1px solid #000; }
@@ -534,6 +534,9 @@
   #archives_return a { color: #1793d1; }
   #archives_return a:hover { color: #299bd4; }
   #messages_unread_status { background: #333; }
+  #messages_unread_status:hover { background: #444; }
+  #messages_unread_status:hover .clear_unread_messages { background: #444; }
+  #messages_unread_status:hover .clear_unread_messages:hover { background: #333; }
   #messages_unread_status.quiet { background: #444; color: #00b9f2; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
   #messages_unread_status.quiet a { color: #00b9f2; }
   .clear_unread_messages { border-left: 1px solid rgba(0, 0, 0, 0.15); }
@@ -1451,8 +1454,8 @@
   footer ul a:link, footer ul a:visited { color: #00b9f2; }
   .plastic_row .icon, #page .msgs_holder, .billing_callout { background: none; }
   table tr, .banner, .service_row, .accordion_section, .billing_contact { border-bottom: 1px solid #000; }
-  #footer { border-top: none; }
-  #footer a { color: #1793d1; }
+  #footer, #footer:not(.footer_msg_input) { border-top: none; }
+  #footer a, #footer:not(.footer_msg_input) a { color: #1793d1; }
   #header_nav a.primary_nav, #activity_recent_toggle { color: #1793d1; }
   .file_header .title a { color: #1793d1; }
   .action_cog { color: #1793d1; }
