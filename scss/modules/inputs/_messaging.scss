@@ -78,6 +78,10 @@
     background: padding-box $color-shade-dark !important;
     border: 2px solid $color-shade-dark !important;
   }
+
+  &:not(.footer_msg_input) {
+    @extend #footer;
+  }
 }
 
 #footer_archives_table {
