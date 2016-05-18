@@ -153,6 +153,10 @@ ts-message {
     border-top: 1px solid $color-shade-light;
   }
 
+  .more_messages {
+    background: $color-shade-light;
+  }
+
   .more_messages_container .more_messages {
     color: $color-highlight;
   }
@@ -251,11 +255,6 @@ ts-message {
       color: $base-link-color-active;
     }
   }
-}
-
-#conversation_container .more_messages,
-#messages_unread_status {
-  background: $color-shade-light;
 }
 
 .channel_archive_messages.card .col:first-child {

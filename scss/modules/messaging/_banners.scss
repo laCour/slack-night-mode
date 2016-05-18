@@ -35,6 +35,18 @@
 #messages_unread_status {
   background: $color-shade-light;
 
+  &:hover {
+    background: $color-shade-lightest;
+
+    .clear_unread_messages {
+      background: $color-shade-lightest;
+
+      &:hover {
+        background: $color-shade-light;
+      }
+    }
+  }
+
   &.quiet {
     background: $color-shade-lightest;
     color: $base-font-color;
