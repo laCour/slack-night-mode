@@ -1,5 +1,6 @@
 # Changelog
 
+* **20/05/16**: Add styles for sharing messages (#58). Improve styling of modal footers (6d9d32e).
 * **17/05/16**: Correct styling for main chat input background (#56) and for hovering on the unread notifications bar (74abf1c).
 * **06/05/16**: Updated broken styles caused by a recent update, which caused a white background behind notification bars (6cdb894). Corrected styles which broke the day divider divider (#54). Added styles for mentions day divider in flexpane (52d5675).
 * **04/05/16**: Fix white bar under header (#53), search input border and autocomplete modifier styles (3641f7c), and day divider styles (3b6c382). Added styles for history navigation on the team page (96abf60). 
