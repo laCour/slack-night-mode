@@ -1,3 +1,13 @@
+.basic_share_dialog {
+  .share_dialog_divider {
+    border-top-color: transparent;
+  }
+}
+
+.share_dialog_attachment_container {
+  color: $base-font-color;
+}
+
 #share_dialog .file_list_item {
   border-color: $color-shade-darkest;
 }
