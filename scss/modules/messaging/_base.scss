@@ -339,3 +339,10 @@ ts-message {
     color: $color-highlight !important;
   }
 }
+
+#message_edit_container,
+.inline_message_input_container {
+  form textarea {
+    color: $base-font-color;
+  }
+}
