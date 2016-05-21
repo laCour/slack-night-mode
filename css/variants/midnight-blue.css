@@ -493,6 +493,7 @@
   .dm_badge .hint { color: #1793d1; }
   .is_limited_div { background-color: #000 !important; }
   .is_limited_div.mini { color: #1793d1 !important; }
+  #message_edit_container form textarea, .inline_message_input_container form textarea { color: #00b9f2; }
   .light_theme ts-message { color: #00b9f2; }
   .light_theme ts-message.unprocessed { color: rgba(0, 185, 242, 0.75); }
   .light_theme ts-message .msg_right_link { color: #1793d1; }
@@ -913,7 +914,7 @@
   .modal { background-color: #000; border: 0; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
   .modal .close, .modal label { color: #00b9f2; }
   .modal_input_note, .modal_input_note_full_width { color: #1793d1; }
-  .modal-footer { background: padding-box #000; border-top: 1px solid #333; box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .modal-footer { background: padding-box #000; border-top: 1px solid transparent; box-shadow: none; }
   .modal-header { background: padding-box #000; border-bottom: 1px solid #111; color: #00b9f2; }
   .close { color: #00b9f2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
   #fs_modal_bg { background: #000; }
@@ -1032,6 +1033,8 @@
   #omnibox .omnibox_item .unread_highlight_cnt { background: #bf360c; color: #00b9f2; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   #omnibox a.omnibox_item { color: #1793d1; }
   #omnibox #omnibox_help { color: #00b9f2; }
+  .basic_share_dialog .share_dialog_divider { border-top-color: transparent; }
+  .share_dialog_attachment_container { color: #00b9f2; }
   #share_dialog .file_list_item { border-color: #000; }
   ts-jumper ts-jumper-container { background: #000; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
   ts-jumper ts-jumper-help { color: #1793d1; }

@@ -493,6 +493,7 @@
   .dm_badge .hint { color: #a3839f; }
   .is_limited_div { background-color: #3e313c !important; }
   .is_limited_div.mini { color: #a3839f !important; }
+  #message_edit_container form textarea, .inline_message_input_container form textarea { color: #f0d9ed; }
   .light_theme ts-message { color: #f0d9ed; font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
   .light_theme ts-message.unprocessed { color: rgba(240, 217, 237, 0.75); }
   .light_theme ts-message .msg_right_link { color: #a3839f; }
@@ -913,7 +914,7 @@
   .modal { background-color: #3e313c; border: 0; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
   .modal .close, .modal label { color: #f0d9ed; }
   .modal_input_note, .modal_input_note_full_width { color: #a3839f; }
-  .modal-footer { background: padding-box #372c36; border-top: 1px solid #61485e; box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5); }
+  .modal-footer { background: padding-box #3e313c; border-top: 1px solid transparent; box-shadow: none; }
   .modal-header { background: padding-box #372c36; border-bottom: 1px solid #4d394b; color: #f0d9ed; }
   .close { color: #f0d9ed; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
   #fs_modal_bg { background: #3e313c; }
@@ -1032,6 +1033,8 @@
   #omnibox .omnibox_item .unread_highlight_cnt { background: #bf360c; color: #f0d9ed; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   #omnibox a.omnibox_item { color: #a3839f; }
   #omnibox #omnibox_help { color: #f0d9ed; }
+  .basic_share_dialog .share_dialog_divider { border-top-color: transparent; }
+  .share_dialog_attachment_container { color: #f0d9ed; }
   #share_dialog .file_list_item { border-color: #372c36; }
   ts-jumper ts-jumper-container { background: #3e313c; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
   ts-jumper ts-jumper-help { color: #a3839f; }
