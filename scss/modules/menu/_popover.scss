@@ -19,7 +19,7 @@
   &.showing_header {
     .arrow::after,
     .arrow_shadow::after {
-      background-color: $color-shade-darkest;
+      background-color: $color-base !important;
     }
   }
 
