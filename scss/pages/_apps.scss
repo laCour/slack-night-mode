@@ -28,32 +28,27 @@
     }
   }
 
-  .titled_list {
-    h4 {
+  .sidebar_menu_list_item {
+    color: $base-font-color;
+
+    &.is_active {
+      background-color: $color-base;
+      border-color: $color-base;
       color: $base-font-color;
+      text-shadow: 0 1px 0 $color-shadow-light;
+
+      a {
+        color: $base-font-color;
+      }
     }
 
-    ul {
-      li {
-        a {
-          color: $base-font-color;
+    &:not(.is_active):hover {
+      background-color: $color-base;
+      border-color: $color-base;
+    }
 
-          &:focus,
-          &:hover {
-            background-color: $color-shade-darkest;
-          }
-        }
-
-        &.active a {
-          background: $color-shade-dark !important;
-          color: $base-link-color;
-
-          &:hover {
-            background: $color-shade-dark !important;
-            color: $base-link-color-active;
-          }
-        }
-      }
+    a {
+      color: $base-font-color;
     }
   }
 
