@@ -70,13 +70,13 @@
 
       &.member .im_close,
       &.mpim .mpim_close {
-        color: $color-highlight;
+        color: $color-highlight !important;
       }
 
       &.group.active .group_close,
       &.member.active .im_close,
       &.mpim.active .mpim_close {
-        color: $base-link-color;
+        color: $base-link-color !important;
       }
 
       &.mention a {
