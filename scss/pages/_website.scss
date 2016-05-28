@@ -74,6 +74,40 @@ table.mini {
   }
 }
 
+.menu_launcher,
+.menu_launcher_large {
+  background-color: $color-shade-light;
+  border: 1px solid $color-base;
+  color: $base-font-color;
+}
+
+.menu_launcher_large {
+  border: 1px solid $color-base;
+}
+
+.menu.avatar_menu ul li {
+  &:hover ts-icon {
+    background: $color-shade-light;
+    color: $base-font-color;
+  }
+
+  a {
+    img,
+    ts-icon {
+      background-color: $color-shade-light;
+      color: $base-font-color;
+    }
+  }
+}
+
+.avatar_menu_signin_item {
+  color: $color-highlight;
+
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
 html.no_touch {
   .action_cog:hover {
     color: $base-link-color;
