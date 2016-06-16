@@ -914,6 +914,7 @@
   #whats_new_tab .flex_heading_controls label { color: #a3839f; }
   #whats_new_updates h3 a { color: #f0d9ed !important; }
   #emoji_menu { background: #372c36; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); color: #f0d9ed; }
+  #emoji_menu #emoji_menu_items_scroller { background: #3e313c !important; }
   #emoji_menu h3 { background: rgba(62, 49, 60, 0.95); }
   #emoji_menu #emoji_div_default_rxns { border-bottom: 1px solid #4d394b; }
   #emoji_menu #emoji_preview_text { background: #372c36; color: #f0d9ed; }
