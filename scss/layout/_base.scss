@@ -60,3 +60,26 @@ h1 a {
 .right_border {
   border-right: 1px solid $color-shade-dark;
 }
+
+::-webkit-scrollbar-track {
+  background: $color-shade-mid !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-shade-light !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: $color-base !important;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  color: $color-base !important;
+}
+
+.feature_indigenous_scroll {
+  #messages_container::after {
+    background: none !important;
+  }
+}
