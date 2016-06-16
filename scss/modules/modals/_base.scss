@@ -48,7 +48,7 @@
   }
 
   #fs_modal_sidebar a {
-    color: $base-link-color;
+    color: $base-font-color;
 
     &:hover {
       background: $color-shade-dark;
@@ -56,7 +56,7 @@
 
     &.active {
       background: $color-shade-darkest;
-      color: $base-link-color-active;
+      color: $base-font-color;
       text-shadow: 0 1px 0 $color-shadow-light;
     }
   }

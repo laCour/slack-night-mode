@@ -53,3 +53,18 @@
     }
   }
 }
+
+.sidebar_menu_list_item {
+  border: 0;
+  color: $base-font-color;
+
+  &.is_active {
+    background-color: $color-shade-darkest;
+    color: $base-font-color;
+    text-shadow: 0 1px 0 $color-shadow-light;
+  }
+
+  &:not(.is_active):hover {
+    background-color: $color-shade-dark;
+  }
+}
