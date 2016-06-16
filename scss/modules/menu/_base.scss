@@ -1,8 +1,12 @@
 .menu {
   background: $color-shade-dark;
-  border: 0;
+  border: 1px solid $color-base;
   box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
+
+  .menu_content {
+    background: $color-shade-dark !important;
+  }
 
   .menu_filter_container {
     background: $color-base;
