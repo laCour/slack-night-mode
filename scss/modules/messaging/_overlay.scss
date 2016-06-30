@@ -1,0 +1,22 @@
+.channel_overlay {
+  border-color: $color-shade-dark;
+  color: $color-highlight;
+
+  &.channel_overlay_redesign {
+    .channel_overlay_title {
+      color: $base-font-color;
+    }
+
+    li {
+      color: $color-highlight;
+    }
+  }
+}
+
+.channel_overlay_title_wrap {
+  border-color: $color-shade-dark;
+}
+
+.channel_overlay_title_shared {
+  color: $base-font-color;
+}
