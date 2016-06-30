@@ -1,0 +1,25 @@
+#fs_modal.help_modal {
+  #fs_modal_footer .help_modal_status {
+    #no_open_issues {
+      color: $color-highlight;
+    }
+  }
+
+  .help_modal_divider {
+    color: $color-highlight;
+  }
+
+  .help_modal_article_row {
+    border-top: 1px solid $color-shade-dark;
+
+    .channel_browser_open {
+      color: $color-highlight;
+    }
+  }
+
+  #help_modal_list_container:not(.keyboard_active).not_scrolling .help_modal_article_row:hover,
+  .help_modal_article_row.highlighted {
+    background-color: $color-shade-dark;
+    border-color: $color-shade-darkest;
+  }
+}
