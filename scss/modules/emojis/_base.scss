@@ -79,6 +79,10 @@
     }
   }
 
+  #monkey_scroll_wrapper_for_emoji_menu_items_scroller {
+    background: $color-base;
+  }
+
   #emoji_input:focus {
     border-color: $color-shade-light;
   }
