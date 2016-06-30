@@ -7,8 +7,12 @@ body.api {
     }
   }
 
-  pre code {
-    color: $base-font-color;
+  pre {
+    overflow-x: auto;
+
+    code {
+      color: $base-font-color;
+    }
   }
 
   #page_contents .card {
@@ -38,16 +42,95 @@ body.api {
   }
 
   .example {
-    border: 1px solid $color-shade-lightest;
+    border: 1px solid $color-shade-darkest;
 
     h5 {
-      background-color: $color-shade-lightest;
+      background-color: $color-shade-darkest;
       color: $base-font-color;
     }
   }
 
   .alert {
     background: $color-shade-light;
+  }
+
+  .hljs {
+    background-image: none;
+  }
+
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-subst {
+    color: map-get($code-colors, keyword);
+  }
+
+  .hljs-number {
+    color: map-get($code-colors, number);
+  }
+
+  .hljs-literal,
+  .hljs-tag .hljs-attr {
+    color: map-get($code-colors, def);
+  }
+
+  .hljs-variable {
+    color: map-get($code-colors, variable);
+  }
+
+  .hljs-template-variable {
+    color: map-get($code-colors, variable-alt);
+  }
+
+  .hljs-comment {
+    color: map-get($code-colors, comment);
+  }
+
+  .hljs-doctag,
+  .hljs-string {
+    color: map-get($code-colors, string);
+  }
+
+  .hljs-section,
+  .hljs-selector-id,
+  .hljs-title {
+    color: map-get($code-colors, string-alt);
+  }
+
+  .hljs-meta {
+    color: map-get($code-colors, meta);
+  }
+
+  .hljs-class .hljs-title,
+  .hljs-type {
+    color: map-get($code-colors, qualifier);
+  }
+
+  .hljs-built_in,
+  .hljs-builtin-name {
+    color: map-get($code-colors, builtin);
+  }
+
+  .hljs-tag {
+    color: map-get($code-colors, tag);
+  }
+
+  .hljs-attribute,
+  .hljs-name {
+    color: map-get($code-colors, attribute);
+  }
+
+  .hljs-bullet,
+  .hljs-symbol {
+    color: map-get($code-colors, atom);
+  }
+
+  .hljs-quote {
+    color: map-get($code-colors, quote);
+  }
+
+  .hljs-link,
+  .hljs-regexp {
+    color: map-get($code-colors, link);
   }
 }
 
@@ -95,6 +178,33 @@ nav#api_nav {
 
     ul a:hover {
       color: $base-link-color-active;
+    }
+  }
+}
+
+.tab_menu {
+  background-color: $color-shade-dark;
+
+  &.grey {
+    background-color: $color-shade-dark;
+  }
+
+  .tab {
+    color: $base-font-color;
+
+    &:hover {
+      box-shadow: inset 0 -4px 0 0 rgba($color-red, 0.4);
+    }
+
+    &.active,
+    &:active,
+    &:focus {
+      box-shadow: inset 0 -4px 0 0 $color-red;
+      color: $base-font-color;
+    }
+
+    &:disabled {
+      color: $color-highlight;
     }
   }
 }
