@@ -44,7 +44,7 @@
         color: $base-link-color;
 
         &:hover {
-          background: $color-base;
+          background: $color-base !important;
           border-bottom-right-radius: 0.25rem;
           border-top-right-radius: 0.25rem;
         }
