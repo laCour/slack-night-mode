@@ -5,8 +5,8 @@
 
   &.active,
   &:hover {
-    background: $color-shade-dark;
-    border-bottom-color: $color-shade-dark;
+    background: $color-shade-dark !important;
+    border-bottom-color: $color-shade-dark !important;
 
     i {
       color: $base-font-color;
