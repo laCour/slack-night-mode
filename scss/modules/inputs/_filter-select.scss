@@ -1,66 +1,75 @@
-.filter_select.default_style {
-  &.disabled {
-    background: $color-shade-dark;
+$filter-selects: (
+  filter_select: "fsl",
+  lazy_filter_select: "lfs"
+);
 
-    input.fsl_input {
-      background: $color-shade-lightest;
-    }
-  }
-
-  .fsl_input_container {
-    border: 1px solid $color-shade-darkest;
-
-    &.active,
-    &:hover {
-      border-color: $color-shade-dark;
-    }
-
-    &.active {
-      box-shadow: 0 0 7px rgba($color-base, 0.15);
-    }
-  }
-
-  .fsl_list_container {
-    background: $color-base;
-    border: 1px solid $color-shade-darkest;
-    box-shadow: 0 0 3px $color-shadow-dark;
-  }
-
-  .fsl_list .fsl_item {
-    &.selected {
-      color: $base-font-color;
-    }
-
+@each $filter, $abbr in $filter-selects {
+  .#{$filter}.default_style {
     &.disabled {
-      color: $base-font-color;
+      background: $color-shade-dark;
+
+      input.#{$abbr}_input {
+        background: $color-shade-lightest;
+      }
     }
 
-    &.active {
-      background-color: $color-shade-darkest;
-      border-color: $color-shade-dark;
+    .#{$abbr}_input_container {
+      border: 1px solid $color-shade-darkest;
+
+      &.active,
+      &:hover {
+        border-color: $color-shade-dark;
+      }
+
+      &.active {
+        box-shadow: 0 0 7px rgba($color-base, 0.15);
+      }
+    }
+
+    .#{$abbr}_list_container {
+      background: $color-base;
+      border: 1px solid $color-shade-darkest;
+      box-shadow: 0 0 3px $color-shadow-dark;
+    }
+
+    .#{$abbr}_list .#{$abbr}_item {
+      &.selected {
+        color: $base-font-color;
+      }
+
+      &.disabled {
+        color: $base-font-color;
+      }
+
+      &.active {
+        background-color: $color-shade-darkest;
+        border-color: $color-shade-dark;
+        color: $base-font-color;
+      }
+    }
+
+    .#{$abbr}_token {
+      background: $color-base;
+      border: 1px solid $color-shade-darkest;
       color: $base-font-color;
+
+      &::after {
+        color: $base-font-color;
+      }
+    }
+
+    &.single .#{$abbr}_input_container {
+      &.active::after,
+      &:hover::after {
+        color: $base-font-color;
+      }
     }
   }
+}
 
-  .fsl_token {
-    background: $color-base;
-    border: 1px solid $color-shade-darkest;
-    color: $base-font-color;
-
-    &::after {
-      color: $base-font-color;
-    }
-  }
-
+.filter_select.default_style {
   .fsl_paginate .fsl_paginate_back,
   .fsl_paginate_forward {
     color: $base-font-color;
-  }
-
-  &.single .fsl_input_container {
-    &.active::after,
-    &:hover::after {
-      color: $base-font-color;
-    }
   }
 }
