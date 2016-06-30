@@ -1,7 +1,6 @@
 .loading {
   #loading-zone {
     background: $color-base;
-    left: 110px;
   }
 }
 
@@ -40,5 +39,15 @@
   &::after {
     color: $color-highlight;
     content: "Loading...";
+  }
+}
+
+body.loading {
+  #team_menu,
+  #quick_switcher_btn,
+  #team_menu_overlay,
+  #col_channels_overlay,
+  #col_channels {
+    background-color: $color-shade-dark;
   }
 }
