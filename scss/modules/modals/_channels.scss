@@ -53,8 +53,11 @@
   color: $base-font-color;
 }
 
-#invite_members_container .fsl_input_container {
-  background: $color-shade-light;
+#invite_members_container {
+  .fsl_input_container,
+  .lfs_input_container {
+    background: $color-shade-light;
+  }
 }
 
 #notifications_not_working p.highlight_yellow_bg {
