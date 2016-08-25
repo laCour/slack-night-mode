@@ -98,26 +98,12 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba($black, 0.075), 0 0 8px rgba($color-shade-lightest, 0.6);
 }
 
-::-webkit-input-placeholder {
-  color: $base-font-color;
-}
-
-::-moz-placeholder {
-  color: $base-font-color;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: $base-font-color;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: $base-font-color;
-}
+@include placeholder;
 
 input,
 textarea {
+  @include placeholder;
+
   &[disabled],
   &[readonly] {
     background-color: $color-shade-light !important;

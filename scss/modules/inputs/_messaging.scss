@@ -13,6 +13,12 @@
   }
 }
 
+#messages-input-container #message-input {
+  &.msg_input_placeholder {
+    @include placeholder;
+  }
+}
+
 #message_edit_form,
 #messages-input-container {
   #message-input {
@@ -90,6 +96,11 @@
 
 #typing_text {
   color: $color-highlight;
+}
+
+#notification_bar.wide #typing_text.msg_input_placeholder {
+  -webkit-filter: none;
+  filter: none;
 }
 
 #special_formatting_text {

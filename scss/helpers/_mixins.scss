@@ -6,3 +6,24 @@
     background: $background;
   }
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: $base-font-color;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 0.5;
+  }
+
+  &::-moz-placeholder {
+    color: $base-font-color;
+    filter: none;
+    opacity: 0.5;
+  }
+
+  &::placeholder {
+    color: $base-font-color;
+    filter: none;
+    opacity: 0.5;
+  }
+}
