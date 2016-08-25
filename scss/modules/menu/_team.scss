@@ -26,6 +26,11 @@
       text-shadow: 0 1px 1px $color-shadow-light;
     }
   }
+
+  .team_name_caret,
+  .notifications_menu_btn {
+    color: $base-font-color !important;
+  }
 }
 
 #team_header_user_name {

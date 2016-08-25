@@ -27,21 +27,22 @@
 
 .channels_list_holder {
   h2 {
-    color: $base-link-color;
+    color: $base-font-color !important;
 
     &.hoverable:not(.jquery_hover):hover {
-      color: $base-link-color-active;
+      color: $base-font-color;
+      opacity: 0.8;
     }
   }
 
   ul {
-    color: $base-font-color;
+    color: $base-font-color !important;
 
     li {
       text-shadow: 0 1px 1px $color-shadow-light;
 
       a {
-        color: $base-link-color;
+        color: $base-font-color !important;
 
         &:hover {
           background: $color-base !important;
@@ -201,7 +202,7 @@
 
 #channel_list_invites_link {
   border-bottom: 1px dotted $base-link-color;
-  color: $base-link-color;
+  color: $base-link-color !important;
   font-size: 0.9rem;
 
   &:hover {
