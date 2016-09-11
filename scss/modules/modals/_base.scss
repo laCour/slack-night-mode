@@ -63,7 +63,7 @@
   }
 
   .fs_modal_btn {
-    color: $color-shade-light;
+    color: rgba($base-font-color, 0.5);
 
     &:hover {
       background: $color-shade-lightest;
