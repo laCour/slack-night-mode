@@ -1,0 +1,31 @@
+#shortcuts_dialog {
+  background: rgba($color-base, 0.95);
+  text-shadow: 0 1px 1px rgba($color-shade-darkest, 0.7);
+
+  &.modal {
+    .modal-body,
+    h1,
+    h3 {
+      color: $base-font-color;
+    }
+
+    ul ul {
+      border-left-color: $color-shade-light;
+    }
+
+    .info_block {
+      color: $color-highlight;
+    }
+
+    .close {
+      background: $color-shade-light;
+      border-color: $color-shade-lightest;
+      box-shadow: 0 1px 2px rgba($color-shade-darkest, 0.5);
+      color: $base-font-color;
+
+      &:hover {
+        box-shadow: 0 1px 2px rgba($color-shade-darkest, 0.9);
+      }
+    }
+  }
+}
