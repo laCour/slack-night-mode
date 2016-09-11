@@ -1,0 +1,22 @@
+#fs_modal.channel_options_modal {
+  .channel_options_header {
+    border-bottom-color: $color-shade-dark;
+  }
+
+  .convert_to_shared label {
+    color: $color-highlight;
+  }
+
+  .channel_option_item {
+    border-top-color: $color-shade-dark;
+
+    .channel_option_open {
+      color: $base-font-color;
+    }
+
+    &:hover {
+      background: rgba($color-shade-darkest, 0.75);
+      border-color: $color-shade-dark;
+    }
+  }
+}
