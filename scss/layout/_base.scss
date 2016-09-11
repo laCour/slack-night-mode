@@ -63,19 +63,20 @@ h1 a {
 
 ::-webkit-scrollbar-track {
   background: $color-shade-mid !important;
+  border-left-color: $color-shade-dark !important;
+  border-right-color: $color-shade-dark !important;
+  color: $color-shade-dark !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background: $color-shade-light !important;
+  border-left-color: $color-shade-dark !important;
+  border-right-color: $color-shade-dark !important;
+  color: $color-base !important;
 }
 
 ::-webkit-scrollbar-corner {
   background: $color-base !important;
-}
-
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track {
-  color: $color-base !important;
 }
 
 .supports_custom_scrollbar {
