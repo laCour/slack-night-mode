@@ -24,10 +24,10 @@
   }
 
   a {
-    color: $base-link-color;
+    color: $base-font-color;
 
     &:hover {
-      color: $base-link-color-active;
+      color: rgba($base-font-color, 0.8);
     }
   }
 }
