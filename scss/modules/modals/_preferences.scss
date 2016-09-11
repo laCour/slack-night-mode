@@ -7,7 +7,7 @@
     }
 
     &:hover:not(.active) {
-      background: rgba($color-shade-darkest, 0.2);
+      background: rgba($color-shade-darkest, 0.75);
       color: $base-font-color;
     }
   }
