@@ -51,14 +51,14 @@ ts-jumper {
       }
 
       &.highlighted {
-        background: $color-shade-lightest;
-        color: $base-font-color;
+        background: $color-shade-lightest !important;
+        color: $base-font-color !important;
       }
     }
 
     &:not(.keyboard_active) li:hover {
-      background: $color-shade-lightest;
-      color: $base-font-color;
+      background: $color-shade-lightest !important;
+      color: $base-font-color !important;
     }
 
     li.highlighted,
