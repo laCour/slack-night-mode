@@ -11,7 +11,7 @@
     &.group.active a.group_name,
     &.member.active a.im_name {
       background: $color-shade-light;
-      color: $base-font-color !important;
+      color: rgba($base-font-color, 0.9) !important;
     }
   }
 
@@ -42,7 +42,7 @@
       text-shadow: 0 1px 1px $color-shadow-light;
 
       a {
-        color: $base-font-color !important;
+        color: rgba($base-font-color, 0.8) !important;
 
         &:hover {
           background: $color-base !important;
@@ -91,6 +91,7 @@
 
         .prefix {
           color: $base-font-color !important;
+          opacity: 1;
         }
       }
     }
