@@ -1,4 +1,4 @@
-@-moz-document domain(slack.com) {
+@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") {
 
   @import "helpers/variables";
   @import "helpers/mixins";
