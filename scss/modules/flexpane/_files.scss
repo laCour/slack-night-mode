@@ -87,8 +87,12 @@ html.no_touch a.filetype_button_web:hover {
   }
 }
 
-.file_container ~ .file_meta {
+.file_header_detailed {
   color: $color-highlight;
+
+  .member {
+    color: $base-font-color !important;
+  }
 }
 
 .file_inline_icon {
