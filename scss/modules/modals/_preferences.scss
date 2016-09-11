@@ -1,5 +1,5 @@
 #fs_modal.prefs_modal {
-  .prefs_rollup {
+  .section_rollup {
     border-bottom: 1px solid $color-shade-dark;
 
     &:first-of-type {
@@ -7,7 +7,7 @@
     }
 
     &:hover:not(.active) {
-      background: $color-shade-darkest;
+      background: rgba($color-shade-darkest, 0.2);
       color: $base-font-color;
     }
   }
