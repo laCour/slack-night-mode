@@ -101,7 +101,7 @@
     color: $base-font-color;
   }
 
-  .unread_highlight {
+  .unread_highlights {
     background: $color-red;
     color: $base-font-color;
     text-shadow: 0 1px 0 $color-shadow-light;
@@ -136,6 +136,11 @@
     .prefix {
       color: $color-highlight;
     }
+  }
+
+  .unread_highlights {
+    background: $color-red;
+    color: $base-font-color;
   }
 }
 
