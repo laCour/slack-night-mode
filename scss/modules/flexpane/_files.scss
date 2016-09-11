@@ -386,3 +386,7 @@ html.no_touch a.filetype_button_web:hover {
     }
   }
 }
+
+.active .tab_container .file_list_item {
+  background-color: $color-shade-dark;
+}
