@@ -19,6 +19,10 @@
           }
         }
       }
+
+      .media_list_text {
+        color: $base-font-color;
+      }
     }
 
     &.media_list_with_arrows a {
@@ -26,6 +30,14 @@
         color: $color-highlight;
       }
     }
+  }
+
+  .media_list_title {
+    color: $base-font-color;
+  }
+
+  .media_list_subtitle {
+    color: $color-highlight;
   }
 
   .sidebar_menu_list_item {
@@ -177,4 +189,22 @@ a.plastic_typeahead_item {
       }
     }
   }
+}
+
+.icon_search_input {
+  color: $color-highlight;
+}
+
+.connected_accounts_header,
+.connected_accounts_list {
+  border-color: $color-shade-light;
+  color: $base-font-color;
+}
+
+.connected_accounts_list_pretext {
+  color: $base-font-color;
+}
+
+.permission_group {
+  color: $base-font-color;
 }
