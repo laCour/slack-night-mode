@@ -20,3 +20,33 @@
     }
   }
 }
+
+#channel_invite_container {
+  .lfs_list_container {
+    .lfs_item {
+      border-top-color: $color-shade-dark;
+
+      &.active {
+        border-color: $color-shade-dark;
+      }
+    }
+  }
+
+  &.page_needs_enterprise {
+    .channel_invite_row {
+      border-top-color: $color-shade-dark;
+
+      &.disabled {
+        color: $color-highlight;
+      }
+    }
+  }
+}
+
+#channel_invite_modal {
+  #channel_invite_container:not(.keyboard_active).not_scrolling .channel_invite_row:hover,
+  .channel_invite_row.highlighted {
+    background: $color-base;
+    border-color: $color-shade-dark;
+  }
+}
