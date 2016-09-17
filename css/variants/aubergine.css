@@ -736,6 +736,23 @@
   .sssh-quote { color: #b0bec5; }
   .sssh-hr { color: #4d394b; }
   .sssh-link { color: #a3839f; }
+  #unread_msgs_scroller_div::after { background: transparent; }
+  #unread_msgs_scroller_div.loading { background-image: none; }
+  #unread_msgs_scroller_div.loading::before { color: #a3839f; }
+  #unread_msgs_div .day_divider .day_divider_line { border-top-color: #4d394b; }
+  .unread_group.marked_as_read .unread_group_header { background: #3e313c; }
+  .unread_group_header { background: #4d394b; border-top-color: #61485e; color: #f0d9ed; }
+  .unread_group_header .unread_group_collapse_toggle:hover ts-icon { color: #f0d9ed; }
+  .collapsed .unread_group_header .ts_icon_caret_right, .collapsing .unread_group_header .ts_icon_caret_right { color: #a3839f; }
+  .mark_as_read_checkmark { color: #a3839f; }
+  .bottom_mark_all_read { border-top-color: #4d394b; }
+  .unread_group_header_name a { color: #f0d9ed; }
+  .unread_group_footer .unread_group_new .unread_group_new_text { color: #a3839f; }
+  .unread_group_footer .unread_group_new:hover .unread_group_new_text { color: #a3839f; }
+  .unread_empty_state_message { color: #a3839f; }
+  .unread_empty_state_undo_inner { background: #372c36; color: #f0d9ed; }
+  .unread_empty_state_undo_action { color: #f0d9ed; }
+  .unread_empty_state_refresh { background: rgba(62, 49, 60, 0.97); }
   #col_flex { background: transparent; }
   #flex_contents { background: #3e313c; }
   #flex_contents .monkey_scroll_hider { background: #3e313c; }
