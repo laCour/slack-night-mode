@@ -1,0 +1,85 @@
+#unread_msgs_scroller_div {
+  &::after {
+    background: transparent;
+  }
+
+  &.loading {
+    background-image: none;
+
+    &::before {
+      color: $color-highlight;
+    }
+  }
+}
+
+#unread_msgs_div {
+  .day_divider .day_divider_line {
+    border-top-color: $color-shade-dark;
+  }
+}
+
+.unread_group {
+  &.marked_as_read .unread_group_header {
+    background: $color-base;
+  }
+}
+
+.unread_group_header {
+  background: $color-shade-dark;
+  border-top-color: $color-shade-light;
+  color: $base-font-color;
+
+  .unread_group_collapse_toggle {
+    &:hover ts-icon {
+      color: $base-font-color;
+    }
+  }
+}
+
+.collapsed .unread_group_header .ts_icon_caret_right,
+.collapsing .unread_group_header .ts_icon_caret_right {
+  color: $color-highlight;
+}
+
+.mark_as_read_checkmark {
+  color: $color-highlight;
+}
+
+.bottom_mark_all_read {
+  border-top-color: $color-shade-dark;
+}
+
+.unread_group_header_name {
+  a {
+    color: $base-font-color;
+  }
+}
+
+.unread_group_footer {
+  .unread_group_new {
+    .unread_group_new_text {
+      color: $color-highlight;
+    }
+
+    &:hover .unread_group_new_text {
+      color: $color-highlight;
+    }
+  }
+}
+
+.unread_empty_state_message {
+  color: $color-highlight;
+}
+
+.unread_empty_state_undo_inner {
+  background: $color-shade-darkest;
+  color: $base-font-color;
+}
+
+.unread_empty_state_undo_action {
+  color: $base-font-color;
+}
+
+.unread_empty_state_refresh {
+  background: rgba($color-base, 0.97);
+}
