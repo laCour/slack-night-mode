@@ -1,4 +1,5 @@
-#client_header .channel_header {
+// FIXME: Slim selector when :not(.channel_header_refactor) is removed from the `#client_header .channel_header` selector on Slack
+#client-ui #client_header .channel_header {
   .flex_header {
     background: $color-base;
   }
