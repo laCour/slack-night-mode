@@ -390,30 +390,30 @@
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #about_dms_link { color: #1793d1; }
   #about_dms_link:hover { color: #299bd4; }
-  #client_header .channel_header .flex_header { background: #000; }
-  #client_header .channel_header .channel_name_container { color: #00b9f2; }
-  #client_header .channel_header .channel_name_container .channel_name { color: #00b9f2; }
-  #client_header .channel_header .channel_name_container .channel_name.muted { color: #1793d1; }
-  #client_header .channel_header .channel_name_container .channel_name #im_title.away { color: #1793d1; }
-  #client_header .channel_header .channel_name_container .channel_name ul li.mpdm_member.away { color: #1793d1; }
-  #client_header .channel_header .channel_name_container .mute_container .muted_icon { color: #1793d1; }
-  #client_header .channel_header .channel_name_container .mute_container .muted_icon:hover { color: #bf360c; }
-  #client_header .channel_header #channel_header_info { background: #000; color: #00b9f2; }
-  #client_header .channel_header #channel_header_info .topic_divider { color: #111; }
-  #client_header .channel_header .channel_title_info { background: #000; color: #1793d1; }
-  #client_header .channel_header .channel_title_info .divider_bar { background: #111; }
-  #client_header .channel_header .channel_title_info .channel_details_toggle { color: #1793d1; }
-  #client_header .channel_header .channel_title_info .channel_actions_toggle { color: #1793d1; }
-  #client_header .channel_header .channel_header_icon { color: #00b9f2; }
-  #client_header .channel_header .channel_header_icon.channel_calls_button { color: #1793d1; }
-  #client_header .channel_header .channel_header_icon#channel_actions_toggle.active { color: #00b9f2; }
-  #client_header .channel_header .channel_header_icon#recent_mentions_toggle:hover { color: #bf360c; }
-  #client_header .channel_header .channel_header_icon#flex_menu_toggle.active { color: #00b9f2; }
-  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle { background: #000; }
-  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle canvas { background: #000; }
-  #client_header .channel_header .channel_header_icon#details_toggle.active, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #111; }
-  #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #333; color: #00b9f2; }
-  #client_header .channel_header .blue_hover:hover { color: #00b9f2; }
+  #client-ui #client_header .channel_header .flex_header { background: #000; }
+  #client-ui #client_header .channel_header .channel_name_container { color: #00b9f2; }
+  #client-ui #client_header .channel_header .channel_name_container .channel_name { color: #00b9f2; }
+  #client-ui #client_header .channel_header .channel_name_container .channel_name.muted { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_name_container .channel_name #im_title.away { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_name_container .channel_name ul li.mpdm_member.away { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_name_container .mute_container .muted_icon { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_name_container .mute_container .muted_icon:hover { color: #bf360c; }
+  #client-ui #client_header .channel_header #channel_header_info { background: #000; color: #00b9f2; }
+  #client-ui #client_header .channel_header #channel_header_info .topic_divider { color: #111; }
+  #client-ui #client_header .channel_header .channel_title_info { background: #000; color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_title_info .divider_bar { background: #111; }
+  #client-ui #client_header .channel_header .channel_title_info .channel_details_toggle { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_title_info .channel_actions_toggle { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_header_icon { color: #00b9f2; }
+  #client-ui #client_header .channel_header .channel_header_icon.channel_calls_button { color: #1793d1; }
+  #client-ui #client_header .channel_header .channel_header_icon#channel_actions_toggle.active { color: #00b9f2; }
+  #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle:hover { color: #bf360c; }
+  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle.active { color: #00b9f2; }
+  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle { background: #000; }
+  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle canvas { background: #000; }
+  #client-ui #client_header .channel_header .channel_header_icon#details_toggle.active, #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client-ui #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #111; }
+  #client-ui #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client-ui #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #333; color: #00b9f2; }
+  #client-ui #client_header .channel_header .blue_hover:hover { color: #00b9f2; }
   #client_body:not(.onboarding)::before { background: #000; border-bottom: 1px solid #000; }
   #help_icon { border: 1px solid #222; color: #1793d1; }
   #help_icon:hover { background: #222; border: 1px solid #111; color: #00b9f2; }
