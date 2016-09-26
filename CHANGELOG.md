@@ -1,5 +1,6 @@
 # Changelog
 
+* **26/09/16**: Correct message input placeholder colors (#84).
 * **22/09/16**: Patch channel header selector (345521e). 
 * **17/09/16**: Add styles for All Unreads (#81).
 * **11/09/16 - Major Release**: Fix team menu scroller (#77). Sidebar improvements (#79). Improve style domain regex (#76). Fix flexpane background (#80). Fix preferences modal styles (#78). Fix flexpane toolbar selector (e1b592a). Improve readability of archives banner link (ec6d147). Add styles for active file lists in flexpane (2fc4c82). Update selectors for image viewer comment panel (be668a1). Update selectors for image viewer meta header (0bbb4da). Add styles for channel preferences modal (cc6c712). Improve readability of archives banner link (b716fff). Improve background color for highlighted preferences sections (9ed784e). Update selector for unread highlights (27a6539). Update apps directory styles (7a2f8eb). Add styles for keyboard shortcuts modal (86202a4). Correct styles for quick jumper (9ea575e).
