@@ -102,12 +102,12 @@
   .uneditable-input:focus, .uneditable-textarea:focus { border-color: rgba(135, 100, 132, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 100, 132, 0.6); }
   textarea { background-color: #61485e; border: 1px solid #372c36; color: #f0d9ed; }
   textarea:focus { border-color: rgba(135, 100, 132, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 100, 132, 0.6); }
-  ::-webkit-input-placeholder { color: #f0d9ed; -webkit-filter: none; filter: none; opacity: 0.5; }
-  ::-moz-placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
-  ::placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #f0d9ed; -webkit-filter: none; filter: none; opacity: 0.5; }
-  input::-moz-placeholder, textarea::-moz-placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
-  input::placeholder, textarea::placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
+  ::-webkit-input-placeholder { color: #f0d9ed !important; -webkit-filter: none; filter: none; opacity: 0.5; }
+  ::-moz-placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
+  ::placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #f0d9ed !important; -webkit-filter: none; filter: none; opacity: 0.5; }
+  input::-moz-placeholder, textarea::-moz-placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
+  input::placeholder, textarea::placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
   input[disabled], input[readonly], textarea[disabled], textarea[readonly] { background-color: #61485e !important; }
   .form-actions { background-color: #4a3b49; border-top: 1px solid #4d394b; }
   .help-block, .help-inline { color: #a3839f; }
@@ -183,9 +183,9 @@
   .filter_select.default_style .fsl_paginate .fsl_paginate_back, .filter_select.default_style .fsl_paginate_forward { color: #f0d9ed; }
   #message-input.offline, #message-input.disabled { background-color: #4d394b !important; }
   #message-input-message { color: #a3839f; }
-  #messages-input-container #message-input.msg_input_placeholder::-webkit-input-placeholder { color: #f0d9ed; -webkit-filter: none; filter: none; opacity: 0.5; }
-  #messages-input-container #message-input.msg_input_placeholder::-moz-placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
-  #messages-input-container #message-input.msg_input_placeholder::placeholder { color: #f0d9ed; filter: none; opacity: 0.5; }
+  #messages-input-container #message-input.msg_input_placeholder::-webkit-input-placeholder { color: #f0d9ed !important; -webkit-filter: none; filter: none; opacity: 0.5; }
+  #messages-input-container #message-input.msg_input_placeholder::-moz-placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
+  #messages-input-container #message-input.msg_input_placeholder::placeholder { color: #f0d9ed !important; filter: none; opacity: 0.5; }
   #message_edit_form #message-input, #messages-input-container #message-input { background: padding-box #61485e; border: 2px solid #4a3b49; border-left: 0; color: #f0d9ed; }
   #message_edit_form #message-input:focus, #messages-input-container #message-input:focus { border-color: #4d394b; }
   #message_edit_form .emo_menu, #messages-input-container .emo_menu { color: rgba(240, 217, 237, 0.3); }
