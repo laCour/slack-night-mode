@@ -1,5 +1,6 @@
 # Changelog
 
+* **04/10/16**: Fix new messages notification banner (#85). Fix channel header (#86).
 * **26/09/16**: Correct message input placeholder colors (#84).
 * **22/09/16**: Patch channel header selector (345521e). 
 * **17/09/16**: Add styles for All Unreads (#81).
