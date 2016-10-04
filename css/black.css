@@ -390,30 +390,31 @@
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #about_dms_link { color: #949494; }
   #about_dms_link:hover { color: #c7c7c7; }
-  #client-ui #client_header .channel_header .flex_header { background: #222; }
-  #client-ui #client_header .channel_header .channel_name_container { color: #e6e6e6; }
-  #client-ui #client_header .channel_header .channel_name_container .channel_name { color: #e6e6e6; }
-  #client-ui #client_header .channel_header .channel_name_container .channel_name.muted { color: #949494; }
-  #client-ui #client_header .channel_header .channel_name_container .channel_name #im_title.away { color: #949494; }
-  #client-ui #client_header .channel_header .channel_name_container .channel_name ul li.mpdm_member.away { color: #949494; }
-  #client-ui #client_header .channel_header .channel_name_container .mute_container .muted_icon { color: #949494; }
-  #client-ui #client_header .channel_header .channel_name_container .mute_container .muted_icon:hover { color: #bf360c; }
-  #client-ui #client_header .channel_header #channel_header_info { background: #222; color: #e6e6e6; }
-  #client-ui #client_header .channel_header #channel_header_info .topic_divider { color: #363636; }
-  #client-ui #client_header .channel_header .channel_title_info { background: #222; color: #949494; }
-  #client-ui #client_header .channel_header .channel_title_info .divider_bar { background: #363636; }
-  #client-ui #client_header .channel_header .channel_title_info .channel_details_toggle { color: #949494; }
-  #client-ui #client_header .channel_header .channel_title_info .channel_actions_toggle { color: #949494; }
-  #client-ui #client_header .channel_header .channel_header_icon { color: #e6e6e6; }
-  #client-ui #client_header .channel_header .channel_header_icon.channel_calls_button { color: #949494; }
-  #client-ui #client_header .channel_header .channel_header_icon#channel_actions_toggle.active { color: #e6e6e6; }
-  #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle:hover { color: #bf360c; }
-  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle.active { color: #e6e6e6; }
-  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle { background: #222; }
-  #client-ui #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle canvas { background: #222; }
-  #client-ui #client_header .channel_header .channel_header_icon#details_toggle.active, #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client-ui #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #363636; }
-  #client-ui #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client-ui #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client-ui #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #545454; color: #e6e6e6; }
-  #client-ui #client_header .channel_header .blue_hover:hover { color: #e6e6e6; }
+  #client_header .channel_header { background: #222; }
+  #client_header .channel_header .flex_header { background: #222; }
+  #client_header .channel_header .channel_name_container { color: #e6e6e6; }
+  #client_header .channel_header .channel_name_container .channel_name { color: #e6e6e6; }
+  #client_header .channel_header .channel_name_container .channel_name.muted { color: #949494; }
+  #client_header .channel_header .channel_name_container .channel_name #im_title.away { color: #949494; }
+  #client_header .channel_header .channel_name_container .channel_name ul li.mpdm_member.away { color: #949494; }
+  #client_header .channel_header .channel_name_container .mute_container .muted_icon { color: #949494; }
+  #client_header .channel_header .channel_name_container .mute_container .muted_icon:hover { color: #bf360c; }
+  #client_header .channel_header #channel_header_info { background: #222; color: #e6e6e6; }
+  #client_header .channel_header #channel_header_info .topic_divider { color: #363636; }
+  #client_header .channel_header .channel_title_info { background: #222; color: #949494; }
+  #client_header .channel_header .channel_title_info .divider_bar { background: #363636; }
+  #client_header .channel_header .channel_title_info .channel_details_toggle { color: #949494; }
+  #client_header .channel_header .channel_title_info .channel_actions_toggle { color: #949494; }
+  #client_header .channel_header .channel_header_icon { color: #e6e6e6; }
+  #client_header .channel_header .channel_header_icon.channel_calls_button { color: #949494; }
+  #client_header .channel_header .channel_header_icon#channel_actions_toggle.active { color: #e6e6e6; }
+  #client_header .channel_header .channel_header_icon#recent_mentions_toggle:hover { color: #bf360c; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle.active { color: #e6e6e6; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle { background: #222; }
+  #client_header .channel_header .channel_header_icon#flex_menu_toggle .flex_menu_download_circle canvas { background: #222; }
+  #client_header .channel_header .channel_header_icon#details_toggle.active, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active, #client_header .channel_header .channel_header_icon#stars_toggle.active { background: #363636; }
+  #client_header .channel_header .channel_header_icon#details_toggle.active:hover, #client_header .channel_header .channel_header_icon#recent_mentions_toggle.active:hover, #client_header .channel_header .channel_header_icon#stars_toggle.active:hover { background: #545454; color: #e6e6e6; }
+  #client_header .channel_header .blue_hover:hover { color: #e6e6e6; }
   #client_body:not(.onboarding)::before { background: #222; border-bottom: 1px solid #222; }
   #help_icon { border: 1px solid #424242; color: #949494; }
   #help_icon:hover { background: #424242; border: 1px solid #363636; color: #e6e6e6; }
@@ -597,7 +598,7 @@
   #messages_unread_status.quiet { background: #828282; color: #e6e6e6; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
   #messages_unread_status.quiet a { color: #e6e6e6; }
   .clear_unread_messages { border-left: 1px solid rgba(0, 0, 0, 0.15); }
-  #messages_container.has_top_messages_banner::before { background: none; }
+  #messages_container.has_reply_banners.has_top_messages_banner #reply_banners::after, #messages_container:not(.has_reply_banners).has_top_messages_banner::before, #messages_container.has_top_messages_banner::before { background: none; }
   .attachment_group.has_container { border: 1px solid #363636; }
   .attachment_group.has_container .inline_attachment::after { background-color: #363636; }
   .attachment_group .media_caret { color: #949494; }
