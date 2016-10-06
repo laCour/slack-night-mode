@@ -98,7 +98,7 @@
   color: $color-highlight;
 }
 
-#notification_bar.wide #typing_text.msg_input_placeholder {
+#notification_bar.wide #typing_text.overflow_ellipsis {
   -webkit-filter: none;
   filter: none;
 }

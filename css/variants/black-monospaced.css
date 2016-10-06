@@ -200,7 +200,7 @@
   #footer.disabled #message-input { background: padding-box #363636 !important; border: 2px solid #363636 !important; }
   #footer_archives_table { color: #949494; }
   #typing_text { color: #949494; }
-  #notification_bar.wide #typing_text.msg_input_placeholder { -webkit-filter: none; filter: none; }
+  #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
   #special_formatting_text { color: #949494; }
   .ts_toggle .ts_toggle_button { background: #000; color: #e6e6e6; }
   .ts_toggle .ts_toggle_button .ts_toggle_handle { background: #363636; }
