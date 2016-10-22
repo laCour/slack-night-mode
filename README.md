@@ -15,13 +15,13 @@ Unfortunately, if you're using the desktop version of Slack, you will not be abl
 
 The primary supported theme. This is an excellent theme if you use a program like f.lux or redshift.
 
-![Black Screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshots/117475_after.png)
+![Black Screenshot](https://userstyles.org/style_screenshots/117475_after.png)
 
 #### Aubergine ([source](scss/themes/_aubergine.scss) - [build](css/variants/aubergine.css) - [install](https://userstyles.org/styles/101971/slack-night-mode))
 
 This is based on Slack's aubergine/maroon style. It's the original theme.
 
-![Aubergine Screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshots/101971_after.png)
+![Aubergine Screenshot](https://userstyles.org/style_screenshots/101971_after.png)
 
 ### Variants
 
