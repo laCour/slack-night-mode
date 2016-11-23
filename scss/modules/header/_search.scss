@@ -1,48 +1,26 @@
-#client_header {
-  .search_form {
-    .icon_search {
-      color: $color-highlight;
-    }
+.search_form:hover {
+  border-color: $color-shade-light;
+}
 
-    .icon_close {
-      color: $base-link-color;
-    }
+.search_focused .search_form {
+  border-color: $color-shade-light;
+}
 
-    .search_input {
-      background: $color-shade-dark !important;
-      border: 1px solid $color-shade-light;
+.search_clear_icon .ts_icon_times_circle {
+  color: $color-highlight;
+}
 
-      &:hover {
-        border: 1px solid $color-shade-lightest;
-      }
+#search_spinner {
+  color: $base-font-color;
+}
 
-      &:focus {
-        border-color: $color-shade-light;
-      }
-    }
+#search_container {
+  .icon_search {
+    color: $color-highlight;
   }
 
-  .channel_header {
-    #search_container {
-      .search_form:hover .search_input {
-        border: 1px solid $color-shade-light;
-      }
-
-      .search_form .search_clear_icon .ts_icon_times_circle {
-        color: $color-highlight;
-      }
-    }
-
-    #header_search_form {
-      #search_spinner {
-        color: $base-font-color;
-      }
-
-      &.search_form .icon_search {
-        color: $color-highlight;
-        z-index: 2;
-      }
-    }
+  .icon_close {
+    color: $base-link-color;
   }
 }
 
