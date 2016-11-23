@@ -439,15 +439,12 @@
   #group_actions, #im_actions { color: #a3839f; }
   #rxn_toast_div { background: #372c36; border: 1px solid #61485e; }
   #whats_new_burst { background: #bf360c; border-color: #61485e; }
-  #client_header .search_form .icon_search { color: #a3839f; }
-  #client_header .search_form .icon_close { color: #a3839f; }
-  #client_header .search_form .search_input { background: #4d394b !important; border: 1px solid #61485e; }
-  #client_header .search_form .search_input:hover { border: 1px solid #876484; }
-  #client_header .search_form .search_input:focus { border-color: #61485e; }
-  #client_header .channel_header #search_container .search_form:hover .search_input { border: 1px solid #61485e; }
-  #client_header .channel_header #search_container .search_form .search_clear_icon .ts_icon_times_circle { color: #a3839f; }
-  #client_header .channel_header #header_search_form #search_spinner { color: #f0d9ed; }
-  #client_header .channel_header #header_search_form.search_form .icon_search { color: #a3839f; z-index: 2; }
+  .search_form:hover { border-color: #61485e; }
+  .search_focused .search_form { border-color: #61485e; }
+  .search_clear_icon .ts_icon_times_circle { color: #a3839f; }
+  #search_spinner { color: #f0d9ed; }
+  #search_container .icon_search { color: #a3839f; }
+  #search_container .icon_close { color: #a3839f; }
   #team_filter .icon_search { color: #a3839f; }
   #team_filter a.icon_close { color: #a3839f; }
   #team_filter a.icon_close:hover { color: #d4bbd1; }
@@ -476,7 +473,9 @@
   .inline_edit.inline_edit_editing .inline_edit_inner::after { color: #a3839f; }
   #msgs_overlay_div { background: #3e313c; }
   ts-message { color: #f0d9ed; }
-  ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) { background: rgba(55, 44, 54, 0.1); }
+  ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) { background: rgba(55, 44, 54, 0.1); }
+  ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned, ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned { background: rgba(55, 44, 54, 0.2); }
+  ts-message.is_pinned { background: rgba(55, 44, 54, 0.15); }
   ts-message .timestamp { color: #a3839f; }
   ts-message .edited, ts-message .temp_msg_controls { color: #a3839f; }
   ts-message .only_visible_to_user { color: #a3839f; }
