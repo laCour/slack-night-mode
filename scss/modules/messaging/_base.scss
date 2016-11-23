@@ -5,9 +5,17 @@
 ts-message {
   color: $base-font-color;
 
-  &.active:not(.standalone):not(.multi_delete_mode):not(.highlight),
-  &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight) {
+  &.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
+  &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
     background: rgba($color-shade-darkest, 0.1);
+
+    &.is_pinned {
+      background: rgba($color-shade-darkest, 0.2);
+    }
+  }
+
+  &.is_pinned {
+    background: rgba($color-shade-darkest, 0.15);
   }
 
   .timestamp {
