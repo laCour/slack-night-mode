@@ -15,6 +15,10 @@
 }
 
 #search_container {
+  .search_input {
+    background: transparent;
+  }
+
   .icon_search {
     color: $color-highlight;
   }
