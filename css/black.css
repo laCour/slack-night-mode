@@ -443,6 +443,7 @@
   .search_focused .search_form { border-color: #545454; }
   .search_clear_icon .ts_icon_times_circle { color: #949494; }
   #search_spinner { color: #e6e6e6; }
+  #search_container .search_input { background: transparent; }
   #search_container .icon_search { color: #949494; }
   #search_container .icon_close { color: #949494; }
   #team_filter .icon_search { color: #949494; }
