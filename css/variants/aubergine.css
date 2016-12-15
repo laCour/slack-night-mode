@@ -617,6 +617,7 @@
   .attachment_group .delete_attachment_link ts-icon::before { color: #a3839f; }
   .attachment_group .delete_attachment_link:hover ts-icon::before { color: #d4bbd1; }
   .attachment_still_pending ts-inline-saver { color: #a3839f; }
+  .msg_inline_attachment_column.column_border { background-color: #61485e; }
   .msg_inline_img_holder .msg_inline_img { box-shadow: inset 0 0 0 1px #372c36; }
   .msg_inline_attachment_collapser, .msg_inline_attachment_expander, .msg_inline_email_collapser, .msg_inline_email_expander, .msg_inline_file_preview_collapser, .msg_inline_file_preview_expander, .msg_inline_img_collapser, .msg_inline_img_expander, .msg_inline_media_toggler, .msg_inline_room_preview_collapser, .msg_inline_room_preview_expander { color: #a3839f; }
   .msg_inline_attachment_collapser:hover, .msg_inline_attachment_expander:hover, .msg_inline_email_collapser:hover, .msg_inline_email_expander:hover, .msg_inline_file_preview_collapser:hover, .msg_inline_file_preview_expander:hover, .msg_inline_img_collapser:hover, .msg_inline_img_expander:hover, .msg_inline_media_toggler:hover, .msg_inline_room_preview_collapser:hover, .msg_inline_room_preview_expander:hover { color: #d4bbd1; }
