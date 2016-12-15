@@ -216,7 +216,9 @@ span.match {
   }
 }
 
-.extract_expand_icons {
+.extract_expand_icons,
+.experiment_search_limit_extracts .extract_expand_icons,
+.search_result_with_extract:hover .extract_expand_icons {
   color: $base-link-color;
 }
 
