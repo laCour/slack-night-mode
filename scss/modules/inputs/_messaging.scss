@@ -23,7 +23,7 @@
 #messages-input-container {
   #message-input {
     background: padding-box $color-shade-light;
-    border: 2px solid $color-shade-mid;
+    border-color: $color-shade-mid;
     border-left: 0;
     color: $base-font-color;
 
@@ -60,6 +60,46 @@
   }
 }
 
+#msg_form {
+  &.focus {
+    #msg_input,
+    #primary_file_button:not(:hover):not(.active) {
+      border-color: $color-shade-dark;
+    }
+  }
+}
+
+#msg_input {
+  background: $color-shade-light;
+  border-color: $color-shade-mid;
+  color: $base-font-color;
+
+  &:focus {
+    border-color: $color-shade-dark;
+
+    + #primary_file_button:not(:hover):not(.active) {
+      border-color: $color-shade-dark;
+    }
+  }
+
+  &.offline:not(.pretend-to-be-online) {
+    background-color: $color-shade-dark !important;
+    color: $color-highlight;
+  }
+
+  &.disabled,
+  &.ql-disabled {
+    background-color: $color-shade-dark;
+    border-color: $color-shade-dark;
+    color: $color-highlight;
+  }
+}
+
+#msg_input_message {
+  background-color: $color-shade-dark;
+  color: $base-font-color;
+}
+
 #message_edit_form.focus #primary_file_button:not(:hover),
 #messages-input-container.focus #primary_file_button:not(:hover) {
   border-color: $color-shade-dark;
@@ -67,12 +107,12 @@
 
 #primary_file_button {
   background: padding-box $color-shade-light;
-  border: 2px solid $color-shade-mid;
+  border-color: $color-shade-mid;
 
   &.active,
   &:hover {
     background: $color-shade-mid;
-    border: 2px solid $color-shade-dark;
+    border-color: $color-shade-dark;
     color: $color-highlight;
   }
 }
@@ -80,12 +120,13 @@
 #footer {
   background: $color-base;
 
-  &.disabled #message-input {
+  &.disabled #message-input,
+  &.disabled #msg_input {
     background: padding-box $color-shade-dark !important;
-    border: 2px solid $color-shade-dark !important;
+    border-color: $color-shade-dark !important;
   }
 
-  &:not(.footer_msg_input) {
+  &.footer_msg_input {
     @extend #footer;
   }
 }
