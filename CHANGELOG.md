@@ -1,5 +1,6 @@
 # Changelog
 
+* **15/12/16**: Update message input styles (#91). Update search result expand icon color (de3b26f).
 * **22/11/16**: Correct message background color on hover, add styles for pinned messages (#90). Update search input styles (7dcfb78).
 * **04/10/16**: Fix new messages notification banner (#85). Fix channel header (#86).
 * **26/09/16**: Correct message input placeholder colors (#84).
