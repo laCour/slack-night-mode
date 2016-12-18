@@ -25,9 +25,9 @@ This is based on Slack's aubergine/maroon style. It's the original theme.
 
 ### Variants
 
-#### Midnight Blue ([source](scss/themes/_midnight-blue.scss) - [build](css/variants/midnight-blue.css))
-
-#### Tomorrow Dark (base16) ([repository](https://github.com/danarnold/slack-night-mode))
+* **Arc ([source](scss/themes/_arc-dark.scss) - [build](css/variants/arc-dark.css))** _by [@Lemmmy](https://github.com/Lemmmy)_
+* **Midnight Blue ([source](scss/themes/_midnight-blue.scss) - [build](css/variants/midnight-blue.css))** _by [@matt-h](https://github.com/matt-h)_
+* **Tomorrow Dark (base16) ([repository](https://github.com/danarnold/slack-night-mode))** _by [@danarnold](https://github.com/danarnold)_
 
 ### Extensions
 
