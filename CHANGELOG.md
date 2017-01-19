@@ -1,5 +1,6 @@
 # Changelog
 
+* **18/01/17 - Major Release**: Support for threads (#99). Correct scrollbar background on non-webkit browsers (#97). Update base flexpane styles (a710b8b). Update flexpane mentions filter bar styles (3c74ec2). Update message box selectors (#98). Add emoji button styles (e616881). Update styles for team menu (eb7f417). Update attachment group styles (6f9571f). Update message select styles (e437719). Add styles for quote bars (#92). Add style for preferences modal legend (7aa4133).
 * **15/12/16**: Update message input styles (#91). Update search result expand icon color (de3b26f). Add style for inline attachment border bar (fixes #88).
 * **22/11/16**: Correct message background color on hover, add styles for pinned messages (#90). Update search input styles (7dcfb78).
 * **04/10/16**: Fix new messages notification banner (#85). Fix channel header (#86).
