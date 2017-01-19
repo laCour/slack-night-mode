@@ -1,9 +1,17 @@
 .attachment_group {
   &.has_container {
+    background: $color-base;
     border: 1px solid $color-shade-dark;
 
     .inline_attachment::after {
       background-color: $color-shade-dark;
+    }
+
+    &.has_link:hover {
+      border-bottom-color: $color-shade-dark;
+      border-left-color: $color-shade-dark;
+      border-right-color: $color-shade-dark;
+      box-shadow: 0 1px 1px $color-shadow-light;
     }
   }
 
