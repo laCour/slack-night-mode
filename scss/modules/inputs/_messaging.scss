@@ -154,3 +154,9 @@
 #special_formatting_text {
   color: $color-highlight;
 }
+
+#msg_form .emo_menu,
+#message_edit_form .emo_menu,
+.inline_message_input_container .emo_menu {
+  color: rgba($base-font-color, 0.35);
+}
