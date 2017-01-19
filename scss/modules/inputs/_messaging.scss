@@ -67,6 +67,13 @@
       border-color: $color-shade-dark;
     }
   }
+
+  #msg_input {
+    background: padding-box $color-shade-light;
+    border-color: $color-shade-mid;
+    border-left: 0;
+    color: $base-font-color;
+  }
 }
 
 #msg_input {
