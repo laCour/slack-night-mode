@@ -9,6 +9,10 @@
   border: 1px solid $color-shade-lightest;
 }
 
+.monkey_scroll_bar_native_scrollbar_shim {
+  background: transparent;
+}
+
 #client-ui {
   .monkey_scroll_bar {
     background: $color-shade-mid;
