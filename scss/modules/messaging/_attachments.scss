@@ -21,6 +21,14 @@
     }
   }
 
+  .inline_attachment.reply_broadcast + .attachment_rule {
+    color: $color-highlight;
+
+    &::after {
+      border-bottom: 1px solid $color-shade-dark;
+    }
+  }
+
   .inline_attachment.message_unfurl .attachment_source .attachment_source_name {
     a,
     span {
@@ -346,5 +354,18 @@ body:not(.feature_new_message_markup) .meta {
   code,
   pre {
     background: $color-shade-dark;
+  }
+}
+
+ts-message .reply_bar {
+  .reply_bar_caret,
+  .view_conv_hover,
+  .last_reply_at {
+    color: $color-highlight;
+  }
+
+  &:hover {
+    background: $color-base;
+    border-color: $color-shade-darkest;
   }
 }

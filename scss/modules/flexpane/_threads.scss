@@ -1,0 +1,44 @@
+#convo_tab #convo_tab_btns .close_flexpane {
+  &:focus,
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
+#reply_container,
+.reply_input_container {
+  .inline_message_input_container {
+    .message_input div,
+    textarea {
+      border-color: $color-shade-dark;
+
+      &:active,
+      &:focus {
+        border-color: $color-shade-darkest;
+      }
+    }
+  }
+
+  .reply_broadcast_buttons_container .reply_broadcast_label_container {
+    color: $base-font-color;
+
+    ts-icon.ts_icon_question_circle {
+      color: $color-highlight;
+    }
+  }
+
+  .reply_limited_in_general {
+    background: $color-base;
+    color: $color-highlight;
+  }
+}
+
+
+#convo_container .convo_flexpane_divider {
+  border-top: 1px solid $color-shade-dark;
+  color: $color-highlight;
+
+  .reply_count {
+    background: $color-base;
+  }
+}

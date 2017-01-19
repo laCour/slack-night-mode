@@ -38,12 +38,14 @@
   @import "modules/messaging/overlay";
   @import "modules/messaging/banners";
   @import "modules/messaging/attachments";
+  @import "modules/messaging/threads";
   @import "modules/messaging/quotes";
   @import "modules/messaging/code";
   @import "modules/messaging/unreads";
 
   @import "modules/flexpane/base";
   @import "modules/flexpane/channel";
+  @import "modules/flexpane/threads";
   @import "modules/flexpane/search";
   @import "modules/flexpane/mentions";
   @import "modules/flexpane/reactions";
