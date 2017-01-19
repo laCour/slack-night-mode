@@ -17,6 +17,7 @@
     }
   }
 
+  #team_menu_user,
   i {
     color: $color-highlight;
   }
@@ -69,4 +70,8 @@
 
 .slack_menu_header_secondary {
   color: $color-highlight;
+}
+
+.slack_menu_download {
+  background-color: $color-shade-dark;
 }
