@@ -103,11 +103,13 @@ ts-message {
 
   &.selected {
     background: $color-base;
-    border-bottom: 6px solid $color-shade-dark;
-    border-top: 6px solid $color-shade-dark;
+
+    &:not(.delete_mode) {
+      background: $color-base;
+    }
 
     &:hover {
-      background: $color-base;
+      background: $color-shadow-light;
     }
   }
 
