@@ -96,6 +96,29 @@
   }
 }
 
+.flexpane_redesign #flex_contents {
+  .heading {
+    border-bottom: 0.0625rem solid $color-shade-dark;
+  }
+
+  .heading_text {
+    color: $base-link-color;
+  }
+
+  .close_flexpane {
+    color: $color-highlight;
+
+    &:focus,
+    &:hover {
+      color: $base-font-color;
+    }
+  }
+}
+
+.flexbox_client.flexpane_redesign.flex_pane_showing #col_flex {
+  border-left: 1px solid $color-shade-dark;
+}
+
 .toolbar_container {
   background: $color-base;
   border-bottom: 1px solid $color-shade-darkest;
