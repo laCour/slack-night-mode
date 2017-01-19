@@ -1,6 +1,4 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") { @keyframes highlight_fade { from { background-color: #4a3b49; }
-    to { background-color: #4d394b; } }
-  body { background: #3e313c; color: #f0d9ed; }
+@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") { body { background: #3e313c; color: #f0d9ed; }
   a { color: #a3839f; }
   a:link, a:visited { color: #a3839f; }
   a:hover, a:active, a:focus { color: #d4bbd1; }
@@ -72,6 +70,7 @@
   #quick_switcher_label { color: #a3839f; }
   .monkey_scroll_bar { background: #4a3b49; }
   .monkey_scroll_handle_inner { background: #61485e; border: 1px solid #876484; }
+  .monkey_scroll_bar_native_scrollbar_shim { background: transparent; }
   #client-ui .monkey_scroll_bar { background: #4a3b49; }
   #client-ui .monkey_scroll_handle_inner { background: #61485e; border: 3px solid #876484; }
   #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_bar { background: #4a3b49; }
@@ -121,9 +120,9 @@
   .btn.btn_border { border: 2px solid #4a3b49; }
   .btn-primary { background-color: #4a3b49; background-image: linear-gradient(to bottom, #61485e, #4a3b49); color: #f0d9ed; }
   .btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary[disabled] { background-color: #61485e; color: #f0d9ed; }
-  .btn-link { color: #a3839f; }
-  .btn-link:focus, .btn-link:hover { color: #d4bbd1; }
-  .btn-link[disabled]:focus, .btn-link[disabled]:hover { color: #d4bbd1; }
+  .btn_link, .btn-link { color: #a3839f; }
+  .btn_link:focus, .btn_link:hover, .btn-link:focus, .btn-link:hover { color: #d4bbd1; }
+  .btn_link[disabled]:focus, .btn_link[disabled]:hover, .btn-link[disabled]:focus, .btn-link[disabled]:hover { color: #d4bbd1; }
   .btn_info { background: #61485e !important; }
   .btn_outline { background: #3e313c; color: #f0d9ed !important; }
   .btn_outline::after { border: 1px solid #4a3b49; }
@@ -194,6 +193,7 @@
   #message_edit_form.offline #message-input, #message_edit_form.offline #primary_file_button, #messages-input-container.offline #message-input, #messages-input-container.offline #primary_file_button { background-color: #4d394b !important; }
   #message_edit_form.offline #primary_file_button, #messages-input-container.offline #primary_file_button { border-color: #4a3b49; color: #a3839f; }
   #msg_form.focus #msg_input, #msg_form.focus #primary_file_button:not(:hover):not(.active) { border-color: #4d394b; }
+  #msg_form #msg_input { background: padding-box #61485e; border-color: #4a3b49; border-left: 0; color: #f0d9ed; }
   #msg_input { background: #61485e; border-color: #4a3b49; color: #f0d9ed; }
   #msg_input:focus { border-color: #4d394b; }
   #msg_input:focus + #primary_file_button:not(:hover):not(.active) { border-color: #4d394b; }
@@ -209,6 +209,7 @@
   #typing_text { color: #a3839f; }
   #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
   #special_formatting_text { color: #a3839f; }
+  #msg_form .emo_menu, #message_edit_form .emo_menu, .inline_message_input_container .emo_menu { color: rgba(240, 217, 237, 0.35); }
   .ts_toggle .ts_toggle_button { background: #372c36; color: #f0d9ed; }
   .ts_toggle .ts_toggle_button .ts_toggle_handle { background: #4d394b; }
   .ts_toggle .ts_toggle_secondary_label { color: #a3839f; }
@@ -244,7 +245,7 @@
   #team_menu.active, #team_menu:hover { background: #4d394b !important; border-bottom-color: #4d394b !important; }
   #team_menu.active i, #team_menu:hover i { color: #f0d9ed; }
   #team_menu.active #current_user_name, #team_menu:hover #current_user_name { color: #f0d9ed; }
-  #team_menu i { color: #a3839f; }
+  #team_menu #team_menu_user, #team_menu i { color: #a3839f; }
   #team_menu .presence .presence_icon { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   #team_menu .team_name_caret, #team_menu .notifications_menu_btn { color: #f0d9ed !important; }
   #team_header_user_name { color: #a3839f; }
@@ -255,6 +256,7 @@
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { color: #a3839f; text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   .slack_menu_section::before { border-top: 1px solid #61485e; }
   .slack_menu_header_secondary { color: #a3839f; }
+  .slack_menu_download { background-color: #4d394b; }
   #menu.file_menu { box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); }
   #menu.file_menu ul li.highlighted, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) { background: #4d394b; }
   #menu.file_menu ul li.highlighted > a, #menu.file_menu:not(.keyboard_active) ul li:hover:not(.disabled) > a { color: #d4bbd1; }
@@ -502,8 +504,9 @@
   ts-message .action_hover_container a, ts-message .message_actions_container message_actions a { background: #3e313c; border-right: 1px solid #3e313c; color: #a3839f; }
   ts-message .action_hover_container a:hover, ts-message .message_actions_container message_actions a:hover { color: #a3839f; }
   ts-message .action_hover_container a.active, ts-message .action_hover_container a:active, ts-message .message_actions_container message_actions a.active, ts-message .message_actions_container message_actions a:active { background: #4d394b; color: #d4bbd1; }
-  ts-message.selected { background: #3e313c; border-bottom: 6px solid #4d394b; border-top: 6px solid #4d394b; }
-  ts-message.selected:hover { background: #3e313c; }
+  ts-message.selected { background: #3e313c; }
+  ts-message.selected:not(.delete_mode) { background: #3e313c; }
+  ts-message.selected:hover { background: rgba(0, 0, 0, 0.15); }
   ts-message .meta { color: #a3839f; }
   ts-message .meta.msg_inline_img_toggler .member, ts-message .meta.msg_inline_img_toggler .service_link, ts-message .meta.msg_inline_file_preview_toggler .member, ts-message .meta.msg_inline_file_preview_toggler .service_link { color: #a3839f !important; }
   ts-message .meta.msg_inline_img_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_img_toggler a, ts-message .meta.msg_inline_file_preview_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_file_preview_toggler a { color: #a3839f !important; }
@@ -606,11 +609,14 @@
   #messages_unread_status.quiet a { color: #f0d9ed; }
   .clear_unread_messages { border-left: 1px solid rgba(0, 0, 0, 0.15); }
   #messages_container.has_reply_banners.has_top_messages_banner #reply_banners::after, #messages_container:not(.has_reply_banners).has_top_messages_banner::before, #messages_container.has_top_messages_banner::before { background: none; }
-  .attachment_group.has_container { border: 1px solid #4d394b; }
+  .attachment_group.has_container { background: #3e313c; border: 1px solid #4d394b; }
   .attachment_group.has_container .inline_attachment::after { background-color: #4d394b; }
+  .attachment_group.has_container.has_link:hover { border-bottom-color: #4d394b; border-left-color: #4d394b; border-right-color: #4d394b; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   .attachment_group .media_caret { color: #a3839f; }
   .attachment_group .attachment_source span { color: #a3839f !important; }
   .attachment_group .attachment_source .attachment_source_name + .attachment_author_name::before { color: #a3839f; }
+  .attachment_group .inline_attachment.reply_broadcast + .attachment_rule { color: #a3839f; }
+  .attachment_group .inline_attachment.reply_broadcast + .attachment_rule::after { border-bottom: 1px solid #4d394b; }
   .attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name a, .attachment_group .inline_attachment.message_unfurl .attachment_source .attachment_source_name span { color: #a3839f; }
   .attachment_group .attachment_title a { color: #f0d9ed; }
   .attachment_group .attachment_footer_text + .attachment_ts::before { color: #a3839f; }
@@ -674,10 +680,32 @@
   .post_body ul.list.checklist li.checked { color: #a3839f; }
   .post_body .message { background-color: #f0d9ed; }
   .post_body code, .post_body pre { background: #4d394b; }
+  ts-message .reply_bar .reply_bar_caret, ts-message .reply_bar .view_conv_hover, ts-message .reply_bar .last_reply_at { color: #a3839f; }
+  ts-message .reply_bar:hover { background: #3e313c; border-color: #372c36; }
+  #threads_msgs_scroller_div { background: #3e313c; }
+  #threads_msgs_scroller_div:not(.loading)::before { background: #3e313c; }
+  #threads_msgs_scroller_div.loading::before { color: #a3839f; }
+  #threads_msgs_scroller_div .threads_caught_up_divider .divider_line { border-top: 1px solid #4d394b; }
+  #threads_msgs_scroller_div .threads_caught_up_divider .divider_label { background: #61485e; color: #f0d9ed; }
+  #threads_view_banner.messages_banner { background: #4d394b; }
+  #threads_view_banner.messages_banner:hover { background: #61485e; }
+  #threads_view_banner.messages_banner:hover .clear_unread_messages { background: #61485e; }
+  #threads_msgs.new_banner_is_showing::before { background: #3e313c; }
+  ts-thread { background: #3e313c; }
+  ts-thread .reply_input_container .inline_message_input_container form textarea { border-color: #4d394b; }
+  ts-thread .reply_input_container .collapsed_input_placeholder, ts-thread .reply_input_container .join_channel_from_thread_container, ts-thread .reply_input_container .reply_limited_in_general { background: #4d394b; border-color: #4d394b; }
+  ts-thread .thread_messages { background: #4d394b; border-color: #4d394b; }
+  ts-thread ts-message.new_reply { background: #3e313c; }
+  ts-thread ts-message.new_reply:hover { background: #4d394b; }
+  ts-thread .thread_header .thread_channel_name a { color: #f0d9ed; }
+  ts-thread .thread_header .thread_action_btns button { color: #a3839f; }
+  ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
+  #convo_tab .thread_participants, ts-thread .thread_participants { color: #a3839f; }
   pre { background: #372c36; border: 1px solid #4d394b; color: #f0d9ed; }
   pre span.mention { padding: 2px 0 !important; }
   #page pre, body > pre { background: #372c36; color: #f0d9ed !important; }
   body > pre { background: #876484; }
+  .special_formatting_quote .quote_bar { background-color: #61485e; }
   code { background-color: #372c36; border: 1px solid #4d394b; color: #f0d9ed; }
   .file_list_item.snippet .snippet_preview { background: #372c36; }
   .snippet_preview, .snippet_body { background: #372c36; }
@@ -784,6 +812,11 @@
   #flex_contents .flexpane_tab_bar li.active a { color: #a3839f; }
   #flex_contents .help { border-top: 5px solid #372c36; color: #f0d9ed; }
   #flex_contents i.callout { color: #a3839f; }
+  .flexpane_redesign #flex_contents .heading { border-bottom: 0.0625rem solid #4d394b; }
+  .flexpane_redesign #flex_contents .heading_text { color: #a3839f; }
+  .flexpane_redesign #flex_contents .close_flexpane { color: #a3839f; }
+  .flexpane_redesign #flex_contents .close_flexpane:focus, .flexpane_redesign #flex_contents .close_flexpane:hover { color: #f0d9ed; }
+  .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex { border-left: 1px solid #4d394b; }
   .toolbar_container { background: #3e313c; border-bottom: 1px solid #372c36; color: #f0d9ed; }
   .msg_right_link { color: #a3839f; }
   #details_tab .heading { background: #3e313c; }
@@ -813,6 +846,14 @@
   .pinned_item .remove_pin:hover { color: #d4bbd1; }
   .pinned_item .pinned_message_text .pin_truncate_fade { background: #3e313c; }
   .pinned_item.delete_mode { border-color: #bf360c !important; }
+  #convo_tab #convo_tab_btns .close_flexpane:focus, #convo_tab #convo_tab_btns .close_flexpane:hover { color: #f0d9ed; }
+  #reply_container .inline_message_input_container .message_input div, #reply_container .inline_message_input_container textarea, .reply_input_container .inline_message_input_container .message_input div, .reply_input_container .inline_message_input_container textarea { border-color: #4d394b; }
+  #reply_container .inline_message_input_container .message_input div:active, #reply_container .inline_message_input_container .message_input div:focus, #reply_container .inline_message_input_container textarea:active, #reply_container .inline_message_input_container textarea:focus, .reply_input_container .inline_message_input_container .message_input div:active, .reply_input_container .inline_message_input_container .message_input div:focus, .reply_input_container .inline_message_input_container textarea:active, .reply_input_container .inline_message_input_container textarea:focus { border-color: #372c36; }
+  #reply_container .reply_broadcast_buttons_container .reply_broadcast_label_container, .reply_input_container .reply_broadcast_buttons_container .reply_broadcast_label_container { color: #f0d9ed; }
+  #reply_container .reply_broadcast_buttons_container .reply_broadcast_label_container ts-icon.ts_icon_question_circle, .reply_input_container .reply_broadcast_buttons_container .reply_broadcast_label_container ts-icon.ts_icon_question_circle { color: #a3839f; }
+  #reply_container .reply_limited_in_general, .reply_input_container .reply_limited_in_general { background: #3e313c; color: #a3839f; }
+  #convo_container .convo_flexpane_divider { border-top: 1px solid #4d394b; color: #a3839f; }
+  #convo_container .convo_flexpane_divider .reply_count { background: #3e313c; }
   .search_message_result { background: #3e313c; border-top: 2px solid #372c36; color: #f0d9ed; }
   .search_message_result .search_message_result_meta { color: #a3839f; }
   .search_message_result .search_message_result_meta a { color: #a3839f; }
@@ -860,7 +901,9 @@
   .search_result_for_context::after { background: rgba(62, 49, 60, 0.1); }
   .extract_expand_icons, .experiment_search_limit_extracts .extract_expand_icons, .search_result_with_extract:hover .extract_expand_icons { color: #a3839f; }
   .search_result_with_extract:hover .extract_expand_icons { color: #d4bbd1; }
-  #mentions_options { background-color: #3e313c; border-top: 1px solid #372c36; color: #f0d9ed; }
+  #mentions_options { background-color: #3e313c; border-top-color: #372c36; color: #f0d9ed; }
+  #mentions_options.subheading.feature_message_replies_simple { background: #4d394b; border-bottom-color: #3e313c; }
+  #member_mentions.feature_message_replies_simple h3 a { color: #a3839f; }
   #member_mentions_more_btn { background-color: #876484 !important; }
   .mention_day_container_div .day_divider::before { background: none; border-color: #4d394b; }
   .mention_rxn .mention_rxn_summary { color: #f0d9ed; }
@@ -1125,6 +1168,7 @@
   #fs_modal.prefs_modal #prefs_themes #prefs_themes_customize .custom_theme_label .color_swatch { border: 1px solid #4d394b; }
   #fs_modal.prefs_modal #prefs_themes #prefs_themes_customize .colpick { background: #4a3b49; border: 1px solid #4d394b; }
   #fs_modal.prefs_modal #prefs_themes::before { background: #bf360c; border-radius: 3px; content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme."; display: block; margin-bottom: 6px; padding: 2px 4px 4px; width: 100%; }
+  #fs_modal.prefs_modal legend { color: #f0d9ed; }
   .sidebar_menu_list_item { border: 0; color: #f0d9ed; }
   .sidebar_menu_list_item.is_active { background-color: #372c36; color: #f0d9ed; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   .sidebar_menu_list_item:not(.is_active):hover { background-color: #4d394b; }
@@ -1219,7 +1263,7 @@
   .member_meta { color: #a3839f; }
   .menu_member_user_details { background: #4d394b; border-bottom: 1px solid #61485e; color: #f0d9ed; }
   .menu_member_user_details .member_name { color: #a3839f; }
-  .mini, .dull_grey, .flat_grey, .charcoal_grey, .ts_tip_tip .subtle_silver { color: #f0d9ed !important; }
+  .mini, .dull_grey, .flat_grey, .blue_link, .charcoal_grey, .ts_tip_tip .subtle_silver { color: #f0d9ed !important; }
   .sky_blue, .havana_blue, .plastic_grey, .indifferent_grey, .old_petunia_grey, .cloud_silver { color: #a3839f !important; }
   .clear_blue { color: #a3839f !important; }
   .candy_red_bg { background-color: #bf360c !important; }
@@ -1656,6 +1700,8 @@
   .two_factor_choice:hover { box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.15); }
   .two_factor_choice:hover .two_factor_link { color: #f0d9ed; }
   #custom_emoji span.emoji-wrapper { background-color: #4d394b; }
+  @keyframes highlight_fade { from { background-color: #4a3b49; }
+    to { background-color: #4d394b; } }
   #channel_specific_settings tr { border-top: 1px solid #61485e; }
   #channel_specific_settings tr.channel_override_row.muted td { background: #4d394b; }
   #channel_specific_settings .extra_left_border { border-left: 3px solid #61485e; }
