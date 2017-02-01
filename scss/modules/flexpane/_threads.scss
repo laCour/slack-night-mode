@@ -5,6 +5,10 @@
   }
 }
 
+#convo_tab textarea.message_input {
+  color: $base-font-color;
+}
+
 #reply_container,
 .reply_input_container {
   .inline_message_input_container {
