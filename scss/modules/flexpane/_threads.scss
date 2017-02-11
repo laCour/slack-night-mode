@@ -15,6 +15,7 @@
     .message_input div,
     textarea {
       border-color: $color-shade-dark;
+      color: $base-font-color;
 
       &:active,
       &:focus {

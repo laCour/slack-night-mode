@@ -45,6 +45,7 @@ ts-thread {
     .inline_message_input_container {
       form textarea {
         border-color: $color-shade-dark;
+        color: $base-font-color;
       }
     }
 
