@@ -75,3 +75,7 @@
 .slack_menu_download {
   background-color: $color-shade-dark;
 }
+
+#menu_items_scroller::-webkit-scrollbar-track {
+  background: $color-base !important;
+}
