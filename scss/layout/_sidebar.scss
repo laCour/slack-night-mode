@@ -1,3 +1,8 @@
+#col_channels {
+  background-color: $color-shade-dark;
+  color: $base-font-color;
+}
+
 #col_channels_collapse_view {
   background: $color-shade-dark;
 }
@@ -82,18 +87,23 @@
   }
 }
 
-#channels_scroller.show_which_channel_is_active ul li.active a {
-  &.channel_name,
-  &.group_name,
-  &.im_name,
-  &.mpim_name {
+#channels_scroller.show_which_channel_is_active ul li.active {
+  .channel_name,
+  span.im_name {
     background: $color-base;
     color: $base-font-color;
   }
 
-  &.channel_name,
-  &.group_name {
-    .prefix {
+  a {
+    &.group_name,
+    &.im_name,
+    &.mpim_name {
+      background: $color-base;
+      color: $base-font-color;
+    }
+
+    &.channel_name .prefix,
+    &.group_name .prefix {
       color: $color-highlight;
     }
   }
