@@ -2,29 +2,6 @@
   background: $color-shade-dark;
 }
 
-#col_channels {
-  background: $color-shade-dark;
-  color: $base-font-color;
-
-  ul li {
-    &.channel.active a.channel_name,
-    &.group.active a.group_name,
-    &.member.active a.im_name {
-      background: $color-shade-light;
-      color: rgba($base-font-color, 0.9) !important;
-    }
-  }
-
-  &.channels_list_holder ul li {
-    &.channel.active .unread_highlight,
-    &.group.active .unread_highlight,
-    &.member.active .unread_highlight {
-      background: $color-base;
-      color: $base-font-color !important;
-    }
-  }
-}
-
 .channels_list_holder {
   h2 {
     color: $base-font-color !important;
@@ -41,7 +18,12 @@
     li {
       text-shadow: 0 1px 1px $color-shadow-light;
 
-      a {
+      .channel_name,
+      .group_name,
+      .im_name,
+      .mpim_name,
+      > a {
+        background: $color-shade-dark;
         color: rgba($base-font-color, 0.8) !important;
 
         &:hover {
@@ -51,32 +33,9 @@
         }
       }
 
-      &.channel.active a.channel_name .prefix {
-        color: $color-highlight;
-      }
-
-      &.group {
-        &.active a.group_name .prefix {
-          color: $color-highlight;
-        }
-
-        .group_close {
-          color: $base-link-color;
-        }
-      }
-
-      &.member:hover {
-        background: $color-base;
-      }
-
-      &.member .im_close,
-      &.mpim .mpim_close {
-        color: $color-highlight !important;
-      }
-
-      &.group.active .group_close,
-      &.member.active .im_close,
-      &.mpim.active .mpim_close {
+      .group_close,
+      .im_close,
+      .mpim_close {
         color: $base-link-color !important;
       }
 
