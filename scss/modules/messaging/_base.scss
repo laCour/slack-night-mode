@@ -72,7 +72,7 @@ ts-message {
 
   .action_hover_container,
   .message_actions_container message_actions {
-    border: 1px solid $color-base;
+    border: 1px solid $color-shade-dark;
 
     &:hover {
       border-color: $color-shade-light;
@@ -84,19 +84,19 @@ ts-message {
       }
     }
 
-    a {
+    .btn_msg_action {
       background: $color-base;
-      border-right: 1px solid $color-base;
+      border-right: 1px solid $color-shade-dark;
       color: $base-link-color;
 
       &:hover {
-        color: $base-link-color;
+        color: $base-font-color;
       }
 
       &.active,
       &:active {
         background: $color-shade-dark;
-        color: $base-link-color-active;
+        color: $base-font-color;
       }
     }
   }
