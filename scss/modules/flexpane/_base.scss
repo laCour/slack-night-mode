@@ -10,7 +10,7 @@
   }
 
   .heading {
-    background: $color-base;
+    background: lighten($color-shade-darkest, 10%);
     color: $base-link-color;
 
     a {

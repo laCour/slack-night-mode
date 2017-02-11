@@ -217,8 +217,8 @@ html.no_touch a.filetype_button_web:hover {
   &.active,
   &:active,
   &:hover {
-    background-color: $color-shade-light;
-    border-color: $color-shade-lightest;
+    background-color: $color-shade-dark;
+    border-color: $color-shade-light;
 
     .title a {
       color: $base-link-color;
@@ -351,8 +351,8 @@ html.no_touch a.filetype_button_web:hover {
   .file_list_item {
     &:focus,
     &:hover {
-      background-color: $color-shade-dark;
-      border-color: $color-shade-darkest;
+      background-color: $color-base;
+      border-color: $color-shade-dark;
     }
 
     .star {
@@ -392,5 +392,5 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .active .tab_container .file_list_item {
-  background-color: $color-shade-dark;
+  background-color: $color-base;
 }

@@ -129,13 +129,16 @@
   }
 }
 
-#client-ui #team_list .team_list_item,
-#member_preview_scroller .team_list_item {
-  &.expanded {
-    border-color: $color-shade-dark;
-  }
+#client-ui .searchable_member_list,
+#client-ui #team_list,
+#member_preview_scroller {
+  .team_list_item {
+    &.expanded {
+      border-color: $color-shade-dark;
+    }
 
-  &:hover {
-    border-color: $color-shade-light;
+    &:hover {
+      border-color: $color-shade-light;
+    }
   }
 }

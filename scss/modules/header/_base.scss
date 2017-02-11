@@ -1,227 +1,133 @@
-#client_header .channel_header {
+.channel_header {
   background: $color-base;
 
-  .flex_header {
-    background: $color-base;
-  }
-
-  .channel_name_container {
-    color: $base-font-color;
-
-    .channel_name {
-      color: $base-font-color;
-
-      &.muted {
-        color: $color-highlight;
-      }
-
-      #im_title.away {
-        color: $color-highlight;
-      }
-
-      ul li.mpdm_member.away {
-        color: $color-highlight;
-      }
-    }
-
-    .mute_container .muted_icon {
-      color: $color-highlight;
-
-      &:hover {
-        color: $color-red;
-      }
-    }
-  }
-
-  #channel_header_info {
-    background: $color-base;
-    color: $base-font-color;
-
-    .topic_divider {
-      color: $color-shade-dark;
-    }
-  }
-
-  .channel_title_info {
-    background: $color-base;
-    color: $color-highlight;
-
-    .divider_bar {
-      background: $color-shade-dark;
-    }
-
-    .channel_details_toggle {
-      color: $color-highlight;
-    }
-
-    .channel_actions_toggle {
-      color: $color-highlight;
-    }
-  }
-
-  .channel_header_icon {
-    color: $base-font-color;
-
-    &.channel_calls_button {
-      color: $color-highlight;
-    }
-
-    &#channel_actions_toggle {
-      &.active {
-        color: $base-font-color;
-      }
-    }
-
-    &#recent_mentions_toggle {
-      &:hover {
-        color: $color-red;
-      }
-    }
-
-    &#flex_menu_toggle {
-      &.active {
-        color: $base-font-color;
-      }
-
-      .flex_menu_download_circle {
-        background: $color-base;
-
-        canvas {
-          background: $color-base;
-        }
-      }
-    }
-
-    &#details_toggle,
-    &#recent_mentions_toggle,
-    &#stars_toggle {
-      &.active {
-        background: $color-shade-dark;
-
-        &:hover {
-          background: $color-shade-light;
-          color: $base-font-color;
-        }
-      }
-    }
-  }
-
-  .blue_hover:hover {
+  .blue_on_hover:hover {
     color: $base-font-color;
   }
 }
 
 #client_body:not(.onboarding)::before {
   background: $color-base;
-  border-bottom: 1px solid $color-base;
+  border-bottom: 1px solid $color-shade-dark;
 }
 
-#help_icon {
-  border: 1px solid $color-shade-mid;
+.messages_header {
+  color: $base-font-color;
+}
+
+.channel_title {
+  .channel_name_container {
+    .channel_name {
+      color: $base-font-color;
+
+      &.muted {
+        color: $color-highlight;
+      }
+    }
+
+    .ts_icon_shared_channel,
+    .mpdm_member {
+      &.away {
+        color: $color-highlight;
+      }
+    }
+
+    .muted_icon {
+      color: $color-highlight;
+
+      &:hover {
+        color: $color-red;
+      }
+    }
+  }
+}
+
+#im_title.away {
+  color: $color-highlight;
+}
+
+.channel_header_info {
+  .star,
+  button {
+    color: $base-link-color;
+  }
+}
+
+.channel_title_info {
+  background: $color-base;
   color: $color-highlight;
 
-  &:hover {
-    background: $color-shade-mid;
-    border: 1px solid $color-shade-dark;
-    color: $base-font-color;
+  .divider_bar {
+    background: $color-shade-dark;
   }
 
-  &.unread #help_icon_circle_count {
-    background-color: $color-red;
-    color: $white;
+  .channel_details_toggle {
+    color: $color-highlight;
+  }
+
+  .channel_actions_toggle {
+    color: $color-highlight;
+  }
+}
+
+.channel_header_icon {
+  color: $base-font-color;
+}
+
+.channel_calls_button .call_icon.call_window_offline {
+  color: $color-highlight;
+}
+
+.channel_actions_toggle,
+.details_toggle {
+  &.active:focus {
+    color: $base-font-color;
   }
 }
 
 #flex_menu_toggle {
+  &.active,
+  &.active:focus {
+    color: $base-font-color;
+  }
+
+  .flex_menu_download_circle {
+    background: $color-base;
+
+    canvas {
+      background: $color-base;
+    }
+  }
+
   &.unread #help_icon_circle_count {
     background-color: $color-red;
     color: $white;
   }
-}
 
-#flex_menu_toggle.open #help_icon_circle_count,
-#help_icon.open #help_icon_circle_count {
-  background-color: $color-shade-darkest;
-  color: $base-font-color;
-}
-
-#channel_members_toggle {
-  background: $color-base;
-  color: $color-highlight;
-
-  .channel_members_toggle_icon {
-    color: $color-highlight;
-  }
-
-  &:hover .channel_members_toggle_icon {
+  &.open #help_icon_circle_count {
+    background-color: $color-shade-darkest;
     color: $base-font-color;
   }
 }
 
-#active_channel_name {
-  color: $color-highlight;
+#details_toggle,
+#recent_mentions_toggle,
+#stars_toggle {
+  &.active {
+    background: $color-shade-dark;
 
-  .name {
-    color: $base-font-color;
-
-    &.muted {
-      color: $color-highlight;
-    }
-  }
-
-  .prefix {
-    color: $color-highlight;
-  }
-
-  &.active .prefix,
-  &:hover .prefix {
-    color: $base-font-color;
-  }
-
-  #channel_actions {
-    color: $color-highlight;
-  }
-
-  .topic {
-    color: $color-highlight;
-  }
-
-  .call_icon {
-    color: $color-highlight;
-
-    &.away {
-      color: rgba($color-highlight, 0.25);
-    }
-
-    &.call_window_offline {
-      color: rgba($color-highlight, 0.25);
-    }
-  }
-
-  .ts_icon_microphone:hover,
-  .ts_icon_video_camera:hover {
-    color: $base-font-color;
-  }
-
-  &:hover {
-    .name.muted,
-    i .fa {
+    &:hover {
+      background: $color-shade-light;
       color: $base-font-color;
     }
   }
 }
 
-#group_actions,
-#im_actions {
-  color: $color-highlight;
+#recent_mentions_toggle:hover {
+  color: $color-red;
 }
 
 #rxn_toast_div {
   background: $color-shade-darkest;
   border: 1px solid $color-shade-light;
-}
-
-#whats_new_burst {
-  background: $color-red;
-  border-color: $color-shade-light;
 }
