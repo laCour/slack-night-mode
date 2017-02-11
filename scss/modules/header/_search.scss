@@ -1,9 +1,13 @@
-.search_form:hover {
+.search_form {
   border-color: $color-shade-light;
+
+  &:hover {
+    border-color: $color-shade-lightest;
+  }
 }
 
 .search_focused .search_form {
-  border-color: $color-shade-light;
+  border-color: $color-shade-lightest;
 }
 
 .search_clear_icon .ts_icon_times_circle {
@@ -14,7 +18,7 @@
   color: $base-font-color;
 }
 
-#search_container {
+.flexbox_client #search_container {
   .search_input {
     background: transparent;
   }
