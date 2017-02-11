@@ -1,20 +1,7 @@
-#mentions_options {
+#flex_contents .subheading#mentions_options {
   background-color: $color-base;
-  border-top-color: $color-shade-darkest;
+  border-bottom-color: $color-shade-dark;
   color: $base-font-color;
-
-  &.subheading.feature_message_replies_simple {
-    background: $color-shade-dark;
-    border-bottom-color: $color-base;
-  }
-}
-
-#member_mentions.feature_message_replies_simple h3 a {
-  color: $color-highlight;
-}
-
-#member_mentions_more_btn {
-  background-color: $color-shade-lightest !important;
 }
 
 .mention_day_container_div .day_divider {
