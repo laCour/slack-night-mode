@@ -49,6 +49,13 @@ textarea {
   }
 }
 
+input:disabled,
+input:disabled:active,
+select:disabled,
+textarea:disabled {
+  border-color: $color-shade-mid !important;
+}
+
 .no_touch {
   input:hover,
   select:hover,
@@ -129,87 +136,89 @@ textarea {
 
 .btn {
   background-color: $color-shade-light;
-  background-image: linear-gradient(to bottom, $color-shade-lightest, $color-shade-light);
-  border: 1px solid $color-shade-lightest;
-  border-bottom-color: $color-shade-light;
-  box-shadow: inset 0 1px 0 $color-shadow-light, 0 1px 2px $color-shadow-light;
   color: $base-font-color !important;
   text-shadow: 0 1px 1px $color-shadow-light;
 
-  &.active,
-  &.disabled,
-  &:active,
+  &.hover,
   &:focus,
   &:hover,
-  &[disabled] {
-    background-color: $color-shade-lightest;
+  &.active,
+  &:active {
+    background-color: $color-shade-light;
     color: $base-font-color;
-  }
-
-  &:focus,
-  &:hover {
-    color: $base-font-color;
-  }
-
-  &:focus {
-    outline: $base-font-color dotted thin;
-  }
-
-  &.btn_outline.disabled {
-    background: $color-shade-mid !important;
-    color: $base-link-color !important;
-
-    &:hover {
-      background: $color-shade-mid !important;
-      color: $base-link-color !important;
-    }
   }
 
   &.btn_border {
     border: 2px solid $color-shade-mid;
   }
-}
 
-.btn-primary {
-  background-color: $color-shade-mid;
-  background-image: linear-gradient(to bottom, $color-shade-light, $color-shade-mid);
-  color: $base-font-color;
-
-  &.active,
   &.disabled,
-  &:active,
-  &:focus,
-  &:hover,
-  &[disabled] {
-    background-color: $color-shade-light;
-    color: $base-font-color;
-  }
-}
+  &:disabled {
+    background-color: $color-shade-darkest !important;
 
-.btn_link,
-.btn-link {
-  color: $base-link-color;
-
-  &:focus,
-  &:hover {
-    color: $base-link-color-active;
-  }
-
-  &[disabled] {
-    &:focus,
+    &:active,
     &:hover {
-      color: $base-link-color-active;
+      background-color: $color-shade-darkest !important;
+    }
+  }
+
+  &.btn_outline {
+    &.btn_danger,
+    &.btn_warning {
+      background-color: $color-red !important;
+      color: $base-font-color !important;
+
+      &:focus,
+      &:hover {
+        background-color: $color-base !important;
+        border-color: $color-red !important;
+        color: $color-red !important;
+      }
+    }
+
+    &.disabled {
+      background: $color-shade-mid !important;
+      color: $base-link-color !important;
+
+      &:hover {
+        background: $color-shade-mid !important;
+        color: $base-link-color !important;
+      }
+    }
+  }
+
+  &.btn_attachment {
+    border-color: $color-shade-light;
+
+    &:hover,
+    &:focus {
+      background-color: $color-shade-dark;
+      border-color: $color-shade-lightest;
+    }
+
+    &.btn_danger {
+      border-color: $color-red;
+
+      &:hover,
+      &:focus {
+        border-color: lighten($color-red, 10%);
+      }
+    }
+
+    &.btn_primary {
+      border-color: $color-shade-lightest;
+
+      &:hover,
+      &:focus {
+        border-color: lighten($color-shade-lightest, 10%);
+      }
     }
   }
 }
 
-.btn_info {
-  background: $color-shade-light !important;
-}
-
 .btn_outline {
   background: $color-base;
-  color: $base-font-color !important;
+  color: $base-link-color !important;
 
   &::after {
     border: 1px solid $color-shade-mid;
@@ -228,7 +237,7 @@ textarea {
     &:focus,
     &:hover {
       background-color: rgba($color-shade-light, 0.9) !important;
-      color: $base-font-color !important;
+      color: $base-link-color-active !important;
     }
 
     &.active,
@@ -240,16 +249,25 @@ textarea {
   &.hover,
   &:focus,
   &:hover {
-    background: $color-shade-dark;
-    color: $base-font-color !important;
+    background: $color-base;
+    color: $base-link-color-active !important;
   }
 
   &:active {
-    color: $base-font-color;
+    color: $base-link-color-active;
   }
 
   &.active {
-    color: $base-link-color !important;
+    color: $base-link-color-active !important;
+  }
+}
+
+.btn_link {
+  color: $base-link-color;
+
+  &:hover,
+  &:focus {
+    color: $base-link-color-active;
   }
 }
 
@@ -269,6 +287,16 @@ textarea {
       box-shadow: inset 1px 0 0 rgba($black, 0.125), inset 0 1px 0 rgba($black, 0.2), 0 1px 2px rgba($white, 0.05);
     }
   }
+}
+
+.btn_info,
+.btn.btn_success {
+  background-color: $color-base !important;
+}
+
+.btn_warning,
+.btn_danger {
+  background-color: $color-red !important;
 }
 
 .btn-danger .caret,
