@@ -1,4 +1,26 @@
-// Used on non-webkit browsers
+::-webkit-scrollbar-track {
+  background: $color-shade-dark !important;
+  border-left-color: $color-shade-dark !important;
+  border-right-color: $color-shade-dark !important;
+  color: $color-shade-dark !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-shade-light !important;
+  border-left-color: $color-shade-dark !important;
+  border-right-color: $color-shade-dark !important;
+  color: $color-base !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: $color-base !important;
+}
+
+.supports_custom_scrollbar {
+  #messages_container::after {
+    background: none !important;
+  }
+}
 
 .monkey_scroll_bar {
   background: $color-shade-mid;
