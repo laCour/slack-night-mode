@@ -207,8 +207,16 @@
 
 .file_container {
   background: $color-shade-darkest;
-  border: 1px solid $color-shade-darkest;
+  border: 1px solid $color-shade-dark;
   color: $base-font-color;
+
+  &:hover,
+  &:focus,
+  &.file_menu_open {
+    border-bottom-color: $color-shade-dark;
+    border-left-color: $color-shade-dark;
+    border-right-color: $color-shade-dark;
+  }
 
   &::after,
   &.post_container::after {
