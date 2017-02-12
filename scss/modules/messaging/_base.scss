@@ -45,8 +45,8 @@ ts-message {
     color: $color-highlight;
   }
 
-  &.standalone:not(.for_mention_display):not(.for_search_display):not(.for_star_display) {
-    border: 1px solid $color-shade-light;
+  &.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
+    border: 1px solid $color-shade-dark;
   }
 
   &.unprocessed {
