@@ -96,13 +96,15 @@
   }
 }
 
-.flexpane_redesign #flex_contents {
-  .heading {
-    border-bottom: 0.0625rem solid $color-shade-dark;
-  }
+.flexpane_redesign {
+  #flex_contents {
+    .heading {
+      border-bottom: 0.0625rem solid $color-shade-dark;
+    }
 
-  .heading_text {
-    color: $base-link-color;
+    .heading_text {
+      color: $base-link-color;
+    }
   }
 
   .close_flexpane {
