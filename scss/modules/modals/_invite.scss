@@ -46,3 +46,7 @@
     background: rgba($color-red, 0.25);
   }
 }
+
+#admin_invites_workflow .lazy_filter_select .lfs_input_container {
+  background-color: $color-shade-light;
+}

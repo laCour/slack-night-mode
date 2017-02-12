@@ -11,3 +11,8 @@
 #share_dialog .file_list_item {
   border-color: $color-shade-darkest;
 }
+
+#generic_dialog.basic_share_dialog .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon),
+#share_dialog .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon) {
+  color: $color-highlight;
+}
