@@ -6,7 +6,7 @@
   background: $color-base;
 
   .heading {
-    background: lighten($color-shade-darkest, 10%);
+    background: darken($color-base, 5%);
     color: $base-link-color;
 
     a {

@@ -1,6 +1,6 @@
 #details_tab {
   .heading {
-    background: $color-base;
+    background: darken($color-base, 5%);
 
     a.close_flexpane {
       color: $base-link-color;
