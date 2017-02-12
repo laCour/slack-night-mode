@@ -58,7 +58,7 @@ code {
 }
 
 .CodeMirror-linenumber {
-  color: $color-highlight;
+  color: $color-highlight !important;
 }
 
 .CodeMirror-guttermarker {
