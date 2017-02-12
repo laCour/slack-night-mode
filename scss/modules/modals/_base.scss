@@ -27,6 +27,10 @@
   color: $base-font-color;
 }
 
+.modal-backdrop {
+  background-color: $color-base;
+}
+
 .close {
   color: $base-font-color;
   text-shadow: 0 1px 0 $color-shadow-dark;
