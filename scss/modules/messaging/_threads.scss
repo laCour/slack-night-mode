@@ -19,6 +19,14 @@
       color: $base-font-color;
     }
   }
+
+  &.loading {
+    background: none;
+
+    &::before {
+      color: $base-font-color;
+    }
+  }
 }
 
 #threads_view_banner.messages_banner {
@@ -88,4 +96,8 @@ ts-thread {
 #convo_tab .thread_participants,
 ts-thread .thread_participants {
   color: $color-highlight;
+}
+
+#convo_loading_indicator {
+  background-image: none;
 }
