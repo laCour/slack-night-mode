@@ -155,7 +155,7 @@ ts-message {
 }
 
 #convo_container {
-  background-color: rgba($color-shade-dark, 0.85);
+  background-color: $color-base;
 
   #message_edit_container {
     border-bottom: 1px solid $color-shade-light;
@@ -185,7 +185,7 @@ ts-message {
 
     ts-message {
       &.selected {
-        background: $color-shade-light;
+        background: $color-base;
       }
     }
 
@@ -207,10 +207,10 @@ ts-message {
         }
 
         &:not(.selected):not(.highlight):not(.delete_mode) {
-          background-color: rgba($color-red, 0.5);
+          background-color: $color-base;
 
           &.new {
-            background-color: rgba($color-red, 0.75);
+            background-color: lighten($color-base, 5%);
           }
         }
       }
