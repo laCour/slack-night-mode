@@ -38,29 +38,13 @@
     background: $color-shade-darkest;
   }
 
-  .emoji_li {
-    a:hover {
-      background: $base-link-color-active;
-    }
-
-    a.green:hover,
-    &.key_selection a.green {
-      background: $color-highlight;
-    }
-
-    a.yellow:hover,
-    &.key_selection a.yellow {
-      background: $color-highlight;
-    }
-
-    a.blue:hover,
-    &.key_selection a.blue {
-      background: $color-highlight;
-    }
-
-    a.pink:hover,
-    &.key_selection a.pink {
-      background: $color-highlight;
+  .emoji_li,
+  &[data-using-keyboard=true] .emoji_li {
+    @for $i from 0 through 5 {
+      &[data-color-index="#{$i}"]:hover,
+      &[data-color-index="#{$i}"].key_selection {
+        background: transparentize(map-get($emoji-hover-colors, $i), 0.5);
+      }
     }
   }
 

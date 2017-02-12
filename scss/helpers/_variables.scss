@@ -34,5 +34,10 @@ $code-colors: (
   quote: #b0bec5, hr: $color-shade-dark, link: $base-link-color
 );
 
+// Emoji Hover Colors
+$emoji-hover-colors: (
+  0: #b7e887, 1: #b5e0fe, 2: #f9ef67, 3: #f3c1fd, 4: #ffe1ae, 5: #e0dfff
+);
+
 // Font Families
 // $base-font-family may be set in themes to override the chat font-family
