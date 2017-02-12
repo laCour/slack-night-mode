@@ -74,6 +74,10 @@ textarea:disabled {
   }
 }
 
+label.disabled {
+  color: $base-font-color;
+}
+
 legend {
   border-bottom: 1px solid $color-shade-lightest;
 
@@ -307,4 +311,8 @@ textarea {
 .btn-warning .caret {
   border-bottom-color: $base-font-color;
   border-top-color: $base-font-color;
+}
+
+.input_note {
+  color: $base-font-color;
 }
