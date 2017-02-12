@@ -11,13 +11,8 @@
     i {
       color: $base-font-color;
     }
-
-    #current_user_name {
-      color: $base-font-color;
-    }
   }
 
-  #team_menu_user,
   i {
     color: $color-highlight;
   }
@@ -34,24 +29,8 @@
   }
 }
 
-#team_header_user_name {
+#team_menu_user {
   color: $color-highlight;
-}
-
-#menu.team_menu {
-  box-shadow: 0 3px 8px $color-shadow-medium;
-
-  ul li.highlighted,
-  &:not(.keyboard_active) ul li:hover {
-    > a {
-      background: $color-shade-light;
-      color: $base-link-color-active;
-    }
-  }
-
-  ul li > a {
-    color: $base-link-color;
-  }
 }
 
 #im-list li.member.active .presence,

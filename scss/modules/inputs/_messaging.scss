@@ -1,37 +1,4 @@
-#message-input {
-  &.offline,
-  &.disabled {
-    background-color: $color-shade-dark !important;
-  }
-}
-
-#message-input-message {
-  color: $color-highlight;
-
-  @if global-variable-exists(base-font-family) {
-    font-family: $base-font-family;
-  }
-}
-
-#messages-input-container #message-input {
-  &.msg_input_placeholder {
-    @include placeholder;
-  }
-}
-
-#message_edit_form,
-#messages-input-container {
-  #message-input {
-    background: padding-box $color-shade-light;
-    border-color: $color-shade-mid;
-    border-left: 0;
-    color: $base-font-color;
-
-    &:focus {
-      border-color: $color-shade-dark;
-    }
-  }
-
+#message_edit_form {
   .emo_menu {
     color: rgba($base-font-color, 0.3);
 
@@ -44,6 +11,10 @@
   &.focus {
     .emo_menu {
       color: rgba($base-font-color, 0.6);
+    }
+
+    #primary_file_button:not(:hover) {
+      border-color: $color-shade-dark;
     }
   }
 
@@ -81,6 +52,10 @@
   border-color: $color-shade-mid;
   color: $base-font-color;
 
+  @if global-variable-exists(base-font-family) {
+    font-family: $base-font-family;
+  }
+
   &:focus {
     border-color: $color-shade-dark;
 
@@ -105,11 +80,6 @@
 #msg_input_message {
   background-color: $color-shade-dark;
   color: $base-font-color;
-}
-
-#message_edit_form.focus #primary_file_button:not(:hover),
-#messages-input-container.focus #primary_file_button:not(:hover) {
-  border-color: $color-shade-dark;
 }
 
 #primary_file_button {

@@ -11,13 +11,3 @@
   -webkit-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
   filter: brightness(0.6) contrast(3) invert(1) sepia(0.5);
 }
-
-.para_menu .options a span,
-.para_menu a.trigger.pilcrow.active,
-.para_menu a.trigger.pilcrow:hover,
-.textstyle_menu .buttons a span,
-.textstyle_menu.style a span {
-  -moz-filter: brightness(10);
-  -webkit-filter: brightness(10);
-  filter: brightness(10);
-}

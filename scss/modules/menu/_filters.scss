@@ -1,5 +1,3 @@
-#dms_filter,
-#dms_filter_show_all,
 #file_member_filter {
   background: $color-shade-darkest;
 }
@@ -16,17 +14,12 @@
     }
   }
 
-  #dms_filter .member_filter,
-  #file_member_filter .member_filter {
-    border-color: $color-shade-light;
-  }
-
   #file_member_filter {
     border-color: $color-shade-light;
-  }
 
-  #dms_filter .member_filter:focus {
-    border-color: $color-shade-light;
+    .member_filter {
+      border-color: $color-shade-light;
+    }
   }
 
   .team_tabs_container {
@@ -50,16 +43,4 @@
 
 .filter_header {
   background-color: $color-base;
-}
-
-.filter_select.default_style .fsl_token {
-  &.fsl_token_default_group {
-    background-color: $color-shade-dark;
-    border-color: $color-shade-dark;
-  }
-
-  &.fsl_token_user_group {
-    background-color: $color-shade-lightest;
-    border-color: $color-shade-lightest;
-  }
 }

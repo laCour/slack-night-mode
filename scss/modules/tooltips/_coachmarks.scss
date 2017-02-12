@@ -3,7 +3,43 @@
     @include coachmark($color-shade-light);
   }
 
-  &.search_coachmark_div {
+  &.calls_ss_window_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.calls_video_beta_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.calls_video_ga_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.direct_messages_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.gdrive_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.highlights_arrows_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.highlights_message_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.replies_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.starred_items_coachmark_div {
+    @include coachmark($color-shade-light);
+  }
+
+  &.unread_view_coachmark_div {
     @include coachmark($color-shade-light);
   }
 
@@ -13,18 +49,6 @@
 
   &.recent_mentions_coachmark_div {
     @include coachmark($color-red);
-  }
-
-  &.direct_messages_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.private_groups_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.starred_items_coachmark_div {
-    @include coachmark($color-shade-light);
   }
 }
 

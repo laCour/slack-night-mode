@@ -70,8 +70,7 @@ ts-message {
     color: rgba($base-font-color, 0.8);
   }
 
-  .action_hover_container,
-  .message_actions_container message_actions {
+  .action_hover_container {
     border: 1px solid $color-shade-dark;
 
     &:hover {
@@ -155,7 +154,7 @@ ts-message {
   background: $color-shade-darkest;
 }
 
-#conversation_container {
+#convo_container {
   background-color: rgba($color-shade-dark, 0.85);
 
   #message_edit_container {
@@ -216,15 +215,6 @@ ts-message {
         }
       }
     }
-  }
-}
-
-#msg_input_overlay {
-  background: $color-base;
-
-  #close_conversation {
-    background: rgba($black, 0.8);
-    color: $color-highlight;
   }
 }
 

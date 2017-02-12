@@ -5,7 +5,7 @@
     border: 1px solid $color-shade-darkest;
   }
 
-  .filter_select.disabled {
+  .lazy_filter_select.disabled {
     background: $color-shade-light;
 
     input {
@@ -136,11 +136,6 @@
       border: 1px solid $color-shade-darkest;
     }
 
-    .fsl_item {
-      background: $color-shade-mid;
-      border-color: $color-shade-mid;
-    }
-
     &[data-type=options_list] {
       span::after {
         color: $color-highlight;
@@ -188,8 +183,4 @@
       }
     }
   }
-}
-
-#edit_member_profile_header_container {
-  border-bottom: 1px solid $color-shade-light;
 }

@@ -26,73 +26,6 @@ span.match {
   padding: 3px;
 }
 
-#search_widget {
-  background: padding-box $color-shade-darkest;
-  box-shadow: 0 1px 3px $color-shadow-dark;
-  color: $base-font-color;
-
-  .results_block {
-    background: $color-shade-dark;
-    box-shadow: 0 1px 1px $color-shadow-light;
-  }
-
-  .results_heading {
-    background: $color-shade-darkest;
-    color: $base-font-color;
-  }
-
-  a.results_heading:hover {
-    background: $color-base;
-  }
-
-  .search_widget_item {
-    a {
-      color: $base-link-color;
-    }
-
-    &:hover a {
-      color: $base-link-color-active;
-    }
-
-    .result_meta a {
-      color: $color-highlight;
-
-      &:hover {
-        color: $base-font-color;
-      }
-    }
-  }
-}
-
-.search_widget_item {
-  border-top: 1px solid $color-shade-light;
-  color: $base-font-color;
-
-  &:hover {
-    background: $color-shade-light;
-  }
-
-  .result_meta {
-    color: $base-font-color;
-  }
-}
-
-#search_options {
-  background: $color-base;
-  border-top: 1px solid $color-shade-dark;
-  color: $base-font-color;
-}
-
-#advanced_options_toggle:hover {
-  color: $base-link-color-active;
-}
-
-#advanced_options {
-  .active .arrow_down {
-    color: $base-link-color;
-  }
-}
-
 #search_filters {
   a {
     background: $color-base;
@@ -216,9 +149,7 @@ span.match {
   }
 }
 
-.extract_expand_icons,
-.experiment_search_limit_extracts .extract_expand_icons,
-.search_result_with_extract:hover .extract_expand_icons {
+.extract_expand_icons {
   color: $base-link-color;
 }
 

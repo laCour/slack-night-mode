@@ -2,6 +2,7 @@
 .dull_grey,
 .flat_grey,
 .blue_link,
+.slate_blue,
 .charcoal_grey,
 .ts_tip_tip .subtle_silver {
   color: $base-font-color !important;
@@ -9,11 +10,14 @@
 
 .greigh,
 .sky_blue,
+.severe_grey,
 .havana_blue,
+.burnt_violet,
 .plastic_grey,
+.cloud_silver,
+.subtle_silver,
 .indifferent_grey,
-.old_petunia_grey,
-.cloud_silver {
+.old_petunia_grey {
   color: $color-highlight !important;
 }
 
@@ -21,7 +25,8 @@
   color: $base-link-color !important;
 }
 
-.candy_red_bg {
+.candy_red_bg,
+.mustard_yellow {
   background-color: $color-red !important;
 }
 

@@ -63,7 +63,6 @@
 }
 
 #messages_container {
-  &.has_reply_banners.has_top_messages_banner #reply_banners::after,
   &:not(.has_reply_banners).has_top_messages_banner::before,
   &.has_top_messages_banner::before {
     background: none;

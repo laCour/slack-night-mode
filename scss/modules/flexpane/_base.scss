@@ -5,10 +5,6 @@
 #flex_contents {
   background: $color-base;
 
-  .monkey_scroll_hider {
-    background: $color-base;
-  }
-
   .heading {
     background: lighten($color-shade-darkest, 10%);
     color: $base-link-color;

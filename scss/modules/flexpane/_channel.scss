@@ -11,12 +11,6 @@
     }
   }
 
-  &.feature_channel_details {
-    .channel_page_section {
-      border-top: 1px solid $color-shade-dark !important;
-    }
-  }
-
   hr {
     border-top-color: $color-shade-dark;
   }
@@ -61,22 +55,6 @@
     }
   }
 
-  .channel_page_member_row {
-    color: $base-font-color;
-
-    a {
-      color: $base-link-color;
-    }
-
-    &.away {
-      color: $base-font-color;
-
-      a {
-        color: $base-link-color;
-      }
-    }
-  }
-
   .pinned_item:hover {
     border-color: $color-shade-light;
   }
@@ -88,6 +66,22 @@
       &:hover {
         color: $base-link-color-active;
       }
+    }
+  }
+}
+
+.channel_page_member_row {
+  color: $base-font-color;
+
+  a {
+    color: $base-link-color;
+  }
+
+  &.away {
+    color: $base-font-color;
+
+    a {
+      color: $base-link-color;
     }
   }
 }

@@ -92,10 +92,6 @@
     &.divider {
       border-bottom: 2px solid $color-shade-mid;
     }
-
-    &.double-divider {
-      border-bottom: 4px solid $color-shade-mid;
-    }
   }
 
   &:not(.keyboard_active) ul li:hover:not(.disabled) a {
