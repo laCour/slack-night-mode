@@ -4,6 +4,7 @@
 .blue_link,
 .slate_blue,
 .charcoal_grey,
+.indifferent_grey,
 .ts_tip_tip .subtle_silver {
   color: $base-font-color !important;
 }
@@ -16,7 +17,6 @@
 .plastic_grey,
 .cloud_silver,
 .subtle_silver,
-.indifferent_grey,
 .old_petunia_grey {
   color: $color-highlight !important;
 }
@@ -25,19 +25,29 @@
   color: $base-link-color !important;
 }
 
-.candy_red_bg,
-.mustard_yellow {
+.moscow_red,
+.mustard_yellow,
+.candy_red_on_hover:hover,
+.moscow_red_on_hover:hover {
+  color: $color-red !important;
+}
+
+.candy_red_bg {
   background-color: $color-red !important;
 }
 
 .neutral_white_bg {
-  background-color: $color-base !important;
+  background-color: $color-shade-dark !important;
 }
 
+.yolk_orange_bg,
+.burnt_violet_bg,
 .flexpane_grey_bg {
   background-color: $color-shade-mid !important;
 }
 
-.sky_blue_bg {
+.sky_blue_bg,
+.clear_blue_bg,
+.seafoam_green_bg {
   background-color: $color-shade-light !important;
 }
