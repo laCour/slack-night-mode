@@ -16,3 +16,7 @@ body > {
 .calendar_day.future {
   background-color: $color-shade-lightest;
 }
+
+.incident_update .time {
+  color: $base-font-color;
+}
