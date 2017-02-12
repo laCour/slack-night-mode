@@ -102,6 +102,10 @@
   }
 }
 
+.emoji_menu_ng #emoji_input_container {
+  background: $color-base;
+}
+
 .emoji_li a {
   color: $base-link-color !important;
   text-shadow: 0 1px $color-shadow-light;
