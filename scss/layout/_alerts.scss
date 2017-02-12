@@ -1,0 +1,20 @@
+.alert {
+  background-color: $color-shade-dark;
+  border-color: $color-shade-darkest;
+  color: $base-font-color;
+  text-shadow: 0 1px 0 $color-shadow-dark;
+
+  h4 {
+    color: $base-font-color;
+  }
+}
+
+.alert-info {
+  background-color: $color-shade-dark;
+  border-color: $color-shade-darkest;
+  color: $base-font-color;
+
+  h4 {
+    color: $base-font-color;
+  }
+}
