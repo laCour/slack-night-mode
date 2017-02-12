@@ -1,0 +1,74 @@
+#user_groups_pane .mention {
+  background: rgba($color-red, 0.25);
+  border: 0;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#user_groups_container {
+  .info_panel {
+    background: $color-base;
+    border: 1px solid $color-shade-light;
+  }
+
+  .mention {
+    background-color: rgba($color-red, 0.25) !important;
+  }
+}
+
+#user_groups_header {
+  .user_groups_search .icon_search {
+    color: $color-highlight;
+  }
+
+  a.icon_close {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+.user_group_item {
+  border-bottom: 1px solid $color-shade-light;
+
+  a {
+    color: $base-link-color;
+  }
+}
+
+#flex_contents {
+  .user_group_item {
+    &:hover {
+      background-color: $color-base;
+
+      h4 {
+        color: $base-font-color;
+      }
+    }
+  }
+
+  .flexpane_tab_toolbar {
+    #user_group_edit {
+      background-color: $color-base;
+
+      &.user_group_edit--flexpane .tab_action_button {
+        color: $base-font-color;
+      }
+    }
+  }
+}
+
+.user_group_invite_member_small {
+  .add_icon {
+    color: $color-highlight;
+  }
+}
+
+#user_group_member_invite_div {
+  .disabled .lfs_item.lfs_token {
+    background-color: $color-shade-lightest;
+    border-color: $color-shade-lightest;
+  }
+}
