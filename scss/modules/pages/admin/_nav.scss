@@ -1,0 +1,105 @@
+.widescreen:not(.nav_open) {
+  color: $base-font-color;
+
+  nav#site_nav {
+    @media only screen and (min-width: 1441px) {
+      background: rgba($color-base, 0.9);
+    }
+
+    h3 {
+      color: $base-font-color;
+    }
+
+    ul a {
+      color: $base-link-color;
+
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $base-link-color-active;
+      }
+    }
+
+    #user_menu_name {
+      color: $color-highlight;
+    }
+  }
+}
+
+nav#site_nav {
+  background: $color-shade-dark;
+
+  #user_menu_contents:hover {
+    background: $color-base;
+    color: $base-font-color;
+  }
+}
+
+header {
+  background: $color-shade-dark;
+
+  #header_team_nav {
+    li a {
+      color: $base-font-color;
+
+      &:hover {
+        background: $color-base;
+        color: $base-font-color;
+      }
+
+      .team_icon.ts_icon_plus {
+        background: $color-shade-darkest;
+        color: $color-highlight;
+      }
+    }
+
+    #add_team_option {
+      border-top: 1px solid $color-shade-darkest;
+    }
+  }
+}
+
+html.no_touch {
+  header {
+    #header_team_nav {
+      li a {
+        color: $base-font-color;
+
+        &:hover {
+          background: $color-base;
+          color: $base-font-color;
+        }
+      }
+    }
+
+    #header_team_name a:hover,
+    #menu_toggle:hover {
+      color: $base-link-color-active;
+    }
+
+    .header_btns a:hover {
+      color: $base-link-color-active;
+
+      .label {
+        color: $color-highlight;
+      }
+    }
+  }
+}
+
+nav#site_nav h3,
+#header_team_name,
+header #header_team_name a {
+  color: $base-link-color;
+}
+
+nav#site_nav #footer_nav a,
+#header_team_name:hover .fa-caret-down,
+.widescreen:not(.nav_open) nav#site_nav #footer_nav a {
+  color: $base-link-color-active;
+}
+
+#home_footer a {
+  color: $base-link-color-active;
+}

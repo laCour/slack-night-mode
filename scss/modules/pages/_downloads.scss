@@ -1,0 +1,66 @@
+.downloads_header {
+  background-color: $color-shade-lightest;
+
+  .welcome .meta {
+    color: $base-font-color;
+
+    a {
+      color: $base-font-color;
+    }
+
+    .pipe_sep {
+      background-color: $color-shadow-medium;
+    }
+  }
+
+  select[name=build_variant] {
+    color: $base-font-color;
+  }
+}
+
+.stay_in_sync {
+  .card {
+    background-color: $color-shade-dark;
+    border-color: $color-shade-darkest;
+
+    h2 {
+      color: $base-font-color;
+    }
+  }
+
+  .other_links {
+    color: $color-highlight;
+
+    a {
+      color: $base-font-color;
+    }
+  }
+}
+
+.sms_form {
+  .sms_number_container::before {
+    color: $color-highlight;
+  }
+
+  input[name=sms_number] {
+    color: $base-font-color;
+  }
+
+  input[type=submit] {
+    background-color: $color-base;
+    color: $base-link-color;
+  }
+
+  .sms_select_container .lazy_filter_select {
+    background-color: $color-shade-light;
+  }
+}
+
+.go_button {
+  background-color: $color-base;
+  color: $base-link-color;
+}
+
+nav.top.fixed {
+  display: none;
+}

@@ -1,0 +1,50 @@
+#stats_too_soon {
+  height: 500px;
+
+  img {
+    display: none;
+  }
+}
+
+#stats_limited {
+  background-image: linear-gradient(to bottom, $color-shadow-transparent 0, $color-shade-darkest 65%);
+  bottom: 0;
+  height: 480px;
+  position: absolute;
+  width: 100%;
+}
+
+#stats_disclaimer,
+#stats_too_soon_copy h3 {
+  color: $base-link-color;
+}
+
+
+#stats_too_soon_copy p {
+  color: $base-font-color;
+}
+
+#all_time,
+#third_row.column,
+#second_row.column {
+  background: $color-shade-dark;
+}
+
+.stats_integrations_container {
+  .icon {
+    background: $color-shade-dark;
+  }
+
+  .icon_plus {
+    border-color: $color-highlight;
+    color: $color-highlight;
+  }
+}
+
+#last_day p.summary {
+  color: $base-font-color;
+
+  strong {
+    color: $base-font-color;
+  }
+}

@@ -1,0 +1,157 @@
+.two_factor_option_app,
+.two_factor_option_sms,
+.configure-step1,
+.configure-step3 {
+  display: none;
+}
+
+.two_factor_choice {
+  background-color: $color-shade-dark;
+  border: 1px solid $color-shade-light;
+  box-shadow: 0 1px 0 $color-shadow-medium;
+
+  &:hover {
+    box-shadow: 0 0 1px 2px $color-shadow-light;
+
+    .two_factor_link {
+      color: $base-font-color;
+    }
+  }
+
+}
+
+a.two_factor_choice {
+  background-color: $color-shade-dark;
+  border: 1px solid $color-shade-light;
+  box-shadow: 0 1px 0 $color-shadow-medium;
+
+  &:link {
+    background-color: $color-shade-dark;
+    border: 1px solid $color-shade-light;
+    box-shadow: 0 1px 0 $color-shadow-medium;
+  }
+
+  &:hover,
+  &:link:hover {
+    box-shadow: 0 0 1px 2px $color-shadow-light;
+
+    .two_factor_link {
+      color: $base-font-color;
+    }
+  }
+}
+
+.backup_codes {
+  background: $color-shade-darkest;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+}
+
+#channel_specific_settings {
+  tr {
+    border-top-color: $color-base;
+
+    &.channel_override_row {
+      &.muted td {
+        background: transparentize($color-base, 0.5);
+      }
+    }
+  }
+
+  .extra_left_border {
+    border-left-color: $color-base;
+  }
+
+  .extra_right_border {
+    border-right-color: $color-base;
+  }
+
+  .revert_to_default {
+    color: $color-highlight;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+}
+
+.admin_list_item {
+  border-bottom-color: $color-base;
+  color: $color-highlight;
+
+  &:hover {
+    background-color: $color-shade-dark;
+  }
+
+  .admin_member_full_name,
+  .admin_member_real_name {
+    color: $base-font-color;
+  }
+
+  .admin_member_type,
+  .admin_member_caret {
+    color: $color-highlight;
+  }
+
+  .pill.group {
+    background: $color-shade-mid;
+  }
+
+  .two_factor_auth_badge:hover {
+    background: $color-shade-mid;
+  }
+
+  .inline_email,
+  .inline_name,
+  .inline_username {
+    &:hover {
+      background: none !important;
+    }
+  }
+
+  &.invite_item {
+    &.bouncing {
+      background: $color-shade-lightest;
+
+      .email {
+        color: $color-red;
+      }
+    }
+  }
+
+  &.error,
+  &.expanded,
+  &.processing,
+  &.success {
+    background-color: $color-base;
+  }
+
+  &.expanded {
+    .btn_outline {
+      border-color: $color-base;
+      color: $base-font-color !important;
+
+      &:hover {
+        border-color: $color-shade-dark;
+        color: $base-font-color !important;
+      }
+    }
+
+    .sub_action {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+
+      @media screen and (max-width: 768px) {
+        + .sub_action:hover {
+          &::before,
+          &::after {
+            color: $base-link-color;
+          }
+        }
+      }
+    }
+  }
+}

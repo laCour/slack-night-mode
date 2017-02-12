@@ -1,0 +1,39 @@
+.file_header .title a {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}
+
+.file_actions_cog {
+  color: $base-link-color !important;
+
+  &:hover {
+    color: $base-link-color-active !important;
+  }
+}
+
+.file_reference .icon,
+.file_list_item .icon,
+.file_preview {
+  border: 2px solid $color-shade-darkest;
+}
+
+.action_cog {
+  color: $base-link-color;
+
+  i {
+    color: $base-link-color;
+  }
+}
+
+html.no_touch {
+  .action_cog:hover {
+    color: $base-link-color-active;
+
+    i {
+      color: $base-link-color-active;
+    }
+  }
+}

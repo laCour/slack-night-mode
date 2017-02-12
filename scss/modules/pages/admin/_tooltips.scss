@@ -1,0 +1,23 @@
+.tooltip-inner {
+  background-color: $color-shade-lightest;
+  color: $base-font-color;
+}
+
+.tooltip {
+  &.top .tooltip-arrow,
+  &.top-left .tooltip-arrow {
+    border-top-color: $color-shade-lightest;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: $color-shade-lightest;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: $color-shade-lightest;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: $color-shade-lightest;
+  }
+}

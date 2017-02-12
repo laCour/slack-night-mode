@@ -1,0 +1,13 @@
+.admin_pref {
+  &:not(:first-of-type) {
+    border-top-color: $color-base;
+  }
+
+  &.locked {
+    background-color: rgba($color-red, 0.2);
+  }
+
+  .admin_pref_locked_label {
+    color: $color-highlight;
+  }
+}

@@ -1,3 +1,7 @@
+.api #header_logo img {
+  display: none;
+}
+
 body.api {
   header .header_links a {
     color: $base-font-color;
@@ -132,9 +136,95 @@ body.api {
   .hljs-regexp {
     color: map-get($code-colors, link);
   }
+
+  span {
+    &.btn {
+      background-color: $color-base;
+    }
+
+    &.deprecation,
+    &.warning {
+      background-color: $color-red;
+      border-color: $color-red;
+    }
+  }
 }
 
 nav#api_nav {
   background: transparent;
   text-shadow: 0 1px 1px $color-shadow-medium;
+}
+
+#api_nav .footer_nav {
+  a {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  .footer_signature {
+    color: $color-red;
+  }
+}
+
+.api_articles {
+  .api_articles_section {
+    border-bottom-color: $color-base;
+  }
+
+  .article_tag_count {
+    color: $color-highlight;
+  }
+}
+
+.api.feature_related_content {
+  #api_related_content {
+    h2 {
+      color: $base-font-color;
+    }
+
+    .article_link_title_wrapper {
+      color: $base-link-color;
+    }
+  }
+}
+
+.tab_menu {
+  background-color: $color-shade-dark;
+
+  &.grey {
+    background-color: $color-shade-dark;
+  }
+
+  .tab {
+    color: $base-font-color;
+
+    &:hover {
+      box-shadow: inset 0 -4px 0 0 rgba($color-red, 0.4);
+    }
+
+    &.active,
+    &:active,
+    &:focus {
+      box-shadow: inset 0 -4px 0 0 $color-red;
+      color: $base-font-color;
+    }
+
+    &:disabled {
+      color: $color-highlight;
+    }
+  }
+}
+
+.page_faq,
+.page_scim {
+  h3 {
+    background-color: $color-base;
+  }
+}
+
+.application_config aside {
+  color: $color-highlight;
 }

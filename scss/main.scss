@@ -76,13 +76,23 @@
   @import "modules/color-overrides";
   @import "modules/hacks";
 
-  @import "pages/api";
-  @import "pages/apps";
-  @import "pages/oauth";
-  @import "pages/pricing";
-  @import "pages/spaces";
-  @import "pages/split";
-  @import "pages/status";
-  @import "pages/website";
+  @import "modules/pages/admin/base";
+  @import "modules/pages/admin/account";
+  @import "modules/pages/admin/billing";
+  @import "modules/pages/admin/customize";
+  @import "modules/pages/admin/directory";
+  @import "modules/pages/admin/files";
+  @import "modules/pages/admin/help";
+  @import "modules/pages/admin/nav";
+  @import "modules/pages/admin/pricing";
+  @import "modules/pages/admin/settings";
+  @import "modules/pages/admin/statistics";
+  @import "modules/pages/admin/tooltips";
+  @import "modules/pages/api";
+  @import "modules/pages/apps";
+  @import "modules/pages/downloads";
+  @import "modules/pages/oauth";
+  @import "modules/pages/spaces";
+  @import "modules/pages/status";
 
 }

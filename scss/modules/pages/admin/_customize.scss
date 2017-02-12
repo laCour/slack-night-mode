@@ -1,0 +1,27 @@
+table tr {
+  border-bottom-color: $color-base;
+}
+
+table tr:first-child th:not(:only-of-type) {
+  border-bottom-color: $color-shade-darkest;
+}
+
+.slackbot_response_fieldset .delete_response {
+  color: $color-highlight;
+
+  &:hover {
+    color: $color-red;
+  }
+}
+
+.author_cell {
+  color: $base-font-color;
+}
+
+.message_cell.disabled {
+  color: $color-highlight;
+}
+
+#message_container #msg_limit {
+  color: $base-font-color;
+}

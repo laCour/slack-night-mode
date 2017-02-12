@@ -1,0 +1,272 @@
+nav.top.persistent {
+  background: $color-shade-dark;
+
+  .logo {
+    background-position: 50% 0 !important;
+  }
+}
+
+.widescreen {
+  #header_team_name a i {
+    margin-left: 1.5em;
+  }
+
+  #user_menu {
+    border-right: none;
+  }
+}
+
+header {
+  #menu_toggle {
+    color: $base-link-color;
+  }
+
+  #header_team_nav {
+    background: $color-shade-dark;
+    border: 1px solid $color-shade-darkest;
+
+    li.active a {
+      background: $color-base;
+      color: $base-font-color;
+    }
+  }
+
+  .header_btns a {
+    color: $base-link-color;
+
+    .label {
+      color: $color-highlight;
+    }
+  }
+
+  .vert_divider {
+    border-left: 1px solid $color-shade-darkest;
+  }
+}
+
+footer {
+  background-color: $color-shade-dark;
+  border-color: $color-shade-darkest;
+  color: $base-font-color;
+
+  ul a {
+    color: $base-font-color;
+
+    &:link,
+    &:visited {
+      color: $base-font-color;
+    }
+  }
+}
+
+.plastic_row {
+  h3 {
+    color: $base-font-color;
+  }
+
+  h4 a {
+    color: $base-font-color;
+  }
+
+  .icon {
+    color: $base-font-color;
+  }
+
+  .chevron {
+    color: $color-highlight;
+  }
+
+  .description {
+    color: $base-font-color;
+  }
+
+  &:active {
+    background: $color-base;
+    border-color: $color-shade-darkest;
+
+    .chevron {
+      color: $base-font-color;
+    }
+  }
+}
+
+html.no_touch {
+  .plastic_row:hover {
+    background: $color-base;
+    border-color: $color-shade-darkest;
+
+    .chevron {
+      color: $base-font-color;
+    }
+  }
+
+  .pagination ul > {
+    li > a:hover {
+      background-color: $color-shade-darkest;
+    }
+
+    .disabled > a:hover {
+      background: $color-shade-dark;
+      color: $color-highlight;
+    }
+  }
+
+  .pager li > a {
+    &:hover,
+    &:focus {
+      color: $base-link-color-active;
+    }
+  }
+}
+
+.card,
+.tab_pane {
+  background: $color-shade-dark;
+  border: 1px solid $color-shade-darkest;
+  color: $base-font-color;
+}
+
+.card h3 a {
+  color: $base-font-color;
+}
+
+#page_contents .card {
+  background: transparentize($color-shade-dark, 0.2) !important;
+
+  p {
+    color: $base-font-color;
+  }
+}
+
+.tab_set a {
+  &.secondary {
+    color: $base-link-color;
+  }
+
+  &.selected,
+  &.secondary.selected {
+    background: $color-shade-dark;
+    border: 1px solid $color-shade-darkest;
+    border-bottom-color: $color-shade-dark;
+    color: $base-link-color-active;
+  }
+}
+
+.tab_actions {
+  background: $color-shade-dark;
+  border: 1px solid $color-shade-darkest;
+  border-color: $color-shade-darkest;
+}
+
+.accordion_section {
+  border-bottom-color: $color-base;
+
+  h4 {
+    color: $base-font-color;
+
+    a {
+      color: $base-font-color;
+    }
+  }
+}
+
+.no_touch .accordion_section h4 a:hover {
+  color: $base-font-color;
+}
+
+.accordion_section_fixed {
+  border-bottom-color: $color-base !important;
+}
+
+.pager {
+  li {
+    > a,
+    > span {
+      background-color: $color-base;
+      background-image: none;
+      border-color: $color-shade-dark;
+      color: $base-link-color;
+    }
+
+    &.previous > {
+      a,
+      span {
+        background-position: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+
+    &.next > {
+      a,
+      span {
+        background-position: 0;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .disabled > {
+    a,
+    span {
+      color: $color-highlight;
+    }
+  }
+}
+
+.pagination ul > {
+  li > {
+    a,
+    span {
+      background: $color-shade-dark;
+      border: 1px solid $color-shade-darkest;
+      color: $base-font-color;
+    }
+
+    a:focus {
+      background-color: $color-shade-darkest;
+    }
+  }
+
+  .active > {
+    a,
+    span {
+      background-color: $color-shade-darkest;
+    }
+  }
+
+  .disabled > {
+    span {
+      background: $color-shade-dark;
+      color: $color-highlight;
+    }
+
+    a {
+      background: $color-shade-dark;
+      color: $base-link-color;
+
+      &:focus {
+        background: $color-shade-dark;
+        color: $base-link-color-active;
+      }
+    }
+  }
+}
+
+.loading_hash_animation img {
+  display: none;
+}
+
+.icon_search_close {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}
+
+.help {
+  border-top-color: $color-shade-darkest;
+  color: $color-highlight;
+}
