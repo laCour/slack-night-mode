@@ -1,15 +1,33 @@
 .billing_selection {
-  border: 2px solid $color-shade-darkest;
+  border-color: $color-shade-darkest;
   color: $base-font-color !important;
   text-shadow: 0 1px 1px $color-shadow-dark;
 
   &:hover {
-    border-color: $color-shade-darkest;
+    border-color: $color-shade-lightest;
   }
 
   &.active {
     background: $color-shade-light;
-    border-color: $color-shade-dark;
+    border-color: $color-shade-lightest;
+  }
+
+  &.billing_selection--refactor {
+    border-color: $color-shade-light;
+    text-shadow: 0 1px 1px $color-shadow-dark;
+
+    &:hover {
+      border-color: $color-shade-lightest;
+    }
+
+    &.active {
+      background: $color-shade-light;
+      border-color: $color-shade-lightest;
+    }
+  }
+
+  .billing_selection__price {
+    color: $base-font-color;
   }
 }
 
