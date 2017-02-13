@@ -1,4 +1,4 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") {
+@-moz-document regexp("https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*") {
 
   @import "helpers/variables";
   @import "helpers/mixins";
@@ -84,7 +84,6 @@
   @import "modules/pages/admin/files";
   @import "modules/pages/admin/help";
   @import "modules/pages/admin/nav";
-  @import "modules/pages/admin/pricing";
   @import "modules/pages/admin/settings";
   @import "modules/pages/admin/statistics";
   @import "modules/pages/admin/tooltips";
