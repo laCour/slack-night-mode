@@ -1,0 +1,36 @@
+// Despite the selector, these are only used for legal pages.
+
+#api_nav {
+  h5 {
+    color: $base-font-color;
+  }
+
+  #api_sections ul {
+    li {
+      a {
+        border-bottom-color: $color-shade-darkest;
+        color: $color-highlight;
+
+        &:hover {
+          color: $base-font-color;
+        }
+
+        &.active {
+          background: $color-shade-dark;
+          color: $color-highlight;
+          text-shadow: 0 1px 1px $color-shadow-medium;
+
+          &:hover {
+            background: $color-shade-dark;
+            color: $color-highlight;
+            text-shadow: 0 1px 1px $color-shadow-medium;
+          }
+        }
+      }
+    }
+  }
+}
+
+.col.span_1_of_2.bordered {
+  background-color: $color-shade-dark;
+}
