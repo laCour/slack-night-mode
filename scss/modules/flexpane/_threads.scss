@@ -53,3 +53,8 @@
     color: $base-link-color;
   }
 }
+
+#convo_tab .message_input,
+#convo_tab textarea#msg_text {
+  color: $base-font-color;
+}
