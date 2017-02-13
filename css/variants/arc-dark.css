@@ -1,4 +1,4 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") { body { background: #404552; color: #d3dae3; }
+@-moz-document regexp("https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*") { body { background: #404552; color: #d3dae3; }
   a { color: #90939b; }
   a:link, a:visited { color: #90939b; }
   a:hover, a:active, a:focus { color: #90939b; }
@@ -1253,9 +1253,13 @@
   .admin_list_item.expanded .sub_action { color: #90939b; }
   .admin_list_item.expanded .sub_action:hover { color: #90939b; }
   @media screen and (max-width: 768px) { .admin_list_item.expanded .sub_action + .sub_action:hover::before, .admin_list_item.expanded .sub_action + .sub_action:hover::after { color: #90939b; } }
-  .billing_selection { border: 2px solid #1d2027; color: #d3dae3 !important; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
-  .billing_selection:hover { border-color: #1d2027; }
-  .billing_selection.active { background: #6b6f79; border-color: #2a2f39; }
+  .billing_selection { border-color: #1d2027; color: #d3dae3 !important; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .billing_selection:hover { border-color: #858991; }
+  .billing_selection.active { background: #6b6f79; border-color: #858991; }
+  .billing_selection.billing_selection--refactor { border-color: #6b6f79; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .billing_selection.billing_selection--refactor:hover { border-color: #858991; }
+  .billing_selection.billing_selection--refactor.active { background: #6b6f79; border-color: #858991; }
+  .billing_selection .billing_selection__price { color: #d3dae3; }
   #billing_contacts_container { background: #2a2f39; border-top: 1px solid #1d2027; }
   .billing_callout { background: none; }
   .billing_contact { border-bottom: 1px solid #404552; }
@@ -1434,6 +1438,12 @@
   .sms_form .sms_select_container .lazy_filter_select { background-color: #6b6f79; }
   .go_button { background-color: #404552; color: #90939b; }
   nav.top.fixed { display: none; }
+  #api_nav h5 { color: #d3dae3; }
+  #api_nav #api_sections ul li a { border-bottom-color: #1d2027; color: #949494; }
+  #api_nav #api_sections ul li a:hover { color: #d3dae3; }
+  #api_nav #api_sections ul li a.active { background: #2a2f39; color: #949494; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  #api_nav #api_sections ul li a.active:hover { background: #2a2f39; color: #949494; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  .col.span_1_of_2.bordered { background-color: #2a2f39; }
   body.oauth_page { background: #2a2f39; }
   body.oauth_page .oauth_header { background: #404552 !important; }
   body.oauth_page .alert { border-color: #772207; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }

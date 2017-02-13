@@ -1,4 +1,4 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") { body { background: #000; color: #00b9f2; }
+@-moz-document regexp("https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*") { body { background: #000; color: #00b9f2; }
   a { color: #1793d1; }
   a:link, a:visited { color: #1793d1; }
   a:hover, a:active, a:focus { color: #299bd4; }
@@ -1253,9 +1253,13 @@
   .admin_list_item.expanded .sub_action { color: #1793d1; }
   .admin_list_item.expanded .sub_action:hover { color: #299bd4; }
   @media screen and (max-width: 768px) { .admin_list_item.expanded .sub_action + .sub_action:hover::before, .admin_list_item.expanded .sub_action + .sub_action:hover::after { color: #1793d1; } }
-  .billing_selection { border: 2px solid #101010; color: #00b9f2 !important; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
-  .billing_selection:hover { border-color: #101010; }
-  .billing_selection.active { background: #282828; border-color: #181818; }
+  .billing_selection { border-color: #101010; color: #00b9f2 !important; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .billing_selection:hover { border-color: #303030; }
+  .billing_selection.active { background: #282828; border-color: #303030; }
+  .billing_selection.billing_selection--refactor { border-color: #282828; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .billing_selection.billing_selection--refactor:hover { border-color: #303030; }
+  .billing_selection.billing_selection--refactor.active { background: #282828; border-color: #303030; }
+  .billing_selection .billing_selection__price { color: #00b9f2; }
   #billing_contacts_container { background: #181818; border-top: 1px solid #101010; }
   .billing_callout { background: none; }
   .billing_contact { border-bottom: 1px solid #000; }
@@ -1434,6 +1438,12 @@
   .sms_form .sms_select_container .lazy_filter_select { background-color: #282828; }
   .go_button { background-color: #000; color: #1793d1; }
   nav.top.fixed { display: none; }
+  #api_nav h5 { color: #00b9f2; }
+  #api_nav #api_sections ul li a { border-bottom-color: #101010; color: #1793d1; }
+  #api_nav #api_sections ul li a:hover { color: #00b9f2; }
+  #api_nav #api_sections ul li a.active { background: #181818; color: #1793d1; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  #api_nav #api_sections ul li a.active:hover { background: #181818; color: #1793d1; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+  .col.span_1_of_2.bordered { background-color: #181818; }
   body.oauth_page { background: #181818; }
   body.oauth_page .oauth_header { background: #000 !important; }
   body.oauth_page .alert { border-color: #772207; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
