@@ -918,6 +918,7 @@
   #convo_container .convo_flexpane_divider { border-top-color: #181818; color: #1793d1; }
   #convo_container .convo_flexpane_divider .reply_count { background: #000; }
   #convo_container ts-conversation ts-message.selected .message_content .thread_channel_link { color: #1793d1; }
+  #convo_tab .message_input, #convo_tab textarea#msg_text { color: #00b9f2; }
   #whats_new_tab p { color: #00b9f2; }
   #whats_new_tab .flex_heading_controls label { color: #1793d1; }
   #whats_new_updates h3 a { color: #00b9f2 !important; }
