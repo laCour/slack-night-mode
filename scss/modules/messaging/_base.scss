@@ -221,12 +221,12 @@ ts-message {
 #msgs_div {
   .unread_divider {
     hr {
-      border-top: 1px solid $color-red;
+      border-top: 1px solid $color-shade-light;
     }
 
     .divider_label {
       background: $color-base;
-      color: $color-red;
+      color: $color-shade-light;
     }
 
     &.no_unreads {
@@ -237,10 +237,6 @@ ts-message {
       .divider_label {
         color: $color-highlight;
       }
-    }
-
-    &.adjacent_to_date {
-      background: $color-base;
     }
   }
 
