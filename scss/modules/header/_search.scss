@@ -1,6 +1,10 @@
 .search_form {
   border-color: $color-shade-light;
 
+  .search_input {
+    background: transparent;
+  }
+
   &:hover {
     border-color: $color-shade-lightest;
   }
