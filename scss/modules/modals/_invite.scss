@@ -24,6 +24,29 @@
   }
 }
 
+.admin_invites_container {
+  &:not(.experiment_guest_profiles_and_expiration) #admin_invites_add_row {
+    background: $color-base;
+    border-color: $color-shade-dark;
+  }
+}
+
+.admin_invite_row,
+.admin_invites_custom_message_container {
+  .delete_row,
+  .hide_custom_message {
+    color: $color-highlight;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  &.delete_highlight {
+    background: rgba($color-red, 0.4);
+  }
+}
+
 #admin_invites_channel_picker_container {
   border-bottom: 1px solid $color-shade-dark;
 }
@@ -49,4 +72,36 @@
 
 #admin_invites_workflow .lazy_filter_select .lfs_input_container {
   background-color: $color-shade-light;
+}
+
+#channel_invite_tokens {
+  background-color: $color-shade-light;
+  border-color: $color-shade-lightest;
+
+  &.active {
+    border-color: $color-highlight;
+    box-shadow: 0 0 7px rgba($color-highlight, 0.15);
+  }
+
+  .member_token {
+    background: $color-base;
+    color: $base-font-color;
+
+    &.ra {
+      background: rgba($color-red, 0.4);
+    }
+  }
+}
+
+.channel_invite_member,
+.channel_invite_member_small,
+.channel_invite_pending_user_small {
+  .add_icon {
+    color: $base-font-color;
+  }
+
+  .invite_user_group_avatar {
+    background-color: $color-base;
+    color: $base-font-color;
+  }
 }
