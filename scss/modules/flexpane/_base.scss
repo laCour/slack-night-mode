@@ -111,10 +111,10 @@
       color: $base-font-color;
     }
   }
-}
 
-.flexbox_client.flexpane_redesign.flex_pane_showing #col_flex {
-  border-left: 1px solid $color-shade-dark;
+  &.flex_pane_showing #col_flex {
+    border-left: 1px solid $color-shade-dark;
+  }
 }
 
 .toolbar_container {
