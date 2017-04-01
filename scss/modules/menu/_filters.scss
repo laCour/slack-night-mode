@@ -7,6 +7,16 @@
     border: 1px solid $color-shade-light;
   }
 
+  .member_file_filter_menu .searchable_member_list_scroller .team_list_item:hover {
+    .channel_page_member_row {
+      background: $color-base;
+    }
+
+    .member {
+      color: $base-font-color;
+    }
+  }
+
   #team_list_container #team_filter {
     .member_filter {
       background-color: $color-base;
