@@ -9,7 +9,8 @@ ts-message {
   &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
     background: rgba($color-shade-darkest, 0.1);
 
-    &.is_pinned {
+    &.is_pinned,
+    &.show_recap:not(.is_pinned) {
       background: rgba($color-shade-darkest, 0.2);
     }
   }
@@ -58,6 +59,30 @@ ts-message {
 
     &:hover {
       background: rgba($color-red, 0.4);
+    }
+  }
+
+  .is_highlights_holder {
+    color: $color-highlight;
+
+    ts-icon {
+      color: $color-highlight;
+    }
+
+    .highlights_feedback_link {
+      color: $color-highlight;
+    }
+
+    .highlights_feedback a:not(.highlights_feedback_link) {
+      color: $base-font-color;
+    }
+  }
+
+  .recap_highlight {
+    background: rgba($color-red, 0.4);
+
+    a {
+      color: $base-font-color;
     }
   }
 
@@ -143,6 +168,14 @@ ts-message {
 
   a .mention {
     color: $base-font-color;
+  }
+
+  &.show_recap:not(.is_pinned) {
+    background: rgba($color-shade-darkest, 0.15);
+
+    &:hover {
+      background: rgba($color-shade-darkest, 0.15);
+    }
   }
 }
 
