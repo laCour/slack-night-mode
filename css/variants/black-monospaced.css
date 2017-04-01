@@ -274,6 +274,8 @@
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   #file_member_filter { background: #000; }
   #client-ui .member_filter { border: 1px solid #545454; }
+  #client-ui .member_file_filter_menu .searchable_member_list_scroller .team_list_item:hover .channel_page_member_row { background: #222; }
+  #client-ui .member_file_filter_menu .searchable_member_list_scroller .team_list_item:hover .member { color: #e6e6e6; }
   #client-ui #team_list_container #team_filter .member_filter { background-color: #222; border-left: 1px solid #000; }
   #client-ui #file_member_filter { border-color: #545454; }
   #client-ui #file_member_filter .member_filter { border-color: #545454; }
@@ -355,6 +357,7 @@
   .day_container .day_divider { background: none; color: #949494; }
   .day_container .day_divider .day_divider_label { background: #222; }
   .search_form { border-color: #545454; }
+  .search_form .search_input { background: transparent; }
   .search_form:hover { border-color: #828282; }
   .search_focused .search_form { border-color: #828282; }
   .search_clear_icon .ts_icon_times_circle { color: #949494; }
@@ -377,7 +380,7 @@
   #msgs_overlay_div { background: #222; }
   ts-message { color: #e6e6e6; }
   ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) { background: rgba(0, 0, 0, 0.1); }
-  ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned, ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned { background: rgba(0, 0, 0, 0.2); }
+  ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned, ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).show_recap:not(.is_pinned), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).is_pinned, ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply).show_recap:not(.is_pinned) { background: rgba(0, 0, 0, 0.2); }
   ts-message.is_pinned { background: rgba(0, 0, 0, 0.15); }
   ts-message .timestamp { color: #949494; }
   ts-message .edited, ts-message .temp_msg_controls { color: #949494; }
@@ -389,6 +392,12 @@
   ts-message.unprocessed { color: rgba(230, 230, 230, 0.75); }
   ts-message.highlight { background: rgba(191, 54, 12, 0.4); }
   ts-message.highlight:hover { background: rgba(191, 54, 12, 0.4); }
+  ts-message .is_highlights_holder { color: #949494; }
+  ts-message .is_highlights_holder ts-icon { color: #949494; }
+  ts-message .is_highlights_holder .highlights_feedback_link { color: #949494; }
+  ts-message .is_highlights_holder .highlights_feedback a:not(.highlights_feedback_link) { color: #e6e6e6; }
+  ts-message .recap_highlight { background: rgba(191, 54, 12, 0.4); }
+  ts-message .recap_highlight a { color: #e6e6e6; }
   ts-message.delete_mode, ts-message.multi_delete_mode { background: rgba(191, 54, 12, 0.75); }
   ts-message.automated .message_body { color: rgba(230, 230, 230, 0.8); }
   ts-message .action_hover_container { border: 1px solid #363636; }
@@ -406,6 +415,8 @@
   ts-message .pinned_item_message_header { color: #949494; }
   ts-message .mention { background: #545454; border: 1px solid #828282; border-radius: 3px; color: #e6e6e6; padding: 0 3px; }
   ts-message a .mention { color: #e6e6e6; }
+  ts-message.show_recap:not(.is_pinned) { background: rgba(0, 0, 0, 0.15); }
+  ts-message.show_recap:not(.is_pinned):hover { background: rgba(0, 0, 0, 0.15); }
   .selecting_messages ts-message.multi_delete_mode:hover { background: rgba(191, 54, 12, 0.75); }
   .selecting_messages ts-message:hover { background: #000; }
   #convo_container { background-color: #222; }
@@ -708,7 +719,7 @@
   .flexpane_redesign #flex_contents .heading_text { color: #949494; }
   .flexpane_redesign .close_flexpane { color: #949494; }
   .flexpane_redesign .close_flexpane:focus, .flexpane_redesign .close_flexpane:hover { color: #e6e6e6; }
-  .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex { border-left: 1px solid #363636; }
+  .flexpane_redesign.flex_pane_showing #col_flex { border-left: 1px solid #363636; }
   .toolbar_container { background: #222; border-bottom: 1px solid #000; color: #e6e6e6; }
   .msg_right_link { color: #949494; }
   #details_tab .heading { background: #151515; }
@@ -1038,12 +1049,22 @@
   .admin_invites_account_type_option:hover:not(.disabled) h3 { color: #e6e6e6; }
   .admin_invites_account_type_option.disabled .account_type_disabled_hover { background: rgba(255, 255, 255, 0); }
   .admin_invites_account_type_option.disabled:hover .account_type_disabled_hover { background: rgba(34, 34, 34, 0.95); }
+  .admin_invites_container:not(.experiment_guest_profiles_and_expiration) #admin_invites_add_row { background: #222; border-color: #363636; }
+  .admin_invite_row .delete_row, .admin_invite_row .hide_custom_message, .admin_invites_custom_message_container .delete_row, .admin_invites_custom_message_container .hide_custom_message { color: #949494; }
+  .admin_invite_row .delete_row:hover, .admin_invite_row .hide_custom_message:hover, .admin_invites_custom_message_container .delete_row:hover, .admin_invites_custom_message_container .hide_custom_message:hover { color: #bf360c; }
+  .admin_invite_row.delete_highlight, .admin_invites_custom_message_container.delete_highlight { background: rgba(191, 54, 12, 0.4); }
   #admin_invites_channel_picker_container { border-bottom: 1px solid #363636; }
   #admin_invites_add_row { background: #545454; border: 1px solid #363636; }
   .admin_invite_row .delete_row { color: #949494; }
   .admin_invite_row .delete_row:hover { color: #bf360c; }
   .admin_invite_row.delete_highlight { background: rgba(191, 54, 12, 0.25); }
   #admin_invites_workflow .lazy_filter_select .lfs_input_container { background-color: #545454; }
+  #channel_invite_tokens { background-color: #545454; border-color: #828282; }
+  #channel_invite_tokens.active { border-color: #949494; box-shadow: 0 0 7px rgba(148, 148, 148, 0.15); }
+  #channel_invite_tokens .member_token { background: #222; color: #e6e6e6; }
+  #channel_invite_tokens .member_token.ra { background: rgba(191, 54, 12, 0.4); }
+  .channel_invite_member .add_icon, .channel_invite_member_small .add_icon, .channel_invite_pending_user_small .add_icon { color: #e6e6e6; }
+  .channel_invite_member .invite_user_group_avatar, .channel_invite_member_small .invite_user_group_avatar, .channel_invite_pending_user_small .invite_user_group_avatar { background-color: #222; color: #e6e6e6; }
   #shortcuts_dialog { background: rgba(34, 34, 34, 0.95); text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7); }
   #shortcuts_dialog.modal .modal-body, #shortcuts_dialog.modal h1, #shortcuts_dialog.modal h3 { color: #e6e6e6; }
   #shortcuts_dialog.modal ul ul { border-left-color: #545454; }
