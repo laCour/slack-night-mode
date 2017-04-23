@@ -34,20 +34,21 @@
   .channels_list_holder ul li { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   .channels_list_holder ul li .channel_name, .channels_list_holder ul li .group_name, .channels_list_holder ul li .im_name, .channels_list_holder ul li .mpim_name, .channels_list_holder ul li > a { background: #4d394b; color: rgba(240, 217, 237, 0.8) !important; }
   .channels_list_holder ul li .channel_name:hover, .channels_list_holder ul li .group_name:hover, .channels_list_holder ul li .im_name:hover, .channels_list_holder ul li .mpim_name:hover, .channels_list_holder ul li > a:hover { background: #3e313c !important; border-bottom-right-radius: 0.25rem; border-top-right-radius: 0.25rem; }
-  .channels_list_holder ul li .group_close, .channels_list_holder ul li .im_close, .channels_list_holder ul li .mpim_close { color: #a3839f !important; }
+  .channels_list_holder ul li .primary_action.feature_user_custom_status:hover .im_name_background, .channels_list_holder ul li .primary_action:not(.feature_user_custom_status):hover { background: #3e313c; }
   .channels_list_holder ul li.mention a { color: #f0d9ed; }
-  .channels_list_holder ul li.unread:not(.muted_channel) { color: #f9eff7 !important; }
-  .channels_list_holder ul li.unread:not(.muted_channel) .channel_name, .channels_list_holder ul li.unread:not(.muted_channel) .group_name, .channels_list_holder ul li.unread:not(.muted_channel) .im_name, .channels_list_holder ul li.unread:not(.muted_channel) .mpim_name, .channels_list_holder ul li.unread:not(.muted_channel) > a { background: #4d394b; color: #f9eff7 !important; }
+  .channels_list_holder ul li.unread:not(.muted_channel) .primary_action { color: #f9eff7 !important; }
   .channels_list_holder ul li.unread .prefix { color: #f0d9ed !important; opacity: 1; }
-  .channels_list_holder .unread_just { background: #3e313c; color: #f0d9ed; }
+  .channels_list_holder .group_close, .channels_list_holder .im_close, .channels_list_holder .mpim_close { color: #a3839f !important; }
   .channels_list_holder .unread_highlights { background: #bf360c; color: #f0d9ed; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
+  .channels_list_holder .unread_msgs { background: #3e313c; color: #f0d9ed; }
   .channels_list_new_btn { color: #a3839f; }
   .list_more { border-bottom: 1px dotted #a3839f; color: #a3839f !important; }
   .list_more:hover { border-bottom: 1px solid #d4bbd1; color: #d4bbd1 !important; }
-  #channels_scroller.show_which_channel_is_active ul li.active .channel_name, #channels_scroller.show_which_channel_is_active ul li.active .group_name, #channels_scroller.show_which_channel_is_active ul li.active .mpim_name, #channels_scroller.show_which_channel_is_active ul li.active .im_name { background: #3e313c; color: #f0d9ed !important; }
-  #channels_scroller.show_which_channel_is_active ul li.active a.group_name, #channels_scroller.show_which_channel_is_active ul li.active a.im_name, #channels_scroller.show_which_channel_is_active ul li.active a.mpim_name { background: #3e313c; color: #f0d9ed; }
-  #channels_scroller.show_which_channel_is_active ul li.active a.channel_name .prefix, #channels_scroller.show_which_channel_is_active ul li.active a.group_name .prefix { color: #a3839f; }
-  #channels_scroller.show_which_channel_is_active ul li.active .unread_highlights { background: #bf360c; color: #f0d9ed; }
+  #channels_scroller.show_which_channel_is_active ul li.active .primary_action { background: #3e313c; color: #f0d9ed; }
+  #channels_scroller.show_which_channel_is_active ul li.active .primary_action.feature_user_custom_status .im_name_background { background: #3e313c; }
+  #channels_scroller.show_which_channel_is_active ul li.active .primary_action .prefix { color: #a3839f; }
+  #channels_scroller.show_which_channel_is_active ul li.active .group_close, #channels_scroller.show_which_channel_is_active ul li.active .im_close, #channels_scroller.show_which_channel_is_active ul li.active .mpim_close { color: #f0d9ed; }
+  #channels_scroller.show_which_channel_is_active ul li.active .unread_highlights, #channels_scroller.show_which_channel_is_active ul li.active .unread_msgs { background: #bf360c; color: #f0d9ed; }
   #channel_scroll_down, #channel_scroll_up { background: #372c36; color: #f0d9ed; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   #channel_scroll_down:hover { color: #f0d9ed; }
   #channel_scroll_down.unseen_have_mentions { background: #bf360c; }
@@ -128,6 +129,7 @@
   .btn.btn_attachment.btn_danger:hover, .btn.btn_attachment.btn_danger:focus { border-color: #ef440f; }
   .btn.btn_attachment.btn_primary { border-color: #876484; }
   .btn.btn_attachment.btn_primary:hover, .btn.btn_attachment.btn_primary:focus { border-color: #a07e9d; }
+  .btn_basic:focus, .btn_basic:hover { color: #f0d9ed; }
   .btn_outline { background: #3e313c; color: #a3839f !important; }
   .btn_outline::after { border: 1px solid #4a3b49; }
   .btn_outline.btn_transparent { color: rgba(97, 72, 94, 0.9) !important; }
@@ -184,10 +186,11 @@
   #typing_text { color: #a3839f; }
   #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
   #special_formatting_text { color: #a3839f; }
-  #msg_form .emo_menu, #message_edit_form .emo_menu, .inline_message_input_container .emo_menu { color: rgba(240, 217, 237, 0.35); }
   .ql-editor::-webkit-scrollbar-thumb { background-color: rgba(97, 72, 94, 0.5); color: #3e313c; }
   .ql-editor::-webkit-scrollbar-thumb:hover { background-color: rgba(97, 72, 94, 0.8); }
   .ql-placeholder { color: #f0d9ed; }
+  .ql-container.texty_single_line_input { background: #61485e; border: 1px solid #4d394b; color: #f0d9ed; }
+  .ql-container.texty_single_line_input.focus, .ql-container.texty_single_line_input:hover { border-color: #4d394b; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
   .ts_toggle .ts_toggle_button { background: #372c36; color: #f0d9ed; }
   .ts_toggle .ts_toggle_button .ts_toggle_handle { background: #4d394b; }
   .ts_toggle .ts_toggle_secondary_label { color: #a3839f; }
@@ -423,9 +426,9 @@
   ts-message .meta.msg_inline_img_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_img_toggler a, ts-message .meta.msg_inline_file_preview_toggler .ts_icon_dropbox, ts-message .meta.msg_inline_file_preview_toggler a { color: #a3839f !important; }
   ts-message .pinned_item_message_header { color: #a3839f; }
   ts-message .mention { background: #61485e; border: 1px solid #876484; border-radius: 3px; color: #f0d9ed; padding: 0 3px; }
-  ts-message a .mention { color: #f0d9ed; }
   ts-message.show_recap:not(.is_pinned) { background: rgba(55, 44, 54, 0.15); }
   ts-message.show_recap:not(.is_pinned):hover { background: rgba(55, 44, 54, 0.15); }
+  ts-mention { background: rgba(135, 100, 132, 0.1); color: #f0d9ed; }
   .selecting_messages ts-message.multi_delete_mode:hover { background: rgba(191, 54, 12, 0.75); }
   .selecting_messages ts-message:hover { background: #372c36; }
   #convo_container { background-color: #3e313c; }
@@ -467,6 +470,8 @@
   .is_limited_div { background-color: #3e313c !important; }
   .is_limited_div.mini { color: #a3839f !important; }
   #message_edit_container form textarea, .inline_message_input_container form textarea { color: #f0d9ed; }
+  #message_edit_container .message_input { background: #61485e; border-color: #4d394b; color: #f0d9ed; }
+  #message_edit_container .message_input.focus { border-color: #4d394b; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
   .attachment_group.has_container { background: #3e313c; border: 1px solid #4d394b; }
   .attachment_group.has_container .inline_attachment::after { background-color: #4d394b; }
   .attachment_group.has_container.has_link:hover { border-bottom-color: #4d394b; border-left-color: #4d394b; border-right-color: #4d394b; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -516,7 +521,7 @@
   .file_container.generic_container .file_header_meta .meta_hover { background: #372c36; color: #f0d9ed; }
   .file_container .file_header .file_header_meta { color: #a3839f; }
   .file_container .file_header + .file_body { border-top: 1px solid #372c36; }
-  .file_container .preview_actions .btn { background-color: #4d394b; }
+  .file_container .preview_actions .btn { background-color: #4d394b; color: #f0d9ed !important; }
   .file_container .preview_actions .btn::after { border-color: #372c36; }
   .file_container .preview_actions .btn.preview_show_less_header { background-color: rgba(135, 100, 132, 0.9); color: #f0d9ed !important; }
   .file_container .preview_actions .btn.preview_show_less_header::after { border: 2px solid #372c36; }
@@ -629,11 +634,8 @@
   .dense_theme ts-message.first .message_gutter .timestamp, .dense_theme ts-message.selected .message_gutter .timestamp { color: #a3839f; }
   .dense_theme ts-message.divider { border-top: 1px solid #3e313c; }
   .dense_theme ts-message.archived, .dense_theme ts-message.bot_change, .dense_theme ts-message.joined, .dense_theme ts-message.left, .dense_theme ts-message.pinned .pinned_item_message_header, .dense_theme ts-message.purpose, .dense_theme ts-message.rename, .dense_theme ts-message.sh_created .sh_auto_msg_text, .dense_theme ts-message.sh_shared .sh_auto_msg_text, .dense_theme ts-message.topic, .dense_theme ts-message.unarchived { color: #a3839f; }
+  .dense_theme ts-message .message_content .message_current_status { border-color: #4d394b; }
   .dense_theme #message_editing_info { color: #a3839f; }
-  .dense_theme #message_edit_form { margin-left: 0; }
-  .dense_theme #message_edit_form textarea { color: #f0d9ed; }
-  .dense_theme #message_edit_form p, .dense_theme #message_edit_form span { color: #a3839f; }
-  .dense_theme #message_edit_form .timestamp { color: #a3839f; }
   .dense_theme .file_reference .post_meta, .dense_theme .file_reference .space_meta { color: #a3839f; }
   .dense_theme .file_reference .post_meta, .dense_theme .file_reference .snippet_meta, .dense_theme .file_reference .space_meta { color: #a3839f; }
   .dense_theme .file_reference a:not(.member):not(.member_name):not(.icon):not(.timestamp):not(.preview_main_action):not(.preview_show_more):not(.file_preview_action) { color: #a3839f; }
@@ -650,8 +652,6 @@
   .light_theme ts-message .meta { color: #a3839f; }
   .light_theme ts-message .file_service_icon { color: #a3839f; }
   .light_theme #message_editing_info { color: #a3839f; }
-  .light_theme #message_edit_form textarea { color: #f0d9ed; }
-  .light_theme #message_edit_form p, .light_theme #message_edit_form span { color: #a3839f; }
   .light_theme .msg_inline_video_holder { border: 1px solid #4d394b; }
   .light_theme .pinned_item_message_header { color: #a3839f; }
   .channel_overlay { border-color: #4d394b; color: #a3839f; }
@@ -686,6 +686,12 @@
   ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
   #convo_tab .thread_participants, ts-thread .thread_participants { color: #a3839f; }
   #convo_loading_indicator { background-image: none; }
+  .reply_input_container .inline_message_input_container .ql-container { background-color: #61485e; border: 1px solid #4d394b; }
+  .reply_input_container .inline_message_input_container .ql-container .ql-editor::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.15); }
+  .reply_input_container .inline_message_input_container .ql-container .ql-editor::-webkit-scrollbar-thumb:hover { background-color: rgba(0, 0, 0, 0.25); }
+  .reply_input_container .inline_message_input_container .ql-container.focus { border-color: rgba(0, 0, 0, 0.15); }
+  .reply_input_container .inline_message_input_container .ql-container.focus ~ .emo_menu { color: #f0d9ed; }
+  .reply_input_container .inline_message_input_container .ql-container ~ .emo_menu { color: #a3839f; }
   #unread_msgs_scroller_div::after { background: transparent; }
   #unread_msgs_scroller_div.loading { background-image: none; }
   #unread_msgs_scroller_div.loading::before { color: #a3839f; }
@@ -705,7 +711,7 @@
   .unread_empty_state_refresh { background: rgba(62, 49, 60, 0.97); }
   #col_flex { background: transparent; }
   #flex_contents { background: #3e313c; }
-  #flex_contents .heading { background: #30262e; color: #a3839f; }
+  #flex_contents .heading { background: #30262e; border-bottom-color: #4d394b; color: #a3839f; }
   #flex_contents .heading a { color: #a3839f; }
   #flex_contents .heading a:hover { color: #d4bbd1; }
   #flex_contents .heading a.close_flexpane { color: #a3839f; }
@@ -713,9 +719,10 @@
   #flex_contents .heading .menu_heading:hover { color: #f0d9ed; }
   #flex_contents .heading .menu_icon { color: #a3839f; }
   #flex_contents .heading .menu_icon:hover { color: #d4bbd1; }
-  #flex_contents .subheading { background: #3e313c; border-top: 1px solid #372c36; color: #a3839f; }
-  #flex_contents .subheading p a { color: #f0d9ed; }
-  #flex_contents .subheading .filter_menu_label.active .arrow_down { color: #a3839f; }
+  #flex_contents .heading_text { color: #a3839f; }
+  #flex_contents .subheading:not(.empty) { background: #3e313c; border-top: 1px solid #372c36; color: #a3839f; }
+  #flex_contents .subheading:not(.empty) p a { color: #f0d9ed; }
+  #flex_contents .subheading:not(.empty) .filter_menu_label.active .arrow_down { color: #a3839f; }
   #flex_contents .toolbar_container { background: #3e313c; }
   #flex_contents .flexpane_tab_bar li a { color: #a3839f; }
   #flex_contents .flexpane_tab_bar li:hover { border-bottom: 4px solid #4d394b; }
@@ -724,11 +731,9 @@
   #flex_contents .flexpane_tab_bar li.active a { color: #a3839f; }
   #flex_contents .help { border-top: 5px solid #372c36; color: #f0d9ed; }
   #flex_contents i.callout { color: #a3839f; }
-  .flexpane_redesign #flex_contents .heading { border-bottom: 0.0625rem solid #4d394b; }
-  .flexpane_redesign #flex_contents .heading_text { color: #a3839f; }
-  .flexpane_redesign .close_flexpane { color: #a3839f; }
-  .flexpane_redesign .close_flexpane:focus, .flexpane_redesign .close_flexpane:hover { color: #f0d9ed; }
-  .flexpane_redesign.flex_pane_showing #col_flex { border-left: 1px solid #4d394b; }
+  .close_flexpane { color: #a3839f; }
+  .close_flexpane:focus, .close_flexpane:hover { color: #f0d9ed; }
+  #client-ui.flex_pane_showing #col_flex { border-left-color: #4d394b; }
   .toolbar_container { background: #3e313c; border-bottom: 1px solid #372c36; color: #f0d9ed; }
   .msg_right_link { color: #a3839f; }
   #details_tab .heading { background: #30262e; }
@@ -823,7 +828,8 @@
   .comment_actions { color: #a3839f; }
   .comment_actions:hover { color: #f0d9ed; }
   .icon_quote { color: #f0d9ed; }
-  #flex_contents .comment_form textarea, #flex_contents .edit_comment_form textarea { color: #f0d9ed; }
+  .edit_comment_form .texty_comment_input, .comment_form .texty_comment_input { background: #61485e; border-color: #4d394b; color: #f0d9ed; }
+  .edit_comment_form .texty_comment_input.focus, .edit_comment_form .texty_comment_input:hover, .comment_form .texty_comment_input.focus, .comment_form .texty_comment_input:hover { border-color: #4d394b; }
   .tab_container .star_item .message .actions .btn_icon, .tab_container .star_item .message .actions .star_jump, .tab_container .star_item ts-message .actions .btn_icon, .tab_container .star_item ts-message .actions .star_jump, .tab_container .file_list_item .actions .btn_icon, .tab_container .file_list_item .actions .star_jump, .tab_container .file_comment_item .actions .btn_icon, .tab_container .file_comment_item .actions .star_jump { background-color: #3e313c; }
   .tab_container .star_item .message .actions .btn::after, .tab_container .star_item ts-message .actions .btn::after, .tab_container .file_list_item .actions .btn::after, .tab_container .file_comment_item .actions .btn::after { border-color: #4d394b; }
   .tab_container .star_item ts-message .timestamp { color: #a3839f; }
@@ -850,7 +856,7 @@
   #flex_contents .flexpane_tab_toolbar #user_group_edit.user_group_edit--flexpane .tab_action_button { color: #f0d9ed; }
   .user_group_invite_member_small .add_icon { color: #a3839f; }
   #user_group_member_invite_div .disabled .lfs_item.lfs_token { background-color: #876484; border-color: #876484; }
-  #flex_contents .subheading#mentions_options { background-color: #3e313c; border-bottom-color: #4d394b; color: #f0d9ed; }
+  #flex_contents .subheading:not(.empty)#mentions_options { background-color: #3e313c; border-bottom-color: #4d394b; color: #f0d9ed; }
   .mention_day_container_div .day_divider::before { background: none; border-color: #4d394b; }
   #member_mentions h3 a { color: #a3839f; }
   .mention_rxn .mention_rxn_summary { color: #f0d9ed; }
@@ -886,8 +892,8 @@
   .search_result_with_extract { background: #4d394b; border: 1px solid #61485e; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15); }
   .search_result_with_extract:hover { border: 1px solid #876484; }
   .search_result_for_context::after { background: rgba(62, 49, 60, 0.1); }
-  .extract_expand_icons { color: #a3839f; }
-  .search_result_with_extract:hover .extract_expand_icons { color: #d4bbd1; }
+  .extract_expand_text, .extract_expand_icons { color: #a3839f; }
+  .search_result_with_extract:hover .extract_expand_text, .search_result_with_extract:hover .extract_expand_icons { color: #d4bbd1; }
   .search_module_header { color: #f0d9ed; }
   .search_module_footer { background-color: #4d394b; border-bottom-color: #61485e; border-left-color: #61485e; border-right-color: #61485e; }
   .search_module_footer p { color: #f0d9ed; }
@@ -929,6 +935,8 @@
   .team_list_item .member_name { color: #f0d9ed; }
   #client-ui .searchable_member_list .team_list_item.expanded, #client-ui #team_list .team_list_item.expanded, #member_preview_scroller .team_list_item.expanded { border-color: #4d394b; }
   #client-ui .searchable_member_list .team_list_item:hover, #client-ui #team_list .team_list_item:hover, #member_preview_scroller .team_list_item:hover { border-color: #61485e; }
+  #member_preview_scroller .member_data_table .current_status_cell .current_status_container .current_status_cover:hover { border-color: #4d394b; }
+  #member_preview_scroller .member_data_table .current_status_cell .current_status_container:not(.active) .current_status_cover.without_status_set .current_status_placeholder { color: rgba(240, 217, 237, 0.35) !important; }
   #convo_tab #convo_tab_btns .close_flexpane:focus, #convo_tab #convo_tab_btns .close_flexpane:hover { color: #f0d9ed; }
   #convo_tab textarea.message_input { color: #f0d9ed; }
   #reply_container .inline_message_input_container .message_input div, #reply_container .inline_message_input_container textarea, .reply_input_container .inline_message_input_container .message_input div, .reply_input_container .inline_message_input_container textarea { border-color: #4d394b; color: #f0d9ed; }
@@ -951,6 +959,7 @@
   #emoji_menu #emoji_menu_footer { background: #372c36; border-top: 1px solid #4d394b; }
   #emoji_menu #emoji_menu_content:hover #emoji_skin_button_container { background: #61485e; border: 1px solid #4d394b; }
   #emoji_menu #emoji_menu_header { background: #372c36; }
+  #emoji_menu #emoji_input_container { background: #3e313c; }
   #emoji_menu .emoji_li[data-color-index="0"]:hover, #emoji_menu .emoji_li[data-color-index="0"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="0"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="0"].key_selection { background: rgba(183, 232, 135, 0.5); }
   #emoji_menu .emoji_li[data-color-index="1"]:hover, #emoji_menu .emoji_li[data-color-index="1"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="1"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="1"].key_selection { background: rgba(181, 224, 254, 0.5); }
   #emoji_menu .emoji_li[data-color-index="2"]:hover, #emoji_menu .emoji_li[data-color-index="2"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="2"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="2"].key_selection { background: rgba(249, 239, 103, 0.5); }
@@ -965,11 +974,19 @@
   #emoji_menu #emoji_skin_button, #emoji_menu #emoji_skin_picker, #emoji_menu #emoji_skin_tip { color: #a3839f; }
   #emoji_menu #emoji_skin_picker { background: #372c36; }
   #emoji_menu #emoji_skin_picker > span[data-preferred=true] { background: #4d394b; }
+  #emoji_menu #emoji_zero_results { color: #a3839f; }
+  #emoji_menu #emoji_zero_results i { color: #a3839f; }
+  #emoji_menu .emoji_tip { color: #f0d9ed; }
   .emoji_menu_ng #emoji_input_container { background: #3e313c; }
   .emoji_li a { color: #a3839f !important; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
-  div#emoji_tip { color: #f0d9ed; }
-  div#emoji_zero_results { color: #a3839f; }
-  div#emoji_tip i, div#emoji_zero_results i { color: #a3839f; }
+  #message_edit_form .current_status_empty_emoji, #message_edit_form .current_status_empty_emoji_cover, #message_edit_form .emo_menu, #msg_form .current_status_empty_emoji, #msg_form .current_status_empty_emoji_cover, #msg_form .emo_menu, .current_status_container .current_status_empty_emoji, .current_status_container .current_status_empty_emoji_cover, .current_status_container .emo_menu, .current_status_input_container .current_status_empty_emoji, .current_status_input_container .current_status_empty_emoji_cover, .current_status_input_container .emo_menu, .inline_message_input_container .current_status_empty_emoji, .inline_message_input_container .current_status_empty_emoji_cover, .inline_message_input_container .emo_menu, .share_channel_modal_contents .current_status_empty_emoji, .share_channel_modal_contents .current_status_empty_emoji_cover, .share_channel_modal_contents .emo_menu { color: #a3839f; }
+  #message_edit_form .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji, #msg_form .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji, .current_status_container .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji, .current_status_input_container .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji, .inline_message_input_container .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji, .share_channel_modal_contents .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji { color: #f0d9ed; }
+  #message_edit_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input.focus ~ .emo_menu, #message_edit_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input:focus ~ .emo_menu, #msg_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input.focus ~ .emo_menu, #msg_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input:focus ~ .emo_menu, .current_status_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input.focus ~ .emo_menu, .current_status_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input:focus ~ .emo_menu, .current_status_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input.focus ~ .emo_menu, .current_status_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input:focus ~ .emo_menu, .inline_message_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input.focus ~ .emo_menu, .inline_message_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input:focus ~ .emo_menu, .share_channel_modal_contents #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input.focus ~ .emo_menu, .share_channel_modal_contents #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input:focus ~ .emo_menu { color: #f0d9ed; }
+  #message_edit_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form .message_input:focus ~ .emo_menu, #msg_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form .message_input:focus ~ .emo_menu, .current_status_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container .message_input:focus ~ .emo_menu, .current_status_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container .message_input:focus ~ .emo_menu, .inline_message_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container .message_input:focus ~ .emo_menu, .share_channel_modal_contents .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents .message_input:focus ~ .emo_menu { color: #f0d9ed; }
+  #message_edit_form.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form.focus ~ .emo_menu, #msg_form.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form.focus ~ .emo_menu, .current_status_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container.focus ~ .emo_menu, .current_status_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container.focus ~ .emo_menu, .inline_message_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container.focus ~ .emo_menu, .share_channel_modal_contents.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents.focus ~ .emo_menu { color: #f0d9ed; }
+  .current_status_emoji_picker { border-right-color: #4d394b; }
+  .current_status_input_for_team_menu .current_status_presets { border-top: 1px solid #372c36; }
+  .current_status_input_for_team_menu .current_status_presets .current_status_presets_section_header .header_label { color: #a3839f; }
   .rxn { background: #372c36; border: 1px solid #61485e; }
   .rxn.active, .rxn:hover { border-color: #4a3b49; }
   .rxn.active .emoji_rxn_count, .rxn:hover .emoji_rxn_count { color: #f0d9ed; }
@@ -1047,6 +1064,8 @@
   .fs_modal_file_viewer_content .no_comment { background-color: #3e313c; color: #a3839f; }
   .fs_modal_file_viewer_content .aside_close_btn { color: #f0d9ed; }
   .fs_modal_file_viewer_content #file_comment { color: #f0d9ed; }
+  #file_comment_textarea.texty_comment_input { background: #3e313c; border-color: #4d394b; color: #f0d9ed; }
+  #file_comment_textarea.texty_comment_input.focus, #file_comment_textarea.texty_comment_input:hover { border-color: #4d394b; }
   #fs_modal.help_modal #fs_modal_footer .help_modal_status #no_open_issues { color: #a3839f; }
   #fs_modal.help_modal .help_modal_divider { color: #a3839f; }
   #fs_modal.help_modal .help_modal_article_row { border-top: 1px solid #4d394b; }
@@ -1142,6 +1161,9 @@
   .share_dialog_attachment_container { color: #f0d9ed; }
   #share_dialog .file_list_item { border-color: #372c36; }
   #generic_dialog.basic_share_dialog .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon), #share_dialog .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon) { color: #a3839f; }
+  #share_dialog_input_container #file_comment_textarea.ql-container { border-color: #4d394b; }
+  #share_dialog_input_container #file_comment_textarea.ql-container.focus { border-color: #61485e; }
+  #share_dialog_input_container #file_comment_textarea.ql-container.focus ~ .emo_menu { color: #f0d9ed; }
   .ts_tip .ts_tip_multiline_inner, .ts_tip:not(.ts_tip_multiline) .ts_tip_tip { background: #61485e; }
   .ts_tip .ts_tip_tip { color: #f0d9ed; }
   .ts_tip.ts_tip_left .ts_tip_tip::after { border-left-color: #61485e; }
