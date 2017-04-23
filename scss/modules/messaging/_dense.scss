@@ -43,23 +43,6 @@
     color: $color-highlight;
   }
 
-  #message_edit_form {
-    margin-left: 0;
-
-    textarea {
-      color: $base-font-color;
-    }
-
-    p,
-    span {
-      color: $color-highlight;
-    }
-
-    .timestamp {
-      color: $color-highlight;
-    }
-  }
-
   .file_reference {
     .post_meta,
     .space_meta {

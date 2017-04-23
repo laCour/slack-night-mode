@@ -101,3 +101,30 @@ ts-thread .thread_participants {
 #convo_loading_indicator {
   background-image: none;
 }
+
+.reply_input_container .inline_message_input_container .ql-container {
+  background-color: $color-shade-light;
+  border: 1px solid $color-shade-dark;
+
+  .ql-editor {
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-shadow-light;
+
+      &:hover {
+        background-color: $color-shadow-medium;
+      }
+    }
+  }
+
+  &.focus {
+    border-color: $color-shadow-light;
+
+    ~ .emo_menu {
+      color: $base-font-color;
+    }
+  }
+
+  ~ .emo_menu {
+    color: $color-highlight;
+  }
+}

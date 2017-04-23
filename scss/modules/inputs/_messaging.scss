@@ -58,7 +58,8 @@
     font-family: $base-font-family;
   }
 
-  &:focus {
+  &:focus,
+  &.focus {
     border-color: $color-shade-dark;
 
     + #primary_file_button:not(:hover):not(.active) {
@@ -127,8 +128,29 @@
   color: $color-highlight;
 }
 
-#msg_form .emo_menu,
-#message_edit_form .emo_menu,
-.inline_message_input_container .emo_menu {
-  color: rgba($base-font-color, 0.35);
+.ql-editor {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($color-shade-light, 0.5);
+    color: $color-base;
+
+    &:hover {
+      background-color: rgba($color-shade-light, 0.8);
+    }
+  }
+}
+
+.ql-placeholder {
+  color: $base-font-color;
+}
+
+.ql-container.texty_single_line_input {
+  background: $color-shade-light;
+  border: 1px solid $color-shade-dark;
+  color: $base-font-color;
+
+  &.focus,
+  &:hover {
+    border-color: $color-shade-dark;
+    box-shadow: 0 0 7px $color-shadow-light;
+  }
 }

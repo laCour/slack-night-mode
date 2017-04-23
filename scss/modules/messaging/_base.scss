@@ -375,3 +375,14 @@ ts-message {
     color: $base-font-color;
   }
 }
+
+#message_edit_container .message_input {
+  background: $color-shade-light;
+  border-color: $color-shade-dark;
+  color: $base-font-color;
+
+  &.focus {
+    border-color: $color-shade-dark;
+    box-shadow: 0 0 7px $color-shadow-light;
+  }
+}

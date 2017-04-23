@@ -306,10 +306,17 @@ html.no_touch a.filetype_button_web:hover {
   color: $base-font-color;
 }
 
-#flex_contents {
-  .comment_form textarea,
-  .edit_comment_form textarea {
+.edit_comment_form,
+.comment_form {
+  .texty_comment_input {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
     color: $base-font-color;
+
+    &.focus,
+    &:hover {
+      border-color: $color-shade-dark;
+    }
   }
 }
 

@@ -16,3 +16,15 @@
 #share_dialog .lazy_filter_select .lfs_item .ts_icon:not(.presence_icon) {
   color: $color-highlight;
 }
+
+#share_dialog_input_container #file_comment_textarea.ql-container {
+  border-color: $color-shade-dark;
+
+  &.focus {
+    border-color: $color-shade-light;
+
+    ~ .emo_menu {
+      color: $base-font-color;
+    }
+  }
+}
