@@ -166,10 +166,6 @@ ts-message {
     padding: 0 3px;
   }
 
-  a .mention {
-    color: $base-font-color;
-  }
-
   &.show_recap:not(.is_pinned) {
     background: rgba($color-shade-darkest, 0.15);
 
@@ -177,6 +173,11 @@ ts-message {
       background: rgba($color-shade-darkest, 0.15);
     }
   }
+}
+
+ts-mention {
+  background: rgba($color-shade-lightest, 0.1);
+  color: $base-font-color;
 }
 
 .selecting_messages ts-message.multi_delete_mode:hover {
