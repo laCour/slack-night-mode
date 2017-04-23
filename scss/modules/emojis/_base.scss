@@ -34,6 +34,10 @@
     background: $color-shade-darkest;
   }
 
+  #emoji_input_container {
+    background: $color-base;
+  }
+
   .emoji_li,
   &[data-using-keyboard=true] .emoji_li {
     @for $i from 0 through 5 {
@@ -80,6 +84,18 @@
       background: $color-shade-dark;
     }
   }
+
+  #emoji_zero_results {
+    color: $color-highlight;
+
+    i {
+      color: $color-highlight;
+    }
+  }
+
+  .emoji_tip {
+    color: $base-font-color;
+  }
 }
 
 .emoji_menu_ng #emoji_input_container {
@@ -89,19 +105,4 @@
 .emoji_li a {
   color: $base-link-color !important;
   text-shadow: 0 1px $color-shadow-light;
-}
-
-div {
-  &#emoji_tip {
-    color: $base-font-color;
-  }
-
-  &#emoji_zero_results {
-    color: $color-highlight;
-  }
-
-  &#emoji_tip i,
-  &#emoji_zero_results i {
-    color: $color-highlight;
-  }
 }
