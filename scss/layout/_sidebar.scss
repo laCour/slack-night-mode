@@ -38,10 +38,11 @@
         }
       }
 
-      .group_close,
-      .im_close,
-      .mpim_close {
-        color: $base-link-color !important;
+      .primary_action {
+        &.feature_user_custom_status:hover .im_name_background,
+        &:not(.feature_user_custom_status):hover {
+          background: $color-base;
+        }
       }
 
       &.mention a {
@@ -49,17 +50,8 @@
       }
 
       &.unread {
-        &:not(.muted_channel) {
+        &:not(.muted_channel) .primary_action {
           color: lighten($base-font-color, 6%) !important;
-
-          .channel_name,
-          .group_name,
-          .im_name,
-          .mpim_name,
-          > a {
-            background: $color-shade-dark;
-            color: lighten($base-font-color, 6%) !important;
-          }
         }
 
         .prefix {
@@ -70,15 +62,21 @@
     }
   }
 
-  .unread_just {
-    background: $color-base;
-    color: $base-font-color;
+  .group_close,
+  .im_close,
+  .mpim_close {
+    color: $base-link-color !important;
   }
 
   .unread_highlights {
     background: $color-red;
     color: $base-font-color;
     text-shadow: 0 1px 0 $color-shadow-light;
+  }
+
+  .unread_msgs {
+    background: $color-base;
+    color: $base-font-color;
   }
 }
 
@@ -97,29 +95,27 @@
 }
 
 #channels_scroller.show_which_channel_is_active ul li.active {
-  .channel_name,
-  .group_name,
-  .mpim_name,
-  .im_name {
+  .primary_action {
     background: $color-base;
-    color: $base-font-color !important;
-  }
+    color: $base-font-color;
 
-  a {
-    &.group_name,
-    &.im_name,
-    &.mpim_name {
+    &.feature_user_custom_status .im_name_background {
       background: $color-base;
-      color: $base-font-color;
     }
 
-    &.channel_name .prefix,
-    &.group_name .prefix {
+    .prefix {
       color: $color-highlight;
     }
   }
 
-  .unread_highlights {
+  .group_close,
+  .im_close,
+  .mpim_close {
+    color: $base-font-color;
+  }
+
+  .unread_highlights,
+  .unread_msgs {
     background: $color-red;
     color: $base-font-color;
   }
