@@ -220,6 +220,13 @@ textarea {
   }
 }
 
+.btn_basic {
+  &:focus,
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
 .btn_outline {
   background: $color-base;
   color: $base-link-color !important;

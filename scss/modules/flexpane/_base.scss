@@ -7,6 +7,7 @@
 
   .heading {
     background: darken($color-base, 5%);
+    border-bottom-color: $color-shade-dark;
     color: $base-link-color;
 
     a {
@@ -40,7 +41,11 @@
     }
   }
 
-  .subheading {
+  .heading_text {
+    color: $base-link-color;
+  }
+
+  .subheading:not(.empty) {
     background: $color-base;
     border-top: 1px solid $color-shade-darkest;
     color: $color-highlight;
@@ -92,29 +97,17 @@
   }
 }
 
-.flexpane_redesign {
-  #flex_contents {
-    .heading {
-      border-bottom: 0.0625rem solid $color-shade-dark;
-    }
+.close_flexpane {
+  color: $color-highlight;
 
-    .heading_text {
-      color: $base-link-color;
-    }
+  &:focus,
+  &:hover {
+    color: $base-font-color;
   }
+}
 
-  .close_flexpane {
-    color: $color-highlight;
-
-    &:focus,
-    &:hover {
-      color: $base-font-color;
-    }
-  }
-
-  &.flex_pane_showing #col_flex {
-    border-left: 1px solid $color-shade-dark;
-  }
+#client-ui.flex_pane_showing #col_flex {
+  border-left-color: $color-shade-dark;
 }
 
 .toolbar_container {

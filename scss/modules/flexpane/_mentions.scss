@@ -1,4 +1,4 @@
-#flex_contents .subheading#mentions_options {
+#flex_contents .subheading:not(.empty)#mentions_options {
   background-color: $color-base;
   border-bottom-color: $color-shade-dark;
   color: $base-font-color;
