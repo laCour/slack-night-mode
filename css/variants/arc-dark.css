@@ -104,9 +104,11 @@
   ::-webkit-input-placeholder { color: #d3dae3 !important; -webkit-filter: none; filter: none; opacity: 0.5; }
   ::-moz-placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
   ::placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
+  [data-placeholder]:empty::before { color: #d3dae3 !important; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #d3dae3 !important; -webkit-filter: none; filter: none; opacity: 0.5; }
   input::-moz-placeholder, textarea::-moz-placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
   input::placeholder, textarea::placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
+  input[data-placeholder]:empty::before, textarea[data-placeholder]:empty::before { color: #d3dae3 !important; }
   input[disabled], input[readonly], textarea[disabled], textarea[readonly] { background-color: #6b6f79 !important; }
   .form-actions { background-color: #454c5c; border-top: 1px solid #2a2f39; }
   .help-block, .help-inline { color: #949494; }
@@ -165,8 +167,12 @@
   #msg_form.focus #msg_input, #msg_form.focus #primary_file_button:not(:hover):not(.active) { border-color: #2a2f39; }
   #msg_form #msg_input { background: padding-box #6b6f79; border-color: #454c5c; border-left: 0; color: #d3dae3; }
   #msg_input { background: #6b6f79; border-color: #454c5c; color: #d3dae3; }
-  #msg_input:focus { border-color: #2a2f39; }
-  #msg_input:focus + #primary_file_button:not(:hover):not(.active) { border-color: #2a2f39; }
+  #msg_input::-webkit-input-placeholder { color: #d3dae3 !important; -webkit-filter: none; filter: none; opacity: 0.5; }
+  #msg_input::-moz-placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
+  #msg_input::placeholder { color: #d3dae3 !important; filter: none; opacity: 0.5; }
+  #msg_input[data-placeholder]:empty::before { color: #d3dae3 !important; }
+  #msg_input:focus, #msg_input.focus { border-color: #2a2f39; }
+  #msg_input:focus + #primary_file_button:not(:hover):not(.active), #msg_input.focus + #primary_file_button:not(:hover):not(.active) { border-color: #2a2f39; }
   #msg_input.offline:not(.pretend-to-be-online) { background-color: #2a2f39 !important; color: #949494; }
   #msg_input.disabled, #msg_input.ql-disabled { background-color: #2a2f39; border-color: #2a2f39; color: #949494; }
   #msg_input_message { background-color: #2a2f39; color: #d3dae3; }
@@ -179,6 +185,9 @@
   #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
   #special_formatting_text { color: #949494; }
   #msg_form .emo_menu, #message_edit_form .emo_menu, .inline_message_input_container .emo_menu { color: rgba(211, 218, 227, 0.35); }
+  .ql-editor::-webkit-scrollbar-thumb { background-color: rgba(107, 111, 121, 0.5); color: #404552; }
+  .ql-editor::-webkit-scrollbar-thumb:hover { background-color: rgba(107, 111, 121, 0.8); }
+  .ql-placeholder { color: #d3dae3; }
   .ts_toggle .ts_toggle_button { background: #1d2027; color: #d3dae3; }
   .ts_toggle .ts_toggle_button .ts_toggle_handle { background: #2a2f39; }
   .ts_toggle .ts_toggle_secondary_label { color: #949494; }
