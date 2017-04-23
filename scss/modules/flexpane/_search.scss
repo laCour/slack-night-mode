@@ -149,12 +149,16 @@ span.match {
   }
 }
 
+.extract_expand_text,
 .extract_expand_icons {
   color: $base-link-color;
 }
 
-.search_result_with_extract:hover .extract_expand_icons {
-  color: $base-link-color-active;
+.search_result_with_extract:hover {
+  .extract_expand_text,
+  .extract_expand_icons {
+    color: $base-link-color-active;
+  }
 }
 
 .search_module_header {
