@@ -253,6 +253,7 @@
 
   .preview_actions .btn {
     background-color: $color-shade-dark;
+    color: $base-font-color !important;
 
     &::after {
       border-color: $color-shade-darkest;
