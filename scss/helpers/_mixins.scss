@@ -26,4 +26,8 @@
     filter: none;
     opacity: 0.5;
   }
+
+  &[data-placeholder]:empty::before {
+    color: $base-font-color !important;
+  }
 }

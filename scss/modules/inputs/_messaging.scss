@@ -48,6 +48,8 @@
 }
 
 #msg_input {
+  @include placeholder;
+
   background: $color-shade-light;
   border-color: $color-shade-mid;
   color: $base-font-color;
