@@ -1,0 +1,54 @@
+#message_edit_form,
+#msg_form,
+.current_status_container,
+.current_status_input_container,
+.inline_message_input_container,
+.share_channel_modal_contents {
+  .current_status_empty_emoji,
+  .current_status_empty_emoji_cover,
+  .emo_menu {
+    color: $color-highlight;
+  }
+
+  .current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji {
+    color: $base-font-color;
+  }
+
+  #msg_input {
+    &.focus ~,
+    &:focus ~ {
+      #primary_file_button:not(:hover):not(.active),
+      .emo_menu {
+        color: $base-font-color;
+      }
+    }
+  }
+
+  .message_input:focus ~ {
+    #primary_file_button:not(:hover):not(.active),
+    .emo_menu {
+      color: $base-font-color;
+    }
+  }
+
+  &.focus ~ {
+    #primary_file_button:not(:hover):not(.active),
+    .emo_menu {
+      color: $base-font-color;
+    }
+  }
+}
+
+.current_status_emoji_picker {
+  border-right-color: $color-shade-dark;
+}
+
+.current_status_input_for_team_menu {
+  .current_status_presets {
+    border-top: 1px solid $color-shade-darkest;
+
+    .current_status_presets_section_header .header_label {
+      color: $color-highlight;
+    }
+  }
+}

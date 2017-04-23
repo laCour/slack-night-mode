@@ -37,6 +37,10 @@
     &.unarchived {
       color: $color-highlight;
     }
+
+    .message_content .message_current_status {
+      border-color: $color-shade-dark;
+    }
   }
 
   #message_editing_info {
