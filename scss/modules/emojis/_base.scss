@@ -1,45 +1,18 @@
-#emoji_menu {
+.p-emoji_picker {
   background: $color-shade-darkest;
-  box-shadow: 0 2px 10px $color-shadow-dark;
   color: $base-font-color;
 
-  #emoji_menu_items_scroller {
-    background: $color-base !important;
+  &[data-using-keyboard="true"] .p-emoji_picker__list_item {
+    @for $i from 0 through 5 {
+      &[data-color-index="#{$i}"].key_selection {
+        background: transparentize(map-get($emoji-hover-colors, $i), 0.5);
+      }
+    }
   }
 
-  h3 {
-    background: rgba($color-base, 0.95);
-  }
+  &__list_item {
+    text-shadow: 0 1px $color-shadow-light;
 
-  #emoji_preview_text {
-    background: $color-shade-darkest;
-    color: $base-font-color;
-  }
-
-  #emoji_preview_deluxe {
-    color: $base-font-color;
-  }
-
-  #emoji_menu_footer {
-    background: $color-shade-darkest;
-    border-top: 1px solid $color-shade-dark;
-  }
-
-  #emoji_menu_content:hover #emoji_skin_button_container {
-    background: $color-shade-light;
-    border: 1px solid $color-shade-dark;
-  }
-
-  #emoji_menu_header {
-    background: $color-shade-darkest;
-  }
-
-  #emoji_input_container {
-    background: $color-base;
-  }
-
-  .emoji_li,
-  &[data-using-keyboard=true] .emoji_li {
     @for $i from 0 through 5 {
       &[data-color-index="#{$i}"]:hover,
       &[data-color-index="#{$i}"].key_selection {
@@ -48,7 +21,17 @@
     }
   }
 
-  a.emoji_grouping_tab {
+  &__heading,
+  &__list_container,
+  &__input_container {
+    background: $color-base;
+  }
+
+  &__group_tabs {
+    border-bottom-color: $color-shade-mid;
+  }
+
+  &__group_tab {
     color: $base-link-color;
 
     &:hover {
@@ -56,53 +39,59 @@
       color: $base-link-color-active;
     }
 
-    &.active {
+    &--active {
       background: $color-shade-light;
-      border-bottom: 3px solid $color-shade-mid;
+      border-bottom-color: $color-shade-mid;
       color: $base-font-color;
     }
   }
 
-  #monkey_scroll_wrapper_for_emoji_menu_items_scroller {
+  &__icon_search {
+    color: $color-highlight;
+  }
+
+  &__content:hover .p-emoji_picker__skintone_btn_container {
+    background: $color-base;
+    border-color: $color-base;
+  }
+
+  &__skintone_options {
     background: $color-base;
   }
 
-  #emoji_input:focus {
-    border-color: $color-shade-light;
-  }
-
-  #emoji_skin_button,
-  #emoji_skin_picker,
-  #emoji_skin_tip {
-    color: $color-highlight;
-  }
-
-  #emoji_skin_picker {
-    background: $color-shade-darkest;
-
-    > span[data-preferred=true] {
-      background: $color-shade-dark;
-    }
-  }
-
-  #emoji_zero_results {
-    color: $color-highlight;
-
+  &__tip,
+  &__no_results {
     i {
       color: $color-highlight;
     }
   }
 
-  .emoji_tip {
+  &__tip {
     color: $base-font-color;
+  }
+
+  &__no_results {
+    color: $color-highlight;
+  }
+
+  &__preview_text {
+    background: $color-shade-darkest;
+    color: $base-font-color;
+  }
+
+  &__footer {
+    background: $color-shade-darkest;
+    border-top-color: $color-shade-dark;
+
+    .p-emoji_picker__heading {
+      background: $color-shade-darkest;
+    }
   }
 }
 
-.emoji_menu_ng #emoji_input_container {
-  background: $color-base;
-}
-
-.emoji_li a {
-  color: $base-link-color !important;
-  text-shadow: 0 1px $color-shadow-light;
+input.p-emoji_picker__input {
+  &:focus {
+    border-color: $color-shade-light;
+    box-shadow: none;
+  }
 }
