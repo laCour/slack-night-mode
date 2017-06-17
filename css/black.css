@@ -46,7 +46,7 @@
   .list_more { border-bottom: 1px dotted #949494; color: #949494 !important; }
   .list_more:hover { border-bottom: 1px solid #c7c7c7; color: #c7c7c7 !important; }
   #channels_scroller.show_which_channel_is_active ul li.active .primary_action { background: #222; color: #e6e6e6; }
-  #channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name .im_name_background { background: #222; }
+  #channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name .im_name_background, #channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name > *:not(.unread_highlights) { background: #222; }
   #channels_scroller.show_which_channel_is_active ul li.active .primary_action.feature_user_custom_status .im_name_background { background: #222; }
   #channels_scroller.show_which_channel_is_active ul li.active .primary_action .prefix { color: #949494; }
   #channels_scroller.show_which_channel_is_active ul li.active .group_close, #channels_scroller.show_which_channel_is_active ul li.active .im_close, #channels_scroller.show_which_channel_is_active ul li.active .mpim_close { color: #e6e6e6; }
@@ -324,6 +324,7 @@
   #team_menu .presence .presence_icon { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   #team_menu .team_name_caret, #team_menu .notifications_menu_btn { color: #e6e6e6 !important; }
   #team_menu_user { color: #949494; }
+  #team_menu_user_name, #team_menu_user_details { color: #e6e6e6 !important; opacity: 0.75; }
   #im-list li.member.active .presence, #starred-list li.member.active .presence { color: #e6e6e6; }
   #im-list li.member.active .presence.away, #starred-list li.member.active .presence.away { color: #949494; text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
   .slack_menu_section::before { border-top-color: #222; }

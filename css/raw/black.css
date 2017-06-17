@@ -94,7 +94,7 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 #channels_scroller.show_which_channel_is_active ul li.active .primary_action { background: #222; color: #e6e6e6; }
 
-#channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name .im_name_background { background: #222; }
+#channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name .im_name_background, #channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name > *:not(.unread_highlights) { background: #222; }
 
 #channels_scroller.show_which_channel_is_active ul li.active .primary_action.feature_user_custom_status .im_name_background { background: #222; }
 
@@ -649,6 +649,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #team_menu .team_name_caret, #team_menu .notifications_menu_btn { color: #e6e6e6 !important; }
 
 #team_menu_user { color: #949494; }
+
+#team_menu_user_name, #team_menu_user_details { color: #e6e6e6 !important; opacity: 0.75; }
 
 #im-list li.member.active .presence, #starred-list li.member.active .presence { color: #e6e6e6; }
 
