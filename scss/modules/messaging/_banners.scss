@@ -68,3 +68,19 @@
     background: none;
   }
 }
+
+.end_div_msg_lim {
+  background-color: $color-shade-dark;
+  background-image: none;
+}
+
+#archives_end_div_msg_lim,
+#end_display_msg_lim {
+  h1 {
+    color: $base-font-color;
+  }
+
+  h2 {
+    color: rgba($base-font-color, 0.8);
+  }
+}
