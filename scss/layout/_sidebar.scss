@@ -106,7 +106,8 @@
       background: $color-base;
       color: $base-font-color;
 
-      &.im_name .im_name_background {
+      &.im_name .im_name_background,
+      &.im_name > *:not(.unread_highlights) {
         background: $color-base;
       }
 
