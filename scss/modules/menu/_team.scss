@@ -33,6 +33,12 @@
   color: $color-highlight;
 }
 
+#team_menu_user_name,
+#team_menu_user_details {
+  color: $base-font-color !important;
+  opacity: 0.75;
+}
+
 #im-list li.member.active .presence,
 #starred-list li.member.active .presence {
   color: $base-font-color;
