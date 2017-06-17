@@ -38,6 +38,11 @@
   }
 }
 
+.infinite_spinner_bg,
+.infinite_spinner_blue {
+  stroke: $base-font-color;
+}
+
 body.loading {
   #team_menu,
   #quick_switcher_btn,
