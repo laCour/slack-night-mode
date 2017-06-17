@@ -80,6 +80,10 @@
     }
   }
 
+  &.fs_modal_header .fs_modal_btn:active {
+    color: $base-font-color;
+  }
+
   #fs_modal_footer {
     background-color: $color-shade-dark;
   }
