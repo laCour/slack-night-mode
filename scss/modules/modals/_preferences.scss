@@ -52,6 +52,29 @@
   legend {
     color: $base-font-color;
   }
+
+  .global_notification_block {
+    background: $color-base;
+    border-color: $color-shade-darkest;
+
+    &.selected {
+      background: $color-shade-dark;
+      border-color: $color-shade-darkest;
+    }
+  }
+
+  .channel_overrides_row {
+    border-top-color: $color-shade-darkest;
+
+    &:hover {
+      background: $color-shade-dark;
+      border-color: $color-shade-darkest;
+    }
+
+    .channel_overrides_summary {
+      color: $base-font-color;
+    }
+  }
 }
 
 .sidebar_menu_list_item {
