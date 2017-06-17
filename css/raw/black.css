@@ -54,6 +54,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner { background: #545454; border: 3px solid #222; }
 
+.client_channels_list_container { background-color: #363636; border-right-color: #363636; }
+
 #col_channels { background-color: #363636; color: #e6e6e6; }
 
 #col_channels_collapse_view { background: #363636; }
@@ -70,7 +72,7 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 .channels_list_holder ul li .channel_name:hover, .channels_list_holder ul li .group_name:hover, .channels_list_holder ul li .im_name:hover, .channels_list_holder ul li .mpim_name:hover, .channels_list_holder ul li > a:hover { background: #222 !important; border-bottom-right-radius: 0.25rem; border-top-right-radius: 0.25rem; }
 
-.channels_list_holder ul li .primary_action.feature_user_custom_status:hover .im_name_background, .channels_list_holder ul li .primary_action:not(.feature_user_custom_status):hover { background: #222; }
+.channels_list_holder ul li .primary_action.im_name:hover .im_name_background, .channels_list_holder ul li .primary_action.feature_user_custom_status:hover .im_name_background, .channels_list_holder ul li .primary_action:not(.feature_user_custom_status):hover { background: #222; }
 
 .channels_list_holder ul li.mention a { color: #e6e6e6; }
 
@@ -92,6 +94,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 #channels_scroller.show_which_channel_is_active ul li.active .primary_action { background: #222; color: #e6e6e6; }
 
+#channels_scroller.show_which_channel_is_active ul li.active .primary_action.im_name .im_name_background { background: #222; }
+
 #channels_scroller.show_which_channel_is_active ul li.active .primary_action.feature_user_custom_status .im_name_background { background: #222; }
 
 #channels_scroller.show_which_channel_is_active ul li.active .primary_action .prefix { color: #949494; }
@@ -99,6 +103,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 #channels_scroller.show_which_channel_is_active ul li.active .group_close, #channels_scroller.show_which_channel_is_active ul li.active .im_close, #channels_scroller.show_which_channel_is_active ul li.active .mpim_close { color: #e6e6e6; }
 
 #channels_scroller.show_which_channel_is_active ul li.active .unread_highlights, #channels_scroller.show_which_channel_is_active ul li.active .unread_msgs { background: #bf360c; color: #e6e6e6; }
+
+#channels_scroller ul li.muted_channel:not(.active) .primary_action > :not(.im_name_background), #channels_scroller:not(.show_which_channel_is_active) li.muted_channel .primary_action > :not(.im_name_background) { opacity: 0.6; }
 
 #channel_scroll_down, #channel_scroll_up { background: #000; color: #e6e6e6; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
@@ -167,6 +173,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 #loading_message_spinner { background-image: none; width: auto; }
 
 #loading_message_spinner::after { color: #949494; content: "Loading..."; }
+
+.infinite_spinner_bg, .infinite_spinner_blue { stroke: #e6e6e6; }
 
 body.loading #team_menu, body.loading #quick_switcher_btn, body.loading #team_menu_overlay, body.loading #col_channels_overlay, body.loading #col_channels { background-color: #363636; }
 
@@ -1124,6 +1132,12 @@ ts-message .reply_bar:hover { background: #222; border-color: #000; }
 
 #messages_container:not(.has_reply_banners).has_top_messages_banner::before, #messages_container.has_top_messages_banner::before { background: none; }
 
+.end_div_msg_lim { background-color: #363636; background-image: none; }
+
+#archives_end_div_msg_lim h1, #end_display_msg_lim h1 { color: #e6e6e6; }
+
+#archives_end_div_msg_lim h2, #end_display_msg_lim h2 { color: rgba(230, 230, 230, 0.8); }
+
 code { background-color: #000; border: 1px solid #363636; color: #e6e6e6; }
 
 .file_list_item.snippet .snippet_preview { background: #000; }
@@ -1904,61 +1918,63 @@ span.match { background: rgba(191, 54, 12, 0.25); border-radius: 3px; padding: 3
 
 #whats_new_updates h3 a { color: #e6e6e6 !important; }
 
-#emoji_menu { background: #000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); color: #e6e6e6; }
+.p-emoji_picker { background: #000; color: #e6e6e6; }
 
-#emoji_menu #emoji_menu_items_scroller { background: #222 !important; }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="0"].key_selection { background: rgba(183, 232, 135, 0.5); }
 
-#emoji_menu h3 { background: rgba(34, 34, 34, 0.95); }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="1"].key_selection { background: rgba(181, 224, 254, 0.5); }
 
-#emoji_menu #emoji_preview_text { background: #000; color: #e6e6e6; }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="2"].key_selection { background: rgba(249, 239, 103, 0.5); }
 
-#emoji_menu #emoji_preview_deluxe { color: #e6e6e6; }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="3"].key_selection { background: rgba(243, 193, 253, 0.5); }
 
-#emoji_menu #emoji_menu_footer { background: #000; border-top: 1px solid #363636; }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="4"].key_selection { background: rgba(255, 225, 174, 0.5); }
 
-#emoji_menu #emoji_menu_content:hover #emoji_skin_button_container { background: #545454; border: 1px solid #363636; }
+.p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="5"].key_selection { background: rgba(224, 223, 255, 0.5); }
 
-#emoji_menu #emoji_menu_header { background: #000; }
+.p-emoji_picker__list_item { text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
 
-#emoji_menu #emoji_input_container { background: #222; }
+.p-emoji_picker__list_item[data-color-index="0"]:hover, .p-emoji_picker__list_item[data-color-index="0"].key_selection { background: rgba(183, 232, 135, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="0"]:hover, #emoji_menu .emoji_li[data-color-index="0"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="0"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="0"].key_selection { background: rgba(183, 232, 135, 0.5); }
+.p-emoji_picker__list_item[data-color-index="1"]:hover, .p-emoji_picker__list_item[data-color-index="1"].key_selection { background: rgba(181, 224, 254, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="1"]:hover, #emoji_menu .emoji_li[data-color-index="1"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="1"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="1"].key_selection { background: rgba(181, 224, 254, 0.5); }
+.p-emoji_picker__list_item[data-color-index="2"]:hover, .p-emoji_picker__list_item[data-color-index="2"].key_selection { background: rgba(249, 239, 103, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="2"]:hover, #emoji_menu .emoji_li[data-color-index="2"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="2"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="2"].key_selection { background: rgba(249, 239, 103, 0.5); }
+.p-emoji_picker__list_item[data-color-index="3"]:hover, .p-emoji_picker__list_item[data-color-index="3"].key_selection { background: rgba(243, 193, 253, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="3"]:hover, #emoji_menu .emoji_li[data-color-index="3"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="3"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="3"].key_selection { background: rgba(243, 193, 253, 0.5); }
+.p-emoji_picker__list_item[data-color-index="4"]:hover, .p-emoji_picker__list_item[data-color-index="4"].key_selection { background: rgba(255, 225, 174, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="4"]:hover, #emoji_menu .emoji_li[data-color-index="4"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="4"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="4"].key_selection { background: rgba(255, 225, 174, 0.5); }
+.p-emoji_picker__list_item[data-color-index="5"]:hover, .p-emoji_picker__list_item[data-color-index="5"].key_selection { background: rgba(224, 223, 255, 0.5); }
 
-#emoji_menu .emoji_li[data-color-index="5"]:hover, #emoji_menu .emoji_li[data-color-index="5"].key_selection, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="5"]:hover, #emoji_menu[data-using-keyboard=true] .emoji_li[data-color-index="5"].key_selection { background: rgba(224, 223, 255, 0.5); }
+.p-emoji_picker__heading, .p-emoji_picker__list_container, .p-emoji_picker__input_container { background: #222; }
 
-#emoji_menu a.emoji_grouping_tab { color: #949494; }
+.p-emoji_picker__group_tabs { border-bottom-color: #424242; }
 
-#emoji_menu a.emoji_grouping_tab:hover { background: #363636; color: #c7c7c7; }
+.p-emoji_picker__group_tab { color: #949494; }
 
-#emoji_menu a.emoji_grouping_tab.active { background: #545454; border-bottom: 3px solid #424242; color: #e6e6e6; }
+.p-emoji_picker__group_tab:hover { background: #363636; color: #c7c7c7; }
 
-#emoji_menu #monkey_scroll_wrapper_for_emoji_menu_items_scroller { background: #222; }
+.p-emoji_picker__group_tab--active { background: #545454; border-bottom-color: #424242; color: #e6e6e6; }
 
-#emoji_menu #emoji_input:focus { border-color: #545454; }
+.p-emoji_picker__icon_search { color: #949494; }
 
-#emoji_menu #emoji_skin_button, #emoji_menu #emoji_skin_picker, #emoji_menu #emoji_skin_tip { color: #949494; }
+.p-emoji_picker__content:hover .p-emoji_picker__skintone_btn_container { background: #222; border-color: #222; }
 
-#emoji_menu #emoji_skin_picker { background: #000; }
+.p-emoji_picker__skintone_options { background: #222; }
 
-#emoji_menu #emoji_skin_picker > span[data-preferred=true] { background: #363636; }
+.p-emoji_picker__tip i, .p-emoji_picker__no_results i { color: #949494; }
 
-#emoji_menu #emoji_zero_results { color: #949494; }
+.p-emoji_picker__tip { color: #e6e6e6; }
 
-#emoji_menu #emoji_zero_results i { color: #949494; }
+.p-emoji_picker__no_results { color: #949494; }
 
-#emoji_menu .emoji_tip { color: #e6e6e6; }
+.p-emoji_picker__preview_text { background: #000; color: #e6e6e6; }
 
-.emoji_menu_ng #emoji_input_container { background: #222; }
+.p-emoji_picker__footer { background: #000; border-top-color: #363636; }
 
-.emoji_li a { color: #949494 !important; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
+.p-emoji_picker__footer .p-emoji_picker__heading { background: #000; }
+
+input.p-emoji_picker__input:focus { border-color: #545454; box-shadow: none; }
 
 #message_edit_form .current_status_empty_emoji, #message_edit_form .current_status_empty_emoji_cover, #message_edit_form .emo_menu, #msg_form .current_status_empty_emoji, #msg_form .current_status_empty_emoji_cover, #msg_form .emo_menu, .current_status_container .current_status_empty_emoji, .current_status_container .current_status_empty_emoji_cover, .current_status_container .emo_menu, .current_status_input_container .current_status_empty_emoji, .current_status_input_container .current_status_empty_emoji_cover, .current_status_input_container .emo_menu, .inline_message_input_container .current_status_empty_emoji, .inline_message_input_container .current_status_empty_emoji_cover, .inline_message_input_container .emo_menu, .share_channel_modal_contents .current_status_empty_emoji, .share_channel_modal_contents .current_status_empty_emoji_cover, .share_channel_modal_contents .emo_menu { color: #949494; }
 
@@ -2021,6 +2037,8 @@ span.match { background: rgba(191, 54, 12, 0.25); border-radius: 3px; padding: 3
 #fs_modal .fs_modal_btn:hover { background: #828282; color: #e6e6e6; }
 
 #fs_modal .fs_modal_btn:active { background: #828282; color: #e6e6e6; }
+
+#fs_modal.fs_modal_header .fs_modal_btn:active { color: #e6e6e6; }
 
 #fs_modal #fs_modal_footer { background-color: #363636; }
 
@@ -2219,6 +2237,16 @@ span.match { background: rgba(191, 54, 12, 0.25); border-radius: 3px; padding: 3
 #fs_modal.prefs_modal #prefs_themes::before { background: #bf360c; border-radius: 3px; content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme."; display: block; margin-bottom: 6px; padding: 2px 4px 4px; width: 100%; }
 
 #fs_modal.prefs_modal legend { color: #e6e6e6; }
+
+#fs_modal.prefs_modal .global_notification_block { background: #222; border-color: #000; }
+
+#fs_modal.prefs_modal .global_notification_block.selected { background: #363636; border-color: #000; }
+
+#fs_modal.prefs_modal .channel_overrides_row { border-top-color: #000; }
+
+#fs_modal.prefs_modal .channel_overrides_row:hover { background: #363636; border-color: #000; }
+
+#fs_modal.prefs_modal .channel_overrides_row .channel_overrides_summary { color: #e6e6e6; }
 
 .sidebar_menu_list_item { border: 0; color: #e6e6e6; }
 
