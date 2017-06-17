@@ -44,6 +44,7 @@
       }
 
       .primary_action {
+        &.im_name:hover .im_name_background,
         &.feature_user_custom_status:hover .im_name_background,
         &:not(.feature_user_custom_status):hover {
           background: $color-base;
@@ -99,30 +100,41 @@
   }
 }
 
-#channels_scroller.show_which_channel_is_active ul li.active {
-  .primary_action {
-    background: $color-base;
-    color: $base-font-color;
-
-    &.feature_user_custom_status .im_name_background {
+#channels_scroller {
+  &.show_which_channel_is_active ul li.active {
+    .primary_action {
       background: $color-base;
+      color: $base-font-color;
+
+      &.im_name .im_name_background {
+        background: $color-base;
+      }
+
+      &.feature_user_custom_status .im_name_background {
+        background: $color-base;
+      }
+
+      .prefix {
+        color: $color-highlight;
+      }
     }
 
-    .prefix {
-      color: $color-highlight;
+    .group_close,
+    .im_close,
+    .mpim_close {
+      color: $base-font-color;
+    }
+
+    .unread_highlights,
+    .unread_msgs {
+      background: $color-red;
+      color: $base-font-color;
     }
   }
 
-  .group_close,
-  .im_close,
-  .mpim_close {
-    color: $base-font-color;
-  }
-
-  .unread_highlights,
-  .unread_msgs {
-    background: $color-red;
-    color: $base-font-color;
+  ul li.muted_channel:not(.active) .primary_action>:not(.im_name_background),
+  &:not(.show_which_channel_is_active) li.muted_channel .primary_action>:not(.im_name_background) {
+    opacity: 0.6;
   }
 }
 
