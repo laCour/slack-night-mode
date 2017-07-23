@@ -129,12 +129,16 @@
 #client-ui #team_list,
 #member_preview_scroller {
   .team_list_item {
+    a {
+      color: $base-font-color !important;
+    }
+
     &.expanded {
-      border-color: $color-shade-dark;
+      border-color: $color-shade-dark !important;
     }
 
     &:hover {
-      border-color: $color-shade-light;
+      border-color: $color-shade-light !important;
     }
   }
 }
