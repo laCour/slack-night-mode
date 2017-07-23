@@ -97,6 +97,15 @@
   }
 }
 
+.feature_keyboard_navigation #msg_input {
+  &,
+  &.focus {
+    + #primary_file_button:not(:hover):not(.active) {
+      border-color: $color-shade-mid;
+    }
+  }
+}
+
 #footer {
   background: $color-base;
 
