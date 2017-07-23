@@ -11,6 +11,11 @@ body.api {
     }
   }
 
+  .reverse_header {
+    background-color: $color-shade-darkest;
+    color: $base-font-color;
+  }
+
   pre {
     overflow-x: auto;
 
