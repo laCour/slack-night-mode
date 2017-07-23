@@ -1,6 +1,19 @@
 #autocomplete_menu {
   color: $base-font-color;
 
+  header {
+    background-color: $color-base;
+
+    .header_label {
+      color: $color-highlight;
+    }
+
+    hr {
+      border-bottom-color: transparent;
+      border-top-color: $color-shade-darkest;
+    }
+  }
+
   h2 {
     color: $base-font-color;
   }
@@ -17,13 +30,6 @@
     background: $color-base;
     border: 1px solid $color-shade-dark;
     box-shadow: 0 1px 0 0 $color-shadow-light;
-  }
-
-  .section_header {
-    .header_label {
-      background-color: $color-base;
-      color: $color-highlight;
-    }
   }
 
   .pickmeup {
