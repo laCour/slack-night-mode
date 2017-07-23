@@ -14,7 +14,7 @@ input {
   &[type=color],
   &[type=search] {
     background-color: $color-shade-light;
-    border: 1px solid $color-shade-darkest;
+    border-color: $color-shade-darkest;
     color: $base-font-color;
 
     &:focus {
@@ -326,4 +326,5 @@ textarea {
 
 .c-enhanced_text_input {
   background-color: $color-shade-light;
+  border-color: $color-shade-darkest;
 }
