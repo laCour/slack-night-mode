@@ -112,9 +112,11 @@
 
 #details_toggle,
 #recent_mentions_toggle,
+#sli_recap_toggle,
 #stars_toggle {
   &.active {
     background: $color-shade-dark;
+    color: $base-font-color;
 
     &:hover {
       background: $color-shade-light;
