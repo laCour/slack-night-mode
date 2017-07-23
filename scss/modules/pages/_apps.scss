@@ -134,6 +134,15 @@
       background-color: $color-shade-light !important;
     }
   }
+
+  .app_desc_btn {
+    background-color: $color-shade-light;
+    color: $base-font-color;
+  }
+
+  .app_desc_expand_showing .app_profile_desc_fade {
+    background: linear-gradient(180deg, rgba($color-base, 0) 0, $color-base 100%);
+  }
 }
 
 .apps_directory {
