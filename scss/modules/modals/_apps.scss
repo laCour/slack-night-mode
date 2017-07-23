@@ -1,0 +1,54 @@
+.p-apps_browser__apps_list--loading::before {
+  background-color: $color-shade-dark;
+}
+
+.p-apps_browser__category_section--tutorial {
+  .p-apps_browser__app {
+    border-color: $color-shade-light;
+    box-shadow: 0 0 5px 0 $color-shadow-light;
+  }
+
+  .p-apps_browser__app--selected {
+    background: $color-shade-dark;
+    box-shadow: 0 0 10px 0 $color-shadow-medium;
+  }
+}
+
+.p-apps_browser__category_header {
+  background: $color-base;
+  color: $color-highlight;
+}
+
+.p-apps_browser__app {
+  border-top-color: $color-shade-light;
+}
+
+.p-apps_browser__app--selected {
+  background: $color-shade-dark;
+  border-color: $color-shade-lightest;
+}
+
+.p-apps_browser__app_info {
+  color: $base-font-color;
+}
+
+.p-apps_browser__browse_apps,
+.p-apps_browser__app_action {
+  background-color: $color-shade-light;
+  border-color: $color-shade-lightest;
+  color: $base-font-color;
+
+  &:hover,
+  &:focus {
+    background-color: $color-shade-lightest;
+    color: $base-font-color;
+  }
+
+  &:active {
+    box-shadow: inset 0 1px 1px $color-shadow-light;
+  }
+}
+
+.p-apps_browser__app_description {
+  color: $color-highlight;
+}
