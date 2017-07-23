@@ -6,6 +6,7 @@ ts-message {
   color: $base-font-color;
 
   &.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
+  &.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
   &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
     background: rgba($color-shade-darkest, 0.1);
 
