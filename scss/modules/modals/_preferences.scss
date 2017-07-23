@@ -18,7 +18,7 @@
     }
   }
 
-  #prefs_themes {
+  #prefs_sidebar {
     .theme_thumb {
       box-shadow: 0 1px 1px $color-shadow-medium;
     }
@@ -38,13 +38,15 @@
       }
     }
 
-    &::before {
+    #prefs_sidebar_theme::after {
       background: $color-red;
       border-radius: 3px;
       content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme.";
       display: block;
-      margin-bottom: 6px;
-      padding: 2px 4px 4px;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 12px 0 6px;
+      padding: 6px;
       width: 100%;
     }
   }
