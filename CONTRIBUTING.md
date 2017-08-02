@@ -57,7 +57,10 @@ Lint the project by running `scss-lint` in the project root. I recommend using a
   * _modules/_ - Styles for specific parts of Slack, organized in parent directories
   * _themes/_ - Theme files that override the default theme's variables
     * _build-variants/_ - Each file here is compiled as a theme, allowing for theme extensions
-  * _main.css_ - Includes all of the SCSS files
+      * _theme--main.scss_ - Extension wrapped for use on slack.com; compiles to _css/variants/_
+      * _theme--styles.scss_ - Extension; compiles to _css/raw/variants/_
+  * _main.scss_ - Includes all of the SCSS files, wrapped for use on slack.com; compiles to _css/_
+  * _styles.scss_ - Includes all of the SCSS files; compiles to _css/raw/_
 
 ### Finding Changes
 Changes require a bit of searching using your browser's developer tools. It's recommended that you base styles off of Slack's own styles, using their selectors. Find the original CSS declaration in their CSS files and proceed to the next section.
