@@ -12,7 +12,7 @@ default:
 variants:
 	for sass in scss/themes/build-variants/*.scss; do \
 		theme=`basename $$sass .scss`; \
-	sassc -t compact $$sass  css/variants/$$theme.css; done
+	sassc -t compact $$sass css/variants/$$theme.css; done
 
 raw:
 	sassc -t compact scss/styles.scss css/raw/black.css
