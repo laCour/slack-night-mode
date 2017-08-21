@@ -54,11 +54,39 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #00b9f2; }
 
 #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner { background: #282828; border: 3px solid #000; }
 
-.client_channels_list_container { background-color: #181818; border-right-color: #181818; }
+.client_channels_list_container { background-color: #181818; border-right-color: #000; }
 
-#col_channels { background-color: #181818; color: #00b9f2; }
+#col_channels { color: #00b9f2; }
 
 #col_channels_collapse_view { background: #181818; }
+
+.p-channel_sidebar { background-color: #181818; color: #00b9f2; }
+
+.p-channel_sidebar__channel, .p-channel_sidebar__channel:link, .p-channel_sidebar__channel:visited, .p-channel_sidebar__channel:hover, .p-channel_sidebar__link, .p-channel_sidebar__link:link, .p-channel_sidebar__link:visited, .p-channel_sidebar__link:hover { color: rgba(0, 185, 242, 0.8) !important; }
+
+.p-channel_sidebar__channel--selected, .p-channel_sidebar__channel--selected:link, .p-channel_sidebar__channel--selected:visited, .p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected, .p-channel_sidebar__link--selected:link, .p-channel_sidebar__link--selected:visited, .p-channel_sidebar__link--selected:hover { color: #00b9f2; }
+
+.p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover { background: #000 !important; }
+
+.p-channel_sidebar__header { color: #00b9f2 !important; }
+
+.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence, .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before { color: #00b9f2; }
+
+.p-channel_sidebar__channel--im .c-presence--away { color: #1793d1; }
+
+.p-channel_sidebar__channel--selected, .p-channel_sidebar__link--selected { background: #282828 !important; }
+
+.p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected:hover { background: #282828 !important; }
+
+.p-channel_sidebar__channel--selected::before, .p-channel_sidebar__channel--selected:hover::before, .p-channel_sidebar__channel--selected::after, .p-channel_sidebar__channel--selected:hover::after { color: #00b9f2; }
+
+.p-channel_sidebar__link--selected::before, .p-channel_sidebar__link--selected::after { color: #00b9f2; }
+
+.p-channel_sidebar__badge, .p-channel_sidebar__banner--mentions { background: #bf360c; }
+
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical, .p-channel_sidebar .c-scrollbar__bar { background: #282828; }
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--unread .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name, .p-channel_sidebar__section_heading_label--clickable:hover, .p-channel_sidebar__quickswitcher:hover { color: #12c7ff !important; }
 
 .channels_list_holder h2 { color: #00b9f2 !important; }
 
@@ -308,29 +336,29 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .c-enhanced_text_input { background-color: #282828; border-color: #101010; }
 
-.lazy_filter_select.default_style.disabled { background: #181818; }
+.lazy_filter_select.disabled { background: #181818; }
 
-.lazy_filter_select.default_style.disabled input.lfs_input { background: #303030; }
+.lazy_filter_select.disabled input.lfs_input { background: #303030; }
 
-.lazy_filter_select.default_style .lfs_input_container { border: 1px solid #101010; }
+.lazy_filter_select .lfs_input_container { border: 1px solid #101010; }
 
-.lazy_filter_select.default_style .lfs_input_container.active, .lazy_filter_select.default_style .lfs_input_container:hover { border-color: #181818; }
+.lazy_filter_select .lfs_input_container.active, .lazy_filter_select .lfs_input_container:hover { border-color: #000; }
 
-.lazy_filter_select.default_style .lfs_input_container.active { box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
+.lazy_filter_select .lfs_input_container.active { box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
 
-.lazy_filter_select.default_style .lfs_list_container { background: #000; border: 1px solid #101010; box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+.lazy_filter_select .lfs_list_container { background: #000; border: 1px solid #101010; box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.selected { color: #00b9f2; }
+.lazy_filter_select .lfs_list .lfs_item.selected { color: #00b9f2; }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.disabled { color: #00b9f2; }
+.lazy_filter_select .lfs_list .lfs_item.disabled { color: #00b9f2; }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.active { background-color: #101010; border-color: #181818; color: #00b9f2; }
+.lazy_filter_select .lfs_list .lfs_item.active { background-color: #101010; border-color: #181818; color: #00b9f2; }
 
-.lazy_filter_select.default_style .lfs_token { background: #000; border: 1px solid #101010; color: #00b9f2; }
+.lazy_filter_select .lfs_token { background: #000; border: 1px solid #101010; color: #00b9f2; }
 
-.lazy_filter_select.default_style .lfs_token::after { color: #00b9f2; }
+.lazy_filter_select .lfs_token::after { color: #00b9f2; }
 
-.lazy_filter_select.default_style.single .lfs_input_container.active::after, .lazy_filter_select.default_style.single .lfs_input_container:hover::after { color: #00b9f2; }
+.lazy_filter_select.single .lfs_input_container.active::after, .lazy_filter_select.single .lfs_input_container:hover::after { color: #00b9f2; }
 
 #message_edit_form .emo_menu { color: rgba(0, 185, 242, 0.3); }
 
@@ -361,6 +389,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #msg_input:focus, #msg_input.focus { border-color: #181818; }
 
 #msg_input:focus + #primary_file_button:not(:hover):not(.active), #msg_input.focus + #primary_file_button:not(:hover):not(.active) { border-color: #181818; }
+
+#msg_input + #primary_file_button:not(:hover):not(.active) { border-color: #202020; }
 
 #msg_input.offline:not(.pretend-to-be-online) { background-color: #181818 !important; color: #1793d1; }
 
@@ -960,7 +990,7 @@ ts-mention { background: rgba(48, 48, 48, 0.1); color: #00b9f2; }
 
 .is_limited_div.mini { color: #1793d1 !important; }
 
-#message_edit_container form textarea, .inline_message_input_container form textarea { color: #00b9f2; }
+#message_edit_container .message_input, .inline_message_input_container .message_input { color: #00b9f2; }
 
 #message_edit_container .message_input { background: #282828; border-color: #181818; color: #00b9f2; }
 
@@ -1480,11 +1510,11 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 
 #flex_contents .flexpane_tab_bar li:hover { border-bottom: 4px solid #181818; }
 
-#flex_contents .flexpane_tab_bar li:hover a { color: #1793d1; }
+#flex_contents .flexpane_tab_bar li:hover a, #flex_contents .flexpane_tab_bar li:hover .tab { color: #1793d1; }
 
 #flex_contents .flexpane_tab_bar li.active { border-bottom: 4px solid #181818; }
 
-#flex_contents .flexpane_tab_bar li.active a { color: #1793d1; }
+#flex_contents .flexpane_tab_bar li.active a, #flex_contents .flexpane_tab_bar li.active .tab { color: #1793d1; }
 
 #flex_contents .help { border-top: 5px solid #101010; color: #00b9f2; }
 
@@ -1860,9 +1890,9 @@ span.match { background: rgba(191, 54, 12, 0.25); border-radius: 3px; padding: 3
 
 #member_preview_scroller .member_data_table tr, #member_preview_web_container .member_data_table tr, #team_list .member_data_table tr, .menu_member_header .member_data_table tr { color: #00b9f2; }
 
-#member_preview_scroller .member_data_table a, #member_preview_web_container .member_data_table a, #team_list .member_data_table a, .menu_member_header .member_data_table a { color: #1793d1; }
+#member_preview_scroller .member_data_table a, #member_preview_web_container .member_data_table a, #team_list .member_data_table a, .menu_member_header .member_data_table a { color: #1793d1 !important; }
 
-#member_preview_scroller .member_data_table a:hover, #member_preview_web_container .member_data_table a:hover, #team_list .member_data_table a:hover, .menu_member_header .member_data_table a:hover { color: #299bd4; }
+#member_preview_scroller .member_data_table a:hover, #member_preview_web_container .member_data_table a:hover, #team_list .member_data_table a:hover, .menu_member_header .member_data_table a:hover { color: #299bd4 !important; }
 
 #member_preview_scroller .member_data_table .bot_label, #member_preview_web_container .member_data_table .bot_label, #team_list .member_data_table .bot_label, .menu_member_header .member_data_table .bot_label { background: #101010; color: #1793d1; }
 
@@ -1997,8 +2027,6 @@ input.p-emoji_picker__input:focus { border-color: #282828; box-shadow: none; }
 #message_edit_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input.focus ~ .emo_menu, #message_edit_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input:focus ~ .emo_menu, #msg_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input.focus ~ .emo_menu, #msg_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input:focus ~ .emo_menu, .current_status_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input.focus ~ .emo_menu, .current_status_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input:focus ~ .emo_menu, .current_status_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input.focus ~ .emo_menu, .current_status_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input:focus ~ .emo_menu, .inline_message_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input.focus ~ .emo_menu, .inline_message_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input:focus ~ .emo_menu, .share_channel_modal_contents #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input.focus ~ .emo_menu, .share_channel_modal_contents #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input:focus ~ .emo_menu { color: #00b9f2; }
 
 #message_edit_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form .message_input:focus ~ .emo_menu, #msg_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form .message_input:focus ~ .emo_menu, .current_status_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container .message_input:focus ~ .emo_menu, .current_status_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container .message_input:focus ~ .emo_menu, .inline_message_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container .message_input:focus ~ .emo_menu, .share_channel_modal_contents .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents .message_input:focus ~ .emo_menu { color: #00b9f2; }
-
-#message_edit_form.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form.focus ~ .emo_menu, #msg_form.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form.focus ~ .emo_menu, .current_status_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container.focus ~ .emo_menu, .current_status_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container.focus ~ .emo_menu, .inline_message_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container.focus ~ .emo_menu, .share_channel_modal_contents.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents.focus ~ .emo_menu { color: #00b9f2; }
 
 .current_status_emoji_picker { border-right-color: #181818; }
 
@@ -2416,61 +2444,19 @@ ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .ma
 
 .ts_tip.success.ts_tip_bottom .ts_tip_tip::after { border-bottom-color: #303030; }
 
-#coachmark.channels_coachmark_div { background: #282828; }
+#coachmark.channels_coachmark_div, #coachmark.calls_interactive_mas_migration_coachmark_div, #coachmark.calls_ss_main_coachmark_div, #coachmark.calls_ss_window_coachmark_div, #coachmark.calls_video_beta_coachmark_div, #coachmark.calls_video_ga_coachmark_div, #coachmark.direct_messages_coachmark_div, #coachmark.enterprise_analytics_usage_callouts_coachmark_div, #coachmark.gdrive_coachmark_div, #coachmark.highlights_arrows_coachmark_div, #coachmark.highlights_feedback_coachmark_div, #coachmark.highlights_message_coachmark_div, #coachmark.intl_channel_names_coachmark_div, #coachmark.replies_coachmark_div, #coachmark.starred_items_coachmark_div, #coachmark.unread_view_coachmark_div { background: #282828; }
 
-#coachmark.channels_coachmark_div #coachmark_callout, #coachmark.channels_coachmark_div #coachmark_interior { background: #282828; }
+#coachmark.channels_coachmark_div #coachmark_callout, #coachmark.channels_coachmark_div #coachmark_interior, #coachmark.calls_interactive_mas_migration_coachmark_div #coachmark_callout, #coachmark.calls_interactive_mas_migration_coachmark_div #coachmark_interior, #coachmark.calls_ss_main_coachmark_div #coachmark_callout, #coachmark.calls_ss_main_coachmark_div #coachmark_interior, #coachmark.calls_ss_window_coachmark_div #coachmark_callout, #coachmark.calls_ss_window_coachmark_div #coachmark_interior, #coachmark.calls_video_beta_coachmark_div #coachmark_callout, #coachmark.calls_video_beta_coachmark_div #coachmark_interior, #coachmark.calls_video_ga_coachmark_div #coachmark_callout, #coachmark.calls_video_ga_coachmark_div #coachmark_interior, #coachmark.direct_messages_coachmark_div #coachmark_callout, #coachmark.direct_messages_coachmark_div #coachmark_interior, #coachmark.enterprise_analytics_usage_callouts_coachmark_div #coachmark_callout, #coachmark.enterprise_analytics_usage_callouts_coachmark_div #coachmark_interior, #coachmark.gdrive_coachmark_div #coachmark_callout, #coachmark.gdrive_coachmark_div #coachmark_interior, #coachmark.highlights_arrows_coachmark_div #coachmark_callout, #coachmark.highlights_arrows_coachmark_div #coachmark_interior, #coachmark.highlights_feedback_coachmark_div #coachmark_callout, #coachmark.highlights_feedback_coachmark_div #coachmark_interior, #coachmark.highlights_message_coachmark_div #coachmark_callout, #coachmark.highlights_message_coachmark_div #coachmark_interior, #coachmark.intl_channel_names_coachmark_div #coachmark_callout, #coachmark.intl_channel_names_coachmark_div #coachmark_interior, #coachmark.replies_coachmark_div #coachmark_callout, #coachmark.replies_coachmark_div #coachmark_interior, #coachmark.starred_items_coachmark_div #coachmark_callout, #coachmark.starred_items_coachmark_div #coachmark_interior, #coachmark.unread_view_coachmark_div #coachmark_callout, #coachmark.unread_view_coachmark_div #coachmark_interior { background: #282828; }
 
-#coachmark.calls_ss_window_coachmark_div { background: #282828; }
+#coachmark.invites_coachmark_div, #coachmark.recent_mentions_coachmark_div { background: #bf360c; }
 
-#coachmark.calls_ss_window_coachmark_div #coachmark_callout, #coachmark.calls_ss_window_coachmark_div #coachmark_interior { background: #282828; }
+#coachmark.invites_coachmark_div #coachmark_callout, #coachmark.invites_coachmark_div #coachmark_interior, #coachmark.recent_mentions_coachmark_div #coachmark_callout, #coachmark.recent_mentions_coachmark_div #coachmark_interior { background: #bf360c; }
 
-#coachmark.calls_video_beta_coachmark_div { background: #282828; }
-
-#coachmark.calls_video_beta_coachmark_div #coachmark_callout, #coachmark.calls_video_beta_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.calls_video_ga_coachmark_div { background: #282828; }
-
-#coachmark.calls_video_ga_coachmark_div #coachmark_callout, #coachmark.calls_video_ga_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.direct_messages_coachmark_div { background: #282828; }
-
-#coachmark.direct_messages_coachmark_div #coachmark_callout, #coachmark.direct_messages_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.gdrive_coachmark_div { background: #282828; }
-
-#coachmark.gdrive_coachmark_div #coachmark_callout, #coachmark.gdrive_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.highlights_arrows_coachmark_div { background: #282828; }
-
-#coachmark.highlights_arrows_coachmark_div #coachmark_callout, #coachmark.highlights_arrows_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.highlights_message_coachmark_div { background: #282828; }
-
-#coachmark.highlights_message_coachmark_div #coachmark_callout, #coachmark.highlights_message_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.replies_coachmark_div { background: #282828; }
-
-#coachmark.replies_coachmark_div #coachmark_callout, #coachmark.replies_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.starred_items_coachmark_div { background: #282828; }
-
-#coachmark.starred_items_coachmark_div #coachmark_callout, #coachmark.starred_items_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.unread_view_coachmark_div { background: #282828; }
-
-#coachmark.unread_view_coachmark_div #coachmark_callout, #coachmark.unread_view_coachmark_div #coachmark_interior { background: #282828; }
-
-#coachmark.invites_coachmark_div { background: #bf360c; }
-
-#coachmark.invites_coachmark_div #coachmark_callout, #coachmark.invites_coachmark_div #coachmark_interior { background: #bf360c; }
-
-#coachmark.recent_mentions_coachmark_div { background: #bf360c; }
-
-#coachmark.recent_mentions_coachmark_div #coachmark_callout, #coachmark.recent_mentions_coachmark_div #coachmark_interior { background: #bf360c; }
-
-#coachmark_footer .coachmark_got_it { background: rgba(48, 48, 48, 0.5) !important; }
+#coachmark_footer .coachmark_done, #coachmark_footer .coachmark_got_it, #coachmark_footer .coachmark_next_tip, #coachmark_footer .coachmark_ok { background: rgba(48, 48, 48, 0.5) !important; }
 
 #coachmark_interior { color: #00b9f2; }
+
+#coachmark_interior .coachmark_close_btn { color: #00b9f2; }
 
 .menu_member_header { background: #101010; }
 
@@ -2724,6 +2710,10 @@ table tr:first-child th:not(:only-of-type) { border-bottom-color: #101010; }
 
 #message_container #msg_limit { color: #00b9f2; }
 
+.statuses_container .current_status_cell .current_status_container .current_status_cover, .statuses_container .current_status_cell .current_status_container:not(.active).with_status_set .current_status_cover { border-color: #282828; }
+
+.statuses_container .current_status_cell .current_status_container .current_status_emoji_picker_cover, .statuses_container .current_status_cell .current_status_container:not(.active).with_status_set .current_status_emoji_picker_cover { border-right: 1px solid #282828; }
+
 .inactive { background-image: none; }
 
 .file_header .title a { color: #1793d1; }
@@ -2795,26 +2785,6 @@ nav#site_nav #footer_nav a, #header_team_name:hover .fa-caret-down, .widescreen:
 .admin_pref.locked { background-color: rgba(191, 54, 12, 0.2); }
 
 .admin_pref .admin_pref_locked_label { color: #1793d1; }
-
-#stats_too_soon { height: 500px; }
-
-#stats_too_soon img { display: none; }
-
-#stats_limited { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #101010 65%); bottom: 0; height: 480px; position: absolute; width: 100%; }
-
-#stats_disclaimer, #stats_too_soon_copy h3 { color: #1793d1; }
-
-#stats_too_soon_copy p { color: #00b9f2; }
-
-#all_time, #third_row.column, #second_row.column { background: #181818; }
-
-.stats_integrations_container .icon { background: #181818; }
-
-.stats_integrations_container .icon_plus { border-color: #1793d1; color: #1793d1; }
-
-#last_day p.summary { color: #00b9f2; }
-
-#last_day p.summary strong { color: #00b9f2; }
 
 .tooltip-inner { background-color: #303030; color: #00b9f2; }
 

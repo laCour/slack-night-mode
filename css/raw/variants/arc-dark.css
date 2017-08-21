@@ -54,11 +54,39 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #d3dae3; }
 
 #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner { background: #6b6f79; border: 3px solid #404552; }
 
-.client_channels_list_container { background-color: #2a2f39; border-right-color: #2a2f39; }
+.client_channels_list_container { background-color: #2a2f39; border-right-color: #404552; }
 
-#col_channels { background-color: #2a2f39; color: #d3dae3; }
+#col_channels { color: #d3dae3; }
 
 #col_channels_collapse_view { background: #2a2f39; }
+
+.p-channel_sidebar { background-color: #2a2f39; color: #d3dae3; }
+
+.p-channel_sidebar__channel, .p-channel_sidebar__channel:link, .p-channel_sidebar__channel:visited, .p-channel_sidebar__channel:hover, .p-channel_sidebar__link, .p-channel_sidebar__link:link, .p-channel_sidebar__link:visited, .p-channel_sidebar__link:hover { color: rgba(211, 218, 227, 0.8) !important; }
+
+.p-channel_sidebar__channel--selected, .p-channel_sidebar__channel--selected:link, .p-channel_sidebar__channel--selected:visited, .p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected, .p-channel_sidebar__link--selected:link, .p-channel_sidebar__link--selected:visited, .p-channel_sidebar__link--selected:hover { color: #d3dae3; }
+
+.p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover { background: #404552 !important; }
+
+.p-channel_sidebar__header { color: #d3dae3 !important; }
+
+.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence, .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before { color: #d3dae3; }
+
+.p-channel_sidebar__channel--im .c-presence--away { color: #949494; }
+
+.p-channel_sidebar__channel--selected, .p-channel_sidebar__link--selected { background: #6b6f79 !important; }
+
+.p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected:hover { background: #6b6f79 !important; }
+
+.p-channel_sidebar__channel--selected::before, .p-channel_sidebar__channel--selected:hover::before, .p-channel_sidebar__channel--selected::after, .p-channel_sidebar__channel--selected:hover::after { color: #d3dae3; }
+
+.p-channel_sidebar__link--selected::before, .p-channel_sidebar__link--selected::after { color: #d3dae3; }
+
+.p-channel_sidebar__badge, .p-channel_sidebar__banner--mentions { background: #bf360c; }
+
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical, .p-channel_sidebar .c-scrollbar__bar { background: #6b6f79; }
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--unread .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name, .p-channel_sidebar__section_heading_label--clickable:hover, .p-channel_sidebar__quickswitcher:hover { color: #e6eaef !important; }
 
 .channels_list_holder h2 { color: #d3dae3 !important; }
 
@@ -308,29 +336,29 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .c-enhanced_text_input { background-color: #6b6f79; border-color: #1d2027; }
 
-.lazy_filter_select.default_style.disabled { background: #2a2f39; }
+.lazy_filter_select.disabled { background: #2a2f39; }
 
-.lazy_filter_select.default_style.disabled input.lfs_input { background: #858991; }
+.lazy_filter_select.disabled input.lfs_input { background: #858991; }
 
-.lazy_filter_select.default_style .lfs_input_container { border: 1px solid #1d2027; }
+.lazy_filter_select .lfs_input_container { border: 1px solid #1d2027; }
 
-.lazy_filter_select.default_style .lfs_input_container.active, .lazy_filter_select.default_style .lfs_input_container:hover { border-color: #2a2f39; }
+.lazy_filter_select .lfs_input_container.active, .lazy_filter_select .lfs_input_container:hover { border-color: #404552; }
 
-.lazy_filter_select.default_style .lfs_input_container.active { box-shadow: 0 0 7px rgba(64, 69, 82, 0.15); }
+.lazy_filter_select .lfs_input_container.active { box-shadow: 0 0 7px rgba(64, 69, 82, 0.15); }
 
-.lazy_filter_select.default_style .lfs_list_container { background: #404552; border: 1px solid #1d2027; box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+.lazy_filter_select .lfs_list_container { background: #404552; border: 1px solid #1d2027; box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.selected { color: #d3dae3; }
+.lazy_filter_select .lfs_list .lfs_item.selected { color: #d3dae3; }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.disabled { color: #d3dae3; }
+.lazy_filter_select .lfs_list .lfs_item.disabled { color: #d3dae3; }
 
-.lazy_filter_select.default_style .lfs_list .lfs_item.active { background-color: #1d2027; border-color: #2a2f39; color: #d3dae3; }
+.lazy_filter_select .lfs_list .lfs_item.active { background-color: #1d2027; border-color: #2a2f39; color: #d3dae3; }
 
-.lazy_filter_select.default_style .lfs_token { background: #404552; border: 1px solid #1d2027; color: #d3dae3; }
+.lazy_filter_select .lfs_token { background: #404552; border: 1px solid #1d2027; color: #d3dae3; }
 
-.lazy_filter_select.default_style .lfs_token::after { color: #d3dae3; }
+.lazy_filter_select .lfs_token::after { color: #d3dae3; }
 
-.lazy_filter_select.default_style.single .lfs_input_container.active::after, .lazy_filter_select.default_style.single .lfs_input_container:hover::after { color: #d3dae3; }
+.lazy_filter_select.single .lfs_input_container.active::after, .lazy_filter_select.single .lfs_input_container:hover::after { color: #d3dae3; }
 
 #message_edit_form .emo_menu { color: rgba(211, 218, 227, 0.3); }
 
@@ -361,6 +389,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #msg_input:focus, #msg_input.focus { border-color: #2a2f39; }
 
 #msg_input:focus + #primary_file_button:not(:hover):not(.active), #msg_input.focus + #primary_file_button:not(:hover):not(.active) { border-color: #2a2f39; }
+
+#msg_input + #primary_file_button:not(:hover):not(.active) { border-color: #454c5c; }
 
 #msg_input.offline:not(.pretend-to-be-online) { background-color: #2a2f39 !important; color: #949494; }
 
@@ -960,7 +990,7 @@ ts-mention { background: rgba(133, 137, 145, 0.1); color: #d3dae3; }
 
 .is_limited_div.mini { color: #949494 !important; }
 
-#message_edit_container form textarea, .inline_message_input_container form textarea { color: #d3dae3; }
+#message_edit_container .message_input, .inline_message_input_container .message_input { color: #d3dae3; }
 
 #message_edit_container .message_input { background: #6b6f79; border-color: #2a2f39; color: #d3dae3; }
 
@@ -1480,11 +1510,11 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 
 #flex_contents .flexpane_tab_bar li:hover { border-bottom: 4px solid #2a2f39; }
 
-#flex_contents .flexpane_tab_bar li:hover a { color: #90939b; }
+#flex_contents .flexpane_tab_bar li:hover a, #flex_contents .flexpane_tab_bar li:hover .tab { color: #90939b; }
 
 #flex_contents .flexpane_tab_bar li.active { border-bottom: 4px solid #2a2f39; }
 
-#flex_contents .flexpane_tab_bar li.active a { color: #90939b; }
+#flex_contents .flexpane_tab_bar li.active a, #flex_contents .flexpane_tab_bar li.active .tab { color: #90939b; }
 
 #flex_contents .help { border-top: 5px solid #1d2027; color: #d3dae3; }
 
@@ -1860,9 +1890,9 @@ span.match { background: rgba(191, 54, 12, 0.25); border-radius: 3px; padding: 3
 
 #member_preview_scroller .member_data_table tr, #member_preview_web_container .member_data_table tr, #team_list .member_data_table tr, .menu_member_header .member_data_table tr { color: #d3dae3; }
 
-#member_preview_scroller .member_data_table a, #member_preview_web_container .member_data_table a, #team_list .member_data_table a, .menu_member_header .member_data_table a { color: #90939b; }
+#member_preview_scroller .member_data_table a, #member_preview_web_container .member_data_table a, #team_list .member_data_table a, .menu_member_header .member_data_table a { color: #90939b !important; }
 
-#member_preview_scroller .member_data_table a:hover, #member_preview_web_container .member_data_table a:hover, #team_list .member_data_table a:hover, .menu_member_header .member_data_table a:hover { color: #90939b; }
+#member_preview_scroller .member_data_table a:hover, #member_preview_web_container .member_data_table a:hover, #team_list .member_data_table a:hover, .menu_member_header .member_data_table a:hover { color: #90939b !important; }
 
 #member_preview_scroller .member_data_table .bot_label, #member_preview_web_container .member_data_table .bot_label, #team_list .member_data_table .bot_label, .menu_member_header .member_data_table .bot_label { background: #1d2027; color: #949494; }
 
@@ -1997,8 +2027,6 @@ input.p-emoji_picker__input:focus { border-color: #6b6f79; box-shadow: none; }
 #message_edit_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input.focus ~ .emo_menu, #message_edit_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form #msg_input:focus ~ .emo_menu, #msg_form #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input.focus ~ .emo_menu, #msg_form #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form #msg_input:focus ~ .emo_menu, .current_status_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input.focus ~ .emo_menu, .current_status_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container #msg_input:focus ~ .emo_menu, .current_status_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input.focus ~ .emo_menu, .current_status_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container #msg_input:focus ~ .emo_menu, .inline_message_input_container #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input.focus ~ .emo_menu, .inline_message_input_container #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container #msg_input:focus ~ .emo_menu, .share_channel_modal_contents #msg_input.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input.focus ~ .emo_menu, .share_channel_modal_contents #msg_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents #msg_input:focus ~ .emo_menu { color: #d3dae3; }
 
 #message_edit_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form .message_input:focus ~ .emo_menu, #msg_form .message_input:focus ~ #primary_file_button:not(:hover):not(.active), #msg_form .message_input:focus ~ .emo_menu, .current_status_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container .message_input:focus ~ .emo_menu, .current_status_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container .message_input:focus ~ .emo_menu, .inline_message_input_container .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container .message_input:focus ~ .emo_menu, .share_channel_modal_contents .message_input:focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents .message_input:focus ~ .emo_menu { color: #d3dae3; }
-
-#message_edit_form.focus ~ #primary_file_button:not(:hover):not(.active), #message_edit_form.focus ~ .emo_menu, #msg_form.focus ~ #primary_file_button:not(:hover):not(.active), #msg_form.focus ~ .emo_menu, .current_status_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_container.focus ~ .emo_menu, .current_status_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .current_status_input_container.focus ~ .emo_menu, .inline_message_input_container.focus ~ #primary_file_button:not(:hover):not(.active), .inline_message_input_container.focus ~ .emo_menu, .share_channel_modal_contents.focus ~ #primary_file_button:not(:hover):not(.active), .share_channel_modal_contents.focus ~ .emo_menu { color: #d3dae3; }
 
 .current_status_emoji_picker { border-right-color: #2a2f39; }
 
@@ -2416,61 +2444,19 @@ ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .ma
 
 .ts_tip.success.ts_tip_bottom .ts_tip_tip::after { border-bottom-color: #858991; }
 
-#coachmark.channels_coachmark_div { background: #6b6f79; }
+#coachmark.channels_coachmark_div, #coachmark.calls_interactive_mas_migration_coachmark_div, #coachmark.calls_ss_main_coachmark_div, #coachmark.calls_ss_window_coachmark_div, #coachmark.calls_video_beta_coachmark_div, #coachmark.calls_video_ga_coachmark_div, #coachmark.direct_messages_coachmark_div, #coachmark.enterprise_analytics_usage_callouts_coachmark_div, #coachmark.gdrive_coachmark_div, #coachmark.highlights_arrows_coachmark_div, #coachmark.highlights_feedback_coachmark_div, #coachmark.highlights_message_coachmark_div, #coachmark.intl_channel_names_coachmark_div, #coachmark.replies_coachmark_div, #coachmark.starred_items_coachmark_div, #coachmark.unread_view_coachmark_div { background: #6b6f79; }
 
-#coachmark.channels_coachmark_div #coachmark_callout, #coachmark.channels_coachmark_div #coachmark_interior { background: #6b6f79; }
+#coachmark.channels_coachmark_div #coachmark_callout, #coachmark.channels_coachmark_div #coachmark_interior, #coachmark.calls_interactive_mas_migration_coachmark_div #coachmark_callout, #coachmark.calls_interactive_mas_migration_coachmark_div #coachmark_interior, #coachmark.calls_ss_main_coachmark_div #coachmark_callout, #coachmark.calls_ss_main_coachmark_div #coachmark_interior, #coachmark.calls_ss_window_coachmark_div #coachmark_callout, #coachmark.calls_ss_window_coachmark_div #coachmark_interior, #coachmark.calls_video_beta_coachmark_div #coachmark_callout, #coachmark.calls_video_beta_coachmark_div #coachmark_interior, #coachmark.calls_video_ga_coachmark_div #coachmark_callout, #coachmark.calls_video_ga_coachmark_div #coachmark_interior, #coachmark.direct_messages_coachmark_div #coachmark_callout, #coachmark.direct_messages_coachmark_div #coachmark_interior, #coachmark.enterprise_analytics_usage_callouts_coachmark_div #coachmark_callout, #coachmark.enterprise_analytics_usage_callouts_coachmark_div #coachmark_interior, #coachmark.gdrive_coachmark_div #coachmark_callout, #coachmark.gdrive_coachmark_div #coachmark_interior, #coachmark.highlights_arrows_coachmark_div #coachmark_callout, #coachmark.highlights_arrows_coachmark_div #coachmark_interior, #coachmark.highlights_feedback_coachmark_div #coachmark_callout, #coachmark.highlights_feedback_coachmark_div #coachmark_interior, #coachmark.highlights_message_coachmark_div #coachmark_callout, #coachmark.highlights_message_coachmark_div #coachmark_interior, #coachmark.intl_channel_names_coachmark_div #coachmark_callout, #coachmark.intl_channel_names_coachmark_div #coachmark_interior, #coachmark.replies_coachmark_div #coachmark_callout, #coachmark.replies_coachmark_div #coachmark_interior, #coachmark.starred_items_coachmark_div #coachmark_callout, #coachmark.starred_items_coachmark_div #coachmark_interior, #coachmark.unread_view_coachmark_div #coachmark_callout, #coachmark.unread_view_coachmark_div #coachmark_interior { background: #6b6f79; }
 
-#coachmark.calls_ss_window_coachmark_div { background: #6b6f79; }
+#coachmark.invites_coachmark_div, #coachmark.recent_mentions_coachmark_div { background: #bf360c; }
 
-#coachmark.calls_ss_window_coachmark_div #coachmark_callout, #coachmark.calls_ss_window_coachmark_div #coachmark_interior { background: #6b6f79; }
+#coachmark.invites_coachmark_div #coachmark_callout, #coachmark.invites_coachmark_div #coachmark_interior, #coachmark.recent_mentions_coachmark_div #coachmark_callout, #coachmark.recent_mentions_coachmark_div #coachmark_interior { background: #bf360c; }
 
-#coachmark.calls_video_beta_coachmark_div { background: #6b6f79; }
-
-#coachmark.calls_video_beta_coachmark_div #coachmark_callout, #coachmark.calls_video_beta_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.calls_video_ga_coachmark_div { background: #6b6f79; }
-
-#coachmark.calls_video_ga_coachmark_div #coachmark_callout, #coachmark.calls_video_ga_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.direct_messages_coachmark_div { background: #6b6f79; }
-
-#coachmark.direct_messages_coachmark_div #coachmark_callout, #coachmark.direct_messages_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.gdrive_coachmark_div { background: #6b6f79; }
-
-#coachmark.gdrive_coachmark_div #coachmark_callout, #coachmark.gdrive_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.highlights_arrows_coachmark_div { background: #6b6f79; }
-
-#coachmark.highlights_arrows_coachmark_div #coachmark_callout, #coachmark.highlights_arrows_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.highlights_message_coachmark_div { background: #6b6f79; }
-
-#coachmark.highlights_message_coachmark_div #coachmark_callout, #coachmark.highlights_message_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.replies_coachmark_div { background: #6b6f79; }
-
-#coachmark.replies_coachmark_div #coachmark_callout, #coachmark.replies_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.starred_items_coachmark_div { background: #6b6f79; }
-
-#coachmark.starred_items_coachmark_div #coachmark_callout, #coachmark.starred_items_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.unread_view_coachmark_div { background: #6b6f79; }
-
-#coachmark.unread_view_coachmark_div #coachmark_callout, #coachmark.unread_view_coachmark_div #coachmark_interior { background: #6b6f79; }
-
-#coachmark.invites_coachmark_div { background: #bf360c; }
-
-#coachmark.invites_coachmark_div #coachmark_callout, #coachmark.invites_coachmark_div #coachmark_interior { background: #bf360c; }
-
-#coachmark.recent_mentions_coachmark_div { background: #bf360c; }
-
-#coachmark.recent_mentions_coachmark_div #coachmark_callout, #coachmark.recent_mentions_coachmark_div #coachmark_interior { background: #bf360c; }
-
-#coachmark_footer .coachmark_got_it { background: rgba(133, 137, 145, 0.5) !important; }
+#coachmark_footer .coachmark_done, #coachmark_footer .coachmark_got_it, #coachmark_footer .coachmark_next_tip, #coachmark_footer .coachmark_ok { background: rgba(133, 137, 145, 0.5) !important; }
 
 #coachmark_interior { color: #d3dae3; }
+
+#coachmark_interior .coachmark_close_btn { color: #d3dae3; }
 
 .menu_member_header { background: #1d2027; }
 
@@ -2724,6 +2710,10 @@ table tr:first-child th:not(:only-of-type) { border-bottom-color: #1d2027; }
 
 #message_container #msg_limit { color: #d3dae3; }
 
+.statuses_container .current_status_cell .current_status_container .current_status_cover, .statuses_container .current_status_cell .current_status_container:not(.active).with_status_set .current_status_cover { border-color: #6b6f79; }
+
+.statuses_container .current_status_cell .current_status_container .current_status_emoji_picker_cover, .statuses_container .current_status_cell .current_status_container:not(.active).with_status_set .current_status_emoji_picker_cover { border-right: 1px solid #6b6f79; }
+
 .inactive { background-image: none; }
 
 .file_header .title a { color: #90939b; }
@@ -2795,26 +2785,6 @@ nav#site_nav #footer_nav a, #header_team_name:hover .fa-caret-down, .widescreen:
 .admin_pref.locked { background-color: rgba(191, 54, 12, 0.2); }
 
 .admin_pref .admin_pref_locked_label { color: #949494; }
-
-#stats_too_soon { height: 500px; }
-
-#stats_too_soon img { display: none; }
-
-#stats_limited { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #1d2027 65%); bottom: 0; height: 480px; position: absolute; width: 100%; }
-
-#stats_disclaimer, #stats_too_soon_copy h3 { color: #90939b; }
-
-#stats_too_soon_copy p { color: #d3dae3; }
-
-#all_time, #third_row.column, #second_row.column { background: #2a2f39; }
-
-.stats_integrations_container .icon { background: #2a2f39; }
-
-.stats_integrations_container .icon_plus { border-color: #949494; color: #949494; }
-
-#last_day p.summary { color: #d3dae3; }
-
-#last_day p.summary strong { color: #d3dae3; }
 
 .tooltip-inner { background-color: #858991; color: #d3dae3; }
 
