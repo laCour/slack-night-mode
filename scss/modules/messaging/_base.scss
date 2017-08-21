@@ -373,7 +373,7 @@ ts-mention {
 
 #message_edit_container,
 .inline_message_input_container {
-  form textarea {
+  .message_input {
     color: $base-font-color;
   }
 }
