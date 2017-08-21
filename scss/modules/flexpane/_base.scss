@@ -72,7 +72,8 @@
       &:hover {
         border-bottom: 4px solid $color-shade-dark;
 
-        a {
+        a,
+        .tab {
           color: $base-link-color;
         }
       }
@@ -80,7 +81,8 @@
       &.active {
         border-bottom: 4px solid $color-shade-dark;
 
-        a {
+        a,
+        .tab {
           color: $base-link-color;
         }
       }
