@@ -1,4 +1,4 @@
-.lazy_filter_select.default_style {
+.lazy_filter_select {
   &.disabled {
     background: $color-shade-dark;
 
@@ -12,7 +12,7 @@
 
     &.active,
     &:hover {
-      border-color: $color-shade-dark;
+      border-color: $color-base;
     }
 
     &.active {
