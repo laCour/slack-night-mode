@@ -30,13 +30,6 @@
       color: $base-font-color;
     }
   }
-
-  &.focus ~ {
-    #primary_file_button:not(:hover):not(.active),
-    .emo_menu {
-      color: $base-font-color;
-    }
-  }
 }
 
 .current_status_emoji_picker {

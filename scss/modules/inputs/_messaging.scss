@@ -67,6 +67,10 @@
     }
   }
 
+  + #primary_file_button:not(:hover):not(.active) {
+    border-color: $color-shade-mid;
+  }
+
   &.offline:not(.pretend-to-be-online) {
     background-color: $color-shade-dark !important;
     color: $color-highlight;
