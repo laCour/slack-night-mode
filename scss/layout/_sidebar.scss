@@ -1,15 +1,96 @@
 .client_channels_list_container {
   background-color: $color-shade-dark;
-  border-right-color: $color-shade-dark;
+  border-right-color: $color-base;
 }
 
 #col_channels {
-  background-color: $color-shade-dark;
   color: $base-font-color;
 }
 
 #col_channels_collapse_view {
   background: $color-shade-dark;
+}
+
+.p-channel_sidebar {
+  background-color: $color-shade-dark;
+  color: $base-font-color;
+
+  &__channel,
+  &__link {
+    &,
+    &:link,
+    &:visited,
+    &:hover {
+      color: rgba($base-font-color, 0.8) !important;
+    }
+
+    &--selected,
+    &--selected:link,
+    &--selected:visited,
+    &--selected:hover {
+      color: $base-font-color;
+    }
+
+    &:hover {
+      background: $color-base !important;
+    }
+  }
+
+  &__header {
+    color: $base-font-color !important;
+  }
+
+  &__channel--im.p-channel_sidebar__channel--selected .c-presence,
+  &__channel--im-slackbot.p-channel_sidebar__channel--selected::before {
+    color: $base-font-color;
+  }
+
+  &__channel--im .c-presence--away {
+    color: $color-highlight;
+  }
+
+  &__channel--selected,
+  &__link--selected {
+    background: $color-shade-light !important;
+
+    &:hover {
+      background: $color-shade-light !important;
+    }
+  }
+
+  &__channel--selected {
+    &::before,
+    &:hover::before,
+    &::after,
+    &:hover::after {
+      color: $base-font-color;
+    }
+  }
+
+  &__link--selected {
+    &::before,
+    &::after {
+      color: $base-font-color;
+    }
+  }
+
+  &__badge,
+  &__banner--mentions {
+    background: $color-red;
+  }
+
+  .c-custom_scrollbar__thumb_vertical,
+  .c-scrollbar__bar {
+    background: $color-shade-light;
+  }
+
+  &__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+  &__link--unread .p-channel_sidebar__name,
+  &__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+  &__section_heading_label--clickable:hover,
+  &__quickswitcher:hover {
+    color: lighten($base-font-color, 6%) !important;
+  }
 }
 
 .channels_list_holder {
