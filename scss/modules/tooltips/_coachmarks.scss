@@ -1,63 +1,42 @@
 #coachmark {
-  &.channels_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.calls_ss_window_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.calls_video_beta_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.calls_video_ga_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.direct_messages_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.gdrive_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.highlights_arrows_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.highlights_message_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.replies_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
-  &.starred_items_coachmark_div {
-    @include coachmark($color-shade-light);
-  }
-
+  &.channels_coachmark_div,
+  &.calls_interactive_mas_migration_coachmark_div,
+  &.calls_ss_main_coachmark_div,
+  &.calls_ss_window_coachmark_div,
+  &.calls_video_beta_coachmark_div,
+  &.calls_video_ga_coachmark_div,
+  &.direct_messages_coachmark_div,
+  &.enterprise_analytics_usage_callouts_coachmark_div,
+  &.gdrive_coachmark_div,
+  &.highlights_arrows_coachmark_div,
+  &.highlights_feedback_coachmark_div,
+  &.highlights_message_coachmark_div,
+  &.intl_channel_names_coachmark_div,
+  &.replies_coachmark_div,
+  &.starred_items_coachmark_div,
   &.unread_view_coachmark_div {
     @include coachmark($color-shade-light);
   }
 
-  &.invites_coachmark_div {
-    @include coachmark($color-red);
-  }
-
+  &.invites_coachmark_div,
   &.recent_mentions_coachmark_div {
     @include coachmark($color-red);
   }
 }
 
 #coachmark_footer {
-  .coachmark_got_it {
+  .coachmark_done,
+  .coachmark_got_it,
+  .coachmark_next_tip,
+  .coachmark_ok {
     background: rgba($color-shade-lightest, 0.5) !important;
   }
 }
 
 #coachmark_interior {
   color: $base-font-color;
+
+  .coachmark_close_btn {
+    color: $base-font-color;
+  }
 }
