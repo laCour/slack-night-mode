@@ -160,11 +160,21 @@ ts-message {
   }
 
   .mention {
-    background: $color-shade-light;
+    background: $color-shade-light !important;
     border: 1px solid $color-shade-lightest;
     border-radius: 3px;
     color: $base-font-color;
     padding: 0 3px;
+  }
+
+  .internal_member_link {
+    background: $color-base !important;
+    border: 0;
+    color: $base-link-color !important;
+
+    &:hover {
+      color: $base-link-color-active !important;
+    }
   }
 
   &.show_recap:not(.is_pinned) {

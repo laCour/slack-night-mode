@@ -137,3 +137,17 @@
 .presence {
   color: $color-highlight;
 }
+
+#channel_topic_text {
+  background: $color-base;
+}
+
+#edit_topic_container {
+  &:hover {
+    overflow: hidden !important;
+  }
+}
+
+#edit_topic_trigger {
+  color: $base-link-color;
+}

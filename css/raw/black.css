@@ -758,6 +758,12 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .presence { color: #949494; }
 
+#channel_topic_text { background: #222; }
+
+#edit_topic_container:hover { overflow: hidden !important; }
+
+#edit_topic_trigger { color: #949494; }
+
 #banner { background: #000; }
 
 #banner a { color: #949494; }
@@ -902,7 +908,11 @@ ts-message .meta.msg_inline_img_toggler .ts_icon_dropbox, ts-message .meta.msg_i
 
 ts-message .pinned_item_message_header { color: #949494; }
 
-ts-message .mention { background: #545454; border: 1px solid #828282; border-radius: 3px; color: #e6e6e6; padding: 0 3px; }
+ts-message .mention { background: #545454 !important; border: 1px solid #828282; border-radius: 3px; color: #e6e6e6; padding: 0 3px; }
+
+ts-message .internal_member_link { background: #222 !important; border: 0; color: #949494 !important; }
+
+ts-message .internal_member_link:hover { color: #c7c7c7 !important; }
 
 ts-message.show_recap:not(.is_pinned) { background: rgba(0, 0, 0, 0.15); }
 
