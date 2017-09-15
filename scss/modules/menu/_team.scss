@@ -59,8 +59,20 @@
 
 .slack_menu_download {
   background-color: $color-shade-dark;
+
+  ts-icon {
+    color: $color-highlight;
+  }
 }
 
 #menu_items_scroller::-webkit-scrollbar-track {
   background: $color-base !important;
+}
+
+#limit_meter:hover #limit_meter_message_body {
+  color: $base-font-color;
+}
+
+#limit_meter_message_body {
+  color: $color-highlight;
 }
