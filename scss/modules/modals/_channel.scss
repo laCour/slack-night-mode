@@ -50,3 +50,49 @@
     border-color: $color-shade-dark;
   }
 }
+
+#channel_prefs_dialog {
+  color: $base-font-color;
+}
+
+.channel_prefs_modal_header {
+  color: $base-font-color;
+}
+
+.channel_prefs_body {
+  &__section_header_title {
+    color: $base-font-color;
+  }
+
+  &__section_header_icon::before {
+    color: $base-font-color;
+  }
+
+}
+
+.channel_prefs_notifications_table {
+  border-bottom-color: $color-shade-dark;
+  color: $base-font-color;
+
+  &__large_cell,
+  &__small_cell,
+  &__row_title {
+    border-bottom-color: $color-shade-light !important;
+  }
+}
+
+.channel_prefs__muting_checkbox_label {
+  color: $base-font-color;
+
+  &:not(.subtle_silver) {
+    color: $base-font-color !important;
+  }
+}
+
+.notification_prefs_icon::before {
+  color: $base-font-color;
+}
+
+.channel_prefs_body__mute_help_text {
+  color: $color-highlight;
+}
