@@ -41,8 +41,15 @@ ts-message {
     color: $base-link-color;
   }
 
-  .edited,
   .temp_msg_controls {
+    color: $color-highlight;
+  }
+
+  .edited {
+    color: rgba($color-highlight, 0.8);
+  }
+
+  &:hover .edited {
     color: $color-highlight;
   }
 
