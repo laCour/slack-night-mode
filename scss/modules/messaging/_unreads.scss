@@ -34,6 +34,12 @@
       color: $base-font-color;
     }
   }
+
+  .unread_group_collapse_caret {
+    .ts_icon_caret_down {
+      color: $color-highlight;
+    }
+  }
 }
 
 .collapsed .unread_group_header .ts_icon_caret_right,
