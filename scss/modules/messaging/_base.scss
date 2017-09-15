@@ -185,11 +185,8 @@ ts-message {
   }
 
   .mention {
-    background: $color-shade-light;
-    border: 1px solid $color-shade-lightest;
-    border-radius: 3px;
-    color: $base-font-color;
-    padding: 0 3px;
+    background: $color-shade-lightest !important;
+    color: $base-font-color !important;
   }
 
   &.show_recap:not(.is_pinned) {
@@ -202,8 +199,8 @@ ts-message {
 }
 
 ts-mention {
-  background: rgba($color-shade-lightest, 0.1);
-  color: $base-font-color;
+  background: rgba($color-shade-lightest, 0.1) !important;
+  color: $base-font-color !important;
 }
 
 .selecting_messages ts-message.multi_delete_mode:hover {
