@@ -1,6 +1,6 @@
 .p-emoji_picker {
-  background: $color-shade-darkest;
-  color: $base-font-color;
+  background: $color-shade-darkest !important;
+  color: $base-font-color !important;
 
   &[data-using-keyboard="true"] .p-emoji_picker__list_item {
     @for $i from 0 through 5 {
@@ -87,9 +87,13 @@
       background: $color-shade-darkest;
     }
   }
+
+  &__emoji_deluxe_label {
+    color: $color-highlight;
+  }
 }
 
-input.p-emoji_picker__input {
+input[type="text"].p-emoji_picker__input {
   &:focus {
     border-color: $color-shade-light;
     box-shadow: none;
