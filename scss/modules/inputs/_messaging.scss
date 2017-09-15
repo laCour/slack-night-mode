@@ -45,6 +45,10 @@
     border-left: 0;
     color: $base-font-color;
   }
+
+  .msg_mentions_button:hover {
+    color: $base-font-color;
+  }
 }
 
 #msg_input {
