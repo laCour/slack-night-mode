@@ -236,15 +236,15 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .unshare_link {
-  color: $base-link-color;
+  color: $base-link-color !important;
 
   i {
     &::before {
-      color: $color-highlight;
+      color: $color-highlight !important;
     }
 
     &.ts_icon_minus_circle_small:hover::before {
-      color: $color-red;
+      color: $color-red !important;
     }
   }
 }
@@ -261,6 +261,10 @@ html.no_touch a.filetype_button_web:hover {
       background: $color-shade-dark;
     }
   }
+}
+
+#file_preview_container .file_meta {
+  color: $color-highlight;
 }
 
 .file_page_meta {
