@@ -112,6 +112,7 @@
 
 #footer {
   background: $color-base;
+  box-shadow: inset 1px 0 0 0 $color-base;
 
   &.disabled #message-input,
   &.disabled #msg_input {

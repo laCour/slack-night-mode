@@ -1,5 +1,6 @@
 .channel_header {
   background: $color-base;
+  box-shadow: inset 1px 0 0 0 $color-base;
 
   .blue_on_hover:hover {
     color: $base-font-color;
@@ -9,6 +10,7 @@
 #client_body:not(.onboarding)::before {
   background: $color-base;
   border-bottom: 1px solid $color-shade-dark;
+  box-shadow: inset 1px 0 0 0 $color-base;
 }
 
 .messages_header {

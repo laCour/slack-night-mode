@@ -2,6 +2,10 @@
   background: $color-base;
 }
 
+#col_messages {
+  box-shadow: inset 1px 0 0 0 $color-base;
+}
+
 ts-message {
   color: $base-font-color;
 
@@ -9,6 +13,7 @@ ts-message {
   &.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
   &:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
     background: rgba($color-shade-darkest, 0.1);
+    box-shadow: inset 1px 0 0 0 $color-base;
 
     &.is_pinned,
     &.show_recap:not(.is_pinned) {
