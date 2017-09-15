@@ -27,13 +27,13 @@ span.match {
 }
 
 #search_filters {
-  a {
+  .tab {
     background: $color-base;
     color: $base-font-color;
-  }
 
-  a:hover {
-    border-bottom: 4px solid $color-shade-dark;
+    &:hover {
+      border-bottom: 4px solid $color-shade-dark;
+    }
   }
 
   &.files #filter_files,
