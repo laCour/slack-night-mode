@@ -77,6 +77,28 @@
       color: $base-font-color;
     }
   }
+
+  .notification_example {
+    &.mac {
+      background: $color-shade-darkest;
+      box-shadow: 0 1px 8px 2px $color-shade-dark;
+    }
+
+    &.linux,
+    &.windows {
+      background: $color-shade-darkest;
+      color: $base-font-color;
+    }
+  }
+
+  .badge_example {
+    background: $color-red;
+  }
+
+  .message_theme_preview {
+    border-bottom-color: $color-shade-darkest;
+    border-top-color: $color-shade-darkest;
+  }
 }
 
 .sidebar_menu_list_item {
@@ -92,4 +114,12 @@
   &:not(.is_active):hover {
     background-color: $color-shade-dark;
   }
+}
+
+.jumbomoji_pref_disabled {
+  color: $color-highlight;
+}
+
+.jumbomoji_disabled_note {
+  color: rgba($color-highlight, 0.6);
 }
