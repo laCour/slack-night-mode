@@ -8,11 +8,12 @@
   }
 
   .lfs_input_container {
-    border: 1px solid $color-shade-darkest;
+    background-color: $color-shade-light;
+    border-color: $color-shade-darkest;
 
     &.active,
     &:hover {
-      border-color: $color-base;
+      border-color: $color-shade-dark;
     }
 
     &.active {
@@ -22,7 +23,7 @@
 
   .lfs_list_container {
     background: $color-base;
-    border: 1px solid $color-shade-darkest;
+    border-color: $color-shade-darkest;
     box-shadow: 0 0 3px $color-shadow-dark;
   }
 
@@ -56,6 +57,24 @@
     &.active::after,
     &:hover::after {
       color: $base-font-color;
+    }
+  }
+}
+
+.unify_user #select_share_channels .lazy_filter_select {
+  .lfs_value .lfs_item.selected {
+    color: $base-font-color;
+
+    .ts_icon:not(.presence_icon) {
+      color: $color-highlight;
+    }
+  }
+
+  .lfs_item {
+    color: $base-font-color;
+
+    .ts_icon:not(.presence_icon) {
+      color: $color-highlight;
     }
   }
 }
