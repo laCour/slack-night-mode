@@ -533,6 +533,23 @@ comments {
     &.active {
       background-color: $color-shade-mid;
       border: 1px solid $color-shade-dark;
+
+      span {
+        filter: grayscale(2) brightness(2);
+      }
+    }
+
+    span {
+      filter: grayscale(2) brightness(5);
+    }
+  }
+
+  a.trigger.pilcrow {
+    filter: grayscale(2) brightness(1.8);
+
+    &:hover,
+    &.active {
+      filter: grayscale(2) brightness(2);
     }
   }
 }
