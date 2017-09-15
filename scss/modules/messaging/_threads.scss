@@ -128,3 +128,11 @@ ts-thread .thread_participants {
     color: $color-highlight;
   }
 }
+
+#file_reply_container,
+#reply_container,
+.reply_input_container {
+  .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
+    color: $color-highlight;
+  }
+}
