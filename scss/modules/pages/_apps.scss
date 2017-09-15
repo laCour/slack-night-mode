@@ -151,12 +151,10 @@
   }
 }
 
-.apps_directory {
-  .app_card,
-  .large_app_card {
-    background-color: $color-base;
-    border: 1px solid $color-shade-dark;
-  }
+.app_card,
+.large_app_card {
+  background-color: $color-base;
+  border: 1px solid $color-shade-dark;
 }
 
 nav.top {
