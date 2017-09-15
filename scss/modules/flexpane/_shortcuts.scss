@@ -1,0 +1,40 @@
+.p-shortcuts_flexpane {
+  &__shortcut {
+    border-color: $color-shade-darkest;
+
+    &:last-of-type {
+      border-bottom-color: $color-shade-darkest;
+    }
+
+    &_hoverable .p-shortcuts_flexpane__shortcut_title {
+      color: $base-font-color;
+    }
+
+    &_title {
+      color: $color-highlight;
+    }
+  }
+
+  &__title {
+    color: $base-font-color;
+  }
+
+  &__tip {
+    color: $color-highlight;
+  }
+
+  &__section_description {
+    color: $color-highlight;
+  }
+
+  &__sub_heading {
+    color: $color-highlight;
+  }
+}
+
+.c-keyboard_key {
+  background: $color-shade-light;
+  border-color: $color-shade-lightest;
+  box-shadow: 0 1px 0 $color-shadow-medium;
+  color: $base-font-color;
+}
