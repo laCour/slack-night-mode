@@ -198,6 +198,10 @@ ts-message {
   }
 }
 
+.ephemeral.message .message_content {
+  color: $base-font-color;
+}
+
 ts-mention {
   background: rgba($color-shade-lightest, 0.1) !important;
   color: $base-font-color !important;
