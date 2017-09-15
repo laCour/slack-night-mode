@@ -302,9 +302,23 @@
   }
 
   .preview_show .preview_show_btn {
-    background: linear-gradient(rgba($color-shade-darkest, 0.8), rgba($color-shade-darkest, 0.8)), linear-gradient(rgba($color-shade-lightest, 0.3), rgba($color-shade-lightest, 0.3));
-    color: $base-link-color;
+    background: linear-gradient(rgba($color-shade-light, 0.8), rgba($color-shade-light, 0.8)), linear-gradient(rgba($color-shade-lightest, 0.3), rgba($color-shade-lightest, 0.3));
+    color: $base-font-color;
   }
+
+  &.file_menu_open,
+  &:focus,
+  &:hover {
+    .preview_show_less .preview_show_btn {
+      background: rgba($color-shade-light, 0.8);
+      color: $base-font-color;
+    }
+  }
+}
+
+.message--focus .file_container .preview_show.preview_show_less .preview_show_btn {
+  background: $color-shade-light;
+  color: $base-font-color;
 }
 
 .msg_inline_video_buttons_div {
