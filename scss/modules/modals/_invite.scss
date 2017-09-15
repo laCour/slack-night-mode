@@ -93,6 +93,11 @@
   }
 }
 
+#admin_invites_alert {
+  background: $color-shade-light;
+  border-color: $color-shade-lightest;
+}
+
 .channel_invite_member,
 .channel_invite_member_small,
 .channel_invite_pending_user_small {
