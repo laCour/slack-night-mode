@@ -9,20 +9,26 @@
   border: 1px solid $color-base;
 }
 
-.menu.avatar_menu ul li {
-  &:hover ts-icon {
-    background: $color-shade-light;
-    color: $base-font-color;
-  }
-
-  a {
-    color: $base-font-color;
-
-    img,
-    ts-icon {
-      background-color: $color-shade-light;
+.menu.avatar_menu {
+  ul li {
+    &:hover ts-icon {
+      background: $color-shade-light;
       color: $base-font-color;
     }
+
+    a {
+      color: $base-font-color;
+
+      img,
+      ts-icon {
+        background-color: $color-shade-light;
+        color: $color-highlight;
+      }
+    }
+  }
+
+  &:not(.keyboard_active) ul li:hover:not(.disabled) a ts-icon {
+    color: $base-font-color;
   }
 }
 
