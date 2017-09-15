@@ -261,3 +261,69 @@ a.plastic_typeahead_item {
 .service_breadcrumbs li span {
   color: $color-highlight;
 }
+
+.c-tabs__tab_menu {
+  background-color: transparent;
+  box-shadow: inset 0 -2px 0 0 $color-shade-light;
+}
+
+.c-tabs__tab {
+  color: $color-highlight;
+
+  &:hover {
+    color: $base-font-color;
+  }
+
+  &.c-tabs__tab--active,
+  &:active,
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $color-shade-lightest;
+    color: $base-font-color;
+  }
+}
+
+.c-tabs__tab_menu--plastic {
+  background-color: transparent;
+  box-shadow: inset 0 -2px 0 0 $color-shade-light;
+}
+
+a.c-tabs__tab--plastic {
+  color: $color-highlight;
+
+  &:hover {
+    color: $base-font-color;
+  }
+
+  &.c-tabs__tab--active,
+  &:active,
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $color-shade-lightest;
+    color: $base-font-color;
+  }
+}
+
+.p-detail_scope {
+  box-shadow: inset 0 1px 0 0 $color-shade-light;
+
+  &:last-child {
+    border-bottom-color: $color-shade-light;
+  }
+}
+
+.p-detail_dangerous_scope {
+  border-left-color: $color-red;
+  border-right-color: $color-shade-light;
+}
+
+.p-detail_arrow_icon {
+  color: $color-highlight;
+
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
+.p-detail_permissions {
+  background: $color-shade-dark;
+  border-color: $color-shade-light;
+}
