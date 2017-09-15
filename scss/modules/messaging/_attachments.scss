@@ -177,8 +177,9 @@
       }
     }
 
-    .ts_icon[class*=ts_icon_caret]:hover {
-      color: $base-link-color-active;
+    .ts_icon.msg_inline_media_toggler:hover,
+    ts-icon.msg_inline_media_toggler:hover {
+      color: $base-link-color-active !important;
     }
   }
 
