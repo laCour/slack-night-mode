@@ -1,0 +1,104 @@
+.c-member__display-name,
+.c-team__display-name,
+.c-usergroup__handle {
+  color: $base-font-color;
+}
+
+.c-member__current-status--small::before,
+.c-member__secondary-name--large + .c-member__current-status--large::before,
+.c-member__secondary-name--medium + .c-member__current-status--medium::before {
+  color: $base-font-color;
+}
+
+.c-member .external_team_badge {
+  background-color: $color-shade-light;
+  box-shadow: 0 0 0 2px $color-shade-light;
+
+  &.default {
+    background-color: $color-highlight;
+    color: $base-font-color;
+    text-shadow: 0 1px 1px $color-shadow-light;
+  }
+
+  &::after {
+    box-shadow: inset 0 0 0 1px $color-shade-light;
+  }
+}
+
+.c-member__name,
+.c-team__name,
+.c-usergroup__name {
+  &--small {
+    color: $base-font-color;
+  }
+}
+
+.c-member--small .presence {
+  color: $color-highlight;
+}
+
+.c-member--small .team_image {
+  &.icon_16 {
+    border-color: $color-shade-dark;
+  }
+
+  &.default {
+    background-color: $color-highlight;
+    color: $base-font-color;
+    text-shadow: 0 1px 1px $color-shadow-light;
+  }
+}
+
+.c-member--dark {
+  .c-member__current-status {
+    color: $color-highlight;
+
+    &::before {
+      color: $color-highlight;
+    }
+  }
+
+  .c-member__name,
+  .c-member__secondary-name {
+    color: $color-highlight;
+  }
+
+  .c-member__display-name,
+  .presence {
+    color: $base-font-color;
+  }
+}
+
+.c-member--medium {
+  color: $color-highlight;
+
+  .presence {
+    color: $color-highlight;
+  }
+}
+
+.c-member__secondary-name--medium {
+  color: $base-font-color;
+}
+
+.c-member--large {
+  color: $color-highlight;
+}
+
+.c-member__display-name--large,
+.c-member__title--large {
+  color: $base-font-color;
+}
+
+.c-member__other-names--large {
+  color: $color-highlight;
+}
+
+.c-usergroup--small .c-usergroup__icon {
+  background-color: $color-highlight;
+  color: $base-font-color;
+}
+
+.c-usergroup__not-in-channel-context--small {
+  color: $color-highlight;
+}
