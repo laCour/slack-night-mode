@@ -21,6 +21,18 @@ ts-message {
     }
   }
 
+  &.active,
+  &.message--focus,
+  &:hover {
+    .meta {
+      color: $color-highlight !important;
+
+      &.msg_inline_file_preview_toggler a {
+        color: $color-highlight !important;
+      }
+    }
+  }
+
   &.is_pinned {
     background: rgba($color-shade-darkest, 0.15);
   }
