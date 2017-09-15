@@ -143,6 +143,14 @@
   }
 }
 
+.unify_user #client-ui .searchable_member_list .team_list_item {
+  border-bottom-color: $color-shade-darkest;
+
+  &:hover {
+    background: $color-shade-light;
+  }
+}
+
 #member_preview_scroller .member_data_table .current_status_cell {
   .current_status_container {
     .current_status_cover {
