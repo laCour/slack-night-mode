@@ -143,6 +143,34 @@
   color: $color-highlight;
 }
 
+#message_edit_container,
+.inline_message_input_container {
+  .message_input {
+    color: $base-font-color;
+  }
+}
+
+.inline_message_input_container .ql-container {
+  border-color: $color-shade-light;
+
+  &.focus,
+  &:active,
+  &:hover {
+    border-color: $color-shade-lightest;
+  }
+}
+
+#message_edit_container .message_input {
+  background: $color-shade-light;
+  border-color: $color-shade-dark;
+  color: $base-font-color;
+
+  &.focus {
+    border-color: $color-shade-dark;
+    box-shadow: 0 0 7px $color-shadow-light;
+  }
+}
+
 .ql-editor {
   &::-webkit-scrollbar-thumb {
     background-color: rgba($color-shade-light, 0.5);
