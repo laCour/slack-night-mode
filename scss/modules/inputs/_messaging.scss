@@ -131,6 +131,7 @@
 
 #typing_text {
   color: $color-highlight;
+  filter: none;
 }
 
 #notification_bar.wide #typing_text.overflow_ellipsis {
@@ -155,6 +156,7 @@
 
 .ql-placeholder {
   color: $base-font-color;
+  filter: none;
 }
 
 .ql-container.texty_single_line_input {
