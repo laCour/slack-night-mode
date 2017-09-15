@@ -12,7 +12,7 @@
   }
 
   &.inline_edit_success .inline_edit_inner::after {
-    color: adjust-hue($color-red, 180);
+    color: $color-green;
   }
 
   &.inline_edit_error .inline_edit_inner::after {

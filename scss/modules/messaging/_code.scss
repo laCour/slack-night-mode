@@ -156,7 +156,7 @@ code {
 }
 
 .cm-positive {
-  color: adjust-hue($color-red, 180);
+  color: $color-green;
 }
 
 .cm-invalidchar,
@@ -166,7 +166,7 @@ code {
 
 div.CodeMirror span {
   &.CodeMirror-matchingbracket {
-    color: adjust-hue($color-red, 180);
+    color: $color-green;
   }
 
   &.CodeMirror-nonmatchingbracket {

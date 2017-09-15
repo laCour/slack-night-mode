@@ -2,6 +2,7 @@
 $color-base: #222 !default;
 $color-highlight: #949494 !default;
 $color-red: #bf360c !default;
+$color-green: adjust-hue($color-red, 140) !default;
 
 $color-shade-darkest: #000 !default;
 $color-shade-dark: #363636 !default;
