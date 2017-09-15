@@ -89,3 +89,8 @@
 .unread_empty_state_refresh {
   background: rgba($color-base, 0.97);
 }
+
+.unread_msgs_loading {
+  background: $color-base;
+  background-image: none;
+}
