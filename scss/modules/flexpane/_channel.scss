@@ -68,6 +68,17 @@
       }
     }
   }
+
+  .channel_section_label .ts_icon_info_circle {
+    color: $color-highlight;
+  }
+
+  .feature_sli_channel_insights {
+    .channel_created_section .creator_link,
+    .channel_purpose_section .channel_purpose_text {
+      color: $color-highlight;
+    }
+  }
 }
 
 .channel_page_member_row {
@@ -83,6 +94,11 @@
     a {
       color: $base-link-color;
     }
+  }
+
+  &:hover {
+    background-color: $color-shade-light;
+    border-color: $color-shade-dark;
   }
 }
 
