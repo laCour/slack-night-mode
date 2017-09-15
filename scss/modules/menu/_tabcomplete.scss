@@ -20,6 +20,14 @@
       .realname {
         color: $base-font-color;
       }
+
+      .unify_broadcast {
+        color: $base-font-color;
+
+        .ts_icon_broadcast {
+          color: $color-highlight;
+        }
+      }
     }
 
     &.type_cmds {
@@ -45,7 +53,10 @@
 
       .cmdname {
         color: $base-font-color;
-        font-weight: 900;
+      }
+
+      .cmddesc {
+        color: $color-highlight;
       }
     }
   }
