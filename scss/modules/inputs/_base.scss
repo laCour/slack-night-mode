@@ -326,5 +326,11 @@ textarea {
 
 .c-enhanced_text_input {
   background-color: $color-shade-light;
-  border-color: $color-shade-darkest;
+  border-color: $color-shade-dark;
+  color: $color-highlight;
+
+  &:hover,
+  &.c-enhanced_text_input--active {
+    border-color: $color-shade-light;
+  }
 }
