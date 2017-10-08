@@ -46,8 +46,12 @@
     color: $base-font-color;
   }
 
-  .msg_mentions_button:hover {
-    color: $base-font-color;
+  .msg_mentions_button {
+    color: $color-highlight;
+
+    &:hover {
+      color: $base-font-color;
+    }
   }
 }
 
