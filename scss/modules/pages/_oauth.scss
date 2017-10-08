@@ -1,51 +1,48 @@
-body.oauth_page {
-  background: $color-shade-dark;
-
-  .oauth_header {
-    background: $color-base !important;
+.c-oauth_scope_info {
+  &__spacer_icon {
+    color: $color-red;
   }
 
-  .alert {
-    border-color: darken($color-red, 15%);
-    text-shadow: 0 1px 0 $color-shadow-medium;
+  &__dangerous_scopes,
+  &__safe_scopes {
+    border-bottom-color: $color-shade-light;
+  }
 
-    &.alert_warning {
-      border-left-color: darken($color-red, 10%);
+  &__dangerous_scopes {
+    border-left-color: $color-red;
+    border-right-color: $color-shade-light;
+    border-top-color: $color-shade-light;
+  }
 
-      .bottom_border {
-        border-color: darken($color-red, 10%);
-      }
+  &__dangerous_scope:not(:first-child),
+  &__safe_scope {
+    border-top-color: $color-shade-light;
+  }
+}
+
+a.p-oauth_nav__anchor {
+  color: $color-highlight;
+}
+
+.p-oauth_nav__team-switcher {
+  .menu_launcher {
+    border-color: $color-shade-dark;
+
+    &:hover {
+      border: $color-shade-light;
     }
   }
+}
 
-  .alert_text {
-    background: $color-red;
-    color: $base-font-color;
+.p-oauth_page,
+.p-oauth_page--error {
+  background: $color-base;
+}
 
-    i:hover {
-      color: $base-font-color !important;
-    }
-  }
+.p-oauth_page__title {
+  color: $base-font-color;
+}
 
-  .darken_hover:hover {
-    color: $color-highlight !important;
-  }
-
-  .team:hover {
-    background: $color-shade-darkest;
-    border: 1px solid $color-shade-light !important;
-  }
-
-  .safe_scopes {
-    border-top: 1px solid $color-base;
-  }
-
-  .yolk_orange,
-  .subtle_silver {
-    color: $base-font-color !important;
-  }
-
-  .top_border {
-    border-color: $color-base;
-  }
+.p-oauth_page_single_channel_picker {
+  border-bottom-color: $color-shade-dark;
 }
