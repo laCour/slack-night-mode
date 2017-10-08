@@ -44,6 +44,10 @@
     border-color: $color-shade-mid;
     border-left: 0;
     color: $base-font-color;
+
+    &.focus ~ .msg_mentions_button:not(.hover) {
+      color: $base-font-color;
+    }
   }
 
   .msg_mentions_button {
