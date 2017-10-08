@@ -61,20 +61,20 @@
   }
 }
 
-.unify_user #select_share_channels .lazy_filter_select {
+#select_share_channels .lazy_filter_select {
   .lfs_value .lfs_item.selected {
-    color: $base-font-color;
+    color: $base-font-color !important;
 
     .ts_icon:not(.presence_icon) {
-      color: $color-highlight;
+      color: $color-highlight !important;
     }
   }
 
   .lfs_item {
-    color: $base-font-color;
+    color: $color-highlight !important;
 
     .ts_icon:not(.presence_icon) {
-      color: $color-highlight;
+      color: $color-highlight !important;
     }
   }
 }
