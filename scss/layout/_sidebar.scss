@@ -91,6 +91,10 @@
   &__quickswitcher:hover {
     color: lighten($base-font-color, 6%) !important;
   }
+
+  &__close_container:hover {
+    background: $color-shade-darkest;
+  }
 }
 
 .channels_list_holder {
