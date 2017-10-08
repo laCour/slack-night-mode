@@ -5,6 +5,15 @@
     }
   }
 
+  .help_modal_header {
+    background-color: $color-shade-dark;
+    border-color: $color-shade-light;
+
+    a {
+      color: $base-font-color;
+    }
+  }
+
   .help_modal_divider {
     color: $color-highlight;
   }
