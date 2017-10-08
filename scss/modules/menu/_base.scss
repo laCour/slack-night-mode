@@ -76,6 +76,13 @@
       color: $base-font-color;
       text-shadow: 0 1px 0 $color-shadow-light;
 
+      .menu_item_details,
+      .prefix,
+      i,
+      ts-icon {
+        color: $base-font-color;
+      }
+
       &.delete_link {
         color: $color-red;
       }
@@ -92,6 +99,10 @@
     &.divider {
       border-bottom-color: $color-base;
     }
+
+    .menu_item_details {
+      color: $color-highlight;
+    }
   }
 
   &:not(.keyboard_active) ul li:hover:not(.disabled) a {
@@ -99,6 +110,13 @@
     border-bottom-color: $color-shade-darkest;
     color: $base-font-color;
     text-shadow: 0 1px 0 $color-shadow-light;
+
+    .menu_item_details,
+    .prefix,
+    i,
+    ts-icon {
+      color: $base-font-color;
+    }
 
     &.delete_link {
       color: $color-red;
