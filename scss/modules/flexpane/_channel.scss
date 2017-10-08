@@ -15,6 +15,20 @@
     border-top-color: $color-shade-dark;
   }
 
+  .conversation_details {
+    .member_name:hover {
+      color: $color-highlight;
+    }
+
+    .member_username:hover {
+      color: $base-font-color;
+    }
+
+    .member_info_timezone {
+      border-top-color: $color-shade-light;
+    }
+  }
+
   .channel_page_section {
     background: $color-base;
     border-top: 1px solid $color-shade-dark;
