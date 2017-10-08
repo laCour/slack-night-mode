@@ -1,12 +1,81 @@
+.page_apps_directory_home {
+  background-color: $color-base !important;
+
+  .nav_title {
+    color: $base-font-color !important;
+  }
+
+  &__search {
+    .apps_search_input {
+      &::placeholder,
+      &:focus::placeholder {
+        color: $color-highlight;
+      }
+    }
+
+    .apps_search_input__body {
+      box-shadow: 0 1px 10px $color-shade-lightest;
+    }
+  }
+}
+
+.splash_container__background {
+  background-color: $color-shade-dark;
+
+  &--left,
+  &--center,
+  &--right {
+    display: none;
+  }
+}
+
+.splash_interactive__button {
+  border-color: $color-shade-light;
+}
+
+.splash_interactive__button--active {
+  box-shadow: 0 0 10px 1px $color-shade-lightest;
+}
+
+.splash_interactive__window {
+  background-color: $color-base;
+  border-color: $color-shade-light;
+
+  &:hover .splash_interactive__window_headline {
+    color: $base-font-color;
+  }
+
+  &::after {
+    background: linear-gradient(to bottom, rgba($color-base, 0) 0, $color-base 100%);
+  }
+
+  &_response {
+    // This is a necessary hack to read the contents of response images.
+    background-color: #fff; // scss-lint:disable ColorVariable
+  }
+}
+
+a.splash_interactive__window_link {
+  color: $base-font-color;
+}
+
+.splash_interactive__window_message_content_text--drive {
+  color: $color-highlight;
+}
+
+.search_input.apps_search_input {
+  border-color: $color-shade-lightest;
+}
+
 .menu_launcher,
 .menu_launcher_large {
   background-color: $color-shade-light;
-  border: 1px solid $color-base;
+  border-color: $color-base !important;
   color: $base-font-color;
 }
 
 .menu_launcher_large {
-  border: 1px solid $color-base;
+  border-color: $color-base;
 }
 
 .menu.avatar_menu {
@@ -39,7 +108,7 @@
 
     > li {
       + li::before {
-        border-top: 1px solid $color-shade-light;
+        border-top-color: $color-shade-light;
       }
 
       &.interactive {
