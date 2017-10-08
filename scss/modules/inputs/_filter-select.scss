@@ -30,10 +30,18 @@
   .lfs_list .lfs_item {
     &.selected {
       color: $base-font-color;
+
+      .c-member__current-status .prevent_copy_paste,
+      .c-member__current-status--small::before,
+      .c-member__display-name,
+      .c-member__name,
+      .c-member__secondary-name {
+        color: $base-font-color !important;
+      }
     }
 
     &.disabled {
-      color: $base-font-color;
+      color: $color-highlight;
     }
 
     &.active {
