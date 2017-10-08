@@ -46,3 +46,78 @@
     }
   }
 }
+
+.c-tooltip__tip {
+  background-color: $color-shade-light;
+  color: $base-font-color;
+
+  &--top {
+    .c-tooltip__tip__arrow {
+      border-top-color: $color-shade-light;
+    }
+
+    &-left .c-tooltip__tip__arrow {
+      border-top-color: $color-shade-light;
+    }
+
+    &-right .c-tooltip__tip__arrow {
+      border-top-color: $color-shade-light;
+    }
+  }
+
+  &--right {
+    .c-tooltip__tip__arrow {
+      border-right-color: $color-shade-light;
+    }
+  }
+
+  &--bottom {
+    .c-tooltip__tip__arrow {
+      border-bottom-color: $color-shade-light;
+    }
+
+    &-left .c-tooltip__tip__arrow {
+      border-bottom-color: $color-shade-light;
+    }
+
+    &-right .c-tooltip__tip__arrow {
+      border-bottom-color: $color-shade-light;
+    }
+  }
+
+  &--left {
+    .c-tooltip__tip__arrow {
+      border-left-color: $color-shade-light;
+    }
+  }
+
+  &--success {
+    background-color: $color-green;
+
+    &.c-tooltip__tip {
+      &--top {
+        &::after,
+        &-left::after,
+        &-right::after {
+          border-top-color: $color-green;
+        }
+      }
+
+      &--right::after {
+        border-right-color: $color-green;
+      }
+
+      &--bottom {
+        &::after,
+        &-left::after,
+        &-right::after {
+          border-bottom-color: $color-green;
+        }
+      }
+
+      &--left::after {
+        border-left-color: $color-green;
+      }
+    }
+  }
+}
