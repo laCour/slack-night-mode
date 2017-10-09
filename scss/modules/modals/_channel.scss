@@ -68,6 +68,9 @@
     color: $base-font-color;
   }
 
+  &__mute_help_text {
+    color: $color-highlight;
+  }
 }
 
 .channel_prefs_notifications_table {
