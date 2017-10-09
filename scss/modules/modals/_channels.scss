@@ -59,12 +59,6 @@
   }
 }
 
-#notifications_not_working p.highlight_yellow_bg {
-  border-radius: 3px;
-  padding: 0 6px 6px;
-
-  a {
-    color: $base-font-color;
-    text-decoration: underline;
-  }
+#notifications_not_working p.highlight_yellow_bg a {
+  color: $base-font-color;
 }
