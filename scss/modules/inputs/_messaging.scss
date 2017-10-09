@@ -79,8 +79,14 @@
     }
   }
 
-  + #primary_file_button:not(:hover):not(.active) {
-    border-color: $color-shade-mid;
+  + #primary_file_button {
+    &:not(:hover):not(.active) {
+      border-color: $color-shade-mid;
+    }
+
+    &.focus-ring:not(:hover):not(.active) {
+      border-color: $color-shade-mid;
+    }
   }
 
   &.offline:not(.pretend-to-be-online) {
@@ -104,21 +110,15 @@
 #primary_file_button {
   background: padding-box $color-shade-light;
   border-color: $color-shade-mid;
+  color: $color-highlight;
 
   &.active,
+  &.focus-ring,
+  &:focus,
   &:hover {
     background: $color-shade-mid;
     border-color: $color-shade-dark;
-    color: $color-highlight;
-  }
-}
-
-.feature_keyboard_navigation #msg_input {
-  &,
-  &.focus {
-    + #primary_file_button:not(:hover):not(.active) {
-      border-color: $color-shade-mid;
-    }
+    color: $base-font-color;
   }
 }
 
