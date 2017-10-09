@@ -1,10 +1,11 @@
 #coachmark {
-  &.channels_coachmark_div,
   &.calls_interactive_mas_migration_coachmark_div,
+  &.calls_iss_window_coachmark_div,
   &.calls_ss_main_coachmark_div,
   &.calls_ss_window_coachmark_div,
   &.calls_video_beta_coachmark_div,
   &.calls_video_ga_coachmark_div,
+  &.channels_coachmark_div,
   &.direct_messages_coachmark_div,
   &.enterprise_analytics_usage_callouts_coachmark_div,
   &.gdrive_coachmark_div,
@@ -12,15 +13,15 @@
   &.highlights_feedback_coachmark_div,
   &.highlights_message_coachmark_div,
   &.intl_channel_names_coachmark_div,
+  &.invites_coachmark_div,
+  &.name_tagging_coachmark_div,
+  &.onboarding_coachmark_div,
+  &.recent_mentions_coachmark_div,
   &.replies_coachmark_div,
+  &.screenhero_deprecation_coachmark_div,
   &.starred_items_coachmark_div,
   &.unread_view_coachmark_div {
     @include coachmark($color-shade-light);
-  }
-
-  &.invites_coachmark_div,
-  &.recent_mentions_coachmark_div {
-    @include coachmark($color-red);
   }
 }
 
