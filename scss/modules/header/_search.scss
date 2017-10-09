@@ -36,22 +36,11 @@
   }
 }
 
-#team_filter {
-  .icon_search {
-    color: $color-highlight;
-  }
-
-  a.icon_close {
-    color: $base-link-color;
-
-    &:hover {
-      color: $base-link-color-active;
-    }
-  }
-}
-
-#client-ui {
-  .icon_search {
+#team_filter,
+#user_group_filter,
+.searchable_member_list_search_bar {
+  .icon_search,
+  .ts_icon_spinner {
     color: $color-highlight;
   }
 
