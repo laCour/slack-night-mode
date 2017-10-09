@@ -396,3 +396,43 @@ a.c-tabs__tab--plastic {
   background: $color-shade-dark;
   border-color: $color-shade-light;
 }
+
+table.gray_header_border tr:first-child th:not(:only-of-type) {
+  border-bottom-color: $color-shade-light;
+}
+
+.section_rollup {
+  border-bottom-color: $color-base;
+
+  &:first-of-type {
+    border-top-color: $color-base;
+  }
+
+  &:hover:not(.is_active) {
+    background: rgba($color-base, 0.5);
+    color: $base-font-color;
+  }
+}
+
+.is_completed_section,
+.is_failed_section {
+  .section_rollup_header::before {
+    background-color: $color-green;
+    color: $color-shade-darkest;
+  }
+}
+
+.developer_apps_functionality_link {
+  &:hover {
+    border-color: $color-shade-light;
+    box-shadow: 0 0 6px 0 rgba($color-shade-lightest, 0.25);
+  }
+
+  &::before {
+    background-color: $color-shade-light;
+  }
+
+  &_enabled::before {
+    background-color: $color-green;
+  }
+}
