@@ -1,8 +1,69 @@
-.drop_zone {
-  border-color: $color-shade-lightest;
-  color: $base-font-color;
+.help_pages.help_pages {
+  p {
+    color: $base-font-color;
+  }
+
+  a {
+    border-bottom-color: $color-shade-light;
+  }
+
+  .o-hero,
+  .o-hero__header {
+    background-color: $color-base;
+  }
+
+  .o-hero__header {
+    color: $base-font-color;
+  }
+
+  .o-section--feature {
+    background-color: $color-shade-dark;
+    border-top-color: $color-shade-light;
+  }
+
+  .c-form__container {
+    .c-form__feedback {
+      color: $color-red;
+    }
+  }
+
+  .c-form__input,
+  .c-input {
+    background-color: $color-base;
+    border-color: $color-shade-light;
+    color: $base-font-color;
+  }
+
+  .drop_zone {
+    background: $color-base;
+    border-color: $color-shade-lightest;
+  }
+
+  .drop_zone_attachment {
+    border-bottom-color: $color-shade-light;
+  }
+
+  .drop_zone_remove_attachment {
+    background-color: $color-base;
+  }
+
+  .c-form__notice {
+    background-color: $color-shade-light;
+    border-color: $color-shade-lightest;
+    color: $base-font-color;
+
+    &.is-error {
+      border-left-color: $color-red;
+    }
+  }
+
+  .c-nav--footer {
+    border-top-color: $color-shade-light;
+  }
 }
 
-.drop_zone_text {
-  color: $base-font-color;
+@media screen and (min-width: 48rem) {
+  .help_pages.help_pages .o-hero {
+    background-color: $color-base;
+  }
 }
