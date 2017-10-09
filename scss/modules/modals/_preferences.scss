@@ -1,17 +1,4 @@
 #fs_modal.prefs_modal {
-  .section_rollup {
-    border-bottom: 1px solid $color-shade-dark;
-
-    &:first-of-type {
-      border-top: 1px solid $color-shade-dark;
-    }
-
-    &:hover:not(.active) {
-      background: $color-base;
-      color: $base-font-color;
-    }
-  }
-
   label.sound_option {
     &:hover:not(.disabled) ts-icon {
       color: $color-highlight;

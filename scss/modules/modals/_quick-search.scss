@@ -64,7 +64,6 @@ ts-jumper {
     li.highlighted,
     &:not(.keyboard_active) li:hover {
       .channel_not_member,
-      .match_score,
       .member_real_name + .member_username,
       .member_username + .member_real_name,
       i.presence_icon,

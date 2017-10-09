@@ -18,24 +18,10 @@
   }
 }
 
-#col_channels_bg {
-  background: $color-base;
-}
-
 #loading_team_menu_bg,
 #loading_user_menu_bg {
   background: $color-base;
   border: none;
-}
-
-#loading_message_spinner {
-  background-image: none;
-  width: auto;
-
-  &::after {
-    color: $color-highlight;
-    content: "Loading...";
-  }
 }
 
 .infinite_spinner_bg,

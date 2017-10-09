@@ -62,11 +62,8 @@
   border-left: 1px solid $color-shadow-light;
 }
 
-#messages_container {
-  &:not(.has_reply_banners).has_top_messages_banner::before,
-  &.has_top_messages_banner::before {
-    background: none;
-  }
+#messages_container.has_top_messages_banner::before {
+  background: none;
 }
 
 .end_div_msg_lim {

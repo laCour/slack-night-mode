@@ -46,17 +46,6 @@
   }
 }
 
-#monkey_scroll_wrapper_for_channels_scroller {
-  .monkey_scroll_bar {
-    background: $color-shade-mid;
-  }
-
-  .monkey_scroll_handle_inner {
-    background: $color-shade-light;
-    border: 3px solid $color-base;
-  }
-}
-
 .c-scrollbar--monkey .c-scrollbar {
   &__track {
     background: $color-shade-mid;

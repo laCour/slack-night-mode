@@ -77,8 +77,6 @@
 
 .msg_inline_attachment_collapser,
 .msg_inline_attachment_expander,
-.msg_inline_file_preview_collapser,
-.msg_inline_file_preview_expander,
 .msg_inline_img_collapser,
 .msg_inline_img_expander,
 .msg_inline_media_toggler,
@@ -177,8 +175,7 @@
       }
     }
 
-    .ts_icon.msg_inline_media_toggler:hover,
-    ts-icon.msg_inline_media_toggler:hover {
+    .ts_icon.msg_inline_media_toggler:hover {
       color: $base-link-color-active !important;
     }
   }

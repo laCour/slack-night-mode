@@ -11,14 +11,6 @@
   }
 }
 
-#primary_file_button {
-  color: $color-highlight !important;
-
-  &:hover {
-    color: $base-font-color !important;
-  }
-}
-
 .file_list_item .icon,
 .file_reference .icon {
   background: $color-shade-lightest;

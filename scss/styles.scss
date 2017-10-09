@@ -16,17 +16,14 @@
 @import "modules/menu/base";
 @import "modules/menu/autocomplete";
 @import "modules/menu/calendar";
-@import "modules/menu/direct-messaging";
 @import "modules/menu/filters";
 @import "modules/menu/popover";
 @import "modules/menu/tabcomplete";
 @import "modules/menu/team";
 
 @import "modules/header/base";
-@import "modules/header/banners";
 @import "modules/header/day-divider";
 @import "modules/header/search";
-@import "modules/header/topic-editor";
 
 @import "modules/messaging/base";
 @import "modules/messaging/attachments";
@@ -92,7 +89,6 @@
 @import "modules/pages/admin/tooltips";
 @import "modules/pages/api";
 @import "modules/pages/apps";
-@import "modules/pages/downloads";
 @import "modules/pages/legal";
 @import "modules/pages/oauth";
 @import "modules/pages/spaces";

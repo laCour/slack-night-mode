@@ -51,16 +51,32 @@
   }
 }
 
-#member_preview_scroller,
-#member_preview_web_container {
+#member_preview_scroller {
   background-color: $color-shade-dark;
+
+  .member_data_table .current_status_cell {
+    .current_status_container {
+      .current_status_cover {
+        &:hover {
+          border-color: $color-shade-dark;
+        }
+      }
+
+      &:not(.active) {
+        .current_status_cover {
+          &.without_status_set {
+            .current_status_placeholder {
+              color: rgba($base-font-color, 0.35) !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-#team_tab {
-  #member_preview_scroller,
-  #member_preview_web_container {
-    background-color: $color-base;
-  }
+#team_tab #member_preview_scroller {
+  background-color: $color-base;
 }
 
 #member_preview_scroller,
@@ -148,25 +164,5 @@
 
   &:hover {
     background: $color-shade-light;
-  }
-}
-
-#member_preview_scroller .member_data_table .current_status_cell {
-  .current_status_container {
-    .current_status_cover {
-      &:hover {
-        border-color: $color-shade-dark;
-      }
-    }
-
-    &:not(.active) {
-      .current_status_cover {
-        &.without_status_set {
-          .current_status_placeholder {
-            color: rgba($base-font-color, 0.35) !important;
-          }
-        }
-      }
-    }
   }
 }

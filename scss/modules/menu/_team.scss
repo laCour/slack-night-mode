@@ -39,16 +39,6 @@
   opacity: 0.75;
 }
 
-#im-list li.member.active .presence,
-#starred-list li.member.active .presence {
-  color: $base-font-color;
-
-  &.away {
-    color: $color-highlight;
-    text-shadow: 1px 1px $color-shadow-light;
-  }
-}
-
 .slack_menu_section::before {
   border-top-color: $color-base;
 }

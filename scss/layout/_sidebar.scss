@@ -7,10 +7,6 @@
   color: $base-font-color;
 }
 
-#col_channels_collapse_view {
-  background: $color-shade-dark;
-}
-
 .p-channel_sidebar {
   background-color: $color-shade-dark;
   color: $base-font-color;
@@ -171,137 +167,6 @@
   }
 }
 
-.channels_list_new_btn {
-  color: $base-link-color;
-}
-
-.list_more {
-  border-bottom: 1px dotted $base-link-color;
-  color: $base-link-color !important;
-
-  &:hover {
-    border-bottom: 1px solid $base-link-color-active;
-    color: $base-link-color-active !important;
-  }
-}
-
-#channels_scroller {
-  &.show_which_channel_is_active ul li.active {
-    .primary_action {
-      background: $color-base;
-      color: $base-font-color;
-
-      &.im_name .im_name_background,
-      &.im_name > *:not(.unread_highlights) {
-        background: $color-base;
-      }
-
-      &.feature_user_custom_status .im_name_background {
-        background: $color-base;
-      }
-
-      .prefix {
-        color: $color-highlight;
-      }
-    }
-
-    .group_close,
-    .im_close,
-    .mpim_close {
-      color: $base-font-color;
-    }
-
-    .unread_highlights,
-    .unread_msgs {
-      background: $color-red;
-      color: $base-font-color;
-    }
-  }
-
-  ul li.muted_channel:not(.active) .primary_action>:not(.im_name_background),
-  &:not(.show_which_channel_is_active) li.muted_channel .primary_action>:not(.im_name_background) {
-    opacity: 0.6;
-  }
-}
-
-#channel_scroll_down,
-#channel_scroll_up {
-  background: $color-shade-darkest;
-  color: $base-font-color;
-  text-shadow: 0 1px 1px $color-shadow-light;
-}
-
-#channel_scroll_down {
-  &:hover {
-    color: $base-font-color;
-  }
-
-  &.unseen_have_mentions {
-    background: $color-red;
-  }
-}
-
-#channel_scroll_up {
-  &.unseen_have_mentions {
-    background: $color-red;
-  }
-}
-
-#channel_scroll_up:hover {
-  color: $base-font-color;
-}
-
-#list_controls {
-  border-bottom: 1px solid $color-shade-dark;
-  color: $color-highlight;
-}
-
-#list_search {
-  border: 1px solid $color-shade-dark;
-}
-
-#list_search_container {
-  .icon_search {
-    color: $color-highlight;
-  }
-
-  .icon_close {
-    color: $color-highlight;
-  }
-}
-
-#list_browser {
-  p.highlighted {
-    background: $color-base;
-  }
-
-  &:not(.keyboard_active) p:hover {
-    background: $color-base;
-  }
-
-  .item_creator {
-    color: $color-highlight;
-  }
-
-  .item_count {
-    color: $base-font-color;
-  }
-
-  .item_purpose {
-    color: $base-font-color;
-  }
-}
-
-#list_browser_dialog {
-  .modal-footer a {
-    color: $base-link-color;
-
-    &:hover {
-      color: $base-link-color-active;
-    }
-  }
-}
-
 #channel_list_invites_link {
   border-bottom: 1px dotted $base-link-color;
   color: $base-link-color !important;
@@ -332,15 +197,7 @@
     #quick_switcher_label {
       color: $base-link-color;
     }
-
-    #quick_switcher_shortcut {
-      color: $base-link-color;
-    }
   }
-}
-
-#quick_switcher_shortcut {
-  color: $color-highlight;
 }
 
 #quick_switcher_label {

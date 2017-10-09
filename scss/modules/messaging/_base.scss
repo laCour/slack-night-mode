@@ -233,14 +233,6 @@ ts-mention {
     border-top: 1px solid $color-shade-light;
   }
 
-  .more_messages {
-    background: $color-shade-light;
-  }
-
-  .more_messages_container .more_messages {
-    color: $color-highlight;
-  }
-
   ts-conversation {
     &::after {
       background: rgba($color-shade-darkest, 0.08);
@@ -308,18 +300,6 @@ ts-mention {
       .divider_label {
         color: $color-highlight;
       }
-    }
-  }
-
-  ts-message.automated_grey {
-    background: $color-shade-darkest;
-
-    .timestamp {
-      color: $base-link-color;
-    }
-
-    &:hover .timestamp {
-      color: $base-link-color-active;
     }
   }
 }
@@ -399,14 +379,11 @@ ts-mention {
   }
 }
 
-.is_limited_div {
-  background-color: $color-base !important;
-
-  &.mini {
-    color: $color-highlight !important;
-  }
+#toggle-subscription-status .subscription_desc {
+  color: $color-highlight;
 }
 
-#toggle-subscription-status .subscription_desc {
+.bot_label {
+  background: $color-shade-darkest;
   color: $color-highlight;
 }
