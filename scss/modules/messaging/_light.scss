@@ -7,7 +7,8 @@
     }
 
     .message_content {
-      .message_sender {
+      .message_sender,
+      .meta .message_sender:hover {
         color: $base-font-color !important;
       }
     }

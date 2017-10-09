@@ -24,6 +24,13 @@ ts-message {
   &.active,
   &.message--focus,
   &:hover {
+    .edited,
+    .reply_bar .last_reply_at,
+    .timestamp,
+    &.automated .message_body {
+      color: $color-highlight;
+    }
+
     .meta {
       color: $color-highlight !important;
 
@@ -217,12 +224,14 @@ ts-mention {
   color: $base-font-color !important;
 }
 
-.selecting_messages ts-message.multi_delete_mode:hover {
-  background: rgba($color-red, 0.75);
-}
+.selecting_messages ts-message {
+  &:hover {
+    background: $color-shade-darkest;
+  }
 
-.selecting_messages ts-message:hover {
-  background: $color-shade-darkest;
+  &.multi_delete_mode:hover {
+    background: rgba($color-red, 0.75);
+  }
 }
 
 #convo_container {
