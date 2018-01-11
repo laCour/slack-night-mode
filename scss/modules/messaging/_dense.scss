@@ -1,3 +1,17 @@
+.c-message--dense {
+  @if global-variable-exists(base-font-family) {
+    font-family: $base-font-family;
+  }
+
+  .c-timestamp__label {
+    color: $base-link-color;
+  }
+
+  .c-message__content_header .c-custom_status {
+    border-color: $color-shade-dark;
+  }
+}
+
 .dense_theme {
   ts-message {
     color: $base-font-color;

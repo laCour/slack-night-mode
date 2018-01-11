@@ -1,3 +1,20 @@
+.c-message_list {
+  &__day_divider {
+    &__label {
+      color: $color-highlight;
+
+      &__pill {
+        background: $color-base;
+        position: relative;
+      }
+    }
+
+    &__line {
+      border-top-color: $color-shade-dark;
+    }
+  }
+}
+
 .day_divider {
   background: $color-base;
   color: $color-highlight;

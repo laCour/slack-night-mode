@@ -6,6 +6,292 @@
   box-shadow: inset 1px 0 0 0 $color-base;
 }
 
+.c-message {
+  &:hover {
+    .c-message__broadcast_preamble_outer,
+    .c-message__broadcast_preamble {
+      color: $color-highlight;
+    }
+  }
+
+  &--hover {
+    .c-message__broadcast_preamble_outer,
+    .c-message__broadcast_preamble {
+      .c-message--focus {
+        .c-message__broadcast_preamble_outer, .c-message__broadcast_preamble {
+          color: $color-highlight;
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &--hover,
+  &--focus {
+    &:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+      background: rgba($color-shade-darkest, 0.1);
+    }
+  }
+
+  &:hover,
+  &--hover .c-message__body--automated .c-message--focus {
+    .c-message__body--automated {
+      color: $color-highlight;
+    }
+  }
+
+  &:hover .c-message__file_meta,
+  &--hover .c-message__file_meta .c-message--focus .c-message__file_meta {
+    color: $color-highlight;
+  }
+
+  &--focus {
+    &:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+      background: rgba($color-shade-darkest, 0.1);
+    }
+  }
+
+  &--pinned,
+  &--sli_highlight:not(.c-message--sli_highlight_negative),
+  &--starred {
+    background: rgba($color-shade-darkest, 0.2);
+  }
+
+  &--custom_response {
+    background: rgba($color-shade-darkest, 0.15);
+  }
+
+
+  &--sli_highlight_negative,
+  &--ephemeral {
+    background: rgba($color-shade-darkest, 0.1);
+  }
+
+  &--pinned .c-message__label__icon {
+    color: $color-red;
+  }
+
+  &--custom_response,
+  &--sli_highlight {
+    .c-message__label__icon {
+      color: $base-font-color;
+    }
+  }
+
+  &--sli_highlight .c-message__label {
+    .c-mrkdwn__member--link,
+    .c-mrkdwn__channel.internal_channel_link {
+      color: $color-highlight;
+    }
+  }
+
+  &--sli_highlight_negative .c-message__label {
+    background: rgba($color-shade-darkest, 0.1);
+  }
+
+  &--resend .c-message__body {
+    color: $color-highlight;
+  }
+
+  &--deleting {
+    background: rgba($color-red, 0.6);
+  }
+
+  &--standalone {
+    border-color: rgba($color-shade-light, 0.1);
+  }
+
+  &--unprocessed .c-message__body {
+    animation: to-grey 50ms linear 10s forwards;
+  }
+
+  &__broadcast_preamble_outer,
+  &__broadcast_preamble {
+    color: $color-highlight;
+  }
+
+  &__sender {
+    color: $base-font-color;
+
+    a {
+      color: $base-font-color;
+    }
+
+    .c-emoji__text_mode_icon {
+      color: $color-highlight;
+    }
+  }
+
+  &__body {
+    color: $base-font-color;
+
+    &--unknown {
+      background: rgba($color-shade-light, 0.1);
+    }
+
+    &--automated {
+      color: $color-highlight;
+    }
+
+    &--tombstone {
+      color: $color-highlight;
+    }
+  }
+
+  &__label {
+    color: $color-highlight;
+
+    &__highlight_title {
+      color: $base-font-color;
+    }
+
+    &__highlight_positive,
+    &__highlight_negative {
+      color: $color-highlight;
+    }
+
+    &__highlight_positive--active,
+    &__highlight_negative--active {
+      color: $base-font-color;
+    }
+  }
+
+  &__resend {
+    &_controls {
+      color: $color-highlight;
+    }
+
+    &_column {
+      background-color: rgba($color-shade-light, 0.1);
+    }
+  }
+
+  &__resend,
+  &__cancel {
+    color: $base-font-color;
+  }
+
+  &__edited_label {
+    color: $color-highlight;
+  }
+
+  &__tombstone_icon {
+    background: rgba($color-shade-light, 0.1);
+    color: $color-highlight;
+  }
+
+  &__bot_label {
+    background: rgba($color-shade-light, 0.1);
+    color: $color-highlight;
+  }
+
+  &__comment {
+    &:before {
+      color: $color-highlight;
+    }
+  }
+
+  &__call_attachment {
+    background: $color-base;
+    border-color: rgba($color-shade-light, 0.1);
+  }
+
+  &__call_icon {
+    color: $base-font-color;
+  }
+
+  &__call--ended .c-message__call_icon {
+    color: $color-highlight;
+  }
+
+  &__call_info {
+    color: $base-font-color;
+  }
+
+  &__call_name--linked {
+    color: $base-font-color;
+  }
+
+  &__call_name + .c-message__call_description {
+    &::before {
+      color: $color-highlight;
+    }
+  }
+
+  &__call_sub {
+    color: $color-highlight;
+  }
+}
+
+.c-message_actions {
+  &__container {
+    background: $color-base;
+    border-color: $color-shade-dark;
+
+    &:hover {
+      border-color: $color-shade-light;
+      box-shadow: 0 1px 1px $color-shadow-medium;
+    }
+  }
+
+  &__button {
+    border-right-color: $color-shade-dark;
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-font-color;
+    }
+
+    &:active {
+      background: $color-shade-dark;
+    }
+  }
+}
+
+.c-message_group {
+  background-color: $color-base;
+  border-color: $color-shade-dark;
+
+  &:hover .c-message_group__header {
+    color: $color-highlight;
+  }
+
+  &__header {
+    color: $base-font-color;
+  }
+
+  &__divider_text {
+    background-color: $color-base;
+    color: $base-font-color;
+  }
+}
+
+.c-message_list {
+  &__unread_divider {
+    &__separator {
+      border-color: $color-shade-light;
+    }
+
+    &__label {
+      background: $color-base;
+      box-shadow: 0 0 2px $color-shadow-medium;
+      color: $color-shade-light;
+    }
+  }
+
+  &__spinner {
+    color: $color-highlight;
+  }
+
+  .c-scrollbar__bar {
+    background: $color-shade-mid;
+  }
+}
+
+.c-virtual_list__item--focus:focus .c-message_list__focus_indicator {
+  box-shadow: inset 0 0 0 3px rgba($color-shade-lightest, 0.8);
+}
+
 ts-message {
   color: $base-font-color;
 
@@ -395,4 +681,34 @@ ts-mention {
 .bot_label {
   background: $color-shade-darkest;
   color: $color-highlight;
+}
+
+@keyframes to-grey {
+  0% {
+    color: inherit;
+  }
+
+  100% {
+    color: $color-highlight;
+  }
+}
+
+@keyframes fade-background-highlight {
+  0% {
+    background: $color-shade-light;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes border_focus_animation {
+  0% {
+    box-shadow: 0 0 4px 0.25px $color-shade-light, 0 0 0 0.5px $color-shade-lightest;
+  }
+
+  100% {
+    box-shadow: 0 0 4px 0 $color-shade-light, 0 0 0 0 $color-shade-lightest;
+  }
 }

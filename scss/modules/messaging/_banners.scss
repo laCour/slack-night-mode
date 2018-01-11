@@ -1,3 +1,24 @@
+.p-message_pane {
+  .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+    background: $color-base;
+    border-bottom: 1px solid $color-base;
+  }
+
+  .p-message_pane__top_banners:not(:empty) + div .c-message_list {
+    &:not(.c-virtual_list--scrollbar),
+    &.c-virtual_list--scrollbar > .c-scrollbar__hider {
+      &:before {
+        box-shadow: 0 32px $color-base;
+      }
+    }
+  }
+}
+
+.p-message_pane__unread_banner__banner {
+  background: $color-shade-light;
+  text-shadow: 0 1px $color-shadow-light;
+}
+
 .messages_banner {
   color: $base-font-color;
   text-shadow: 0 1px $color-shadow-light;

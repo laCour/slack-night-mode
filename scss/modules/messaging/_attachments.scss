@@ -1,3 +1,131 @@
+.c-message_attachment {
+  color: $base-font-color;
+
+  &__border {
+    background-color: $color-shade-light;
+  }
+
+  &__delete {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  &__pretext {
+    color: $base-font-color;
+  }
+
+  &__part + .c-message_attachment__part::before {
+    color: $color-shade-light;
+  }
+
+  &__author
+  &__autor--distinct {
+    color: $base-link-color;
+  }
+
+  &__author_link + .c-message_attachment__author_link {
+    color: $base-link-color;
+  }
+
+  &__title_link span {
+    color: $base-font-color;
+  }
+
+  &__text_expander {
+    color: $base-link-color;
+  }
+
+  &__footer {
+    color: $base-link-color;
+  }
+
+  &__image,
+  &__thumb,
+  &__video_thumb {
+    box-shadow: 0 0 0 1px  rgba($color-shade-darkest, 0.1) inset;
+  }
+
+  &__video_html {
+    background-color: rgba($color-base, 0.4);
+  }
+
+  &__video_buttons {
+    background: rgba($color-shade-darkest, 0.4);
+  }
+
+  &__video_link:visited,
+  &__video_link:link {
+    color: $base-font-color;
+  }
+
+  &__video_play,
+  &__video_link {
+    color: $base-font-color;
+    text-shadow: 0 1px 1px  rgba($color-shade-darkest, 0.5);
+  }
+
+  &__video_play:hover,
+  &__video_link:hover {
+    color: $base-font-color;
+  }
+
+  &__media_trigger .c-expandable_trigger {
+    color: $base-link-color;
+  }
+
+  &__media_trigger--too_large {
+    color: $base-link-color;
+  }
+
+  &__select {
+    border-color: $color-shade-darkest;
+
+    &:hover,
+    &:active {
+      border-color: $color-shade-light;
+    }
+  }
+}
+
+.c-message {
+  &__reply_bar {
+    &:hover,
+    &--focus {
+      background-color: $color-base;
+      border-color: $color-shade-darkest;
+
+      .c-message__reply_bar_arrow {
+        color: $color-highlight;
+      }
+
+      .c-message__reply_bar_view_thread {
+        background-color: $color-shade-light;
+      }
+    }
+  }
+
+  &__reply_bar_description {
+    color: $color-highlight;
+  }
+
+  &__file_meta {
+    color: $color-highlight;
+  }
+
+  &__image_container {
+    background: rgba($color-shade-darkest, 0.1);
+  }
+
+  &__image_wrapper {
+    &:after {
+      border-color: transparent;
+    }
+  }
+}
+
 .attachment_group {
   &.has_container {
     background: $color-base;
