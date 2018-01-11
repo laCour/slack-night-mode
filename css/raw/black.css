@@ -380,6 +380,12 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .inline_message_input_container .ql-container.focus, .inline_message_input_container .ql-container:active, .inline_message_input_container .ql-container:hover { border-color: #828282; }
 
+.c-message__editor__input { background: #545454; border-color: #363636; color: #e6e6e6; }
+
+.c-message__editor__input.focus { border-color: #363636; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
+
+.c-message__editor__warning { color: #bf360c; }
+
 #message_edit_container .message_input { background: #545454; border-color: #363636; color: #e6e6e6; }
 
 #message_edit_container .message_input.focus { border-color: #363636; box-shadow: 0 0 7px rgba(0, 0, 0, 0.15); }
@@ -738,6 +744,12 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #edit_topic_trigger { color: #949494; }
 
+.c-message_list__day_divider__label { color: #949494; }
+
+.c-message_list__day_divider__label__pill { background: #222; position: relative; }
+
+.c-message_list__day_divider__line { border-top-color: #363636; }
+
 .day_divider, .mention_day_container_div .day_divider { background: #222; color: #949494; }
 
 .day_divider hr, .mention_day_container_div .day_divider hr { border-bottom: 0; border-top: 1px solid #363636; }
@@ -779,6 +791,120 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #msgs_overlay_div { background: #222; }
 
 #col_messages { box-shadow: inset 1px 0 0 0 #222; }
+
+.c-message:hover .c-message__broadcast_preamble_outer, .c-message:hover .c-message__broadcast_preamble { color: #949494; }
+
+.c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble_outer, .c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble, .c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble_outer, .c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble { color: #949494; }
+
+.c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--focus:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) { background: rgba(0, 0, 0, 0.1); }
+
+.c-message:hover .c-message__body--automated, .c-message--hover .c-message__body--automated .c-message--focus .c-message__body--automated { color: #949494; }
+
+.c-message:hover .c-message__file_meta, .c-message--hover .c-message__file_meta .c-message--focus .c-message__file_meta { color: #949494; }
+
+.c-message--focus:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) { background: rgba(0, 0, 0, 0.1); }
+
+.c-message--pinned, .c-message--sli_highlight:not(.c-message--sli_highlight_negative), .c-message--starred { background: rgba(0, 0, 0, 0.2); }
+
+.c-message--custom_response { background: rgba(0, 0, 0, 0.15); }
+
+.c-message--sli_highlight_negative, .c-message--ephemeral { background: rgba(0, 0, 0, 0.1); }
+
+.c-message--pinned .c-message__label__icon { color: #bf360c; }
+
+.c-message--custom_response .c-message__label__icon, .c-message--sli_highlight .c-message__label__icon { color: #e6e6e6; }
+
+.c-message--sli_highlight .c-message__label .c-mrkdwn__member--link, .c-message--sli_highlight .c-message__label .c-mrkdwn__channel.internal_channel_link { color: #949494; }
+
+.c-message--sli_highlight_negative .c-message__label { background: rgba(0, 0, 0, 0.1); }
+
+.c-message--resend .c-message__body { color: #949494; }
+
+.c-message--deleting { background: rgba(191, 54, 12, 0.6); }
+
+.c-message--standalone { border-color: rgba(84, 84, 84, 0.1); }
+
+.c-message--unprocessed .c-message__body { animation: to-grey 50ms linear 10s forwards; }
+
+.c-message__broadcast_preamble_outer, .c-message__broadcast_preamble { color: #949494; }
+
+.c-message__sender { color: #e6e6e6; }
+
+.c-message__sender a { color: #e6e6e6; }
+
+.c-message__sender .c-emoji__text_mode_icon { color: #949494; }
+
+.c-message__body { color: #e6e6e6; }
+
+.c-message__body--unknown { background: rgba(84, 84, 84, 0.1); }
+
+.c-message__body--automated { color: #949494; }
+
+.c-message__body--tombstone { color: #949494; }
+
+.c-message__label { color: #949494; }
+
+.c-message__label__highlight_title { color: #e6e6e6; }
+
+.c-message__label__highlight_positive, .c-message__label__highlight_negative { color: #949494; }
+
+.c-message__label__highlight_positive--active, .c-message__label__highlight_negative--active { color: #e6e6e6; }
+
+.c-message__resend_controls { color: #949494; }
+
+.c-message__resend_column { background-color: rgba(84, 84, 84, 0.1); }
+
+.c-message__resend, .c-message__cancel { color: #e6e6e6; }
+
+.c-message__edited_label { color: #949494; }
+
+.c-message__tombstone_icon { background: rgba(84, 84, 84, 0.1); color: #949494; }
+
+.c-message__bot_label { background: rgba(84, 84, 84, 0.1); color: #949494; }
+
+.c-message__comment:before { color: #949494; }
+
+.c-message__call_attachment { background: #222; border-color: rgba(84, 84, 84, 0.1); }
+
+.c-message__call_icon { color: #e6e6e6; }
+
+.c-message__call--ended .c-message__call_icon { color: #949494; }
+
+.c-message__call_info { color: #e6e6e6; }
+
+.c-message__call_name--linked { color: #e6e6e6; }
+
+.c-message__call_name + .c-message__call_description::before { color: #949494; }
+
+.c-message__call_sub { color: #949494; }
+
+.c-message_actions__container { background: #222; border-color: #363636; }
+
+.c-message_actions__container:hover { border-color: #545454; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+
+.c-message_actions__button { border-right-color: #363636; color: #949494; }
+
+.c-message_actions__button:hover { color: #e6e6e6; }
+
+.c-message_actions__button:active { background: #363636; }
+
+.c-message_group { background-color: #222; border-color: #363636; }
+
+.c-message_group:hover .c-message_group__header { color: #949494; }
+
+.c-message_group__header { color: #e6e6e6; }
+
+.c-message_group__divider_text { background-color: #222; color: #e6e6e6; }
+
+.c-message_list__unread_divider__separator { border-color: #545454; }
+
+.c-message_list__unread_divider__label { background: #222; box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); color: #545454; }
+
+.c-message_list__spinner { color: #949494; }
+
+.c-message_list .c-scrollbar__bar { background: #424242; }
+
+.c-virtual_list__item--focus:focus .c-message_list__focus_indicator { box-shadow: inset 0 0 0 3px rgba(130, 130, 130, 0.8); }
 
 ts-message { color: #e6e6e6; }
 
@@ -944,6 +1070,71 @@ ts-mention { background: rgba(130, 130, 130, 0.1) !important; color: #e6e6e6 !im
 
 .bot_label { background: #000; color: #949494; }
 
+@keyframes to-grey { 0% { color: inherit; }
+  100% { color: #949494; } }
+
+@keyframes fade-background-highlight { 0% { background: #545454; }
+  100% { background: transparent; } }
+
+@keyframes border_focus_animation { 0% { box-shadow: 0 0 4px 0.25px #545454, 0 0 0 0.5px #828282; }
+  100% { box-shadow: 0 0 4px 0 #545454, 0 0 0 0 #828282; } }
+
+.c-message_attachment { color: #e6e6e6; }
+
+.c-message_attachment__border { background-color: #545454; }
+
+.c-message_attachment__delete { color: #949494; }
+
+.c-message_attachment__delete:hover { color: #c7c7c7; }
+
+.c-message_attachment__pretext { color: #e6e6e6; }
+
+.c-message_attachment__part + .c-message_attachment__part::before { color: #545454; }
+
+.c-message_attachment__author .c-message_attachment__autor--distinct { color: #949494; }
+
+.c-message_attachment__author_link + .c-message_attachment__author_link { color: #949494; }
+
+.c-message_attachment__title_link span { color: #e6e6e6; }
+
+.c-message_attachment__text_expander { color: #949494; }
+
+.c-message_attachment__footer { color: #949494; }
+
+.c-message_attachment__image, .c-message_attachment__thumb, .c-message_attachment__video_thumb { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; }
+
+.c-message_attachment__video_html { background-color: rgba(34, 34, 34, 0.4); }
+
+.c-message_attachment__video_buttons { background: rgba(0, 0, 0, 0.4); }
+
+.c-message_attachment__video_link:visited, .c-message_attachment__video_link:link { color: #e6e6e6; }
+
+.c-message_attachment__video_play, .c-message_attachment__video_link { color: #e6e6e6; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+
+.c-message_attachment__video_play:hover, .c-message_attachment__video_link:hover { color: #e6e6e6; }
+
+.c-message_attachment__media_trigger .c-expandable_trigger { color: #949494; }
+
+.c-message_attachment__media_trigger--too_large { color: #949494; }
+
+.c-message_attachment__select { border-color: #000; }
+
+.c-message_attachment__select:hover, .c-message_attachment__select:active { border-color: #545454; }
+
+.c-message__reply_bar:hover, .c-message__reply_bar--focus { background-color: #222; border-color: #000; }
+
+.c-message__reply_bar:hover .c-message__reply_bar_arrow, .c-message__reply_bar--focus .c-message__reply_bar_arrow { color: #949494; }
+
+.c-message__reply_bar:hover .c-message__reply_bar_view_thread, .c-message__reply_bar--focus .c-message__reply_bar_view_thread { background-color: #545454; }
+
+.c-message__reply_bar_description { color: #949494; }
+
+.c-message__file_meta { color: #949494; }
+
+.c-message__image_container { background: rgba(0, 0, 0, 0.1); }
+
+.c-message__image_wrapper:after { border-color: transparent; }
+
 .attachment_group.has_container { background: #222; border: 1px solid #363636; }
 
 .attachment_group.has_container .inline_attachment::after { background-color: #363636; }
@@ -1093,6 +1284,12 @@ ts-message .reply_bar .reply_bar_caret, ts-message .reply_bar .view_conv_hover, 
 ts-message .reply_bar:hover { background: #222; border-color: #000; }
 
 .inline_color_block { border-color: #545454; }
+
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { background: #222; border-bottom: 1px solid #222; }
+
+.p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { box-shadow: 0 32px #222; }
+
+.p-message_pane__unread_banner__banner { background: #545454; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
 
 .messages_banner { color: #e6e6e6; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }
 
@@ -1266,11 +1463,17 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #bf360c; }
 
 .sssh-link { color: #949494; }
 
+.c-message--dense .c-timestamp__label { color: #949494; }
+
+.c-message--dense .c-message__content_header .c-custom_status { border-color: #363636; }
+
 .dense_theme ts-message { color: #e6e6e6; }
 
 .dense_theme ts-message.first .message_gutter .timestamp, .dense_theme ts-message.selected .message_gutter .timestamp { color: #949494; }
 
 .dense_theme ts-message .message_content .message_current_status { border-color: #363636; }
+
+.c-message--light .c-message__sender .c-message__sender_link { color: #e6e6e6; }
 
 .light_theme ts-message { color: #e6e6e6; }
 
