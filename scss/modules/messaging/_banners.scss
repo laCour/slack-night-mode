@@ -12,6 +12,11 @@
       }
     }
   }
+
+  &__foreword__description,
+  &__limited_history_alert {
+    color: $base-font-color;
+  }
 }
 
 .p-message_pane__unread_banner__banner {
