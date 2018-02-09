@@ -17,7 +17,8 @@ code {
   }
 }
 
-.file_container {
+.file_container,
+.c-file_container {
   .CodeMirror,
   .sssh-code {
     .CodeMirror-code > div::before,
@@ -32,7 +33,7 @@ code {
 .CodeMirror {
   background: $color-shade-darkest;
   border: 1px solid $color-shade-dark;
-  color: $base-font-color;
+  color: $base-font-color !important;
 
   pre {
     background: transparent !important;
