@@ -136,6 +136,11 @@
     &--tombstone {
       color: $color-highlight;
     }
+
+    .c-mrkdwn__mention,
+    .c-mrkdwn__broadcast--mention {
+      color: $color-highlight;
+    }
   }
 
   &__label {
