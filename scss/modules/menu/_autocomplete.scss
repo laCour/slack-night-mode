@@ -36,7 +36,8 @@
     border-bottom: 1px solid $color-shade-dark;
   }
 
-  &.search_menu {
+  &.search_menu,
+  &.search_menu.unified {
     .section_header::before {
       background-color: $color-shade-light;
     }
@@ -86,9 +87,12 @@
       }
     }
 
-    &:not(.keyboard_active) li {
+    &:not(.keyboard_active) li,
+    .results.unified:not(.keyboard_active) li {
       &:focus,
       &:hover {
+        background: transparent;
+
         .muted_text {
           color: $color-highlight;
         }
@@ -130,12 +134,21 @@
       color: $base-font-color;
     }
 
+    .results.unified {
+      .unified_autocomplete_item {
+        .text {
+          color: $base-font-color;
+        }
+      }
+    }
+
     .action_btn,
     .modifier_icon {
       color: $color-highlight;
     }
 
-    footer {
+    footer,
+    footer.unified {
       .keyword::before,
       .modifier::before {
         background: $color-shade-lightest;
