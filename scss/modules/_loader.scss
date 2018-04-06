@@ -38,3 +38,8 @@ body.loading {
     background-color: $color-shade-dark;
   }
 }
+
+.p-degraded_list__loading {
+  background-color: $color-base;
+  color: $base-font-color;
+}
