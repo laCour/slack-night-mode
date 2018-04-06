@@ -2,8 +2,12 @@
   .im_browser_row {
     border-top: 1px solid $color-shade-light;
 
-    &.multiparty .member_image + .member_image:not(.ra):not(.ura) {
-      border: 2px solid $color-shade-darkest;
+    &.multiparty {
+      color: $base-font-color;
+
+      .member_image + .member_image:not(.ra):not(.ura) {
+        border: 2px solid $color-shade-darkest;
+      }
     }
 
     .im_unread_cnt {
