@@ -146,6 +146,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #00b9f2; }
 
 body.loading #team_menu, body.loading #quick_switcher_btn, body.loading #team_menu_overlay, body.loading #col_channels_overlay, body.loading #col_channels { background-color: #181818; }
 
+.p-degraded_list__loading { background-color: #000; color: #00b9f2; }
+
 input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type='url'], input[type=tel], input[type=color], input[type=search] { background-color: #282828; border-color: #101010; color: #00b9f2; }
 
 input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, input[type=number]:focus, input[type=email]:focus, input[type='url']:focus, input[type=tel]:focus, input[type=color]:focus, input[type=search]:focus { border-color: rgba(24, 24, 24, 0.8); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(48, 48, 48, 0.6); }
@@ -394,7 +396,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .ql-editor::-webkit-scrollbar-thumb:hover { background-color: rgba(40, 40, 40, 0.8); }
 
-.ql-placeholder { color: #00b9f2; filter: none; }
+.ql-placeholder, .texty_legacy .ql-placeholder { color: #00b9f2; filter: none; }
 
 .ql-container.texty_single_line_input { background: #282828; border: 1px solid #181818; color: #00b9f2; }
 
@@ -711,10 +713,6 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #im_title.away { color: #1793d1; }
 
 .channel_header_info button { color: #1793d1; }
-
-.channel_title_info { background: #000; color: #1793d1; }
-
-.channel_title_info .channel_details_toggle, .channel_title_info .channel_actions_toggle { color: #1793d1; }
 
 .channel_header_icon { color: #00b9f2; }
 
@@ -1223,45 +1221,45 @@ ts-mention { background: rgba(48, 48, 48, 0.1) !important; color: #00b9f2 !impor
 
 .delete_attachment_link:hover { color: #299bd4; }
 
-.file_container { background: #101010; border: 1px solid #181818; color: #00b9f2; }
+.file_container, .c-file_container { background: #101010; border: 1px solid #181818; color: #00b9f2; }
 
-.file_container:hover, .file_container:focus, .file_container.file_menu_open { border-bottom-color: #181818; border-left-color: #181818; border-right-color: #181818; }
+.file_container:hover, .file_container:focus, .file_container.file_menu_open, .c-file_container:hover, .c-file_container:focus, .c-file_container.file_menu_open { border-bottom-color: #181818; border-left-color: #181818; border-right-color: #181818; }
 
-.file_container::after, .file_container.post_container::after { background-image: -webkit-linear-gradient(top, transparent 0, #000 100%); background-image: -moz-linear-gradient(top, transparent 0, #000 100%); background-image: -o-linear-gradient(top, transparent 0, #000 100%); background-image: linear-gradient(top, transparent 0, #000 100%); }
+.file_container::after, .file_container.post_container::after, .c-file_container::after, .c-file_container.post_container::after { background-image: -webkit-linear-gradient(top, transparent 0, #000 100%); background-image: -moz-linear-gradient(top, transparent 0, #000 100%); background-image: -o-linear-gradient(top, transparent 0, #000 100%); background-image: linear-gradient(top, transparent 0, #000 100%); }
 
-.file_container.generic_container .file_header_icon .ts_icon { background: #000; box-shadow: 0 0 0 3px #000; color: #00b9f2; }
+.file_container.generic_container .file_header_icon .ts_icon, .c-file_container.generic_container .file_header_icon .ts_icon { background: #000; box-shadow: 0 0 0 3px #000; color: #00b9f2; }
 
-.file_container.generic_container .file_header_icon .ts_icon.snippet { background: #181818; }
+.file_container.generic_container .file_header_icon .ts_icon.snippet, .c-file_container.generic_container .file_header_icon .ts_icon.snippet { background: #181818; }
 
-.file_container.generic_container .file_header_meta .meta_hover { background: #101010; color: #00b9f2; }
+.file_container.generic_container .file_header_meta .meta_hover, .c-file_container.generic_container .file_header_meta .meta_hover { background: #101010; color: #00b9f2; }
 
-.file_container .file_header .file_header_meta { color: #1793d1; }
+.file_container .file_header .file_header_meta, .c-file_container .file_header .file_header_meta { color: #1793d1; }
 
-.file_container .file_header + .file_body { border-top: 1px solid #101010; }
+.file_container .file_header + .file_body, .c-file_container .file_header + .file_body { border-top: 1px solid #101010; }
 
-.file_container .preview_actions .btn { background-color: #181818; color: #00b9f2 !important; }
+.file_container .preview_actions .btn, .c-file_container .preview_actions .btn { background-color: #181818; color: #00b9f2 !important; }
 
-.file_container .preview_actions .btn::after { border-color: #101010; }
+.file_container .preview_actions .btn::after, .c-file_container .preview_actions .btn::after { border-color: #101010; }
 
-.file_container .preview_actions .btn.preview_show_less_header { background-color: rgba(48, 48, 48, 0.9); color: #00b9f2 !important; }
+.file_container .preview_actions .btn.preview_show_less_header, .c-file_container .preview_actions .btn.preview_show_less_header { background-color: rgba(48, 48, 48, 0.9); color: #00b9f2 !important; }
 
-.file_container .preview_actions .btn.preview_show_less_header::after { border: 2px solid #101010; }
+.file_container .preview_actions .btn.preview_show_less_header::after, .c-file_container .preview_actions .btn.preview_show_less_header::after { border: 2px solid #101010; }
 
-.file_container .preview_actions .btn.preview_show_less_header:focus, .file_container .preview_actions .btn.preview_show_less_header:hover { background-color: #181818; }
+.file_container .preview_actions .btn.preview_show_less_header:focus, .file_container .preview_actions .btn.preview_show_less_header:hover, .c-file_container .preview_actions .btn.preview_show_less_header:focus, .c-file_container .preview_actions .btn.preview_show_less_header:hover { background-color: #181818; }
 
-.file_container .preview_actions .btn.preview_show_less_header:focus::after, .file_container .preview_actions .btn.preview_show_less_header:hover::after { border-color: #181818; }
+.file_container .preview_actions .btn.preview_show_less_header:focus::after, .file_container .preview_actions .btn.preview_show_less_header:hover::after, .c-file_container .preview_actions .btn.preview_show_less_header:focus::after, .c-file_container .preview_actions .btn.preview_show_less_header:hover::after { border-color: #181818; }
 
-.file_container.image_container .image_body { background-color: #000; }
+.file_container.image_container .image_body, .c-file_container.image_container .image_body { background-color: #000; }
 
-.file_container.image_container .preview_actions .btn { background-color: rgba(48, 48, 48, 0.9); }
+.file_container.image_container .preview_actions .btn, .c-file_container.image_container .preview_actions .btn { background-color: rgba(48, 48, 48, 0.9); }
 
-.file_container.image_container .preview_actions .btn:focus, .file_container.image_container .preview_actions .btn:hover { background-color: #181818; }
+.file_container.image_container .preview_actions .btn:focus, .file_container.image_container .preview_actions .btn:hover, .c-file_container.image_container .preview_actions .btn:focus, .c-file_container.image_container .preview_actions .btn:hover { background-color: #181818; }
 
-.file_container.image_container .preview_actions.overflow_preview_actions { background: rgba(48, 48, 48, 0.9); border: 1px solid rgba(16, 16, 16, 0.1); }
+.file_container.image_container .preview_actions.overflow_preview_actions, .c-file_container.image_container .preview_actions.overflow_preview_actions { background: rgba(48, 48, 48, 0.9); border: 1px solid rgba(16, 16, 16, 0.1); }
 
-.file_container .preview_show .preview_show_btn { background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), linear-gradient(rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)); color: #00b9f2; }
+.file_container .preview_show .preview_show_btn, .c-file_container .preview_show .preview_show_btn { background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), linear-gradient(rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)); color: #00b9f2; }
 
-.file_container.file_menu_open .preview_show_less .preview_show_btn, .file_container:focus .preview_show_less .preview_show_btn, .file_container:hover .preview_show_less .preview_show_btn { background: rgba(40, 40, 40, 0.8); color: #00b9f2; }
+.file_container.file_menu_open .preview_show_less .preview_show_btn, .file_container:focus .preview_show_less .preview_show_btn, .file_container:hover .preview_show_less .preview_show_btn, .c-file_container.file_menu_open .preview_show_less .preview_show_btn, .c-file_container:focus .preview_show_less .preview_show_btn, .c-file_container:hover .preview_show_less .preview_show_btn { background: rgba(40, 40, 40, 0.8); color: #00b9f2; }
 
 .message--focus .file_container .preview_show.preview_show_less .preview_show_btn { background: #282828; color: #00b9f2; }
 
@@ -1346,6 +1344,10 @@ code { background-color: #101010; border: 1px solid #181818; color: #00b9f2; }
 .snippet_preview pre, .snippet_body pre { color: #00b9f2 !important; }
 
 .file_container .CodeMirror .CodeMirror-code > div::before, .file_container .CodeMirror .sssh-line::before, .file_container .sssh-code .CodeMirror-code > div::before, .file_container .sssh-code .sssh-line::before, .c-file_container .CodeMirror .CodeMirror-code > div::before, .c-file_container .CodeMirror .sssh-line::before, .c-file_container .sssh-code .CodeMirror-code > div::before, .c-file_container .sssh-code .sssh-line::before { background-color: #181818; border-right: 1px solid #181818; color: #1793d1; }
+
+.c-snippet .c-file_container { background-color: #000; }
+
+.c-snippet .c-file_container.c-file_container--gradient::after { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #000); border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
 
 .CodeMirror { background: #101010; border: 1px solid #181818; color: #00b9f2 !important; }
 
@@ -2500,6 +2502,8 @@ input[type="text"].p-emoji_picker__input:focus { border-color: #282828; box-shad
 #notifications_not_working p.highlight_yellow_bg a { color: #00b9f2; }
 
 #im_browser .im_browser_row { border-top: 1px solid #282828; }
+
+#im_browser .im_browser_row.multiparty { color: #00b9f2; }
 
 #im_browser .im_browser_row.multiparty .member_image + .member_image:not(.ra):not(.ura) { border: 2px solid #101010; }
 
