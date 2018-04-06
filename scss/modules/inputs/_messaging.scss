@@ -213,7 +213,8 @@
   }
 }
 
-.ql-placeholder {
+.ql-placeholder,
+.texty_legacy .ql-placeholder {
   color: $base-font-color;
   filter: none;
 }
