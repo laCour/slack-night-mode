@@ -331,7 +331,8 @@
   color: $base-link-color-active;
 }
 
-.file_container {
+.file_container,
+.c-file_container {
   background: $color-shade-darkest;
   border: 1px solid $color-shade-dark;
   color: $base-font-color;
