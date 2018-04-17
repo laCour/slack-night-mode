@@ -91,6 +91,10 @@
   &__close_container:hover {
     background: $color-shade-darkest;
   }
+
+  &__jumper {
+    background: transparent !important; // !important in order to overcome specificity score that matches base style
+  }
 }
 
 .channels_list_holder {

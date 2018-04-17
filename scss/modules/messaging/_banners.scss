@@ -1,7 +1,11 @@
 .p-message_pane {
-  .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+  .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
     background: $color-base;
-    border-bottom: 1px solid $color-base;
+
+    &::before {
+      background: $color-base;
+      border-bottom: 1px solid $color-base;
+    }
   }
 
   .p-message_pane__top_banners:not(:empty) + div .c-message_list {
