@@ -44,6 +44,7 @@
   .p-channel_sidebar .c-custom_scrollbar__thumb_vertical, .p-channel_sidebar .c-scrollbar__bar { background: #61485e; }
   .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--unread .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name, .p-channel_sidebar__section_heading_label--clickable:hover, .p-channel_sidebar__quickswitcher:hover { color: #f9eff7 !important; }
   .p-channel_sidebar__close_container:hover { background: #372c36; }
+  .p-channel_sidebar__jumper { background: transparent !important; }
   .channels_list_holder h2 { color: #f0d9ed !important; }
   .channels_list_holder h2.hoverable:not(.jquery_hover):hover { color: #f0d9ed; opacity: 0.8; }
   .channels_list_holder ul { color: #f0d9ed !important; }
@@ -645,7 +646,8 @@
   ts-message .reply_bar .reply_bar_caret, ts-message .reply_bar .view_conv_hover, ts-message .reply_bar .last_reply_at { color: #a3839f; }
   ts-message .reply_bar:hover { background: #3e313c; border-color: #372c36; }
   .inline_color_block { border-color: #61485e; }
-  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { background: #3e313c; border-bottom: 1px solid #3e313c; }
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider { background: #3e313c; }
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider::before { background: #3e313c; border-bottom: 1px solid #3e313c; }
   .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { box-shadow: 0 32px #3e313c; }
   .p-message_pane__foreword__description, .p-message_pane__limited_history_alert { color: #f0d9ed; }
   .p-message_pane__unread_banner__banner { background: #61485e; text-shadow: 0 1px rgba(0, 0, 0, 0.15); }

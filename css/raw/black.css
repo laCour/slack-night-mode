@@ -90,6 +90,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 .p-channel_sidebar__close_container:hover { background: #000; }
 
+.p-channel_sidebar__jumper { background: transparent !important; }
+
 .channels_list_holder h2 { color: #e6e6e6 !important; }
 
 .channels_list_holder h2.hoverable:not(.jquery_hover):hover { color: #e6e6e6; opacity: 0.8; }
@@ -1289,7 +1291,9 @@ ts-message .reply_bar:hover { background: #222; border-color: #000; }
 
 .inline_color_block { border-color: #545454; }
 
-.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { background: #222; border-bottom: 1px solid #222; }
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider { background: #222; }
+
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider::before { background: #222; border-bottom: 1px solid #222; }
 
 .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before { box-shadow: 0 32px #222; }
 
