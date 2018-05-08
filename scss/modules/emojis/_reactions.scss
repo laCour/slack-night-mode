@@ -1,17 +1,20 @@
-.rxn {
-  background: $color-shade-darkest;
+.rxn,
+.c-reaction,
+.c-reaction_add,
+.c-member_slug {
+  background: $color-shade-dark;
   border: 1px solid $color-shade-light;
 
   &.active,
   &:hover {
-    border-color: $color-shade-mid;
+    background: $color-shade-mid;
 
     .emoji_rxn_count {
       color: $base-font-color;
     }
   }
 
-  &.user_reacted {
+  &.c-reaction--reacted {
     background-color: rgba($color-shade-mid, 0.08);
     border-color: rgba($color-shade-lightest, 0.4) !important;
 
