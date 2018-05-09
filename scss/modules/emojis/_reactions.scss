@@ -18,12 +18,14 @@
     background-color: rgba($color-shade-mid, 0.08);
     border-color: rgba($color-shade-lightest, 0.4) !important;
 
-    .emoji_rxn_count {
+    .emoji_rxn_count,
+    .c-reaction__count {
       color: $base-font-color;
     }
   }
 
-  .emoji_rxn_count {
+  .emoji_rxn_count,
+  .c-reaction__count {
     color: $base-font-color;
   }
 
