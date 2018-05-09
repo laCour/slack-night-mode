@@ -17,13 +17,15 @@
   color: $base-link-color;
 }
 
-a.c-member_slug {
+a.c-member_slug,
+.c-mrkdwn__subteam--link {
   background: $color-shade-dark;
   border: 1px solid $color-shade-light;
   color: $base-font-color;
 
   &.active,
   &:hover {
+    color: $base-font-color;
     background: $color-shade-mid;
   }
 }
