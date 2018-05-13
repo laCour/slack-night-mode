@@ -746,9 +746,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .presence { color: #1793d1; }
 
-#channel_topic_text { background: #000; }
-
-#edit_topic_container:hover { overflow: hidden !important; }
+#edit_topic_inner:not(.unable_to_post)::before { background: #000; border-color: #181818; }
 
 #edit_topic_trigger { color: #1793d1; }
 

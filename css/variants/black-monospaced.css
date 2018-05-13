@@ -372,8 +372,7 @@
   #recent_mentions_toggle:hover { color: #bf360c; }
   #rxn_toast_div { background: #000; border: 1px solid #545454; }
   .presence { color: #949494; }
-  #channel_topic_text { background: #222; }
-  #edit_topic_container:hover { overflow: hidden !important; }
+  #edit_topic_inner:not(.unable_to_post)::before { background: #222; border-color: #363636; }
   #edit_topic_trigger { color: #949494; }
   .c-message_list__day_divider__label { color: #949494; }
   .c-message_list__day_divider__label__pill { background: #222; position: relative; }
