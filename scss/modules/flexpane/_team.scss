@@ -167,3 +167,11 @@
     background: $color-shade-light;
   }
 }
+
+.c-unified_member__display-name,
+.c-unified_member__secondary-name,
+.c-unified_member__title,
+.c-unified_member__other-names,
+.c-unified_member__other-names {
+  color: $base-font-color !important;
+}
