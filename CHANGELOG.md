@@ -1,5 +1,28 @@
 # Changelog
 
+## 2018-05-13
+* Correct color on team member and user listings ([#165](https://github.com/laCour/slack-night-mode/issues/165))
+* Correct background-color of message--editing element ([#166](https://github.com/laCour/slack-night-mode/issues/166))
+* Darken colors on mentions and reactions ([#167](https://github.com/laCour/slack-night-mode/issues/167))
+* Correct color on file attachment titles ([#168](https://github.com/laCour/slack-night-mode/issues/168))
+* Correct colors on user and channel tokens in search results ([#169](https://github.com/laCour/slack-night-mode/issues/169))
+
+Thanks to [@mastermel](https://github.com/mastermel) for this release.
+
+## 2018-04-17
+* Fix messaging pane background styles ([#159](https://github.com/laCour/slack-night-mode/issues/159))
+
+Thanks to [@denno020](https://github.com/denno020) for this release.
+
+## 2018-04-06
+* Fix dissimilar header icon colors ([#151](https://github.com/laCour/slack-night-mode/issues/151))
+* Correct styling of history loading message ([#153](https://github.com/laCour/slack-night-mode/issues/153))
+* Change gradient color for snippets and remove white outline ([#152](https://github.com/laCour/slack-night-mode/issues/152))
+* Correct the color of the placeholder text in the message box ([#156](https://github.com/laCour/slack-night-mode/issues/156))
+* Correct color of multi-party direct message text ([#155](https://github.com/laCour/slack-night-mode/issues/155))
+* Correct container styling for files ([#154](https://github.com/laCour/slack-night-mode/issues/154))
+
+Thanks to [@ifvictr](https://github.com/ifvictr), [@narkq](https://github.com/narkq), and [@mastermel](https://github.com/mastermel) for this release.
 
 ## 2018-02-09
 * Support for new mention classes ([#141](https://github.com/laCour/slack-night-mode/issues/141))
