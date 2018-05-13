@@ -139,6 +139,11 @@
         .text {
           color: $base-font-color;
         }
+
+        .token {
+          background-color: $color-shade-mid;
+          color: $base-font-color;
+        }
       }
     }
 
