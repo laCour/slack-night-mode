@@ -121,14 +121,9 @@
   color: $color-highlight;
 }
 
-#channel_topic_text {
+#edit_topic_inner:not(.unable_to_post)::before {
   background: $color-base;
-}
-
-#edit_topic_container {
-  &:hover {
-    overflow: hidden !important;
-  }
+  border-color: $color-shade-dark;
 }
 
 #edit_topic_trigger {
