@@ -16,3 +16,17 @@
 #member_mentions h3 a {
   color: $base-link-color;
 }
+
+a.c-member_slug,
+.c-member_slug--link,
+.c-mrkdwn__subteam--link {
+  background: $color-shade-dark;
+  border: 1px solid $color-shade-light;
+  color: $base-font-color;
+
+  &.active,
+  &:hover {
+    background: $color-shade-mid;
+    color: $base-font-color;
+  }
+}
