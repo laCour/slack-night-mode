@@ -173,6 +173,12 @@
 }
 
 .c-message {
+  &--editing {
+    background: $color-shade-dark;
+    border-color: $color-shade-dark;
+    color: $base-font-color;
+  }
+
   &__editor {
     &__input {
       background: $color-shade-light;
