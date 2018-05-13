@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2018-05-13
+* Fix unviewable topics ([#163](https://github.com/laCour/slack-night-mode/issues/163))
 * Correct color on team member and user listings ([#165](https://github.com/laCour/slack-night-mode/issues/165))
 * Correct background-color of message--editing element ([#166](https://github.com/laCour/slack-night-mode/issues/166))
 * Darken colors on mentions and reactions ([#167](https://github.com/laCour/slack-night-mode/issues/167))
