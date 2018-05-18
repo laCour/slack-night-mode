@@ -24,23 +24,39 @@
   }
 }
 
-.unread_group_header {
-  background: $color-shade-dark;
-  border-top-color: $color-shade-light;
-  color: $base-font-color;
+.unread_group {
+  .unread_group_header {
+    background: $color-shade-dark;
+    border-top-color: $color-shade-light;
+    color: $base-font-color;
 
-  .unread_group_collapse_toggle {
-    &:hover ts-icon {
+    .unread_group_collapse_toggle {
+      &:hover ts-icon {
+        color: $base-font-color;
+      }
+    }
+
+    .unread_group_collapse_caret {
+      .ts_icon_caret_down {
+        color: $color-highlight;
+      }
+    }
+
+    .unread_group_mark,
+    .unread_keyboard {
+      background: $color-base;
+    }
+  }
+
+  &.active {
+    .unread_group_header {
+      background: $color-shade-darkest;
+      border-top-color: $color-shade-light;
       color: $base-font-color;
     }
   }
-
-  .unread_group_collapse_caret {
-    .ts_icon_caret_down {
-      color: $color-highlight;
-    }
-  }
 }
+
 
 .collapsed .unread_group_header .ts_icon_caret_right,
 .collapsing .unread_group_header .ts_icon_caret_right {
