@@ -6,6 +6,17 @@
   box-shadow: inset 1px 0 0 0 $color-base;
 }
 
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__broadcast--mention:hover,
+.c-mrkdwn__highlight,
+.c-mrkdwn__mention,
+.c-mrkdwn__mention:hover,
+.c-mrkdwn__subteam--mention,
+.c-mrkdwn__subteam--mention:hover,
+.mention_yellow_bg {
+  color: $color-highlight !important;
+}
+
 .c-message {
   &:hover {
     .c-message__broadcast_preamble_outer,
@@ -134,11 +145,6 @@
     }
 
     &--tombstone {
-      color: $color-highlight;
-    }
-
-    .c-mrkdwn__mention,
-    .c-mrkdwn__broadcast--mention {
       color: $color-highlight;
     }
   }

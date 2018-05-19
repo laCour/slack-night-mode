@@ -55,6 +55,18 @@
   color: $base-font-color;
 }
 
+#at_channel_warning_dialog {
+  background-color: $color-base;
+
+  &.fullsize {
+    background-color: $color-base;
+
+    .modal-body {
+      background-color: $color-base;
+    }
+  }
+}
+
 .channel_prefs_modal_header {
   color: $base-font-color;
 }
