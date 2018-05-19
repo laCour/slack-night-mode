@@ -1,5 +1,12 @@
 # Changelog
 
+## 2018-05-19
+* Correct colors for unread section headers ([#150](https://github.com/laCour/slack-night-mode/issues/150))
+* Correct color on channel warning and highlights ([#170](https://github.com/laCour/slack-night-mode/issues/170))
+* Correct styles for limited channel history foreword ([#148](https://github.com/laCour/slack-night-mode/issues/148))
+
+Thanks to [@mastermel](https://github.com/mastermel) and [Jiri-Kremser](https://github.com/Jiri-Kremser) for this release.
+
 ## 2018-05-13
 * Fix unviewable topics ([#163](https://github.com/laCour/slack-night-mode/issues/163))
 * Correct color on team member and user listings ([#165](https://github.com/laCour/slack-night-mode/issues/165))
