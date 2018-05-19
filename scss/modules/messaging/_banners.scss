@@ -23,6 +23,12 @@
   }
 }
 
+.p-message_pane__limited_history_foreword {
+  background: $color-shade-dark;
+  background-image: none;
+  color: $base-font-color;
+}
+
 .p-message_pane__unread_banner__banner {
   background: $color-shade-light;
   text-shadow: 0 1px $color-shadow-light;
