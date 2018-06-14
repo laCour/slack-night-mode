@@ -17,6 +17,11 @@
   color: $base-link-color;
 }
 
+a.internal_member_link {
+  background: $color-shade-dark;
+  color: $base-font-color;
+}
+
 a.c-member_slug,
 .c-member_slug--link,
 .c-mrkdwn__subteam--link {
