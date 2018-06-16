@@ -1,5 +1,11 @@
 # Changelog
 
+## 2018-06-15
+* Style member mentions in channel topics ([#173](https://github.com/laCour/slack-night-mode/issues/173))
+* Style channel purpose in channel list ([#174](https://github.com/laCour/slack-night-mode/issues/174))
+
+Thanks to [@mastermel](https://github.com/mastermel) and [@jspaetzel](https://github.com/jspaetzel) for this release.
+
 ## 2018-05-19
 * Correct colors for unread section headers ([#150](https://github.com/laCour/slack-night-mode/issues/150))
 * Correct color on channel warning and highlights ([#170](https://github.com/laCour/slack-night-mode/issues/170))
