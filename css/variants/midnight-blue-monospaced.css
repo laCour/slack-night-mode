@@ -987,6 +987,7 @@
   #flex_contents .subheading:not(.empty)#mentions_options { background-color: #000; border-bottom-color: #181818; color: #00b9f2; }
   .mention_day_container_div .day_divider::before { background: none; border-color: #181818; }
   #member_mentions h3 a { color: #1793d1; }
+  a.internal_member_link { background: #181818; color: #00b9f2; }
   a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link { background: #181818; border: 1px solid #282828; color: #00b9f2; }
   a.c-member_slug.active, a.c-member_slug:hover, .c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover { background: #202020; color: #00b9f2; }
   .mention_rxn .mention_rxn_summary { color: #00b9f2; }
@@ -1261,6 +1262,7 @@
   #channel_browser #channel_list_container:not(.keyboard_active).not_scrolling .channel_browser_row:hover, #channel_browser .channel_browser_row.highlighted { background: #101010; border: 1px solid #282828; }
   #channel_browser .channel_browser_divider { background: transparent; color: #1793d1; }
   #channel_browser .channel_browser_sort_container::after { color: #00b9f2; }
+  #channel_browser .channel_browser_channel_purpose { color: #00b9f2; }
   .channel_invite_member .add_icon, .channel_invite_member_small .add_icon { color: #1793d1; }
   .channel_invite_member .name_container .not_in_token, .channel_invite_member_small .name_container .not_in_token { color: #1793d1 !important; }
   .channel_invite_member .invite_user_group_avatar, .channel_invite_member_small .invite_user_group_avatar { background-color: #101010; color: #00b9f2; }
@@ -1453,6 +1455,7 @@
   .off_white_bg, .neutral_white_bg { background-color: #181818 !important; }
   .yolk_orange_bg, .burnt_violet_bg, .flexpane_grey_bg { background-color: #202020 !important; }
   .sky_blue_bg, .clear_blue_bg, .seafoam_green_bg { background-color: #282828 !important; }
+  .sk_black { color: inherit; }
   .monkey_scroll_bar { z-index: 99; }
   .client_header_icon { -moz-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); -webkit-filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); filter: brightness(0.6) contrast(3) invert(1) sepia(0.5); }
   nav.top.persistent { background: #181818; }

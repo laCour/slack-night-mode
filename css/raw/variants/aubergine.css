@@ -1969,6 +1969,8 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #f0d9ed; }
 
 #member_mentions h3 a { color: #a3839f; }
 
+a.internal_member_link { background: #4d394b; color: #f0d9ed; }
+
 a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link { background: #4d394b; border: 1px solid #61485e; color: #f0d9ed; }
 
 a.c-member_slug.active, a.c-member_slug:hover, .c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover { background: #4a3b49; color: #f0d9ed; }
@@ -2517,6 +2519,8 @@ input[type="text"].p-emoji_picker__input:focus { border-color: #61485e; box-shad
 
 #channel_browser .channel_browser_sort_container::after { color: #f0d9ed; }
 
+#channel_browser .channel_browser_channel_purpose { color: #f0d9ed; }
+
 .channel_invite_member .add_icon, .channel_invite_member_small .add_icon { color: #a3839f; }
 
 .channel_invite_member .name_container .not_in_token, .channel_invite_member_small .name_container .not_in_token { color: #a3839f !important; }
@@ -2900,6 +2904,8 @@ ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .me
 .yolk_orange_bg, .burnt_violet_bg, .flexpane_grey_bg { background-color: #4a3b49 !important; }
 
 .sky_blue_bg, .clear_blue_bg, .seafoam_green_bg { background-color: #61485e !important; }
+
+.sk_black { color: inherit; }
 
 .monkey_scroll_bar { z-index: 99; }
 
