@@ -218,6 +218,15 @@ a.splash_interactive__window_link {
   .app_desc_expand_showing .app_profile_desc_fade {
     background: linear-gradient(180deg, rgba($color-base, 0) 0, $color-base 100%);
   }
+
+  .service_panel {
+    background-color: $color-shade-dark;
+  }
+  
+  .service_card {
+    background-color: $color-base;
+    border: 1px solid $color-shade-mid;
+  }
 }
 
 .app_card,
