@@ -70,6 +70,10 @@
       }
     }
 
+    a:not(.inline_menu_link) {
+      color: $base-font-color;
+    }
+
     &.highlighted a {
       background: $color-base;
       border-bottom-color: $color-shade-darkest;

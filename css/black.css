@@ -221,6 +221,7 @@
   .menu .section_header .header_label { background-color: #363636; color: #949494; }
   .menu .section_header > div.header_label_container { color: #949494; }
   .menu ul li a { background: #363636; border-bottom: 0; color: #e6e6e6; }
+  .menu ul li a:not(.inline_menu_link) { color: #e6e6e6; }
   .menu ul li a.delete_link { color: #bf360c; }
   .menu ul li.highlighted a { background: #222; border-bottom-color: #000; color: #e6e6e6; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15); }
   .menu ul li.highlighted a .menu_item_details, .menu ul li.highlighted a .prefix, .menu ul li.highlighted a i, .menu ul li.highlighted a ts-icon { color: #e6e6e6; }
