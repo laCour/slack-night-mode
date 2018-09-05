@@ -52,3 +52,36 @@
     }
   }
 }
+
+.c-search_modal,
+.c-search_modal:not(.c-search_modal--primarysearch) {
+  .popover>div,
+  .c-search__input_box {
+    background: $color-shade-dark;
+    border-color: $color-shade-light;
+    color: $base-font-color;
+  }
+}
+
+.c-search_autocomplete footer {
+  background: $color-shade-dark;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+}
+
+.c-search_autocomplete__suggestion_item {
+  color: $base-font-color;
+
+  &--selected {
+    background-color: $color-shade-mid;
+  }
+
+   .token {
+     background-color: $color-shade-darker;
+     color: $base-font-color;
+   }
+}
+
+.c-search__input_and_close {
+  border-bottom-color: $color-shade-darkest;
+}
