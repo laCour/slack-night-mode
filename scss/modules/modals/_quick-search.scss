@@ -4,7 +4,9 @@ ts-jumper {
     box-shadow: 0 1px 10px $color-shadow-dark;
   }
 
-  ts-jumper-help {
+  ts-jumper-help,
+  .p-jumper__help {
+    background: $color-base;
     color: $color-highlight;
   }
 
