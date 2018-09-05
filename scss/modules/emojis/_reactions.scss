@@ -33,3 +33,9 @@
     color: rgba($base-font-color, 0.25);
   }
 }
+
+a.c-member_slug--mention,
+a.c-member_slug--mention:hover {
+  background-color: $color-yellow;
+  color: $color-shade-dark;
+}
