@@ -156,8 +156,10 @@
 }
 
 #message_edit_container,
-.inline_message_input_container {
-  .message_input {
+#threads_msgs,
+#reply_container.upload_in_threads {
+  .inline_message_input_container,
+  .inline_message_input_container.with_file_upload {
     background: $color-shade-light;
     border-color: $color-shade-dark;
     color: $base-font-color;
