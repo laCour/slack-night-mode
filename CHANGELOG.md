@@ -1,5 +1,16 @@
 # Changelog
 
+## 2018-09-04
+* Correct styling of backgrounds on new app page ([#175](https://github.com/laCour/slack-night-mode/issues/175))
+* Correct dropdown menu text color ([#182](https://github.com/laCour/slack-night-mode/issues/182), [#181](https://github.com/laCour/slack-night-mode/issues/181))
+* Correct styling of thread message input ([#183](https://github.com/laCour/slack-night-mode/issues/183), [#184](https://github.com/laCour/slack-night-mode/issues/184))
+* Add selectors for new alerts ([#179](https://github.com/laCour/slack-night-mode/issues/179))
+* Correct hover background color on threads ([#178](https://github.com/laCour/slack-night-mode/issues/178))
+* Restore yellow background of highlight mentions ([#176](https://github.com/laCour/slack-night-mode/issues/176))
+* Style new search modal ([#177](https://github.com/laCour/slack-night-mode/issues/177))
+
+Thanks to [@mastermel](https://github.com/mastermel), [@jspaetzel](https://github.com/jspaetzel), [@gfody](https://github.com/gfody), and [@mortenlj](https://github.com/mortenlj) for this release.
+
 ## 2018-06-15
 * Style member mentions in channel topics ([#173](https://github.com/laCour/slack-night-mode/issues/173))
 * Style channel purpose in channel list ([#174](https://github.com/laCour/slack-night-mode/issues/174))
