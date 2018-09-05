@@ -1,4 +1,6 @@
-.alert {
+.alert,
+.c-alert,
+.c-alert--boxed {
   background-color: $color-shade-dark;
   border-color: $color-shade-darkest;
   color: $base-font-color;
