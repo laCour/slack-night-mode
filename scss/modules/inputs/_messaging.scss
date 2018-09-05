@@ -158,6 +158,8 @@
 #message_edit_container,
 .inline_message_input_container {
   .message_input {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
     color: $base-font-color;
   }
 }
