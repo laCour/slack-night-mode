@@ -81,6 +81,24 @@
   }
 }
 
+.p-block_kit_date_picker_calendar_wrapper {
+  background: $color-shade-dark;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+
+  .c-calendar_view_header__title_btn {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
+    color: $base-font-color;
+  }
+
+  .c-date_picker_calendar__date--disabled,
+  .c-mini_calendar__month_button:disabled {
+    background: $color-shade-light;
+    color: $color-shade-lightest;
+  }
+}
+
 #menu {
   &.date_picker {
     .pickmeup {

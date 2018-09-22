@@ -1,24 +1,19 @@
-.ts_toggle {
-  .ts_toggle_button {
-    background: $color-shade-darkest;
-    color: $base-font-color;
-
-    .ts_toggle_handle {
-      background: $color-shade-dark;
-    }
-  }
-
-  .ts_toggle_secondary_label {
-    color: $color-highlight;
-  }
-
-  &.checked .ts_toggle_button {
-    background: $color-shade-lightest;
+.c-input_select {
+  background: $color-shade-light;
+  border-color: $color-shade-dark;
+  color: $base-font-color;
+  
+  .p-file_list__file_type_select &__selected_value--placeholder {
     color: $base-font-color;
   }
+}
 
-  &.ts_toggle_orange .ts_toggle_button {
-    background: $color-red;
-    color: $base-font-color;
-  }
+.c-input_select_options_list_container:not(.c-input_select_options_list_container--always-open) {
+  background: $color-shade-light;
+  border-color: $color-shade-dark;
+  color: $base-font-color;
+}
+
+.c-input_select_options_list__option {
+  color: $base-font-color;
 }

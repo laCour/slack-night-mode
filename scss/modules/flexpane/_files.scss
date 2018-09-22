@@ -385,3 +385,42 @@ html.no_touch a.filetype_button_web:hover {
 .active .tab_container .file_list_item {
   background-color: $color-base;
 }
+
+.c-file {
+  &__actions {
+    background: $color-shade-light;
+  }
+
+  &__action_button,
+  &__action_button:link,
+  &__action_button:focus,
+  &__action_button:hover {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
+    color: $white;
+  }
+}
+
+.p-file_details {
+  &__name,
+  &__share_channel {
+    color: $base-font-color;
+  }
+
+  &__meta_container .c-file__action_button {
+    color: $white;
+  }
+}
+
+.c-pillow_file {
+  &_container {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
+    color: $base-font-color;
+  }
+
+  &__description,
+  &__title {
+    color: $base-font-color;
+  }
+}

@@ -53,6 +53,33 @@
   }
 }
 
+.c-search {
+  background: transparent;
+}
+
+.c-search_message__body {
+  color: $base-font-color;
+}
+
+.p-search_filter__more_link {
+  color: $base-font-color;
+}
+
+.p-search_filter__title_text {
+  background: $color-shade-dark;
+  color: $base-font-color;
+}
+
+.p-search_filter__datepicker_trigger {
+  background: $color-shade-dark;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
 .c-search_modal,
 .c-search_modal:not(.c-search_modal--primarysearch) {
   .popover>div,
@@ -84,4 +111,11 @@
 
 .c-search__input_and_close {
   border-bottom-color: $color-shade-darkest;
+}
+
+.c-search__input_box__clear,
+.c-search__input_box__icon,
+.c-search__section_header,
+.c-search__input_and_close__close {
+  color: $base-font-color;
 }
