@@ -1,5 +1,11 @@
 # Changelog
 
+## 2018-09-23
+* Style new search results dialog and several input components ([#186](https://github.com/laCour/slack-night-mode/issues/186))
+* Correct background color of quick search help footer ([84b8944](https://github.com/laCour/slack-night-mode/commit/84b8944))
+
+Thanks to [@mastermel](https://github.com/mastermel) for this release.
+
 ## 2018-09-04
 * Correct styling of backgrounds on new app page ([#175](https://github.com/laCour/slack-night-mode/issues/175))
 * Correct dropdown menu text color ([#182](https://github.com/laCour/slack-night-mode/issues/182), [#181](https://github.com/laCour/slack-night-mode/issues/181))
