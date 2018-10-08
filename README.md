@@ -13,7 +13,7 @@ No official support. Workarounds exist.
 
 **🛑 READ FIRST:** Most workarounds will request the compiled CSS file from this repository. You are strongly discouraged from using a remote CSS file. It's recommended that you create your own copy. An XSS attack could put your Slack client at risk.
 
-**Discussion:** https://github.com/laCour/slack-night-mode/issues/73#issuecomment-242707078
+[![Chat on Gitter](https://badges.gitter.im/laCour/slack-night-mode.png)](https://gitter.im/slack-night-mode/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) ([previous discussion](https://github.com/laCour/slack-night-mode/issues/73#issuecomment-242707078))
 
 ## Themes
 
