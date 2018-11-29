@@ -438,20 +438,22 @@ html.no_touch a.filetype_button_web:hover {
   color: $base-font-color;
 }
 
-.p-download-item {
-  &__actions {
-    background-color: $color-base;
-  }
-
-  &__link {
-    &__open,
-    &__retry,
-    &__show {
-      color: $base-link-color;
+.p-download_item__container {
+  .p-download_item {
+    &__actions {
+      background-color: $color-base;
     }
-  }
 
-  &__name_row {
-    color: $base-font-color;
+    &__link {
+      &__open,
+      &__retry,
+      &__show {
+        color: $base-link-color;
+      }
+    }
+
+    &__name_row {
+      color: $base-font-color;
+    }
   }
 }

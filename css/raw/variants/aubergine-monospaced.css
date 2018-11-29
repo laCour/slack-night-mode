@@ -1993,11 +1993,11 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #f0d9ed; }
 
 .p-downloads_list__shift_hint { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #3e313c 25%, #3e313c); color: #f0d9ed; }
 
-.p-download-item__actions { background-color: #3e313c; }
+.p-download_item__container .p-download_item__actions { background-color: #3e313c; }
 
-.p-download-item__link__open, .p-download-item__link__retry, .p-download-item__link__show { color: #a3839f; }
+.p-download_item__container .p-download_item__link__open, .p-download_item__container .p-download_item__link__retry, .p-download_item__container .p-download_item__link__show { color: #a3839f; }
 
-.p-download-item__name_row { color: #f0d9ed; }
+.p-download_item__container .p-download_item__name_row { color: #f0d9ed; }
 
 #user_groups_pane .mention { background: rgba(191, 54, 12, 0.25); border: 0; border-radius: 3px; padding: 2px; }
 

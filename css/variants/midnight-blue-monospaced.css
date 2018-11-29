@@ -997,9 +997,9 @@
   .c-pillow_file_container { background: #282828; border-color: #181818; color: #00b9f2; }
   .c-pillow_file__description, .c-pillow_file__title { color: #00b9f2; }
   .p-downloads_list__shift_hint { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #000 25%, #000); color: #00b9f2; }
-  .p-download-item__actions { background-color: #000; }
-  .p-download-item__link__open, .p-download-item__link__retry, .p-download-item__link__show { color: #1793d1; }
-  .p-download-item__name_row { color: #00b9f2; }
+  .p-download_item__container .p-download_item__actions { background-color: #000; }
+  .p-download_item__container .p-download_item__link__open, .p-download_item__container .p-download_item__link__retry, .p-download_item__container .p-download_item__link__show { color: #1793d1; }
+  .p-download_item__container .p-download_item__name_row { color: #00b9f2; }
   #user_groups_pane .mention { background: rgba(191, 54, 12, 0.25); border: 0; border-radius: 3px; padding: 2px; }
   #user_groups_container .info_panel { background: #000; border: 1px solid #282828; }
   #user_groups_container .mention { background-color: rgba(191, 54, 12, 0.25) !important; }
