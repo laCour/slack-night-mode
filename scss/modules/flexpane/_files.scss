@@ -424,3 +424,16 @@ html.no_touch a.filetype_button_web:hover {
     color: $base-font-color;
   }
 }
+
+.p-downloads_list__shift_hint {
+  background: linear-gradient(180deg, hsla(0,0%,100%,0), $color-base 25%, $color-base);
+  color: $base-font-color;
+}
+
+.p-download_item__name_row {
+  color: $base-font-color;
+}
+
+.p-download-item__actions {
+  background-color: $color-base;
+}
