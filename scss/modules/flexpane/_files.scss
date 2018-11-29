@@ -399,6 +399,15 @@ html.no_touch a.filetype_button_web:hover {
     border-color: $color-shade-dark;
     color: $white;
   }
+
+  &__meta,
+  &__title {
+    color: $base-font-color;
+  }
+
+  &__slide--meta {
+    background-color: $color-shade-darkest;
+  }
 }
 
 .p-file_details {
@@ -430,10 +439,12 @@ html.no_touch a.filetype_button_web:hover {
   color: $base-font-color;
 }
 
-.p-download_item__name_row {
-  color: $base-font-color;
-}
+.p-download-item {
+  &__actions {
+    background-color: $color-base;
+  }
 
-.p-download-item__actions {
-  background-color: $color-base;
+  &__name_row {
+    color: $base-font-color;
+  }
 }

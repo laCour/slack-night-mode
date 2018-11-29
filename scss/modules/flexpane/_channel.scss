@@ -191,48 +191,50 @@
   .c-member__title {
     color: $color-highlight;
   }
-}
 
-.p-channel_insights__activity {
-  border-color: $color-shade-light;
-}
+  &__activity {
+    border-color: $color-shade-light;
+  }
 
-.p-channel_insights_activity_bar_container {
-  &:hover {
-    background-color: rgba($color-shade-darkest, 0.05);
+  &__activity_bar {
+    background-color: rgba($color-shade-light, 0.5);
+  }
 
-    .p-channel_insights__activity_bar {
+  &_activity_bar_container {
+    &:hover {
+      background-color: rgba($color-shade-darkest, 0.05);
+
+      .p-channel_insights__activity_bar {
+        background-color: $color-shade-light;
+      }
+    }
+  }
+
+  &__date_heading {
+    span {
+      background-color: $color-base;
+      color: $base-font-color;
+    }
+
+    &::before {
       background-color: $color-shade-light;
     }
   }
-}
 
-.p-channel_insights__activity_bar {
-  background-color: rgba($color-shade-light, 0.5);
-}
-
-.p-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
-  background-color: $color-base;
-  border-color: $color-shade-light;
-}
-
-.p-channel_insights__message--truncate {
-  &::before {
-    background: linear-gradient(180deg, transparent, $color-base 90%);
-  }
-}
-
-.p-channel_insights__highlights_description {
-  color: $color-highlight;
-}
-
-.p-channel_insights__date_heading {
-  span {
-    background-color: $color-base;
-    color: $base-font-color;
+  &__highlights_description {
+    color: $color-highlight;
   }
 
-  &::before {
-    background-color: $color-shade-light;
+  &__message {
+    &--truncate {
+      &::before {
+        background: linear-gradient(180deg, transparent, $color-base 90%);
+      }
+    }
+
+    ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
+      background-color: $color-base;
+      border-color: $color-shade-light;
+    }
   }
 }
