@@ -150,43 +150,6 @@
   }
 }
 
-.p-channel_insights__title {
-  color: $base-font-color;
-}
-
-.p-channel_insights__section:not(.p-channel_insights__section--no_border) {
-  border-color: $color-shade-light;
-}
-
-.p-channel_insights__drawer_title {
-  color: $color-highlight;
-}
-
-.p-channel_insights__item--user {
-  .member_preview_link,
-  .message_sender {
-    color: $base-font-color !important;
-  }
-}
-
-.p-channel_insights__user_title {
-  color: $color-highlight;
-}
-
-.p-channel_insights__channel {
-  .channel_link {
-    color: $base-font-color;
-  }
-}
-
-.p-channel_insights__member_count {
-  color: $color-highlight;
-
-  .ts_icon_user {
-    color: $color-highlight;
-  }
-}
-
 .p-channel_insights {
   .c-member__title {
     color: $color-highlight;
@@ -198,15 +161,21 @@
 
   &__activity_bar {
     background-color: rgba($color-shade-light, 0.5);
+
+    &_container {
+      &:hover {
+        background-color: rgba($color-shade-darkest, 0.05);
+
+        .p-channel_insights__activity_bar {
+          background-color: $color-shade-light;
+        }
+      }
+    }
   }
 
-  &_activity_bar_container {
-    &:hover {
-      background-color: rgba($color-shade-darkest, 0.05);
-
-      .p-channel_insights__activity_bar {
-        background-color: $color-shade-light;
-      }
+  &__channel {
+    .channel_link {
+      color: $base-font-color;
     }
   }
 
@@ -221,8 +190,27 @@
     }
   }
 
+  &__drawer_title {
+    color: $color-highlight;
+  }
+
   &__highlights_description {
     color: $color-highlight;
+  }
+
+  &__item--user {
+    .member_preview_link,
+    .message_sender {
+      color: $base-font-color !important;
+    }
+  }
+
+  &__member_count {
+    color: $color-highlight;
+
+    .ts_icon_user {
+      color: $color-highlight;
+    }
   }
 
   &__message {
@@ -236,5 +224,17 @@
       background-color: $color-base;
       border-color: $color-shade-light;
     }
+  }
+
+  &__section:not(.p-channel_insights__section--no_border) {
+    border-color: $color-shade-light;
+  }
+
+  &__title {
+    color: $base-font-color;
+  }
+
+  &__user_title {
+    color: $color-highlight;
   }
 }
