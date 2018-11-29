@@ -354,7 +354,7 @@
   .channel_header { background: #000; box-shadow: inset 1px 0 0 0 #000; }
   .channel_header .blue_on_hover:hover { color: #00b9f2; }
   #client_body:not(.onboarding)::before { background: #000; border-bottom: 1px solid #181818; box-shadow: inset 1px 0 0 0 #000; }
-  #client_body:not(.onboarding):not(.feature_global_nav_layout):before { background: #000; border-bottom: 1px solid #181818; box-shadow: inset 1px 0 0 0 #000; }
+  #client_body:not(.onboarding):not(.feature_global_nav_layout)::before { background: #000; border-bottom: 1px solid #181818; box-shadow: inset 1px 0 0 0 #000; }
   .messages_header { color: #00b9f2; }
   .channel_title .channel_name_container .channel_name { color: #00b9f2; }
   .channel_title .channel_name_container .channel_name.muted { color: #1793d1; }
