@@ -631,7 +631,7 @@
   .delete_attachment_link:hover { color: #299bd4; }
   .file_container, .c-file_container { background: #101010; border: 1px solid #181818; color: #00b9f2; }
   .file_container:hover, .file_container:focus, .file_container.file_menu_open, .c-file_container:hover, .c-file_container:focus, .c-file_container.file_menu_open { border-bottom-color: #181818; border-left-color: #181818; border-right-color: #181818; }
-  .file_container::after, .file_container.post_container::after, .c-file_container::after, .c-file_container.post_container::after { background-image: -webkit-linear-gradient(top, transparent 0, #000 100%); background-image: -moz-linear-gradient(top, transparent 0, #000 100%); background-image: -o-linear-gradient(top, transparent 0, #000 100%); background-image: linear-gradient(top, transparent 0, #000 100%); }
+  .file_container::after, .file_container.post_container::after, .c-file_container::after, .c-file_container.post_container::after { background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 100%); background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 100%); background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 100%); background-image: linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 100%); }
   .file_container.generic_container .file_header_icon .ts_icon, .c-file_container.generic_container .file_header_icon .ts_icon { background: #000; box-shadow: 0 0 0 3px #000; color: #00b9f2; }
   .file_container.generic_container .file_header_icon .ts_icon.snippet, .c-file_container.generic_container .file_header_icon .ts_icon.snippet { background: #181818; }
   .file_container.generic_container .file_header_meta .meta_hover, .c-file_container.generic_container .file_header_meta .meta_hover { background: #101010; color: #00b9f2; }
@@ -892,24 +892,24 @@
   .pinned_item .remove_pin:hover { color: #299bd4; }
   .pinned_item .pinned_message_text .pin_truncate_fade { background: #000; }
   .pinned_item.delete_mode { border-color: #bf360c !important; }
-  .c-channel_insights__title { color: #00b9f2; }
-  .c-channel_insights__section:not(.c-channel_insights__section--no_border) { border-color: #282828; }
-  .c-channel_insights__drawer_title { color: #1793d1; }
-  .c-channel_insights__item--user .member_preview_link, .c-channel_insights__item--user .message_sender { color: #00b9f2 !important; }
-  .c-channel_insights__user_title { color: #1793d1; }
-  .c-channel_insights__channel .channel_link { color: #00b9f2; }
-  .c-channel_insights__member_count { color: #1793d1; }
-  .c-channel_insights__member_count .ts_icon_user { color: #1793d1; }
-  .c-channel_insights .c-member__title { color: #1793d1; }
-  .c-channel_insights__activity { border-color: #282828; }
-  .c-channel_insights_activity_bar_container:hover { background-color: rgba(16, 16, 16, 0.05); }
-  .c-channel_insights_activity_bar_container:hover .c-channel_insights__activity_bar { background-color: #282828; }
-  .c-channel_insights__activity_bar { background-color: rgba(40, 40, 40, 0.5); }
-  .c-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) { background-color: #000; border-color: #282828; }
-  .c-channel_insights__message--truncate::before { background: linear-gradient(180deg, transparent, #000 90%); }
-  .c-channel_insights__highlights_description { color: #1793d1; }
-  .c-channel_insights__date_heading span { background-color: #000; color: #00b9f2; }
-  .c-channel_insights__date_heading::before { background-color: #282828; }
+  .p-channel_insights .c-member__title { color: #1793d1; }
+  .p-channel_insights_activity_bar_container:hover { background-color: rgba(16, 16, 16, 0.05); }
+  .p-channel_insights_activity_bar_container:hover .p-channel_insights__activity_bar { background-color: #282828; }
+  .p-channel_insights__activity { border-color: #282828; }
+  .p-channel_insights__activity_bar { background-color: rgba(40, 40, 40, 0.5); }
+  .p-channel_insights__channel .channel_link { color: #00b9f2; }
+  .p-channel_insights__date_heading span { background-color: #000; color: #00b9f2; }
+  .p-channel_insights__date_heading::before { background-color: #282828; }
+  .p-channel_insights__drawer_title { color: #1793d1; }
+  .p-channel_insights__highlights_description { color: #1793d1; }
+  .p-channel_insights__item--user .member_preview_link, .p-channel_insights__item--user .message_sender { color: #00b9f2 !important; }
+  .p-channel_insights__member_count { color: #1793d1; }
+  .p-channel_insights__member_count .ts_icon_user { color: #1793d1; }
+  .p-channel_insights__message--truncate::before { background: linear-gradient(180deg, transparent, #000 90%); }
+  .p-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) { background-color: #000; border-color: #282828; }
+  .p-channel_insights__section:not(.p-channel_insights__section--no_border) { border-color: #282828; }
+  .p-channel_insights__title { color: #00b9f2; }
+  .p-channel_insights__user_title { color: #1793d1; }
   #file_list_toggle_users { color: #1793d1; }
   #file_list_toggle_users.active:hover, #file_list_toggle_users:hover { color: #299bd4; }
   #file_list_toggle_users.active { color: #1793d1; }
@@ -990,10 +990,16 @@
   .active .tab_container .file_list_item { background-color: #000; }
   .c-file__actions { background: #282828; }
   .c-file__action_button, .c-file__action_button:link, .c-file__action_button:focus, .c-file__action_button:hover { background: #282828; border-color: #181818; color: #fff; }
+  .c-file__meta { color: #00b9f2; }
+  .c-file__slide--meta { background-color: #101010; }
   .p-file_details__name, .p-file_details__share_channel { color: #00b9f2; }
   .p-file_details__meta_container .c-file__action_button { color: #fff; }
   .c-pillow_file_container { background: #282828; border-color: #181818; color: #00b9f2; }
   .c-pillow_file__description, .c-pillow_file__title { color: #00b9f2; }
+  .p-downloads_list__shift_hint { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #000 25%, #000); color: #00b9f2; }
+  .p-download-item__actions { background-color: #000; }
+  .p-download-item__link__open, .p-download-item__link__retry, .p-download-item__link__show { color: #1793d1; }
+  .p-download-item__name_row { color: #00b9f2; }
   #user_groups_pane .mention { background: rgba(191, 54, 12, 0.25); border: 0; border-radius: 3px; padding: 2px; }
   #user_groups_container .info_panel { background: #000; border: 1px solid #282828; }
   #user_groups_container .mention { background-color: rgba(191, 54, 12, 0.25) !important; }
@@ -1819,7 +1825,7 @@
   .splash_interactive__button--active { box-shadow: 0 0 10px 1px #303030; }
   .splash_interactive__window { background-color: #000; border-color: #282828; }
   .splash_interactive__window:hover .splash_interactive__window_headline { color: #00b9f2; }
-  .splash_interactive__window::after { background: linear-gradient(to bottom, transparent 0, #000 100%); }
+  .splash_interactive__window::after { background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%); }
   .splash_interactive__window_response { background-color: #fff; }
   a.splash_interactive__window_link { color: #00b9f2; }
   .splash_interactive__window_message_content_text--drive { color: #1793d1; }
@@ -1852,7 +1858,7 @@
   #page .tag { background-color: #101010; border: 1px solid #181818; }
   #page .tag:hover { background-color: #282828 !important; }
   #page .app_desc_btn { background-color: #282828; color: #00b9f2; }
-  #page .app_desc_expand_showing .app_profile_desc_fade { background: linear-gradient(180deg, transparent 0, #000 100%); }
+  #page .app_desc_expand_showing .app_profile_desc_fade { background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%); }
   #page .service_panel { background-color: #181818; }
   #page .service_card { background-color: #000; border: 1px solid #202020; }
   .app_card, .large_app_card { background-color: #000; border: 1px solid #181818; }

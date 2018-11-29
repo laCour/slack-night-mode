@@ -1783,41 +1783,41 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 
 .pinned_item.delete_mode { border-color: #bf360c !important; }
 
-.c-channel_insights__title { color: #f0d9ed; }
+.p-channel_insights .c-member__title { color: #a3839f; }
 
-.c-channel_insights__section:not(.c-channel_insights__section--no_border) { border-color: #61485e; }
+.p-channel_insights_activity_bar_container:hover { background-color: rgba(55, 44, 54, 0.05); }
 
-.c-channel_insights__drawer_title { color: #a3839f; }
+.p-channel_insights_activity_bar_container:hover .p-channel_insights__activity_bar { background-color: #61485e; }
 
-.c-channel_insights__item--user .member_preview_link, .c-channel_insights__item--user .message_sender { color: #f0d9ed !important; }
+.p-channel_insights__activity { border-color: #61485e; }
 
-.c-channel_insights__user_title { color: #a3839f; }
+.p-channel_insights__activity_bar { background-color: rgba(97, 72, 94, 0.5); }
 
-.c-channel_insights__channel .channel_link { color: #f0d9ed; }
+.p-channel_insights__channel .channel_link { color: #f0d9ed; }
 
-.c-channel_insights__member_count { color: #a3839f; }
+.p-channel_insights__date_heading span { background-color: #3e313c; color: #f0d9ed; }
 
-.c-channel_insights__member_count .ts_icon_user { color: #a3839f; }
+.p-channel_insights__date_heading::before { background-color: #61485e; }
 
-.c-channel_insights .c-member__title { color: #a3839f; }
+.p-channel_insights__drawer_title { color: #a3839f; }
 
-.c-channel_insights__activity { border-color: #61485e; }
+.p-channel_insights__highlights_description { color: #a3839f; }
 
-.c-channel_insights_activity_bar_container:hover { background-color: rgba(55, 44, 54, 0.05); }
+.p-channel_insights__item--user .member_preview_link, .p-channel_insights__item--user .message_sender { color: #f0d9ed !important; }
 
-.c-channel_insights_activity_bar_container:hover .c-channel_insights__activity_bar { background-color: #61485e; }
+.p-channel_insights__member_count { color: #a3839f; }
 
-.c-channel_insights__activity_bar { background-color: rgba(97, 72, 94, 0.5); }
+.p-channel_insights__member_count .ts_icon_user { color: #a3839f; }
 
-.c-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) { background-color: #3e313c; border-color: #61485e; }
+.p-channel_insights__message--truncate::before { background: linear-gradient(180deg, transparent, #3e313c 90%); }
 
-.c-channel_insights__message--truncate::before { background: linear-gradient(180deg, transparent, #3e313c 90%); }
+.p-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) { background-color: #3e313c; border-color: #61485e; }
 
-.c-channel_insights__highlights_description { color: #a3839f; }
+.p-channel_insights__section:not(.p-channel_insights__section--no_border) { border-color: #61485e; }
 
-.c-channel_insights__date_heading span { background-color: #3e313c; color: #f0d9ed; }
+.p-channel_insights__title { color: #f0d9ed; }
 
-.c-channel_insights__date_heading::before { background-color: #61485e; }
+.p-channel_insights__user_title { color: #a3839f; }
 
 #file_list_toggle_users { color: #a3839f; }
 
@@ -1979,6 +1979,10 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #f0d9ed; }
 
 .c-file__action_button, .c-file__action_button:link, .c-file__action_button:focus, .c-file__action_button:hover { background: #61485e; border-color: #4d394b; color: #fff; }
 
+.c-file__meta { color: #f0d9ed; }
+
+.c-file__slide--meta { background-color: #372c36; }
+
 .p-file_details__name, .p-file_details__share_channel { color: #f0d9ed; }
 
 .p-file_details__meta_container .c-file__action_button { color: #fff; }
@@ -1986,6 +1990,14 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #f0d9ed; }
 .c-pillow_file_container { background: #61485e; border-color: #4d394b; color: #f0d9ed; }
 
 .c-pillow_file__description, .c-pillow_file__title { color: #f0d9ed; }
+
+.p-downloads_list__shift_hint { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #3e313c 25%, #3e313c); color: #f0d9ed; }
+
+.p-download-item__actions { background-color: #3e313c; }
+
+.p-download-item__link__open, .p-download-item__link__retry, .p-download-item__link__show { color: #a3839f; }
+
+.p-download-item__name_row { color: #f0d9ed; }
 
 #user_groups_pane .mention { background: rgba(191, 54, 12, 0.25); border: 0; border-radius: 3px; padding: 2px; }
 

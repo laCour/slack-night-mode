@@ -155,13 +155,7 @@
     color: $color-highlight;
   }
 
-  &__activity {
-    border-color: $color-shade-light;
-  }
-
-  &__activity_bar {
-    background-color: rgba($color-shade-light, 0.5);
-
+  &_activity_bar {
     &_container {
       &:hover {
         background-color: rgba($color-shade-darkest, 0.05);
@@ -171,6 +165,14 @@
         }
       }
     }
+  }
+
+  &__activity {
+    border-color: $color-shade-light;
+  }
+
+  &__activity_bar {
+    background-color: rgba($color-shade-light, 0.5);
   }
 
   &__channel {

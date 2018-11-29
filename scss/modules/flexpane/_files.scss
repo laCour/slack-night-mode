@@ -443,6 +443,14 @@ html.no_touch a.filetype_button_web:hover {
     background-color: $color-base;
   }
 
+  &__link {
+    &__open,
+    &__retry,
+    &__show {
+      color: $base-link-color;
+    }
+  }
+
   &__name_row {
     color: $base-font-color;
   }
