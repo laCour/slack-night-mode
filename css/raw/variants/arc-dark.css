@@ -710,6 +710,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #client_body:not(.onboarding)::before { background: #404552; border-bottom: 1px solid #2a2f39; box-shadow: inset 1px 0 0 0 #404552; }
 
+#client_body:not(.onboarding):not(.feature_global_nav_layout):before { background: #404552; border-bottom: 1px solid #2a2f39; box-shadow: inset 1px 0 0 0 #404552; }
+
 .messages_header { color: #d3dae3; }
 
 .channel_title .channel_name_container .channel_name { color: #d3dae3; }
