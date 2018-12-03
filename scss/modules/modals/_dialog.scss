@@ -17,8 +17,8 @@
 
     .p-share_dialog_message_input {
       background-color: $color-shade-darkest;
-      color: $base-font-color;
       border-color: $color-shade-dark;
+      color: $base-font-color;
 
       &.focus {
         border-color: $color-shade-light;
