@@ -2523,6 +2523,30 @@ a.c-member_slug--mention, a.c-member_slug--mention:hover { background-color: #ff
 
 #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:active, #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:hover, #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:visited { color: #d3dae3; }
 
+.c-dialog__header { background: #1d2027; }
+
+.c-dialog__header .c-dialog__title, .c-dialog__header .c-dialog__close { color: #d3dae3; }
+
+.c-dialog__header .c-dialog__close:hover { color: #90939b; }
+
+.c-dialog__body { background: #222222; }
+
+.c-dialog__body .p-share_dialog_message_input { background-color: #1d2027; color: #d3dae3; border-color: #2a2f39; }
+
+.c-dialog__body .p-share_dialog_message_input.focus { border-color: #6b6f79; box-shadow: unset; }
+
+.c-dialog__body input.c-input_text { border-color: #2a2f39; }
+
+.c-dialog__body input.c-input_text .c-input_character_count { background-color: #2a2f39; color: #d3dae3; }
+
+.c-dialog__body input.c-input_text:focus { border-color: #6b6f79; box-shadow: unset; }
+
+.c-dialog__footer { background: #222222; }
+
+.c-dialog__footer .c-button { background-color: #6b6f79; color: #d3dae3; }
+
+.c-dialog__footer .p-file_upload_dialog__footer_share_inputs { color: #d3dae3; }
+
 #incoming_call { background-color: rgba(29, 32, 39, 0.97); color: #d3dae3; }
 
 #fs_modal.channel_options_modal .channel_options_header { border-bottom-color: #2a2f39; }
