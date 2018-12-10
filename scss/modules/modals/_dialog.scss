@@ -26,6 +26,12 @@
       }
     }
 
+    .p-file_upload_dialog__preview,
+    .p-file_upload_dialog__preview_image {
+      background-color: $color-shade-darkest;
+      border-color: $color-shade-dark;
+    }
+
     input.c-input_text {
       border-color: $color-shade-dark;
 

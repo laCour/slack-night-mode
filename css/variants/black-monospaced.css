@@ -1312,6 +1312,7 @@
   .c-dialog__body { background: #222222; }
   .c-dialog__body .p-share_dialog_message_input { background-color: #000; border-color: #363636; color: #e6e6e6; }
   .c-dialog__body .p-share_dialog_message_input.focus { border-color: #545454; box-shadow: unset; }
+  .c-dialog__body .p-file_upload_dialog__preview, .c-dialog__body .p-file_upload_dialog__preview_image { background-color: #000; border-color: #363636; }
   .c-dialog__body input.c-input_text { border-color: #363636; }
   .c-dialog__body input.c-input_text .c-input_character_count { background-color: #363636; color: #e6e6e6; }
   .c-dialog__body input.c-input_text:focus { border-color: #545454; box-shadow: unset; }
