@@ -1389,6 +1389,8 @@ ts-message .reply_bar:hover { background: #000; border-color: #101010; }
 
 code { background-color: #101010; border: 1px solid #181818; color: #00b9f2; }
 
+code .special_formatting { background: #181818; border: 1px solid #282828; color: #00b9f2; }
+
 .file_list_item.snippet .snippet_preview { background: #101010; }
 
 .snippet_preview, .snippet_body { background: #101010; }

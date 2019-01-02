@@ -695,6 +695,7 @@
   #archives_end_div_msg_lim h1, #end_display_msg_lim h1 { color: #e6e6e6; }
   #archives_end_div_msg_lim h2, #end_display_msg_lim h2 { color: rgba(230, 230, 230, 0.8); }
   code { background-color: #000; border: 1px solid #363636; color: #e6e6e6; }
+  code .special_formatting { background: #363636; border: 1px solid #545454; color: #e6e6e6; }
   .file_list_item.snippet .snippet_preview { background: #000; }
   .snippet_preview, .snippet_body { background: #000; }
   .snippet_preview pre, .snippet_body pre { color: #e6e6e6 !important; }
