@@ -1,6 +1,8 @@
 # Slack Night Mode
 A user style for easy Slack theming. [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
 
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
 ## Usage
 
 ### Browser
