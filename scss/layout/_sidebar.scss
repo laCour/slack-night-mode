@@ -207,3 +207,37 @@
 #quick_switcher_label {
   color: $color-highlight;
 }
+
+.p-channel_insights {
+  &__channel {
+    .channel_link {
+      color: $base-link-color;
+    }
+  }
+
+  &__date_heading {
+    &::before {
+      background-color: $color-shade-dark;
+    }
+
+    span {
+      background-color: $color-base;
+      color: $color-highlight;
+    }
+  }
+
+  &__message--truncate {
+    &::before {
+      background: linear-gradient(180deg,transparent,$color-shade-dark 90%);
+    }
+  }
+
+  &__message {
+    ts-message {
+      &.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
+        background-color: $color-base;
+        border-color: $color-shade-dark;
+      }
+    }
+  }
+}

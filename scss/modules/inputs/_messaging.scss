@@ -168,7 +168,7 @@
 
 .inline_message_input_container .ql-container {
   border-color: $color-shade-light;
-
+  color: $base-font-color;
   &.focus,
   &:active,
   &:hover {

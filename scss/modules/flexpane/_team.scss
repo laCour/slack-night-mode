@@ -77,6 +77,12 @@
 
 #team_tab #member_preview_scroller {
   background-color: $color-base;
+
+  .member_details {
+    .member_name {
+      color: $base-font-color;
+    }
+  }
 }
 
 #member_preview_scroller,

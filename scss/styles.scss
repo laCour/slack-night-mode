@@ -5,6 +5,7 @@
 @import "layout/alerts";
 @import "layout/scrollbar";
 @import "layout/sidebar";
+@import "layout/dialog";
 
 @import "modules/loader";
 
@@ -12,6 +13,8 @@
 @import "modules/inputs/filter-select";
 @import "modules/inputs/messaging";
 @import "modules/inputs/toggle";
+@import "modules/inputs/label";
+@import "modules/inputs/datepicker";
 
 @import "modules/menu/base";
 @import "modules/menu/autocomplete";
@@ -38,6 +41,7 @@
 
 @import "modules/flexpane/base";
 @import "modules/flexpane/channel";
+@import "modules/flexpane/download";
 @import "modules/flexpane/files";
 @import "modules/flexpane/groups";
 @import "modules/flexpane/mentions";

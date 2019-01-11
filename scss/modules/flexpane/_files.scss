@@ -387,10 +387,7 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-file {
-  &__actions {
-    background: $color-shade-light;
-  }
-
+  
   &__action_button,
   &__action_button:link,
   &__action_button:focus,
@@ -399,6 +396,7 @@ html.no_touch a.filetype_button_web:hover {
     border-color: $color-shade-dark;
     color: $white;
   }
+
 
   &__meta {
     color: $base-font-color;
@@ -421,15 +419,31 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-pillow_file {
-  &_container {
-    background: $color-shade-light;
-    border-color: $color-shade-dark;
-    color: $base-font-color;
-  }
-
   &__description,
   &__title {
     color: $base-font-color;
+  }
+}
+
+.p-file_list {
+  background: $color-shade-dark;
+  &__filters {
+    @extend .p-file_list;
+    border-color: $color-shade-dark;
+  }
+
+  &__file.c-pillow_file  {
+    &_container,
+    &_container--full_width {
+      background: $color-shade-dark;
+      border-color: $color-shade-dark;
+      color: $base-font-color;
+    }
+
+    &_container--full_width:hover {
+      background: $color-shade-light;
+      border-color: $color-shade-light;
+    }
   }
 }
 

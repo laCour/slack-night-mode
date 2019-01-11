@@ -1,0 +1,42 @@
+.c-date_picker {
+  &__dropdown {
+    background-color: $color-shade-dark;
+  }
+}
+
+.c-calendar_view_header {
+  &__stepper_btn:disabled,
+  &__title_btn:disabled {
+    color: $color-highlight;
+  }
+
+  &__stepper_btn,
+  &__title_btn {
+    color: $base-font-color;
+  }
+
+  &__stepper_btn:hover,
+  &__title_btn:hover {
+    background-color: $color-shade-light;
+  }
+}
+
+.c-date_picker_calendar {
+  &__date--disabled,
+  &__date--disabled:hover {
+    background-color: $color-shade-dark;
+  }
+}
+
+.c-mini_calendar {
+  &__month_button:disabled,
+  &__month_button:disabled:hover {
+    background-color: $color-shade-dark;
+  }
+}
+
+.c-calendar_month {
+  &__day_of_week_heading {
+    color: $base-font-color;
+  }
+}

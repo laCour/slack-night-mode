@@ -162,3 +162,18 @@
     }
   }
 }
+
+.c-menu {
+  background-color: $color-shade-dark;
+}
+
+
+.c-menu_item {
+  &__label {
+    color: $white;
+  }
+
+  &__header {
+    color: $color-highlight;
+  }
+}

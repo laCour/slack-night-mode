@@ -1,0 +1,27 @@
+.c-dialog {
+  &__content {
+    border-radius: 0.6rem;
+  }
+
+  &__header,
+  &__body,
+  &__footer {
+    background: $color-shade-dark;
+  }
+
+  &__title {
+    color: $base-font-color;
+  }
+
+  .p-custom_status_input {
+    &__duration_picker_select {
+      padding-left: 11px;
+      
+      .c-input_select {      
+        &__selected_value--placeholder {
+          color: $base-font-color;
+        }
+      }
+    }
+  }
+}
