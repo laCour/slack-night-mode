@@ -150,89 +150,93 @@
   }
 }
 
-.c-channel_insights__title {
-  color: $base-font-color;
-}
-
-.c-channel_insights__section:not(.c-channel_insights__section--no_border) {
-  border-color: $color-shade-light;
-}
-
-.c-channel_insights__drawer_title {
-  color: $color-highlight;
-}
-
-.c-channel_insights__item--user {
-  .member_preview_link,
-  .message_sender {
-    color: $base-font-color !important;
-  }
-}
-
-.c-channel_insights__user_title {
-  color: $color-highlight;
-}
-
-.c-channel_insights__channel {
-  .channel_link {
-    color: $base-font-color;
-  }
-}
-
-.c-channel_insights__member_count {
-  color: $color-highlight;
-
-  .ts_icon_user {
-    color: $color-highlight;
-  }
-}
-
-.c-channel_insights {
+.p-channel_insights {
   .c-member__title {
     color: $color-highlight;
   }
-}
 
-.c-channel_insights__activity {
-  border-color: $color-shade-light;
-}
+  &_activity_bar {
+    &_container {
+      &:hover {
+        background-color: rgba($color-shade-darkest, 0.05);
 
-.c-channel_insights_activity_bar_container {
-  &:hover {
-    background-color: rgba($color-shade-darkest, 0.05);
+        .p-channel_insights__activity_bar {
+          background-color: $color-shade-light;
+        }
+      }
+    }
+  }
 
-    .c-channel_insights__activity_bar {
+  &__activity {
+    border-color: $color-shade-light;
+  }
+
+  &__activity_bar {
+    background-color: rgba($color-shade-light, 0.5);
+  }
+
+  &__channel {
+    .channel_link {
+      color: $base-font-color;
+    }
+  }
+
+  &__date_heading {
+    span {
+      background-color: $color-base;
+      color: $base-font-color;
+    }
+
+    &::before {
       background-color: $color-shade-light;
     }
   }
-}
 
-.c-channel_insights__activity_bar {
-  background-color: rgba($color-shade-light, 0.5);
-}
-
-.c-channel_insights__message ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
-  background-color: $color-base;
-  border-color: $color-shade-light;
-}
-
-.c-channel_insights__message--truncate {
-  &::before {
-    background: linear-gradient(180deg, transparent, $color-base 90%);
+  &__drawer_title {
+    color: $color-highlight;
   }
-}
 
-.c-channel_insights__highlights_description {
-  color: $color-highlight;
-}
+  &__highlights_description {
+    color: $color-highlight;
+  }
 
-.c-channel_insights__date_heading {
-  span {
-    background-color: $color-base;
+  &__item--user {
+    .member_preview_link,
+    .message_sender {
+      color: $base-font-color !important;
+    }
+  }
+
+  &__member_count {
+    color: $color-highlight;
+
+    .ts_icon_user {
+      color: $color-highlight;
+    }
+  }
+
+  &__message {
+    &--truncate {
+      &::before {
+        background: linear-gradient(180deg, transparent, $color-base 90%);
+      }
+    }
+
+    ts-message.standalone:not(.for_mention_display):not(.for_search_display):not(.for_top_results_search_display):not(.for_star_display) {
+      background-color: $color-base;
+      border-color: $color-shade-light;
+    }
+  }
+
+  &__section:not(.p-channel_insights__section--no_border) {
+    border-color: $color-shade-light;
+  }
+
+  &__title {
     color: $base-font-color;
   }
 
-  &::before {
-    background-color: $color-shade-light;
+  &__user_title {
+    color: $color-highlight;
   }
 }

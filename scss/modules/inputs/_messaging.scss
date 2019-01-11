@@ -184,7 +184,8 @@
   }
 
   &__editor {
-    &__input {
+    &__input,
+    &__input--legacy {
       background: $color-shade-light;
       border-color: $color-shade-dark;
       color: $base-font-color;
@@ -197,6 +198,24 @@
 
     &__warning {
       color: $color-red;
+    }
+  }
+
+  .c-button {
+    border-color: $color-shade-mid;
+
+    &--outline {
+      background-color: $color-shade-dark;
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+
+    &--primary {
+      background-color: $color-shade-light;
+      color: $base-font-color;
     }
   }
 }

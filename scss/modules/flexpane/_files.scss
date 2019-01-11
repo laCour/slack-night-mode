@@ -399,6 +399,14 @@ html.no_touch a.filetype_button_web:hover {
     border-color: $color-shade-dark;
     color: $white;
   }
+
+  &__meta {
+    color: $base-font-color;
+  }
+
+  &__slide--meta {
+    background-color: $color-shade-darkest;
+  }
 }
 
 .p-file_details {
@@ -422,5 +430,30 @@ html.no_touch a.filetype_button_web:hover {
   &__description,
   &__title {
     color: $base-font-color;
+  }
+}
+
+.p-downloads_list__shift_hint {
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), $color-base 25%, $color-base);
+  color: $base-font-color;
+}
+
+.p-download_item__container {
+  .p-download_item {
+    &__actions {
+      background-color: $color-base;
+    }
+
+    &__link {
+      &__open,
+      &__retry,
+      &__show {
+        color: $base-link-color;
+      }
+    }
+
+    &__name_row {
+      color: $base-font-color;
+    }
   }
 }
