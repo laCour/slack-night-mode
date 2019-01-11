@@ -1,5 +1,27 @@
 # Changelog
 
+## 2019-01-10 - Major Release
+* Corrected styling of channel insights ([#197](https://github.com/laCour/slack-night-mode/issues/197))
+* Corrected styling of downloads panel ([#197](https://github.com/laCour/slack-night-mode/issues/197), [#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of file upload dialog ([#197](https://github.com/laCour/slack-night-mode/issues/197), [#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of message editing ([#197](https://github.com/laCour/slack-night-mode/issues/197))
+* Remove small white border under channel header ([#197](https://github.com/laCour/slack-night-mode/issues/197))
+* Corrected styling of message action menu ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of status dialog ([#191](https://github.com/laCour/slack-night-mode/issues/191))
+* Corrected styling of autocomplete highlights ([#195](https://github.com/laCour/slack-night-mode/issues/195))
+* Corrected styling of topic text ([#194](https://github.com/laCour/slack-night-mode/issues/194))
+* Corrected styling of channel details ([#192](https://github.com/laCour/slack-night-mode/issues/192))
+* Corrected styling of apps module filter input ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of direct message popup input ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of team tab flexpane member names ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of notification menu header ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Added styles for custom notification datepicker ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected styling of file actions background ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected background style on file messages near file size ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+* Corrected background style on file attachments with action buttons ([#201](https://github.com/laCour/slack-night-mode/issues/201))
+
+Thanks to [@zengshengliu](https://github.com/zengshengliu) and [@playBranden](https://github.com/playBranden) for this release.
+
 ## 2018-09-23
 * Style new search results dialog and several input components ([#186](https://github.com/laCour/slack-night-mode/issues/186))
 * Correct background color of quick search help footer ([84b8944](https://github.com/laCour/slack-night-mode/commit/84b8944))
