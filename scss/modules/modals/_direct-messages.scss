@@ -21,7 +21,7 @@
   }
 
   #im_list_container:not(.keyboard_active).not_scrolling .im_browser_row:not(.disabled_dm):hover,
-  #im_browser .im_browser_row.highlighted {
+  .im_browser_row.highlighted {
     background: $color-shade-darkest !important;
     border: 1px solid $color-shade-light !important;
   }

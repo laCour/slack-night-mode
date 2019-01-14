@@ -446,6 +446,14 @@
   }
 }
 
+.c-file_container--has_thumb {
+  .c-file {
+    &__actions::before {
+      background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $color-shade-darkest 20px);
+    }
+  }
+}
+
 .message--focus .file_container .preview_show.preview_show_less .preview_show_btn {
   background: $color-shade-light;
   color: $base-font-color;

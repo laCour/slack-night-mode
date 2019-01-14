@@ -1,0 +1,26 @@
+.p-download_item {
+  padding: 12px 12px 4px 16px;
+  margin: 0;
+
+  &__container &__name_row {
+    color: $base-font-color;
+  }
+  
+
+  &__actions {
+    background: $color-base;
+  }
+
+  &__link--open,
+  &__link--retry,
+  &__link--show {
+    color: $base-font-color;
+  }
+}
+
+.p-downloads_list {
+  &__shift_hint {
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),$color-shade-dark 25%,$color-shade-dark);
+    color: $base-font-color;
+  }
+}
