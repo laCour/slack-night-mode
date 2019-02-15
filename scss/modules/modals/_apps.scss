@@ -72,14 +72,20 @@
     }
 
     &_profile {
-      &__info, &__screenshots {
+      &__info,
+      &__screenshots {
         background-color: $color-shade-dark;
         border-bottom-color: $color-shade-mid;
       }
+
       &__screenshots {
+        background-color: $color-shade-dark;
         border-top-color: $color-shade-mid;
+        border-bottom-color: $color-shade-mid;
       }
-      &__screenshot, &youtube_thumbnail {
+
+      &__screenshot,
+      &youtube_thumbnail {
         box-shadow: 0 0 0 1px $color-shade-mid;
       }
     }

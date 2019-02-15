@@ -109,16 +109,17 @@
 }
 
 .channel_header {
-    .channel_header__tabs {
-      .channel_header__tab {
-        color: $base-link-color;
+  .channel_header__tabs {
+    .channel_header__tab {
+      color: $base-link-color;
 
-        &.--active {
-          color: $base-link-color-active;
-        }
-        &:hover {
-          color: $base-link-color-active;
-        }
+      &.--active {
+        color: $base-link-color-active;
+      }
+
+      &:hover {
+        color: $base-link-color-active;
+      }
     }
   }
 }
