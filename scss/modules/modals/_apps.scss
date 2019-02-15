@@ -62,3 +62,26 @@
     color: $base-font-color;
   }
 }
+
+.p-app {
+  &_space {
+    background-color: $color-shade-dark;
+
+    &__header, &__subheader {
+      color: $base-font-color;
+    }
+
+    &_profile {
+      &__info, &__screenshots {
+        background-color: $color-shade-dark;
+        border-bottom-color: $color-shade-mid;
+      }
+      &__screenshots {
+        border-top-color: $color-shade-mid;
+      }
+      &__screenshot, &youtube_thumbnail {
+        box-shadow: 0 0 0 1px $color-shade-mid;
+      }
+    }
+  }
+}
