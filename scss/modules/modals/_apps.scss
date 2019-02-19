@@ -67,7 +67,8 @@
   &_space {
     background-color: $color-shade-dark;
 
-    &__header, &__subheader {
+    &__header,
+    &__subheader {
       color: $base-font-color;
     }
 
