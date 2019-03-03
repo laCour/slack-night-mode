@@ -136,3 +136,11 @@ ts-thread .thread_participants {
     color: $color-highlight;
   }
 }
+#file_reply_container .reply_limited,
+#reply_container .reply_limited,
+.reply_input_container .reply_limited,
+ts-thread .reply_input_container .reply_limited {
+  background-color: $color-shade-dark;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+}

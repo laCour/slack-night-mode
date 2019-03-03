@@ -192,7 +192,9 @@ textarea {
   }
 
   &.btn_attachment {
+    background-color: $color-shade-darkest;
     border-color: $color-shade-light;
+    color: $base-link-color;
 
     &:hover,
     &:focus {
