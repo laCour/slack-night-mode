@@ -419,9 +419,21 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-pillow_file {
+  &__content--collapsed:after {
+    background: linear-gradient(0deg, $color-shade-darker, hsla(0, 0%, 100%, 0) 40px);
+  }
+
   &__description,
+  &__email__attachments__count,
+  &__email__attachment__meta,
+  &__email__meta__field,
+  &__email__sender__address,
   &__title {
     color: $base-font-color;
+  }
+
+  &_container {
+    background-color: $color-shade-dark;
   }
 }
 
