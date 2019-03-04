@@ -418,6 +418,16 @@ html.no_touch a.filetype_button_web:hover {
   }
 }
 
+.c-pillow_file_container {
+  background-color: $color-shade-darkest;
+
+  .c-pillow_file__swap {
+    .c-pillow_file__slide {
+      background-color: $color-shade-darkest;
+    }
+  }
+}
+
 .c-pillow_file {
   &__description,
   &__title {
