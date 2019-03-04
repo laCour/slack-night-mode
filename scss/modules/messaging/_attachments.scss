@@ -449,7 +449,7 @@
 .c-file_container--has_thumb {
   .c-file {
     &__actions::before {
-      background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $color-shade-darkest 20px);
+      background-image: linear-gradient(90deg, $color-shadow-transparent, $color-shade-darkest 20px);
     }
   }
 }

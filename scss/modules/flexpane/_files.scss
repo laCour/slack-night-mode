@@ -419,8 +419,8 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-pillow_file {
-  &__content--collapsed:after {
-    background: linear-gradient(0deg, $color-shade-darker, hsla(0, 0%, 100%, 0) 40px);
+  &__content--collapsed::after {
+    background: linear-gradient(0deg, $color-shade-darker, $color-shadow-transparent 40px);
   }
 
   &__description,
@@ -460,7 +460,7 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .p-downloads_list__shift_hint {
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), $color-base 25%, $color-base);
+  background: linear-gradient(180deg, $color-shadow-transparent, $color-base 25%, $color-base);
   color: $base-font-color;
 }
 
