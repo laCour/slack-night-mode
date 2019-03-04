@@ -45,6 +45,16 @@
   background: $color-base;
 }
 
+.p-threads_footer__input,
+.p-threads_footer__input--legacy {
+  .p-message_input_field {
+    background: $color-shade-dark;
+  }
+
+  .p-message_input_file_button {
+    background: $color-shade-dark;
+  }
+}
 
 ts-thread {
   background: $color-base;
