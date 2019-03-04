@@ -32,15 +32,18 @@
       border-color: $color-shade-dark;
     }
 
+    textarea.c-input_textarea,
     input.c-input_text {
       border-color: $color-shade-dark;
+      color: $base-font-color;
 
-      .c-input_character_count {
+      .c-input_character_count::after {
         background-color: $color-shade-dark;
         color: $base-font-color;
       }
 
       &:focus {
+
         border-color: $color-shade-light;
         box-shadow: unset;
       }
