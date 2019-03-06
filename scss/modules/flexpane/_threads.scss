@@ -71,3 +71,28 @@ ts-thread {
     background-color: $color-shade-darker;
   }
 }
+
+.p-threads {
+  &_flexpane {
+    &__header {
+      background: $color-shade-dark;
+      border-color: $color-shade-light;
+      color: $base-font-color;
+
+      &_channel_name {
+        color: $base-link-color;
+      }
+    }
+  }
+
+  &_footer {
+    &__input_container {
+      .p-message_input_file_button,
+      .p-message_input_field,
+      .ql-placeholder {
+        background-color: $color-shade-dark;
+        color: $base-font-color;
+      }
+    }
+  }
+}
