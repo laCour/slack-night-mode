@@ -27,6 +27,15 @@
       color: $base-font-color;
     }
   }
+
+  #thread_notification_banner {
+    background-color: $color-shade-dark;
+    border-bottom-color: $color-shade-mid;
+
+    .banner_description {
+      color: $base-font-color;
+    }
+  }
 }
 
 #threads_view_banner.messages_banner {
