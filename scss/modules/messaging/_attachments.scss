@@ -126,6 +126,12 @@
   }
 }
 
+.c-message_kit {
+  &__file__meta {
+    color: $base-font-color;
+  }
+}
+
 .attachment_group {
   &.has_container {
     background: $color-base;
