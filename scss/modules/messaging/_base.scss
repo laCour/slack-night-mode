@@ -277,6 +277,12 @@
   }
 }
 
+.c-app_badge {
+  background: $color-shade-light;
+  box-shadow: 0 0 2px $color-shadow-medium;
+  color: $color-highlight;
+}
+
 .c-message_list {
   &__unread_divider {
     &__separator {
