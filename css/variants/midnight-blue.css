@@ -152,6 +152,7 @@
   .c-enhanced_text_input:hover, .c-enhanced_text_input.c-enhanced_text_input--active { border-color: #282828; }
   .c-filter_input { background: #282828; }
   .p-share_dialog_message_input { color: #00b9f2; }
+  .c-texty_input .ql-placeholder { color: #00b9f2; }
   .lazy_filter_select.disabled { background: #181818; }
   .lazy_filter_select.disabled input.lfs_input { background: #303030; }
   .lazy_filter_select .lfs_input_container { background-color: #282828; border-color: #101010; }
@@ -616,6 +617,7 @@
   .c-message__file_meta { color: #1793d1; }
   .c-message__image_container { background: rgba(16, 16, 16, 0.1); }
   .c-message__image_wrapper:after { border-color: transparent; }
+  .c-message_kit__file__meta { color: #00b9f2; }
   .attachment_group.has_container { background: #000; border: 1px solid #181818; }
   .attachment_group.has_container .inline_attachment::after { background-color: #181818; }
   .attachment_group.has_container.has_link:hover { border-bottom-color: #181818; border-left-color: #181818; border-right-color: #181818; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
@@ -818,6 +820,8 @@
   #threads_view_banner.messages_banner:hover { background: #282828; }
   #threads_view_banner.messages_banner:hover .clear_unread_messages { background: #282828; }
   #threads_msgs.new_banner_is_showing::before { background: #000; }
+  .p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field { background: #181818; }
+  .p-threads_footer__input .p-message_input_file_button, .p-threads_footer__input--legacy .p-message_input_file_button { background: #181818; }
   ts-thread { background: #000; }
   ts-thread .reply_input_container .inline_message_input_container form textarea { border-color: #181818; color: #00b9f2; }
   ts-thread .reply_input_container .collapsed_input_placeholder, ts-thread .reply_input_container .join_channel_from_thread_container, ts-thread .reply_input_container .reply_limited_in_general { background: #181818; border-color: #181818; }
@@ -1026,6 +1030,8 @@
   .c-file__slide--meta { background-color: #101010; }
   .p-file_details__name, .p-file_details__share_channel { color: #00b9f2; }
   .p-file_details__meta_container .c-file__action_button { color: #fff; }
+  .c-pillow_file_container { background-color: #101010; }
+  .c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide { background-color: #101010; }
   .c-pillow_file__description, .c-pillow_file__title { color: #00b9f2; }
   .p-file_list, .p-file_list__filters { background: #181818; }
   .p-file_list__filters { border-color: #181818; }

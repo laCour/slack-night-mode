@@ -306,6 +306,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .p-share_dialog_message_input { color: #586e75; }
 
+.c-texty_input .ql-placeholder { color: #586e75; }
+
 .lazy_filter_select.disabled { background: #fcf3d9; }
 
 .lazy_filter_select.disabled input.lfs_input { background: #fffefb; }
@@ -1231,6 +1233,8 @@ ts-mention { background: rgba(255, 254, 251, 0.1) !important; color: #586e75 !im
 
 .c-message__image_wrapper:after { border-color: transparent; }
 
+.c-message_kit__file__meta { color: #586e75; }
+
 .attachment_group.has_container { background: #fdf6e3; border: 1px solid #fcf3d9; }
 
 .attachment_group.has_container .inline_attachment::after { background-color: #fcf3d9; }
@@ -1634,6 +1638,10 @@ body > pre { background: #fffefb; }
 #threads_view_banner.messages_banner:hover .clear_unread_messages { background: #fef9ed; }
 
 #threads_msgs.new_banner_is_showing::before { background: #fdf6e3; }
+
+.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field { background: #fcf3d9; }
+
+.p-threads_footer__input .p-message_input_file_button, .p-threads_footer__input--legacy .p-message_input_file_button { background: #fcf3d9; }
 
 ts-thread { background: #fdf6e3; }
 
@@ -2050,6 +2058,10 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #586e75; }
 .p-file_details__name, .p-file_details__share_channel { color: #586e75; }
 
 .p-file_details__meta_container .c-file__action_button { color: #fff; }
+
+.c-pillow_file_container { background-color: #fbeecb; }
+
+.c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide { background-color: #fbeecb; }
 
 .c-pillow_file__description, .c-pillow_file__title { color: #586e75; }
 
