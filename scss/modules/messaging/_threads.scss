@@ -153,3 +153,17 @@ ts-thread .reply_input_container .reply_limited {
   border-color: $color-shade-light;
   color: $base-font-color;
 }
+
+#notification_banner {
+  background-color: $color-shade-dark;
+
+  h1,
+  h2 {
+    color: $base-font-color;
+  }
+}
+
+#notification_banner:before {
+  background-color: $color-shade-dark;
+  border-bottom-color: $color-shade-dark;
+}
