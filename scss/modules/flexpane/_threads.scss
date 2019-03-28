@@ -95,4 +95,56 @@ ts-thread {
       }
     }
   }
+
+  &_view {
+    background-color: $color-shade-darker;
+
+    &__default_background {
+      background-color: $color-shade-darker;
+    }
+
+    &__divider {
+      &_label {
+        background-color: $color-shade-dark;
+        color: $base-font-color;
+      }
+
+      &_line {
+        border-top-color: $color-shade-dark;
+      }
+    }
+
+    &__footer,
+    &_reply,
+    &_root {
+      border-color: $color-shade-dark;
+    }
+
+    &_header {
+      &__participant_list {
+        color: $base-font-color;
+      }
+
+      &__permalink {
+        color: $base-link-color !important;
+      }
+    }
+  }
+}
+
+.p_threads {
+  &_view {
+    &_load_older_button {
+      background-color: $color-shade-darker;
+      border-color: $color-shade-dark;
+
+      &:hover {
+        background-color: $color-shade-dark;
+      }
+
+      .c-link--button {
+        color: $base-font-color;
+      }
+    }
+  }
 }
