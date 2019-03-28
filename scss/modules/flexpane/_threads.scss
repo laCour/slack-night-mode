@@ -114,9 +114,7 @@ ts-thread {
       }
     }
 
-    &__footer,
-    &_reply,
-    &_root {
+    &__footer {
       border-color: $color-shade-dark;
     }
 
@@ -128,6 +126,18 @@ ts-thread {
       &__permalink {
         color: $base-link-color !important;
       }
+    }
+
+    &_reply {
+      border-color: $color-shade-dark;
+
+      &--new_reply {
+        background-color: $color-shade-dark;
+      }
+    }
+
+    &_root {
+      border-color: $color-shade-dark;
     }
   }
 }
