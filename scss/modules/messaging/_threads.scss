@@ -163,7 +163,7 @@ ts-thread .reply_input_container .reply_limited {
   }
 }
 
-#notification_banner:before {
+#notification_banner::before {
   background-color: $color-shade-dark;
   border-bottom-color: $color-shade-dark;
 }
