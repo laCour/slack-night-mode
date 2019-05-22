@@ -29,7 +29,8 @@
   background-color: $color-shade-dark;
   border-bottom-color: $color-shade-mid;
 
-  &__control {
+  &__control,
+  &__control .c-icon {
     color: $base-font-color;
 
     &:hover {
