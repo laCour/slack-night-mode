@@ -144,7 +144,7 @@ ts-thread {
 
 .p_threads {
   &_view {
-    &_load_older_button {
+    &_load_older_button, &_load_newer_button {
       background-color: $color-shade-darker;
       border-color: $color-shade-dark;
 
@@ -156,5 +156,13 @@ ts-thread {
         color: $base-font-color;
       }
     }
+  }
+
+  .c-app_badge, .c-app_label {
+    color: $base-link-color;
+  }
+
+  .c-timestamp__label {
+    color: $base-font-color;
   }
 }
