@@ -14,7 +14,8 @@
 .c-mrkdwn__subteam--mention,
 .c-mrkdwn__subteam--mention:hover,
 .mention_yellow_bg {
-  color: $color-highlight !important;
+  background-color: $color-yellow;
+  color: $color-shade-dark;
 }
 
 .c-message {
