@@ -45,6 +45,45 @@
   background: $color-base;
 }
 
+.p-threads_view {
+  background: $color-shade-dark;
+
+  &__divider {
+    &_line,
+    &_label {
+      background: $color-shade-darker;
+      border-color: $color-shade-darker;
+      color: $base-font-color;
+    }
+  }
+
+  &__default_background {
+    background: $color-shade-darker;
+  }
+
+  &_header {
+    &__channel_name,
+    &__participant_list {
+      color: $base-font-color;
+    }
+  }
+
+  .p_threads_view_load_newer_button,
+  .p_threads_view_load_older_button {
+    background: $color-shade-darker;
+
+    .c-link--button {
+      color: $base-link-color;
+    }
+  }
+
+  &_reply {
+    &--new_reply {
+      background: $color-shade-darker;
+    }
+  }
+}
+
 .p-threads_footer__input,
 .p-threads_footer__input--legacy {
   .p-message_input_field {
