@@ -387,7 +387,7 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-file {
-  
+
   &__action_button,
   &__action_button:link,
   &__action_button:focus,
@@ -429,20 +429,26 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-pillow_file {
+  &__snippet__truncated,
   &__description,
   &__title {
     color: $base-font-color;
+  }
+
+  &__content--collapsed::after {
+    background: linear-gradient(0deg, $color-shade-lightest, hsla(0, 0%, 100%, 0) 40px);
   }
 }
 
 .p-file_list {
   background: $color-shade-dark;
+
   &__filters {
     @extend .p-file_list;
     border-color: $color-shade-dark;
   }
 
-  &__file.c-pillow_file  {
+  &__file.c-pillow_file {
     &_container,
     &_container--full_width {
       background: $color-shade-dark;
