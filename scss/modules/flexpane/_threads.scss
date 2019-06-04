@@ -1,12 +1,26 @@
-#convo_tab #convo_tab_btns .close_flexpane {
-  &:focus,
-  &:hover {
+#convo_tab {
+  #convo_tab_btns .close_flexpane {
+    &:focus,
+    &:hover {
+      color: $base-font-color;
+    }
+  }
+
+  textarea.message_input {
     color: $base-font-color;
   }
-}
 
-#convo_tab textarea.message_input {
-  color: $base-font-color;
+  .message_input,
+  textarea#msg_text {
+    color: $base-font-color;
+  }
+
+  .p-threads_flexpane__separator_count {
+    color: $color-highlight;
+  }
+  .p-threads_flexpane__separator_line {
+    border-color: $color-highlight;
+  }
 }
 
 #reply_container,
@@ -52,11 +66,6 @@
   ts-conversation ts-message.selected .message_content .thread_channel_link {
     color: $base-link-color;
   }
-}
-
-#convo_tab .message_input,
-#convo_tab textarea#msg_text {
-  color: $base-font-color;
 }
 
 ts-message.message:hover,

@@ -22,11 +22,15 @@
   }
 
   &__author
-  &__autor--distinct {
+  &__author--distinct {
     color: $base-link-color;
   }
 
   &__author_link + .c-message_attachment__author_link {
+    color: $base-link-color;
+  }
+
+  &__author_name {
     color: $base-link-color;
   }
 
@@ -123,6 +127,16 @@
     &:after {
       border-color: transparent;
     }
+  }
+}
+
+.c-message_kit {
+  &__labels__label {
+    color: $color-highlight;
+  }
+
+  &__file__meta {
+    color: $base-font-color;
   }
 }
 

@@ -428,23 +428,29 @@ html.no_touch a.filetype_button_web:hover {
   &__email__attachment__meta,
   &__email__meta__field,
   &__email__sender__address,
+  &__snippet_truncated,
   &__title {
     color: $base-font-color;
   }
 
+  &__slide {
+    background-color: $color-shade-darkest;
+  }
+
   &_container {
-    background-color: $color-shade-dark;
+    background-color: $color-shade-darkest;
   }
 }
 
 .p-file_list {
   background: $color-shade-dark;
+
   &__filters {
     @extend .p-file_list;
     border-color: $color-shade-dark;
   }
 
-  &__file.c-pillow_file  {
+  &__file.c-pillow_file {
     &_container,
     &_container--full_width {
       background: $color-shade-dark;
