@@ -113,9 +113,10 @@
     .channel_header__tab {
       color: $base-link-color;
 
-      &.--active {
-        color: $base-link-color-active;
-      }
+      // Comment out per discussion in https://github.com/laCour/slack-night-mode/pull/208
+      //&.--active {
+      //  color: $base-link-color-active;
+      //}
 
       &:hover {
         color: $base-link-color-active;
