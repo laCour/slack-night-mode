@@ -131,6 +131,10 @@
 }
 
 .c-message_kit {
+  &__labels__label {
+    color: $color-highlight;
+  }
+
   &__file__meta {
     color: $base-font-color;
   }

@@ -45,20 +45,33 @@
   background: $color-base;
 }
 
+.p-message_container_loading {
+  background: $color-base;
+}
+
+.p-message_container_loading__msg {
+  color: $base-font-color;
+}
+
 .p-threads_view {
-  background: $color-shade-dark;
+  background: $color-base;
 
   &__divider {
     &_line,
     &_label {
-      background: $color-shade-darker;
-      border-color: $color-shade-darker;
+      background: $color-shade-dark;
+      border-color: $color-shade-dark;
       color: $base-font-color;
     }
   }
 
+  &__footer,
+  &_root {
+    border-color: $color-shade-darker;
+  }
+
   &__default_background {
-    background: $color-shade-darker;
+    background: $color-shade-dark;
   }
 
   &_header {
@@ -70,7 +83,8 @@
 
   .p_threads_view_load_newer_button,
   .p_threads_view_load_older_button {
-    background: $color-shade-darker;
+    background: $color-shade-dark;
+    border-color: $color-shade-darker;
 
     .c-link--button {
       color: $base-link-color;
@@ -78,8 +92,10 @@
   }
 
   &_reply {
+    border-color: $color-shade-darker;
+
     &--new_reply {
-      background: $color-shade-darker;
+      background: $color-shade-dark;
     }
   }
 }
