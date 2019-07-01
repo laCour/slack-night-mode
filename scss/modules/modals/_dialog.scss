@@ -26,6 +26,11 @@
       }
     }
 
+    .p-share_dialog__section:last-child {
+      background-color: $color-shade-dark;
+      border-color: $color-shade-darkest;
+    }
+
     .p-file_upload_dialog__preview,
     .p-file_upload_dialog__preview_image {
       background-color: $color-shade-darkest;
