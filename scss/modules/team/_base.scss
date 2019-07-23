@@ -102,3 +102,9 @@
 .c-usergroup__not-in-channel-context--small {
   color: $color-highlight;
 }
+
+.c-base_entity {
+  &__subtext {
+    color: $color-shade-lightest;
+  }
+}

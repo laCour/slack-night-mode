@@ -88,3 +88,26 @@
     background-color: $color-shade-dark;
   }
 }
+
+.c-fullscreen_modal {
+  &__body {
+    background: $color-base;
+    color: $base-font-color;
+  }
+}
+
+.p-dm_browser_modal {
+  &__option {
+    border-color: $color-shade-lightest;
+  }
+
+  &__list_row {
+    &--active {
+      background: $color-shade-dark;
+    }
+
+    &_meta {
+      color: $base-font-color;
+    }
+  }
+}
