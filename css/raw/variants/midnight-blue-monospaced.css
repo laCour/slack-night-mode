@@ -310,7 +310,29 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .c-texty_input .ql-placeholder { color: #00b9f2; }
 
+.c-texty_autocomplete { background: #000; box-shadow: 0 0 0 1px #303030, 0 4px 12px 0 #303030; }
+
+.c-texty_autocomplete__result--selected { background: #202020; }
+
+.c-texty_autocomplete__result_highlight, .c-texty_autocomplete__result_highlight--selected { background: #181818; }
+
 .p-workspace__input .p-message_input_field { background: #000; }
+
+.ts_toggle .ts_toggle_button { background: #101010; color: #00b9f2; }
+
+.ts_toggle .ts_toggle_button .ts_toggle_handle { background: #181818; }
+
+.ts_toggle .ts_toggle_secondary_label { color: #1793d1; }
+
+.ts_toggle.checked .ts_toggle_button { background: #303030; color: #00b9f2; }
+
+.ts_toggle.ts_toggle_orange .ts_toggle_button { background: #bf360c; color: #00b9f2; }
+
+.c-multi_select_input { background: #282828; background-color: #282828; }
+
+.c-token { background: #181818; }
+
+.c-multi_select_token__remove { color: #303030; }
 
 .lazy_filter_select.disabled { background: #181818; }
 
@@ -831,6 +853,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 .p-classic_nav { background: #181818; }
 
 .p-classic_nav__model__button { color: #00b9f2; }
+
+.p-classic_nav__model__title__is_you { color: #303030; }
 
 .p-classic_nav__model__title__info { color: #00b9f2; }
 
@@ -2601,6 +2625,8 @@ ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_c
 
 .c-usergroup__not-in-channel-context--small { color: #1793d1; }
 
+.c-base_entity__subtext { color: #303030; }
+
 .p-emoji_picker { background: #101010 !important; color: #00b9f2 !important; }
 
 .p-emoji_picker[data-using-keyboard="true"] .p-emoji_picker__list_item[data-color-index="0"].key_selection { background: rgba(183, 232, 135, 0.5); }
@@ -2726,6 +2752,14 @@ a.c-member_slug--mention, a.c-member_slug--mention:hover { background-color: #ff
 #fs_modal.fs_modal_header .fs_modal_btn:active { color: #00b9f2; }
 
 #fs_modal #fs_modal_footer { background-color: #181818; }
+
+.c-fullscreen_modal__body { background: #000; color: #00b9f2; }
+
+.p-dm_browser_modal__option { border-color: #303030; }
+
+.p-dm_browser_modal__list_row--active { background: #181818; }
+
+.p-dm_browser_modal__list_row_meta { color: #00b9f2; }
 
 .p-apps_browser__apps_list--loading::before { background-color: #181818; }
 
