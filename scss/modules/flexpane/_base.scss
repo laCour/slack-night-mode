@@ -127,14 +127,6 @@
   color: $color-highlight;
 }
 
-.p-flexpane {
-  &_header {
-    background: $color-shade-dark;
-    border-color: $color-shade-light;
-    color: $base-font-color;
-  }
-}
-
 #client_body:not(.onboarding):not(.feature_global_nav_layout):before {
-  background: $color-shade-dark;
+  background: $color-shade-darker;
 }

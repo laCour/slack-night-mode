@@ -17,6 +17,35 @@
     }
   }
 
+  &_banner {
+    background-color: $color-shade-dark;
+    color: $base-font-color;
+
+    .c-button {
+      &--outline {
+        background-color: $color-shade-darker;
+        color: $base-link-color;
+      }
+
+      &--primary {
+        background-color: $color-shade-light;
+        color: $base-font-color;
+      }
+    }
+
+    &__body--wider-text,
+    &__close_icon,
+    &__header {
+      color: $base-font-color;
+    }
+  }
+
+  &_banner::before {
+    background-color: $color-shade-darker;
+    border-bottom-color: $color-shade-darker;
+
+  }
+
   &__foreword__description,
   &__limited_history_alert {
     color: $base-font-color;

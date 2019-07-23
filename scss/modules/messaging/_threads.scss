@@ -27,6 +27,15 @@
       color: $base-font-color;
     }
   }
+
+  #thread_notification_banner {
+    background-color: $color-shade-dark;
+    border-bottom-color: $color-shade-mid;
+
+    .banner_description {
+      color: $base-font-color;
+    }
+  }
 }
 
 #threads_view_banner.messages_banner {
@@ -200,4 +209,26 @@ ts-thread .thread_participants {
   .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
     color: $color-highlight;
   }
+}
+#file_reply_container .reply_limited,
+#reply_container .reply_limited,
+.reply_input_container .reply_limited,
+ts-thread .reply_input_container .reply_limited {
+  background-color: $color-shade-dark;
+  border-color: $color-shade-light;
+  color: $base-font-color;
+}
+
+#notification_banner {
+  background-color: $color-shade-dark;
+
+  h1,
+  h2 {
+    color: $base-font-color;
+  }
+}
+
+#notification_banner::before {
+  background-color: $color-shade-dark;
+  border-bottom-color: $color-shade-dark;
 }

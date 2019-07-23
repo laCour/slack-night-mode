@@ -62,3 +62,53 @@
     color: $base-font-color;
   }
 }
+
+.p-app {
+  &_space {
+    background-color: $color-shade-dark;
+
+    &__header,
+    &__subheader,
+    &__subheader__helper {
+      color: $base-font-color;
+    }
+
+    &_profile {
+      &__info,
+      &__screenshots {
+        background-color: $color-shade-dark;
+        border-bottom-color: $color-shade-mid;
+      }
+
+      &__screenshots {
+        background-color: $color-shade-dark;
+        border-bottom-color: $color-shade-mid;
+        border-top-color: $color-shade-mid;
+      }
+
+      &__screenshot,
+      &youtube_thumbnail {
+        box-shadow: 0 0 0 1px $color-shade-mid;
+      }
+
+      &__slash_command {
+        border-bottom-color: $color-shade-mid;
+        border-top-color: $color-shade-mid;
+
+        strong {
+          color: $base-font-color;
+        }
+
+        &_desc {
+          color: $base-link-color;
+        }
+      }
+
+      &__slash_commands {
+        background-color: $color-shade-darker;
+        border-bottom-color: $color-shade-mid;
+        border-top-color: $color-shade-mid;
+      }
+    }
+  }
+}

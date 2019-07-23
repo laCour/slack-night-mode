@@ -418,25 +418,27 @@ html.no_touch a.filetype_button_web:hover {
   }
 }
 
-.c-pillow_file_container {
-  background-color: $color-shade-darkest;
-
-  .c-pillow_file__swap {
-    .c-pillow_file__slide {
-      background-color: $color-shade-darkest;
-    }
-  }
-}
-
 .c-pillow_file {
-  &__snippet__truncated,
+  &__content--collapsed::after {
+    background: linear-gradient(0deg, $color-shade-darker, $color-shadow-transparent 40px);
+  }
+
   &__description,
+  &__email__attachments__count,
+  &__email__attachment__meta,
+  &__email__meta__field,
+  &__email__sender__address,
+  &__snippet_truncated,
   &__title {
     color: $base-font-color;
   }
 
-  &__content--collapsed::after {
-    background: linear-gradient(0deg, $color-shade-lightest, hsla(0, 0%, 100%, 0) 40px);
+  &__slide {
+    background-color: $color-shade-darkest;
+  }
+
+  &_container {
+    background-color: $color-shade-darkest;
   }
 }
 
@@ -464,7 +466,7 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .p-downloads_list__shift_hint {
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), $color-base 25%, $color-base);
+  background: linear-gradient(180deg, $color-shadow-transparent, $color-base 25%, $color-base);
   color: $base-font-color;
 }
 

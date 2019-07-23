@@ -20,7 +20,34 @@
 
 .p-downloads_list {
   &__shift_hint {
-    background: linear-gradient(180deg,hsla(0,0%,100%,0),$color-shade-dark 25%,$color-shade-dark);
+    background: linear-gradient(180deg, $color-shadow-transparent, $color-shade-dark 25%, $color-shade-dark);
     color: $base-font-color;
+  }
+}
+
+.p-flexpane {
+  &_header {
+    background-color: $color-shade-dark;
+    border-bottom-color: $color-shade-mid;
+
+    &__control,
+    &__control .c-icon {
+      color: $base-font-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
+  }
+
+  &__body {
+    .p-thread_drag_overlay {
+      background-color: $color-shade-dark;
+
+      &__subtitle,
+      &__title {
+        color: $base-font-color;
+      }
+    }
   }
 }

@@ -15,6 +15,21 @@
   &__body {
     background: $color-shade-darker;
 
+    .p-multi_file_upload {
+      &__add_file_btn {
+        color: $base-link-color;
+      }
+
+      &__container {
+        .p-galler_scroller {
+          &__wrapper {
+            background-color: $color-shade-darkest;
+            border-color: $color-shade-dark;
+          }
+        }
+      }
+    }
+
     .p-share_dialog_message_input {
       background-color: $color-shade-darkest;
       border-color: $color-shade-dark;
@@ -37,15 +52,18 @@
       border-color: $color-shade-dark;
     }
 
+    textarea.c-input_textarea,
     input.c-input_text {
       border-color: $color-shade-dark;
+      color: $base-font-color;
 
-      .c-input_character_count {
+      .c-input_character_count::after {
         background-color: $color-shade-dark;
         color: $base-font-color;
       }
 
       &:focus {
+
         border-color: $color-shade-light;
         box-shadow: unset;
       }

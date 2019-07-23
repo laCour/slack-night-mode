@@ -233,6 +233,16 @@
   &__call_sub {
     color: $color-highlight;
   }
+
+  &_attachment {
+    &__author_name,
+    &__author_name.clink--button,
+    &__author_name.clink--button:active,
+    &__author_name.clink--button:focus,
+    &__author_name.clink--button:hover {
+      color: $base-font-color;
+    }
+  }
 }
 
 .c-message_actions {
