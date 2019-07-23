@@ -351,6 +351,22 @@ textarea {
   }
 }
 
+.c-texty_autocomplete {
+  background: $color-base;
+  box-shadow: 0 0 0 1px $color-shade-lightest, 0 4px 12px 0 $color-shade-lightest;
+
+  &__result {
+    &--selected {
+      background: $color-shade-mid;
+    }
+
+    &_highlight,
+    &_highlight--selected {
+      background: $color-shade-dark;
+    }
+  }
+}
+
 .p-workspace__input {
   .p-message_input_field {
     background: $color-base;
