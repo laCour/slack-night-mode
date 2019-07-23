@@ -145,6 +145,10 @@
     }
 
     &__title {
+      &__is_you {
+        color: $color-shade-lightest;
+      }
+
       &__info {
         color: $base-font-color;
 
