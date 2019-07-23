@@ -316,8 +316,16 @@
   }
 }
 
-.c-virtual_list__item--focus:focus .c-message_list__focus_indicator {
-  box-shadow: inset 0 0 0 3px rgba($color-shade-lightest, 0.8);
+.c-virtual_list {
+  &__item--focus:focus .c-message_list__focus_indicator {
+    box-shadow: inset 0 0 0 3px rgba($color-shade-lightest, 0.8);
+  }
+
+  .c-virtual_list--scrollbar .c-scrollbar .c-scrollbar--hidden,
+  .c-scrollbar__hider {
+    background: $color-shade-darkest;
+    border-color: $color-shade-dark;
+  }
 }
 
 ts-message {
