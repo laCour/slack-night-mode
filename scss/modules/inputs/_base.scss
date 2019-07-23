@@ -350,3 +350,9 @@ textarea {
     color: $base-font-color;
   }
 }
+
+.p-workspace__input {
+  .p-message_input_field {
+    background: $color-base;
+  }
+}

@@ -135,3 +135,60 @@
 #edit_topic_trigger {
   color: $base-link-color;
 }
+
+.p-classic_nav {
+  background: $color-shade-dark;
+
+  &__model {
+    &__button {
+      color: $base-font-color;
+    }
+
+    &__title {
+      &__info {
+        color: $base-font-color;
+
+        &__topic {
+          &:hover {
+            .p-classic_nav__model__title__info__topic__text:before {
+              background: $color-base;
+              color: $base-font-color;
+            }
+          }
+        }
+      }
+
+      &__name {
+        &--dim {
+          color: $color-shade-lightest;
+        }
+      }
+    }
+  }
+
+  &__right {
+    &__button {
+      color: $base-font-color;
+    }
+
+    &__search {
+      border-color: $base-font-color;
+
+      &:hover {
+        border-color: $color-shade-lightest;
+
+        .p-classic_nav__right__search {
+          &__icon,
+          &__placeholder {
+            color: $color-shade-lightest;
+          }
+        }
+      }
+
+      &__icon,
+      &__placeholder {
+        color: $base-font-color;
+      }
+    }
+  }
+}
