@@ -367,8 +367,21 @@ textarea {
   }
 }
 
-.p-workspace__input {
-  .p-message_input_field {
-    background: $color-base;
+.p-workspace {
+  &__input {
+    .p-message_input_field {
+      background: $color-base;
+      border-color: $color-shade-light;
+    }
+  }
+
+  &__primary_view_footer {
+    background: $color-shade-darkest;
+    border-color: $color-shade-dark;
+    opacity: 0.8;
+  }
+
+  &__secondary_view {
+    border-color: $color-shade-dark;
   }
 }

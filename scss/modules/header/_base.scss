@@ -144,6 +144,11 @@
       color: $base-font-color;
     }
 
+    &_header {
+      background: $color-shade-darkest;
+      opacity: 0.8;
+    }
+
     &__title {
       &__is_you {
         color: $color-shade-lightest;
@@ -175,6 +180,11 @@
       color: $base-font-color;
     }
 
+    &_header {
+      background: $color-shade-lightest;
+      opacity: 0.8;
+    }
+
     &__search {
       border-color: $base-font-color;
 
@@ -194,5 +204,9 @@
         color: $base-font-color;
       }
     }
+  }
+
+  &__team_header {
+    background: $color-shade-dark;
   }
 }
