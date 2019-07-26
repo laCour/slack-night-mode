@@ -30,6 +30,14 @@
   }
 }
 
+.p-user_group_base_row__list_item {
+  background: transparent;
+
+  &:hover {
+    background: $color-shade-dark;
+  }
+}
+
 .user_group_item {
   border-bottom: 1px solid $color-shade-light;
 

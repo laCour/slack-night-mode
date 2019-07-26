@@ -191,7 +191,8 @@
   }
 }
 
-.c-message {
+.c-message,
+.p-channel_details_section {
   &--editing {
     background: $color-shade-dark;
     border-color: $color-shade-dark;

@@ -433,7 +433,8 @@ html.no_touch a.filetype_button_web:hover {
     color: $base-font-color;
   }
 
-  &__slide {
+  &__slide,
+  &__swap {
     background-color: $color-shade-darkest;
   }
 

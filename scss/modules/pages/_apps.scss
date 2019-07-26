@@ -340,7 +340,8 @@ a.plastic_typeahead_item {
   color: $color-highlight;
 }
 
-.c-tabs__tab_menu {
+.c-tabs__tab_menu,
+.c-tabs__tab_count {
   background-color: transparent;
   box-shadow: inset 0 -2px 0 0 $color-shade-light;
 }

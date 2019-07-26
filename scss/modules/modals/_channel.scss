@@ -124,3 +124,18 @@
     }
   }
 }
+
+.p-channel_details {
+  &__heading,
+  &__created_link,
+  &__created_link:hover,
+  &__similar_channels_channel :hover {
+    color: inherit;
+  }
+}
+
+.p-highlights_section {
+  &__group_title_label {
+    background: $color-shade-mid;
+  }
+}

@@ -18,6 +18,17 @@
   color: $color-shade-dark;
 }
 
+.c-mrkdwn__user_group--link,
+a:link.c-mrkdwn__user_group--link {
+  background: $color-shade-dark;
+  color: $base-font-color;
+}
+
+.c-mrkdwn__user_group--link:hover,
+a:link.c-mrkdwn__user_group--link:hover {
+  background: $color-shade-mid;
+}
+
 .c-message {
   &:hover {
     .c-message__broadcast_preamble_outer,
