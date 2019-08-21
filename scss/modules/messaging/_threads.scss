@@ -121,17 +121,18 @@
 }
 
 .p-workspace__input {
-  .p-message_input_field {
+  .p-message_input_field,
+  .p-message_input_field.focus {
     border-color: $color-shade-light;
+
+    &~.p-message_input_file_button:not(:hover) {
+      color: $base-link-color;
+    }
   }
 
-  .p-message_input_file_button {
+  .p-message_input_file_button:hover {
     color: $base-link-color;
-
-    &:hover {
-      color: $base-link-color;
-      background: $color-shade-mid;
-    }
+    background: $color-shade-mid;
   }
 }
 
