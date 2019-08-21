@@ -50,6 +50,10 @@
   &__limited_history_alert {
     color: $base-font-color;
   }
+
+  &_input_broadcast_warning {
+    background-color: $color-shade-darker;
+  }
 }
 
 .p-message_pane__limited_history_foreword {
