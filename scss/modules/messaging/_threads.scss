@@ -120,6 +120,21 @@
   }
 }
 
+.p-workspace__input {
+  .p-message_input_field {
+    border-color: $color-shade-light;
+  }
+
+  .p-message_input_file_button {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color;
+      background: $color-shade-mid;
+    }
+  }
+}
+
 ts-thread {
   background: $color-base;
 
