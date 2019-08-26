@@ -184,3 +184,18 @@
     }
   }
 }
+
+.p-member_profile {
+  &_card {
+    background: $color-shade-darker;
+  }
+
+  &_name__link,
+  &_name__link:hover {
+    color: $base-font-color;
+  }
+
+  &_field__label {
+    color: $base-font-color;
+  }
+}
