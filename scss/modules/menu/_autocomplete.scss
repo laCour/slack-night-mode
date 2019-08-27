@@ -213,3 +213,38 @@
     color: $base-font-color;
   }
 }
+
+.c-texty_autocomplete--commands {
+  background: $color-base;
+  box-shadow: 0 0 0 1px $color-shade-light, 0 4px 12px 0 $color-shade-light;
+
+  .c-texty_autocomplete {
+    &__group {
+      background-color: $color-shade-dark;
+      color: $base-font-color;
+    }
+
+    &__result {
+      background-color: $color-base;
+
+      &:not(.c-texty_autocomplete__result--selected) {
+        .c-texty_autocomplete__result_description {
+          color: $base-link-color;
+        }
+      }
+
+      &--selected {
+        background: $color-shade-mid;
+      }
+
+      &_highlight,
+      &_highlight--selected {
+        background: $color-shade-dark;
+      }
+
+      &_title {
+        color: $base-font-color;
+      }
+    }
+  }
+}
