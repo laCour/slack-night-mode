@@ -5,7 +5,7 @@
   &__container &__name_row {
     color: $base-font-color;
   }
-  
+
 
   &__actions {
     background: $color-base;
@@ -41,6 +41,10 @@
   }
 
   &__body {
+    &--empty {
+      background-color: $color-base;
+    }
+
     .p-thread_drag_overlay {
       background-color: $color-shade-dark;
 
