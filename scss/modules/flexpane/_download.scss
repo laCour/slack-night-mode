@@ -55,3 +55,12 @@
     }
   }
 }
+
+.c-icon_button--light,
+.c-icon_button--light.c-button-unstyled {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}
