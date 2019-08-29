@@ -64,6 +64,12 @@
 }
 
 .p-app {
+  &_dialog {
+    &__title_text {
+      color: $base-font-color;
+    }
+  }
+
   &_space {
     background-color: $color-shade-dark;
 
@@ -111,4 +117,8 @@
       }
     }
   }
+}
+
+textarea.c-input_textarea {
+  background-color: $color-base;
 }
