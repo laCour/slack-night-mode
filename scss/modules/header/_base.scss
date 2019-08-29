@@ -163,6 +163,10 @@
               color: $base-font-color;
             }
           }
+
+          &__edit {
+            color: $base-link-color;
+          }
         }
       }
 
@@ -207,8 +211,4 @@
   &__team_header {
     background: $color-shade-dark;
   }
-}
-
-.p-classic_nav__model__title__info__topic__edit {
-  color: $base-link-color;
 }
