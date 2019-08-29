@@ -35,3 +35,16 @@ a.c-member_slug,
     color: $base-font-color;
   }
 }
+
+a.c-member_slug--mention,
+a.c-member_slug--mention:hover,
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__broadcast--mention:hover,
+.c-mrkdwn__mention,
+.c-mrkdwn__mention:hover,
+.c-mrkdwn__subteam--mention,
+.c-mrkdwn__subteam--mention:hover {
+  background-color: $base-font-color;
+  border: 1px solid $color-shade-light;
+  color: $color-shade-darker;
+}
