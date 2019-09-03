@@ -169,8 +169,8 @@
 
 
 .c-menu_item {
-  &__label {
-    color: $white;
+  &__description {
+    color: $base-link-color;
   }
 
   &__header {
@@ -179,6 +179,10 @@
 
   &__icon {
     color: $color-shade-lightest;
+  }
+
+  &__label {
+    color: $white;
   }
 
   &__shortcut {
