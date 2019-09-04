@@ -169,7 +169,8 @@
 
 
 .c-menu_item {
-  &__description {
+  &__description,
+  &__link_icon {
     color: $base-link-color;
   }
 
