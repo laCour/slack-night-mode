@@ -148,6 +148,16 @@
   &__file__meta {
     color: $base-font-color;
   }
+
+  &__message {
+    background-color: $color-shade-darkest;
+  }
+}
+
+.p-pinned_items {
+  &__remove_item {
+    color: $base-link-color;
+  }
 }
 
 .attachment_group {
