@@ -124,14 +124,22 @@
   }
 }
 
-.p-prefs_modal__radiogroup {
-  .p-prefs_modal__radio_decorator {
-    background-color: $color-shade-dark;
+.p-prefs_modal {
+  &__notification_example.p-prefs_modal__notification_example {
+    &--none,
+    &--linux,
+    &--mac,
+    &--windows {
+      background-color: $color-base;
+      color: $base-font-color;
+    }
   }
-}
-.p-prefs_modal__notification_example.p-prefs_modal__notification_example--mac {
-  background-color: $color-base;
-  color: $base-font-color;
+
+  &__radiogroup {
+    .p-prefs_modal__radio_decorator {
+      background-color: $color-shade-dark;
+    }
+  }
 }
 
 .c-select {
@@ -151,5 +159,12 @@
     &__wrapper {
       background-color: $color-shade-dark;
     }
+  }
+}
+
+.c-button {
+  &--outline {
+    background-color: $color-shade-dark;
+    color: $base-link-color;
   }
 }
