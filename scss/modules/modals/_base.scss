@@ -94,6 +94,18 @@
     background: $color-base;
     color: $base-font-color;
   }
+
+  &__close {
+    color: $base-link-color;
+
+    &:hover {
+      color: $base-link-color-active;
+    }
+  }
+
+  &__header {
+    background: $color-base;
+  }
 }
 
 .p-dm_browser_modal {
@@ -108,6 +120,36 @@
 
     &_meta {
       color: $base-font-color;
+    }
+  }
+}
+
+.p-prefs_modal__radiogroup {
+  .p-prefs_modal__radio_decorator {
+    background-color: $color-shade-dark;
+  }
+}
+.p-prefs_modal__notification_example.p-prefs_modal__notification_example--mac {
+  background-color: $color-base;
+  color: $base-font-color;
+}
+
+.c-select {
+  &_button {
+    background-color: $color-shade-dark;
+
+    &:active {
+      background-color: $color-shade-mid;
+    }
+  }
+
+  &_options_list {
+    &__option {
+      color: $base-link-color;
+    }
+
+    &__wrapper {
+      background-color: $color-shade-dark;
     }
   }
 }
