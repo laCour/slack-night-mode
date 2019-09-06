@@ -208,6 +208,14 @@
     }
   }
 
+  &__team_menu {
+    &__blurb {
+      &__sub {
+        color: $base-link-color;
+      }
+    }
+  }
+
   &__team_header {
     background: $color-shade-dark;
   }
