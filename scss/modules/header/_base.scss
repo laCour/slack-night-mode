@@ -163,12 +163,22 @@
               color: $base-font-color;
             }
           }
+
+          &__edit {
+            color: $base-link-color;
+          }
         }
       }
 
       &__name {
         &--dim {
           color: $color-shade-lightest;
+        }
+
+        &__status {
+          &--im {
+            color: $base-link-color;
+          }
         }
       }
     }
@@ -200,6 +210,14 @@
       &__icon,
       &__placeholder {
         color: $base-font-color;
+      }
+    }
+  }
+
+  &__team_menu {
+    &__blurb {
+      &__sub {
+        color: $base-link-color;
       }
     }
   }

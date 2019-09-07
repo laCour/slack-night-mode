@@ -248,3 +248,11 @@ ts-thread .reply_input_container .reply_limited {
   background-color: $color-shade-dark;
   border-bottom-color: $color-shade-dark;
 }
+
+.c-link--button {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
+  }
+}

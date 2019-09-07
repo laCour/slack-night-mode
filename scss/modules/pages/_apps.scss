@@ -446,3 +446,7 @@ table.gray_header_border tr:first-child th:not(:only-of-type) {
     background-color: $color-green;
   }
 }
+
+.sk_primary_foreground {
+  color: $base-font-color;
+}

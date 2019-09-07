@@ -21,7 +21,7 @@
     color: $color-shade-light;
   }
 
-  &__author
+  &__author,
   &__author--distinct {
     color: $base-link-color;
   }
@@ -32,6 +32,14 @@
 
   &__author_name {
     color: $base-link-color;
+
+    &.c-link--button {
+      color: $base-link-color;
+
+      &:hover {
+        color: $base-link-color-active;
+      }
+    }
   }
 
   &__title_link span {
@@ -139,6 +147,16 @@
 
   &__file__meta {
     color: $base-font-color;
+  }
+
+  &__message {
+    background-color: $color-shade-darkest;
+  }
+}
+
+.p-pinned_items {
+  &__remove_item {
+    color: $base-link-color;
   }
 }
 

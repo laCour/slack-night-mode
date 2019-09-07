@@ -339,6 +339,10 @@ textarea {
 
 .c-filter_input {
   background: $color-shade-light;
+
+  &__input[type=text][placeholder] {
+    color: $base-font-color;
+  }
 }
 
 .p-share_dialog_message_input {
@@ -348,22 +352,6 @@ textarea {
 .c-texty_input {
   .ql-placeholder {
     color: $base-font-color;
-  }
-}
-
-.c-texty_autocomplete {
-  background: $color-base;
-  box-shadow: 0 0 0 1px $color-shade-lightest, 0 4px 12px 0 $color-shade-lightest;
-
-  &__result {
-    &--selected {
-      background: $color-shade-mid;
-    }
-
-    &_highlight,
-    &_highlight--selected {
-      background: $color-shade-dark;
-    }
   }
 }
 

@@ -5,7 +5,7 @@
   &__container &__name_row {
     color: $base-font-color;
   }
-  
+
 
   &__actions {
     background: $color-base;
@@ -41,6 +41,10 @@
   }
 
   &__body {
+    &--empty {
+      background-color: $color-base;
+    }
+
     .p-thread_drag_overlay {
       background-color: $color-shade-dark;
 
@@ -49,5 +53,14 @@
         color: $base-font-color;
       }
     }
+  }
+}
+
+.c-icon_button--light,
+.c-icon_button--light.c-button-unstyled {
+  color: $base-link-color;
+
+  &:hover {
+    color: $base-link-color-active;
   }
 }
